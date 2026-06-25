@@ -1,21 +1,27 @@
 import type { Novel, Chapter } from "./types";
-import fs from "fs/promises";
-import path from "path";
 
 /**
  * Data access layer.
  * - Tries Supabase first if env vars are set
  * - Falls back to local JSON in /data (zero-config)
+ * 
+ * IMPORTANT: This file must not import 'fs' directly.
+ * All JSON data is imported statically so Next.js can bundle it.
  */
 
 import { supabase, hasSupabase } from "./supabase";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+// Static imports — bundled at build time
+import novelsData from "@/data/novels.json";
+import moipChapters from "@/data/chapters/moip.json";
+import laskarChapters from "@/data/chapters/laskar-pelangi.json";
+import sherlockChapters from "@/data/chapters/sherlock-holmes-collection.json";
 
-async function readJSON<T>(file: string): Promise<T> {
-  const raw = await fs.readFile(path.join(DATA_DIR, file), "utf-8");
-  return JSON.parse(raw) as T;
-}
+const chaptersMap: Record<string, Chapter[]> = {
+  moip: moipChapters as Chapter[],
+  "laskar-pelangi": laskarChapters as Chapter[],
+  "sherlock-holmes-collection": sherlockChapters as Chapter[],
+};
 
 export async function getAllNovels(): Promise<Novel[]> {
   if (hasSupabase && supabase) {
@@ -25,8 +31,9 @@ export async function getAllNovels(): Promise<Novel[]> {
       .order("updated_at", { ascending: false });
     if (!error && data) return data as Novel[];
   }
-  const list = await readJSON<Novel[]>("novels.json");
-  return list.sort((a, b) => (b.updated_at ?? "").localeCompare(a.updated_at ?? ""));
+  return (novelsData as Novel[]).sort((a, b) =>
+    (b.updated_at ?? "").localeCompare(a.updated_at ?? "")
+  );
 }
 
 export async function getNovelBySlug(slug: string): Promise<Novel | null> {
@@ -38,8 +45,7 @@ export async function getNovelBySlug(slug: string): Promise<Novel | null> {
       .maybeSingle();
     if (!error && data) return data as Novel;
   }
-  const list = await readJSON<Novel[]>("novels.json");
-  return list.find((s) => s.slug === slug) ?? null;
+  return (novelsData as Novel[]).find((s) => s.slug === slug) ?? null;
 }
 
 export async function getChaptersByNovel(novelId: string): Promise<Chapter[]> {
@@ -51,12 +57,7 @@ export async function getChaptersByNovel(novelId: string): Promise<Chapter[]> {
       .order("number", { ascending: true });
     if (!error && data) return data as Chapter[];
   }
-  try {
-    const list = await readJSON<Chapter[]>(`chapters/${novelId}.json`);
-    return list.sort((a, b) => a.number - b.number);
-  } catch {
-    return [];
-  }
+  return (chaptersMap[novelId] ?? []).sort((a, b) => a.number - b.number);
 }
 
 export async function getChapter(
