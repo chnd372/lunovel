@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import type { ReaderSettings, Chapter, Novel, ReaderTheme } from "@/lib/types";
 import { estimateReadingMinutes } from "@/lib/data";
+import { applyCorrections, getCorrections } from "@/lib/corrections";
+import TextSelectionHandler from "@/components/TextSelectionHandler";
 import { useRouter } from "next/navigation";
 
 interface Props {
@@ -64,6 +66,11 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
   const [showSettings, setShowSettings] = useState(false);
   const [progress, setProgress] = useState(0);
   const [showHeader, setShowHeader] = useState(true);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  // Apply approved corrections to chapter content
+  const { text: correctedContent, applied: appliedCorrections } = applyCorrections(chapter.content, novel.id);
+  const chapterContent = correctedContent;
 
   // Load settings on mount
   useEffect(() => {
@@ -109,7 +116,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
 
   const theme = themes[settings.theme];
   const minutes = estimateReadingMinutes(chapter.word_count);
-  const paragraphs = chapter.content.split(/\n\n+/);
+        const paragraphs = chapterContent.split(/\n\n+/);
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${theme.bg} ${theme.text}`}>
@@ -269,8 +276,18 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
         </div>
       )}
 
+      {/* Text selection handler for corrections */}
+      <TextSelectionHandler
+        novelId={novel.id}
+        novelSlug={novel.slug}
+        chapterId={chapter.id}
+        chapterNumber={chapter.number}
+        contentRef={contentRef}
+      />
+
       {/* Article */}
       <article
+        ref={contentRef}
         className="mx-auto px-4 md:px-6 pt-16 pb-32"
         style={{ maxWidth: settings.max_width + 32 }}
       >
@@ -302,15 +319,32 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
             lineHeight: settings.line_height,
           }}
         >
-          {paragraphs.map((p, i) => (
-            <p
-              key={i}
-              className="mb-6 indent-8 first:indent-0"
-              style={{ textAlign: "justify", hyphens: "auto" }}
-            >
-              {p}
-            </p>
-          ))}
+          {paragraphs.map((p, i) => {
+            // Apply inline highlighting for pending/approved corrections
+            const pendingCorrs = typeof window !== "undefined" ? getCorrections(novel.id, "pending") : [];
+            const approvedCorrs = typeof window !== "undefined" ? getCorrections(novel.id, "approved") : [];
+            const allCorrs = [...pendingCorrs, ...approvedCorrs];
+            
+            // Simple approach: highlight original text that has pending corrections
+            let rendered = p;
+            for (const corr of pendingCorrs) {
+              if (rendered.includes(corr.original)) {
+                rendered = rendered.replace(
+                  corr.original,
+                  `<mark class="bg-amber-200/50 dark:bg-amber-500/20 border-b-2 border-dashed border-amber-400" title="Saran: ${corr.suggested}">${corr.original}</mark>`
+                );
+              }
+            }
+            
+            return (
+              <p
+                key={i}
+                className="mb-6 indent-8 first:indent-0"
+                style={{ textAlign: "justify", hyphens: "auto" }}
+                dangerouslySetInnerHTML={{ __html: rendered }}
+              />
+            );
+          })}
         </div>
 
         {/* End of chapter */}

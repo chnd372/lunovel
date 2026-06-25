@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getNovelBySlug, getChaptersByNovel } from "@/lib/data";
 import ChapterList from "@/components/ChapterList";
 import BookmarkButton from "@/components/BookmarkButton";
+import CorrectionPanel from "@/components/CorrectionPanel";
 
 export const dynamic = "force-dynamic";
 
@@ -114,6 +115,11 @@ export default async function NovelPage({ params }: Props) {
           </div>
         </div>
       </div>
+
+      {/* Koreksi komunal panel */}
+      <section>
+        <CorrectionPanel novelId={novel.id} novelSlug={novel.slug} />
+      </section>
 
       {/* Chapter list */}
       <section>

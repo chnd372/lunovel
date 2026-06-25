@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getNovelBySlug, getChaptersByNovel, getChapter } from "@/lib/data";
 import Reader from "@/components/Reader";
+import CorrectionPanel from "@/components/CorrectionPanel";
 
 export const dynamic = "force-dynamic";
 
@@ -25,11 +26,17 @@ export default async function ReadPage({ params }: Props) {
   const next = currentIdx < allChapters.length - 1 ? allChapters[currentIdx + 1] : null;
 
   return (
-    <Reader
-      novel={novel}
-      chapter={chapter}
-      prevChapter={prev ? { number: prev.number } : null}
-      nextChapter={next ? { number: next.number } : null}
-    />
+    <>
+      <Reader
+        novel={novel}
+        chapter={chapter}
+        prevChapter={prev ? { number: prev.number } : null}
+        nextChapter={next ? { number: next.number } : null}
+      />
+      {/* Floating correction panel (bottom-left) */}
+      <div className="fixed bottom-6 left-6 z-30 max-w-sm">
+        <CorrectionPanel novelId={novel.id} novelSlug={novel.slug} />
+      </div>
+    </>
   );
 }
