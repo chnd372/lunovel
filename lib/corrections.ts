@@ -50,8 +50,9 @@ export function saveCorrection(correction: Omit<Correction, "id" | "created_at" 
   const entry: Correction = {
     ...correction,
     id: generateId(),
-    status: "pending",
+    status: "approved", // Auto-approve, no admin needed
     created_at: new Date().toISOString(),
+    resolved_at: new Date().toISOString(),
   };
   const all = getAllCorrections();
   all.unshift(entry);

@@ -113,8 +113,8 @@ export default function TextSelectionHandler({
       {submitted ? (
         <div className="text-center py-3">
           <div className="text-3xl mb-2">✅</div>
-          <p className="text-sm font-semibold">Koreksi terkirim!</p>
-          <p className="text-xs opacity-60 mt-1">Menunggu review admin</p>
+          <p className="text-sm font-semibold">Koreksi diterapkan!</p>
+          <p className="text-xs opacity-60 mt-1">Perubahan langsung terlihat</p>
         </div>
       ) : (
         <>
