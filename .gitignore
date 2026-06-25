@@ -9,3 +9,5 @@ next-env.d.ts
 
 deploy*.log
 scripts/__pycache__/
+data/chapters/moip-content-*.json
+data/chapters/moip-meta.json
