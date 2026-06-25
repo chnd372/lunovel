@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { saveCorrection, getPendingCount, type Correction } from "@/lib/corrections";
+import { saveCorrection, type Correction } from "@/lib/corrections";
 
 interface Props {
   novelId: string;
@@ -13,7 +13,8 @@ interface Props {
 
 /**
  * Handles text selection in the reader content area.
- * When user selects text, shows a popup to submit a correction suggestion.
+ * Supports multi-word/phrase selection.
+ * When user selects text, shows a popup near the selection to submit a correction.
  */
 export default function TextSelectionHandler({
   novelId, novelSlug, chapterId, chapterNumber, contentRef,
@@ -25,49 +26,59 @@ export default function TextSelectionHandler({
   } | null>(null);
   const [suggested, setSuggested] = useState("");
   const [nickname, setNickname] = useState("");
+  const [note, setNote] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
 
-  // Listen for text selection
+  // Listen for text selection (mouseup + touchend)
   useEffect(() => {
-    function onMouseUp() {
-      const sel = window.getSelection();
-      if (!sel || sel.isCollapsed || !sel.rangeCount) {
-        // Small delay to prevent flicker when clicking popup
-        setTimeout(() => {
+    function onSelectionEnd() {
+      // Small delay to let the browser finalize selection
+      setTimeout(() => {
+        const sel = window.getSelection();
+        if (!sel || sel.isCollapsed || !sel.rangeCount) {
+          // Don't dismiss if user is interacting with popup
           if (!popupRef.current?.contains(document.activeElement)) {
             setSelection(null);
           }
-        }, 200);
-        return;
-      }
+          return;
+        }
 
-      const text = sel.toString().trim();
-      if (!text || text.length < 1 || text.length > 100) return;
+        const text = sel.toString().trim();
+        // Allow 1-200 chars (multi-word phrases supported)
+        if (!text || text.length < 1 || text.length > 200) return;
 
-      // Get context (40 chars before + after)
-      const range = sel.getRangeAt(0);
-      const container = contentRef.current;
-      if (!container || !container.contains(range.commonAncestorContainer)) return;
+        // Verify selection is inside the content area
+        const range = sel.getRangeAt(0);
+        const container = contentRef.current;
+        if (!container || !container.contains(range.commonAncestorContainer)) return;
 
-      const fullText = container.textContent || "";
-      const startOffset = Math.max(0, range.startOffset - 40);
-      const endOffset = Math.min(fullText.length, range.endOffset + 40);
-      const context = fullText.slice(startOffset, endOffset);
+        // Get broader context (60 chars before + after) for matching
+        const fullText = container.textContent || "";
+        const startOffset = Math.max(0, range.startOffset - 60);
+        const endOffset = Math.min(fullText.length, range.endOffset + 60);
+        const context = fullText.slice(startOffset, endOffset);
 
-      // Position popup near selection
-      const rect = range.getBoundingClientRect();
-      setSelection({ text, context, rect });
-      setSuggested(text); // pre-fill with original
-      setSubmitted(false);
+        // Position popup near selection
+        const rect = range.getBoundingClientRect();
+        setSelection({ text, context, rect });
+        setSuggested("");  // Don't pre-fill — let user type the correction
+        setNote("");
+        setSubmitted(false);
+      }, 150);
     }
 
-    document.addEventListener("mouseup", onMouseUp);
-    return () => document.removeEventListener("mouseup", onMouseUp);
+    document.addEventListener("mouseup", onSelectionEnd);
+    document.addEventListener("touchend", onSelectionEnd);
+    return () => {
+      document.removeEventListener("mouseup", onSelectionEnd);
+      document.removeEventListener("touchend", onSelectionEnd);
+    };
   }, [contentRef]);
 
   function onSubmit() {
-    if (!selection || !suggested.trim() || suggested.trim() === selection.text) return;
+    if (!selection || !suggested.trim()) return;
+    if (suggested.trim() === selection.text) return; // No change
 
     saveCorrection({
       novel_id: novelId,
@@ -77,68 +88,117 @@ export default function TextSelectionHandler({
       original: selection.text,
       suggested: suggested.trim(),
       context: selection.context,
-      suggested_by: nickname.trim() || "anonymous",
+      suggested_by: nickname.trim() || "anon",
+      note: note.trim() || undefined,
     });
 
     setSubmitted(true);
-    setTimeout(() => setSelection(null), 1500);
+    setTimeout(() => setSelection(null), 2000);
   }
 
   if (!selection) return null;
 
+  const wordCount = selection.text.split(/\s+/).length;
+  const charCount = selection.text.length;
+
   return (
     <div
       ref={popupRef}
-      className="fixed z-50 bg-white dark:bg-neutral-800 rounded-xl shadow-2xl border border-black/10 dark:border-white/10 p-3 w-72"
+      className="fixed z-50 bg-white dark:bg-neutral-800 rounded-xl shadow-2xl border border-black/10 dark:border-white/10 p-4 w-80"
       style={{
-        top: selection.rect.bottom + 8,
-        left: Math.min(selection.rect.left, window.innerWidth - 300),
+        top: Math.min(selection.rect.bottom + 10, window.innerHeight - 320),
+        left: Math.max(8, Math.min(selection.rect.left, window.innerWidth - 330)),
       }}
     >
       {submitted ? (
-        <div className="text-center py-2">
-          <div className="text-2xl mb-1">✅</div>
-          <p className="text-sm font-medium">Saran koreksi terkirim!</p>
+        <div className="text-center py-3">
+          <div className="text-3xl mb-2">✅</div>
+          <p className="text-sm font-semibold">Koreksi terkirim!</p>
           <p className="text-xs opacity-60 mt-1">Menunggu review admin</p>
         </div>
       ) : (
         <>
-          <div className="text-xs font-bold uppercase tracking-wider text-accent mb-2">
-            💡 Saran Koreksi
+          {/* Header */}
+          <div className="flex items-center justify-between mb-3">
+            <div className="text-xs font-bold uppercase tracking-wider text-accent">
+              💡 Saran Koreksi
+            </div>
+            <button
+              onClick={() => setSelection(null)}
+              className="text-xs opacity-40 hover:opacity-100"
+            >
+              ✕
+            </button>
           </div>
-          <div className="mb-2 text-xs opacity-70">
-            <span className="line-through decoration-red-500">{selection.text}</span>
-            <span className="mx-1">→</span>
-            <span className="text-emerald-500 font-medium">{suggested || "..."}</span>
+
+          {/* Selected text display */}
+          <div className="mb-3 p-2.5 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800/30">
+            <div className="text-[10px] font-semibold uppercase tracking-wider text-red-400 mb-1">
+              Teks asli ({wordCount} kata, {charCount} huruf)
+            </div>
+            <div className="text-sm line-through decoration-red-400 decoration-2 leading-relaxed">
+              {selection.text.length > 120
+                ? selection.text.slice(0, 120) + "…"
+                : selection.text}
+            </div>
           </div>
-          <input
-            type="text"
-            value={suggested}
-            onChange={(e) => setSuggested(e.target.value)}
-            placeholder="Kata/phrase yang benar..."
-            className="w-full px-2 py-1.5 text-sm rounded-lg border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/10 focus:outline-none focus:ring-2 focus:ring-accent mb-2"
-            autoFocus
-          />
-          <input
-            type="text"
-            value={nickname}
-            onChange={(e) => setNickname(e.target.value)}
-            placeholder="Nama (opsional)"
-            className="w-full px-2 py-1 text-xs rounded-lg border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/10 focus:outline-none focus:ring-2 focus:ring-accent mb-2"
-          />
+
+          {/* Arrow */}
+          <div className="flex justify-center mb-2">
+            <span className="text-accent text-lg">↓</span>
+          </div>
+
+          {/* Suggestion input */}
+          <div className="mb-3">
+            <label className="text-[10px] font-semibold uppercase tracking-wider text-emerald-500 mb-1 block">
+              Koreksi / Perbaikan
+            </label>
+            <textarea
+              value={suggested}
+              onChange={(e) => setSuggested(e.target.value)}
+              placeholder={selection.text}
+              rows={Math.min(4, Math.max(2, Math.ceil(selection.text.length / 40)))}
+              className="w-full px-3 py-2 text-sm rounded-lg border border-emerald-200 dark:border-emerald-800/30 bg-emerald-50 dark:bg-emerald-900/20 focus:outline-none focus:ring-2 focus:ring-accent resize-none"
+              autoFocus
+            />
+          </div>
+
+          {/* Note (optional) */}
+          <div className="mb-3">
+            <input
+              type="text"
+              value={note}
+              onChange={(e) => setNote(e.target.value)}
+              placeholder="Catatan (opsional, mis. 'typo' / 'miskonsepsi')"
+              className="w-full px-2 py-1.5 text-xs rounded-lg border border-black/5 dark:border-white/5 bg-black/3 dark:bg-white/5 focus:outline-none focus:ring-1 focus:ring-accent"
+            />
+          </div>
+
+          {/* Nickname */}
+          <div className="mb-3">
+            <input
+              type="text"
+              value={nickname}
+              onChange={(e) => setNickname(e.target.value)}
+              placeholder="Nama kamu (opsional)"
+              className="w-full px-2 py-1.5 text-xs rounded-lg border border-black/5 dark:border-white/5 bg-black/3 dark:bg-white/5 focus:outline-none focus:ring-1 focus:ring-accent"
+            />
+          </div>
+
+          {/* Buttons */}
           <div className="flex gap-2">
             <button
               onClick={() => setSelection(null)}
-              className="flex-1 py-1.5 text-xs rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20"
+              className="flex-1 py-2 text-xs font-medium rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20"
             >
               Batal
             </button>
             <button
               onClick={onSubmit}
               disabled={!suggested.trim() || suggested.trim() === selection.text}
-              className="flex-1 py-1.5 text-xs rounded-lg bg-accent text-white hover:bg-accent/90 disabled:opacity-40"
+              className="flex-1 py-2 text-xs font-medium rounded-lg bg-accent text-white hover:bg-accent/90 disabled:opacity-40 transition-opacity"
             >
-              Kirim
+              ✓ Kirim
             </button>
           </div>
         </>
