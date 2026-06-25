@@ -120,6 +120,9 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${theme.bg} ${theme.text}`}>
+      {/* Hide the site Navbar when in reader — we manage our own header */}
+      <style dangerouslySetInnerHTML={{ __html: `header.sticky { display: none !important; }` }} />
+      
       {/* Top progress bar */}
       <div className="fixed top-0 left-0 right-0 h-1 bg-black/5 z-50">
         <div
@@ -127,6 +130,8 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
           style={{ width: `${progress}%` }}
         />
       </div>
+
+      {/* Navbar placeholder — hidden in reader, controlled by Reader component */}
 
       {/* Floating header (hides on scroll) */}
       <header
