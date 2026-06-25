@@ -33,10 +33,6 @@ export default async function ReadPage({ params }: Props) {
         prevChapter={prev ? { number: prev.number } : null}
         nextChapter={next ? { number: next.number } : null}
       />
-      {/* Floating correction panel (bottom-left) */}
-      <div className="fixed bottom-6 left-6 z-30 max-w-sm">
-        <CorrectionPanel novelId={novel.id} novelSlug={novel.slug} />
-      </div>
     </>
   );
 }

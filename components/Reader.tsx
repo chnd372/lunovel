@@ -151,14 +151,20 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
         </div>
       </header>
 
-      {/* Settings FAB */}
-      <button
-        onClick={() => setShowSettings(!showSettings)}
-        className="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-accent text-white shadow-lg hover:scale-105 transition-transform"
-        aria-label="Reader settings"
+      {/* Settings FAB — auto-hide when scrolling deep */}
+      <div
+        className={`fixed bottom-6 right-6 z-40 transition-all duration-300 ${
+          progress > 15 ? "opacity-0 translate-y-4 pointer-events-none" : "opacity-100"
+        }`}
       >
-        ⚙
-      </button>
+        <button
+          onClick={() => setShowSettings(!showSettings)}
+          className="w-12 h-12 rounded-full bg-accent text-white shadow-lg hover:scale-105 transition-transform"
+          aria-label="Reader settings"
+        >
+          ⚙
+        </button>
+      </div>
 
       {/* Settings panel */}
       {showSettings && (

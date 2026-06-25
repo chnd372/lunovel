@@ -116,11 +116,6 @@ export default async function NovelPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Koreksi komunal panel */}
-      <section>
-        <CorrectionPanel novelId={novel.id} novelSlug={novel.slug} />
-      </section>
-
       {/* Chapter list */}
       <section>
         <div className="flex items-baseline justify-between mb-3">
