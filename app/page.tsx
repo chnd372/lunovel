@@ -1,6 +1,9 @@
 import Link from "next/link";
-import { getAllNovels, getChaptersByNovel, allGenres, estimateReadingMinutes } from "@/lib/data";
+import { getAllNovels, getChaptersByNovel, allGenres } from "@/lib/data";
 import NovelCard from "@/components/NovelCard";
+import ContinueReading from "@/components/ContinueReading";
+import SiteStats from "@/components/SiteStats";
+import HomeTabs from "@/components/HomeTabs";
 
 export const dynamic = "force-dynamic";
 
@@ -69,6 +72,12 @@ export default async function HomePage() {
         </div>
       ) : (
         <>
+          {/* Continue Reading — client-side, only shows if user has history */}
+          <ContinueReading />
+
+          {/* Site Stats */}
+          <SiteStats />
+
           {/* Featured */}
           {featured && (
             <section>
@@ -117,7 +126,12 @@ export default async function HomePage() {
             </section>
           )}
 
-          {/* Genre chips */}
+          {/* Genre-based tabs + Update Terbaru (replaces old genre chips + cards) */}
+          <section>
+            <HomeTabs enriched={enriched} />
+          </section>
+
+          {/* Quick genre links */}
           {genres.length > 0 && (
             <section>
               <h2 className="text-lg sm:text-xl font-bold mb-3">Jelajahi Genre</h2>
@@ -130,38 +144,6 @@ export default async function HomePage() {
                   >
                     {g}
                   </Link>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* Update terbaru */}
-          <section>
-            <div className="flex items-baseline justify-between mb-3">
-              <h2 className="text-lg sm:text-xl font-bold">Update Terbaru</h2>
-              <Link href="/search" className="text-sm text-accent hover:underline">
-                Lihat semua →
-              </Link>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {enriched.slice(0, 6).map(({ novel, chapterCount, totalWords }) => (
-                <NovelCard
-                  key={novel.id}
-                  novel={novel}
-                  chapterCount={chapterCount}
-                  totalWords={totalWords}
-                />
-              ))}
-            </div>
-          </section>
-
-          {/* Sisanya */}
-          {rest.length > 1 && (
-            <section>
-              <h2 className="text-lg sm:text-xl font-bold mb-3">Novel Lainnya</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                {rest.slice(1).map(({ novel, chapterCount }) => (
-                  <NovelCard key={novel.id} novel={novel} chapterCount={chapterCount} />
                 ))}
               </div>
             </section>

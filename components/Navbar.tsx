@@ -57,6 +57,9 @@ export default function Navbar() {
           <Link href="/search?type=original" className="opacity-70 hover:opacity-100">Original</Link>
           <Link href="/search?status=ongoing" className="opacity-70 hover:opacity-100">Ongoing</Link>
           <Link href="/search?status=completed" className="opacity-70 hover:opacity-100">Completed</Link>
+          <Link href="/profile" className={`flex items-center gap-1.5 opacity-70 hover:opacity-100 ${pathname === "/profile" ? "text-accent" : ""}`}>
+            👤
+          </Link>
         </nav>
         <form onSubmit={onSearch} className="flex-1 max-w-md ml-auto">
           <input
