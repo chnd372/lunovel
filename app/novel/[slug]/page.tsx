@@ -87,7 +87,7 @@ export default async function NovelPage({ params }: Props) {
               </Link>
             ))}
           </div>
-          <p className="text-sm opacity-90 leading-relaxed">
+          <p className="text-sm opacity-90 leading-relaxed whitespace-pre-line">
             {novel.description}
           </p>
           <div className="flex items-center gap-3 text-xs opacity-70">
