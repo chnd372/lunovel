@@ -4,6 +4,7 @@ import { getNovelBySlug, getChaptersByNovel } from "@/lib/data";
 import ChapterList from "@/components/ChapterList";
 import BookmarkButton from "@/components/BookmarkButton";
 import CorrectionPanel from "@/components/CorrectionPanel";
+import Comments from "@/components/Comments";
 
 export const dynamic = "force-dynamic";
 
@@ -125,6 +126,18 @@ export default async function NovelPage({ params }: Props) {
         <div className="rounded-xl overflow-hidden bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5">
           <ChapterList novel={novel} chapters={chapters.slice().reverse()} />
         </div>
+      </section>
+
+      {/* Novel-level discussion (separate from chapter-threaded comments) */}
+      <section className="mt-10">
+        <div className="flex items-baseline justify-between mb-3">
+          <h2 className="text-lg sm:text-xl font-bold">Diskusi Novel</h2>
+          <span className="text-xs opacity-60">Topik umum · tidak terikat chapter</span>
+        </div>
+        <Comments
+          chapterId={`novel:${novel.slug}`}
+          novelId={novel.id}
+        />
       </section>
     </div>
   );
