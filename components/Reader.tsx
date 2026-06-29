@@ -5,6 +5,7 @@ import type { ReaderSettings, Chapter, Novel, ReaderTheme } from "@/lib/types";
 import { estimateReadingMinutes } from "@/lib/data";
 import { applyCorrections, getCorrections } from "@/lib/corrections";
 import TextSelectionHandler from "@/components/TextSelectionHandler";
+import Comments from "@/components/Comments";
 import { useRouter } from "next/navigation";
 
 interface Props {
@@ -392,6 +393,12 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
           </div>
         </div>
       </article>
+
+      {/* Comments thread — WordPress-inspired, threaded replies */}
+      <Comments
+        chapterId={chapter.id}
+        novelId={novel.id}
+      />
     </div>
   );
 }
