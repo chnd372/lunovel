@@ -54,11 +54,11 @@ export default async function NovelPage({ params }: Props) {
               {statusLabel[novel.status]}
             </span>
             <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-black/5 dark:bg-white/10">
-              {novel.type === "translated" ? "Terjemahan" : "Original"}
+              {novel.type === "translated" ? "Terjemahan" : (novel.type ?? "Original")}
             </span>
             {novel.original_language && novel.original_language !== "id" && (
               <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-black/5 dark:bg-white/10">
-                dari {novel.original_language.toUpperCase()}
+                dari {novel.original_language}
               </span>
             )}
           </div>
