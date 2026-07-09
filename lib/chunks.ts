@@ -35,8 +35,9 @@ export async function getChunkedChapter(
   const meta = findMeta(novelId);
   if (!meta) return null;
 
-  const key = chapterNumber % 1 === 0 ? String(Math.floor(chapterNumber)) : String(chapterNumber);
-  const entry = meta.chapter_map[key];
+  const normKey = (n: number) => (n % 1 === 0 ? String(Math.floor(n)) : String(n));
+  const key = normKey(chapterNumber);
+  const entry = meta.chapter_map[key] ?? meta.chapter_map[String(chapterNumber)];
   if (!entry) return null;
 
   const chunk = await loadChunk(novelId, entry.chunk_idx);
