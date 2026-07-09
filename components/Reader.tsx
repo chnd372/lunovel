@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 import type { ReaderSettings, Chapter, Novel, ReaderTheme } from "@/lib/types";
 import { estimateReadingMinutes } from "@/lib/data";
 import { applyCorrections, getCorrections } from "@/lib/corrections";
+import { applyPerbaikan } from "@/lib/perbaikanKata";
 import TextSelectionHandler from "@/components/TextSelectionHandler";
 import Comments from "@/components/Comments";
 import { useRouter } from "next/navigation";
@@ -67,11 +68,29 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
   const [showSettings, setShowSettings] = useState(false);
   const [progress, setProgress] = useState(0);
   const [showHeader, setShowHeader] = useState(true);
+  const [perbaikanVersion, setPerbaikanVersion] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
 
   // Apply approved corrections to chapter content
   const { text: correctedContent, applied: appliedCorrections } = applyCorrections(chapter.content, novel.id);
-  const chapterContent = correctedContent;
+  // Apply personal find/replace rules (per-novel localStorage).
+  // perbaikanVersion bump forces re-apply after user adds a new rule via modal.
+  const { text: chapterContent } = useMemo(
+    () => applyPerbaikan(correctedContent, novel.slug),
+    [correctedContent, novel.slug, perbaikanVersion],
+  );
+
+  // Listen for perbaikan changes (new rule added via TextSelectionHandler modal)
+  useEffect(() => {
+    function onChange(e: Event) {
+      const detail = (e as CustomEvent).detail;
+      if (!detail || detail.slug === novel.slug) {
+        setPerbaikanVersion((v) => v + 1);
+      }
+    }
+    window.addEventListener("lunovel:perbaikan-changed", onChange);
+    return () => window.removeEventListener("lunovel:perbaikan-changed", onChange);
+  }, [novel.slug]);
 
   // Load settings on mount
   useEffect(() => {

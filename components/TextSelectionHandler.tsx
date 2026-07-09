@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { saveCorrection, type Correction } from "@/lib/corrections";
+import PerbaikanKataModal from "@/components/PerbaikanKataModal";
 
 interface Props {
   novelId: string;
@@ -28,6 +29,7 @@ export default function TextSelectionHandler({
   const [nickname, setNickname] = useState("");
   const [note, setNote] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [showPerbaikan, setShowPerbaikan] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
 
   // Listen for text selection (mouseup + touchend)
@@ -194,6 +196,13 @@ export default function TextSelectionHandler({
               Batal
             </button>
             <button
+              onClick={() => setShowPerbaikan(true)}
+              className="flex-1 py-2 text-xs font-medium rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 hover:bg-blue-500/20 border border-blue-500/20"
+              title="Find & replace untuk semua chapter novel ini (tersimpan lokal)"
+            >
+              ✏️ Perbaiki Kata
+            </button>
+            <button
               onClick={onSubmit}
               disabled={!suggested.trim() || suggested.trim() === selection.text}
               className="flex-1 py-2 text-xs font-medium rounded-lg bg-accent text-white hover:bg-accent/90 disabled:opacity-40 transition-opacity"
@@ -203,6 +212,20 @@ export default function TextSelectionHandler({
           </div>
         </>
       )}
+
+      {/* Perbaiki Kata modal */}
+      <PerbaikanKataModal
+        open={showPerbaikan}
+        slug={novelSlug}
+        initialDari={selection.text}
+        onClose={() => setShowPerbaikan(false)}
+        onSaved={() => {
+          // Notify Reader to re-render with new find/replace rules
+          window.dispatchEvent(new CustomEvent("lunovel:perbaikan-changed", {
+            detail: { slug: novelSlug },
+          }));
+        }}
+      />
     </div>
   );
 }
