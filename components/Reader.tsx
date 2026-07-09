@@ -6,6 +6,7 @@ import { estimateReadingMinutes } from "@/lib/data";
 import { applyCorrections, getCorrections } from "@/lib/corrections";
 import { applyPerbaikan, syncSharedRules } from "@/lib/perbaikanKata";
 import TextSelectionHandler from "@/components/TextSelectionHandler";
+import TapFixMode from "@/components/TapFixMode";
 import Comments from "@/components/Comments";
 import { useRouter } from "next/navigation";
 
@@ -316,7 +317,10 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
         </div>
       )}
 
-      {/* Text selection handler for corrections */}
+      {/* Tap-to-fix mode (tap word to edit). Includes the floating toggle button. */}
+      <TapFixMode slug={novel.slug} contentRef={contentRef} />
+
+      {/* Text selection handler for corrections (disabled when tap-fix mode is on) */}
       <TextSelectionHandler
         novelId={novel.id}
         novelSlug={novel.slug}

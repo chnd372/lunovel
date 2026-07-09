@@ -58,6 +58,15 @@ export default function TextSelectionHandler({
   // Listen for selection changes — fires on iOS Safari when user lifts fingers
   useEffect(() => {
     function onChange() {
+      // Skip when tap-fix mode is active — it owns taps in the content area
+      try {
+        // (lazy key lookup per-selector since we don't have slug here, just check any tapfix_* key)
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k?.startsWith("tapfix_") && localStorage.getItem(k) === "1") return;
+        }
+      } catch {}
+
       // Debounce: iOS fires several selectionchange events as user drags handles
       if (debounceRef.current) clearTimeout(debounceRef.current);
       debounceRef.current = setTimeout(() => {
