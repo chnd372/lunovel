@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getNovelBySlug, getChaptersByNovel } from "@/lib/data";
 import ChapterList from "@/components/ChapterList";
+
 import BookmarkButton from "@/components/BookmarkButton";
 import CorrectionPanel from "@/components/CorrectionPanel";
 import Comments from "@/components/Comments";
@@ -10,7 +11,10 @@ export const dynamic = "force-dynamic";
 
 interface Props {
   params: { slug: string };
+  searchParams: { sort?: string };
 }
+
+type SortOrder = "newest" | "oldest";
 
 const statusColor: Record<string, string> = {
   ongoing: "bg-emerald-500/90",
@@ -23,7 +27,7 @@ const statusLabel: Record<string, string> = {
   hiatus: "Hiatus",
 };
 
-export default async function NovelPage({ params }: Props) {
+export default async function NovelPage({ params, searchParams }: Props) {
   const novel = await getNovelBySlug(params.slug);
   if (!novel) notFound();
 
@@ -31,6 +35,8 @@ export default async function NovelPage({ params }: Props) {
   const totalWords = chapters.reduce((s, c) => s + c.word_count, 0);
   const lastChapter = chapters[chapters.length - 1];
   const firstChapter = chapters[0];
+  const sort: SortOrder = searchParams.sort === "oldest" ? "oldest" : "newest";
+  const orderedChapters = sort === "oldest" ? chapters : chapters.slice().reverse();
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
@@ -123,8 +129,9 @@ export default async function NovelPage({ params }: Props) {
           <h2 className="text-lg sm:text-xl font-bold">Daftar Chapter</h2>
           <span className="text-xs opacity-60">{chapters.length} entries</span>
         </div>
+        
         <div className="rounded-xl overflow-hidden bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5">
-          <ChapterList novel={novel} chapters={chapters.slice().reverse()} />
+          <ChapterList novel={novel} chapters={orderedChapters} />
         </div>
       </section>
 

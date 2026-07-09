@@ -4,64 +4,18 @@ import type { Novel, Chapter } from "./types";
  * Data access layer for Lunovel.
  * - Tries Supabase first if env vars are set
  * - Falls back to local JSON in /data (zero-config)
- * 
- * MOIP chapters are split into 19 chunks (~900 KB each) for Vercel compatibility.
- * Content is loaded on-demand per chunk, not all at once.
  */
 
 import { supabase, hasSupabase } from "./supabase";
+import { getChunkedChapter, getChunkedChapterList } from "./chunks";
 
-// Static imports — bundled at build time
 import novelsData from "@/data/novels.json";
-import moipMeta from "@/data/chapters/moip-meta.json";
-import laskarChapters from "@/data/chapters/laskar-pelangi.json";
-import sherlockChapters from "@/data/chapters/sherlock-holmes-collection.json";
+import laskarPelangiData from "@/data/chapters/laskar-pelangi.json";
+import sherlockData from "@/data/chapters/sherlock-holmes-collection.json";
 
-// MOIP chunk imports (19 chunks, ~900 KB each)
-import moipChunk00 from "@/data/chapters/moip-content-000.json";
-import moipChunk01 from "@/data/chapters/moip-content-001.json";
-import moipChunk02 from "@/data/chapters/moip-content-002.json";
-import moipChunk03 from "@/data/chapters/moip-content-003.json";
-import moipChunk04 from "@/data/chapters/moip-content-004.json";
-import moipChunk05 from "@/data/chapters/moip-content-005.json";
-import moipChunk06 from "@/data/chapters/moip-content-006.json";
-import moipChunk07 from "@/data/chapters/moip-content-007.json";
-import moipChunk08 from "@/data/chapters/moip-content-008.json";
-import moipChunk09 from "@/data/chapters/moip-content-009.json";
-import moipChunk10 from "@/data/chapters/moip-content-010.json";
-import moipChunk11 from "@/data/chapters/moip-content-011.json";
-import moipChunk12 from "@/data/chapters/moip-content-012.json";
-import moipChunk13 from "@/data/chapters/moip-content-013.json";
-import moipChunk14 from "@/data/chapters/moip-content-014.json";
-import moipChunk15 from "@/data/chapters/moip-content-015.json";
-import moipChunk16 from "@/data/chapters/moip-content-016.json";
-import moipChunk17 from "@/data/chapters/moip-content-017.json";
-import moipChunk18 from "@/data/chapters/moip-content-018.json";
-
-const moipChunks: Record<string, string>[] = [
-  moipChunk00, moipChunk01, moipChunk02, moipChunk03, moipChunk04,
-  moipChunk05, moipChunk06, moipChunk07, moipChunk08, moipChunk09,
-  moipChunk10, moipChunk11, moipChunk12, moipChunk13, moipChunk14,
-  moipChunk15, moipChunk16, moipChunk17, moipChunk18,
-];
-
-const CHUNK_SIZE = 50; // must match the chunking script
-
-/** Get content for a specific MOIP chapter by number */
-function getMoipContent(chapterNumber: number): string | null {
-  const chStr = String(chapterNumber);
-  // Determine which chunk this chapter belongs to
-  const idx = (moipMeta as any[]).findIndex((m: any) => m.number === chapterNumber);
-  if (idx === -1) return null;
-  const chunkIdx = Math.floor(idx / CHUNK_SIZE);
-  if (chunkIdx < 0 || chunkIdx >= moipChunks.length) return null;
-  const chunk = moipChunks[chunkIdx];
-  return chunk[chStr] ?? null;
-}
-
-const otherChapters: Record<string, Chapter[]> = {
-  "laskar-pelangi": laskarChapters as Chapter[],
-  "sherlock-holmes-collection": sherlockChapters as Chapter[],
+const chapterData: Record<string, Chapter[]> = {
+  "laskar-pelangi": laskarPelangiData as Chapter[],
+  "sherlock-holmes-collection": sherlockData as Chapter[],
 };
 
 export async function getAllNovels(): Promise<Novel[]> {
@@ -73,7 +27,7 @@ export async function getAllNovels(): Promise<Novel[]> {
     if (!error && data) return data as Novel[];
   }
   return (novelsData as Novel[]).sort((a, b) =>
-    (b.updated_at ?? "").localeCompare(a.updated_at ?? "")
+    (b.updated_at ?? "").localeCompare(a.updated_at ?? ""),
   );
 }
 
@@ -98,35 +52,28 @@ export async function getChaptersByNovel(novelId: string): Promise<Chapter[]> {
       .order("number", { ascending: true });
     if (!error && data) return data as Chapter[];
   }
-  
-  if (novelId === "moip") {
-    // Return metadata-only chapters (content loaded on demand in getChapter)
-    return (moipMeta as any[]).map((m: any) => ({
-      ...m,
-      content: "", // Content loaded separately
-    })) as Chapter[];
-  }
-  
-  return (otherChapters[novelId] ?? []).sort((a, b) => a.number - b.number);
+  // Chunked novels (e.g. moip): return lightweight list (no content)
+  const chunkedList = await getChunkedChapterList(novelId);
+  if (chunkedList) return chunkedList;
+  return (chapterData[novelId] ?? []).sort((a, b) => a.number - b.number);
 }
 
 export async function getChapter(
   novelId: string,
   chapterNumber: number,
 ): Promise<Chapter | null> {
-  if (novelId === "moip") {
-    // Find metadata
-    const meta = (moipMeta as any[]).find((m: any) => m.number === chapterNumber);
-    if (!meta) return null;
-    // Load content from chunk
-    const content = getMoipContent(chapterNumber);
-    if (!content) return null;
-    return {
-      ...meta,
-      content,
-    } as Chapter;
+  if (hasSupabase && supabase) {
+    const { data, error } = await supabase
+      .from("chapters")
+      .select("*")
+      .eq("novel_id", novelId)
+      .eq("number", chapterNumber)
+      .maybeSingle();
+    if (!error && data) return data as Chapter;
   }
-  
+  // Chunked novels: load only the relevant chunk
+  const chunked = await getChunkedChapter(novelId, chapterNumber);
+  if (chunked) return chunked;
   const list = await getChaptersByNovel(novelId);
   return list.find((c) => c.number === chapterNumber) ?? null;
 }

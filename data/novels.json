@@ -31,47 +31,6 @@
     "release_year": 2024,
     "rating": 9.2,
     "created_at": "2024-01-01T00:00:00Z",
-    "updated_at": "2026-06-29T10:00:00Z"
-  },
-  {
-    "id": "laskar-pelangi",
-    "slug": "laskar-pelangi",
-    "title": "Laskar Pelangi (Edisi Digital)",
-    "author": "Andrea Hirata",
-    "status": "completed",
-    "type": "original",
-    "language": "id",
-    "genres": [
-      "Drama",
-      "Slice of Life",
-      "Inspiratif",
-      "Sastra Indonesia"
-    ],
-    "description": "Kisah inspiratif tentang sepuluh anak dari keluarga miskin di Belitung yang menempuh pendidikan di sebuah sekolah yang hampir roboh. Dengan tekad baja, mereka membuktikan bahwa kemiskinan bukan halangan untuk bermimpi. Sebuah novel yang sudah menyentuh hati jutaan pembaca Indonesia.",
-    "release_year": 2005,
-    "rating": 4.8,
-    "created_at": "2025-01-01T00:00:00Z",
-    "updated_at": "2025-05-01T00:00:00Z"
-  },
-  {
-    "id": "sherlock-holmes-collection",
-    "slug": "sherlock-holmes-collection",
-    "title": "Koleksi Kasus Sherlock Holmes",
-    "author": "Sir Arthur Conan Doyle (terjemahan)",
-    "status": "completed",
-    "type": "translated",
-    "language": "id",
-    "original_language": "en",
-    "genres": [
-      "Mystery",
-      "Detektif",
-      "Klasik",
-      "Fiksi Kriminal"
-    ],
-    "description": "Kumpulan kasus-kasus paling ikonik dari detektif legendaris Sherlock Holmes. Dari kediamannya di 221B Baker Street, Holmes memecahkan misteri yang membuat Scotland Yard kebingungan. Setiap kasus adalah pelajaran tentang logika, observasi, dan dedikasi.",
-    "release_year": 1887,
-    "rating": 4.9,
-    "created_at": "2024-10-01T00:00:00Z",
-    "updated_at": "2024-12-15T00:00:00Z"
+    "updated_at": "2026-07-09T08:00:00Z"
   }
 ]
