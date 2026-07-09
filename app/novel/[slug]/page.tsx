@@ -36,13 +36,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : undefined;
 
   return {
-    title: `${novel.title} - ${SITE_NAME}`,
+    title: novel.title,
     description,
     keywords: [novel.title, ...(novel.genres || []), novel.author].filter(Boolean) as string[],
     alternates: { canonical: `/novel/${novel.slug}` },
     openGraph: {
       type: "book",
-      title: `${novel.title} - ${SITE_NAME}`,
+      title: novel.title,
       description,
       url: `/novel/${novel.slug}`,
       siteName: SITE_NAME,
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${novel.title} - ${SITE_NAME}`,
+      title: novel.title,
       description,
       images: ogImage?.map((i) => i.url),
     },

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!chapter) return { title: "Chapter tidak ditemukan" };
 
   const chLabel = chapter.title ? `Ch ${chapter.number}: ${chapter.title}` : `Chapter ${chapter.number}`;
-  const title = `${chLabel} - ${novel.title} | ${SITE_NAME}`;
+  const title = `${chLabel} - ${novel.title}`;
   const description = `Baca ${novel.title} Chapter ${chapter.number}${chapter.title ? ` - ${chapter.title}` : ""} dalam bahasa Indonesia. Online, gratis, tanpa iklan di ${SITE_NAME}.`;
   const ogImage = novel.cover
     ? [{ url: novel.cover, width: 800, height: 1200, alt: `${novel.title} — ${chLabel}` }]

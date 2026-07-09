@@ -19,7 +19,7 @@ export function generateMetadata({ searchParams }: Props): Metadata {
   if (status) parts.push(status === "ongoing" ? "Ongoing" : status === "completed" ? "Completed" : status);
   if (type) parts.push(type === "translated" ? "Terjemahan" : "Original");
   const label = parts.length > 0 ? parts.join(" · ") : "Semua Novel";
-  const title = parts.length > 0 ? `Cari: ${label} - ${SITE_NAME}` : `Cari Novel - ${SITE_NAME}`;
+  const title = parts.length > 0 ? `Cari: ${label}` : `Cari Novel`;
   return {
     title,
     description: `Cari novel${q ? ` "${q}"` : ""}${genre ? ` genre ${genre}` : ""}${status ? ` status ${status}` : ""}${type ? ` ${type === "translated" ? "terjemahan" : "original"}` : ""}. Ribuan chapter siap dibaca online gratis di ${SITE_NAME}.`,
