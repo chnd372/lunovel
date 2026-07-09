@@ -4,7 +4,9 @@ import { useEffect, useState, useRef, useMemo } from "react";
 import type { ReaderSettings, Chapter, Novel, ReaderTheme } from "@/lib/types";
 import { estimateReadingMinutes } from "@/lib/data";
 import { applyCorrections, getCorrections } from "@/lib/corrections";
-import { applyPerbaikan, syncSharedRules } from "@/lib/perbaikanKata";
+import {
+  applyPerbaikan, applyPerbaikanToDOM, syncSharedRules,
+} from "@/lib/perbaikanKata";
 import TextSelectionHandler from "@/components/TextSelectionHandler";
 import TapFixMode from "@/components/TapFixMode";
 import Comments from "@/components/Comments";
@@ -101,6 +103,49 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
       .catch(() => {});
     return () => ac.abort();
   }, [novel.slug]);
+
+  // Safety net: walk text nodes in the rendered content and apply any rule
+  // that wasn't covered by the string-level pass (e.g. rules added by a
+  // sibling tab, or rules whose `dari` contains HTML-breaking chars that
+  // would have been stripped in the dangerouslySetInnerHTML path).
+  // Also re-runs on every lunovel:perbaikan-changed event.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const container = contentRef.current;
+    if (!container) {
+      console.warn("[perbaikan] DOM pass: content ref not ready, skipping");
+      return;
+    }
+    const slug = novel.slug;
+    console.log(`[perbaikan] DOM pass: scheduling for slug="${slug}"`);
+
+    function run() {
+      const el = contentRef.current;
+      if (!el) return;
+      const res = applyPerbaikanToDOM(el, slug);
+      console.log(
+        `[perbaikan] DOM pass summary: rules=${res.rulesCount}, applied=${res.applied.length}, replacements=${res.totalReplacements}`,
+      );
+    }
+
+    // Run immediately (content already mounted) + observe future mutations
+    // (e.g. inline correction highlights injected later).
+    run();
+    const mo = new MutationObserver(() => {
+      // Debounce — childrenList fires many times during stream updates
+      clearTimeout((run as any)._t);
+      (run as any)._t = setTimeout(run, 80);
+    });
+    mo.observe(container, { childList: true, subtree: true });
+
+    function onChange() { run(); }
+    window.addEventListener("lunovel:perbaikan-changed", onChange);
+    return () => {
+      mo.disconnect();
+      clearTimeout((run as any)._t);
+      window.removeEventListener("lunovel:perbaikan-changed", onChange);
+    };
+  }, [novel.slug, chapter.id]);
 
   // Load settings on mount
   useEffect(() => {

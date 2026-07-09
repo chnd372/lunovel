@@ -179,6 +179,91 @@ export async function clearPerbaikanShared(slug: string): Promise<void> {
 }
 
 /**
+ * Walk every text node inside `element` and apply the active find/replace
+ * rules in-place. Safer than `innerHTML.replace` because it never touches
+ * element nodes (so HTML structure, classes, event handlers are preserved).
+ *
+ * Rules are read fresh from localStorage each call so a re-run after a
+ * "perubahan-changed" event picks up new rules immediately.
+ */
+export function applyPerbaikanToDOM(element: HTMLElement, slug: string): {
+  applied: PerbaikanKata[];
+  totalReplacements: number;
+  rulesCount: number;
+} {
+  if (!element || typeof document === "undefined") {
+    return { applied: [], totalReplacements: 0, rulesCount: 0 };
+  }
+  const list = getPerbaikan(slug);
+  if (list.length === 0) {
+    if (typeof console !== "undefined") {
+      console.log(`[perbaikan] DOM pass: 0 rules in localStorage for slug="${slug}"`);
+    }
+    return { applied: [], totalReplacements: 0, rulesCount: 0 };
+  }
+
+  const applied = new Set<string>();
+  let totalReplacements = 0;
+  const flags = (cs: boolean) => (cs ? "g" : "gi");
+
+  for (const rule of list) {
+    // Skip corrupt rules (empty `ke` means "delete word"; allow it but log)
+    if (!rule.dari) continue;
+    const pattern = rule.dari.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(pattern, flags(rule.caseSensitive));
+
+    // Snapshot text nodes first — modifying textContent invalidates the walker
+    const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null);
+    const nodes: Text[] = [];
+    let n: Node | null = walker.nextNode();
+    while (n) {
+      // Skip nodes inside script/style (defensive)
+      const parent = n.parentElement;
+      if (parent && !["SCRIPT", "STYLE", "NOSCRIPT"].includes(parent.tagName)) {
+        nodes.push(n as Text);
+      }
+      n = walker.nextNode();
+    }
+
+    let replacedHere = 0;
+    for (const node of nodes) {
+      const text = node.textContent ?? "";
+      if (!re.test(text)) {
+        // Reset regex state (test with /g flag leaves lastIndex advanced)
+        re.lastIndex = 0;
+        continue;
+      }
+      re.lastIndex = 0;
+      const next = text.replace(re, rule.ke);
+      if (next !== text) {
+        node.textContent = next;
+        replacedHere += text.split(rule.dari).length - 1;
+      }
+    }
+    if (replacedHere > 0) {
+      applied.add(rule.dari);
+      totalReplacements += replacedHere;
+    }
+    if (typeof console !== "undefined") {
+      console.log(
+        `[perbaikan] DOM pass: rule "${rule.dari}" → "${rule.ke}" (cs=${rule.caseSensitive}) hit ${replacedHere}x in ${nodes.length} text nodes`,
+      );
+    }
+  }
+
+  if (typeof console !== "undefined") {
+    console.log(
+      `[perbaikan] DOM pass done: ${applied.size}/${list.length} rules applied, ${totalReplacements} total replacements`,
+    );
+  }
+  return {
+    applied: list.filter((r) => applied.has(r.dari)),
+    totalReplacements,
+    rulesCount: list.length,
+  };
+}
+
+/**
  * Apply all find-and-replace rules to text. Pure sync function.
  * Reads from localStorage (which has been hydrated by syncSharedRules).
  */

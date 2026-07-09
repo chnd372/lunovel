@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { saveCorrection, type Correction } from "@/lib/corrections";
-import { addPerbaikanShared } from "@/lib/perbaikanKata";
 import PerbaikanKataModal from "@/components/PerbaikanKataModal";
 
 interface Props {
@@ -126,20 +125,15 @@ export default function TextSelectionHandler({
     setTimeout(() => setSelection(null), 2000);
   }
 
-  async function onPerbaikanSaved() {
+  function onPerbaikanSaved() {
     if (!selection) return;
-    setPopupSaving(true);
+    // The PerbaikanKataModal already wrote to localStorage + shared API.
+    // Just notify the Reader so it re-renders content with the new rule.
     try {
-      await addPerbaikanShared(novelSlug, {
-        dari: selection.text,
-        ke: "",
-        caseSensitive: false, // modal will update via separate flow — handled below
-        by: nickname.trim() || undefined,
-      }).catch(() => {});
-      // The actual save is done inside the modal itself; this just confirms.
-    } finally {
-      setPopupSaving(false);
-    }
+      window.dispatchEvent(new CustomEvent("lunovel:perbaikan-changed", {
+        detail: { slug: novelSlug },
+      }));
+    } catch {}
   }
 
   if (!selection) return null;
