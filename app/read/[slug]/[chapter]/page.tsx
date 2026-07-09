@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getNovelBySlug, getChaptersByNovel, getChapter } from "@/lib/data";
 import Reader from "@/components/Reader";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 export const dynamic = "force-dynamic";
 
@@ -25,11 +26,13 @@ export default async function ReadPage({ params }: Props) {
   const next = currentIdx < allChapters.length - 1 ? allChapters[currentIdx + 1] : null;
 
   return (
-    <Reader
-      novel={novel}
-      chapter={chapter}
-      prevChapter={prev ? { number: prev.number } : null}
-      nextChapter={next ? { number: next.number } : null}
-    />
+    <ErrorBoundary>
+      <Reader
+        novel={novel}
+        chapter={chapter}
+        prevChapter={prev ? { number: prev.number } : null}
+        nextChapter={next ? { number: next.number } : null}
+      />
+    </ErrorBoundary>
   );
 }
