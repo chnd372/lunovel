@@ -50,10 +50,10 @@ export default async function SiteStats() {
         {cards.map((card) => (
           <div
             key={card.label}
-            className="rounded-xl bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 p-4 sm:p-5 hover:shadow-sm transition-all"
+            className="rounded-xl bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 p-3 sm:p-5 hover:shadow-sm transition-all"
           >
-            <div className="text-xl sm:text-2xl mb-1">{card.icon}</div>
-            <div className="text-xl sm:text-2xl font-bold leading-tight">
+            <div className="text-lg sm:text-2xl mb-1">{card.icon}</div>
+            <div className="text-lg sm:text-2xl font-bold leading-tight">
               {card.value}
             </div>
             <div className="text-xs opacity-60 mt-0.5">{card.label}</div>

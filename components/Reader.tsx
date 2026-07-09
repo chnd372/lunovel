@@ -49,13 +49,14 @@ function saveSettings(s: ReaderSettings) {
   try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(s)); } catch {}
 }
 
-function saveHistory(novelId: string, chapterId: string, chapterNumber: number, percent: number) {
+function saveHistory(novelId: string, novelSlug: string, chapterId: string, chapterNumber: number, percent: number) {
   try {
     const raw = localStorage.getItem(HISTORY_KEY);
     const list: any[] = raw ? JSON.parse(raw) : [];
     const filtered = list.filter((h: any) => h.novel_id !== novelId);
     filtered.unshift({
       novel_id: novelId,
+      novel_slug: novelSlug,
       chapter_id: chapterId,
       chapter_number: chapterNumber,
       scroll_percent: Math.round(percent),
@@ -166,7 +167,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
       setProgress(Math.min(100, Math.max(0, pct)));
       // Save history when past 30%
       if (pct > 30) {
-        saveHistory(novel.id, chapter.id, chapter.number, pct);
+        saveHistory(novel.id, novel.slug, chapter.id, chapter.number, pct);
       }
       setShowHeader(scrollTop < 100);
     }
@@ -196,7 +197,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
   return (
     <div className={`min-h-screen transition-colors duration-300 ${theme.bg} ${theme.text}`}>
       {/* Hide the site Navbar when in reader — we manage our own header */}
-      <style dangerouslySetInnerHTML={{ __html: `header.sticky { display: none !important; }` }} />
+      <style dangerouslySetInnerHTML={{ __html: `header.sticky, [data-bottom-nav] { display: none !important; }` }} />
       
       {/* Top progress bar */}
       <div className="fixed top-0 left-0 right-0 h-1 bg-black/5 z-50">

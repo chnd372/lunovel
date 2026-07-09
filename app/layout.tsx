@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import Navbar from "@/components/Navbar";
 import { ThemeScript } from "@/components/Navbar";
+import BottomNav from "@/components/BottomNav";
 
 const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://lunovel.vercel.app";
@@ -67,7 +68,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-sans antialiased">
         <Navbar />
-        <main className="min-h-[calc(100vh-64px)]">{children}</main>
+        <main className="min-h-[calc(100vh-64px)] pb-14 md:pb-0">{children}</main>
+        <BottomNav />
         <footer className="border-t border-black/10 dark:border-white/10 py-6 text-center text-sm opacity-70">
           <div className="max-w-7xl mx-auto px-4 space-y-1">
             <div>🌙 {siteName} · {new Date().getFullYear()} · {tagline}</div>
