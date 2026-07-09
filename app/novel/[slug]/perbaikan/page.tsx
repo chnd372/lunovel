@@ -39,10 +39,10 @@ export default async function PerbaikanKataPage({ params }: Props) {
           <div className="mt-4 rounded-lg bg-blue-500/5 border border-blue-500/20 p-3 text-xs leading-relaxed">
             <div className="font-semibold mb-1">📖 Cara kerja:</div>
             <ul className="list-disc list-inside space-y-0.5 opacity-80">
-              <li>Setiap perbaikan disimpan <strong>lokal di browser kamu</strong> (localStorage)</li>
-              <li>Berlaku untuk <strong>semua chapter</strong> dari novel ini</li>
+              <li>Setiap perbaikan disimpan di <strong>server (Vercel KV)</strong> dan dibagi ke <strong>semua pembaca</strong> novel ini</li>
+              <li>Berlaku untuk <strong>semua chapter</strong> dari novel ini, otomatis</li>
               <li>Untuk menambah dari bacaan: blok kata → klik <span className="font-mono">✏️ Perbaiki Kata</span></li>
-              <li>Menghapus = langsung hilang dari semua chapter</li>
+              <li>Menghapus = langsung hilang dari semua pembaca</li>
             </ul>
           </div>
         </header>

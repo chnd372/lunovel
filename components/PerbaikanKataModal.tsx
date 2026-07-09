@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { addPerbaikan } from "@/lib/perbaikanKata";
+import { addPerbaikanShared } from "@/lib/perbaikanKata";
 
 interface Props {
   open: boolean;
   slug: string;
   initialDari: string;
+  nickname?: string;
   onClose: () => void;
   onSaved: () => void;
 }
@@ -14,15 +15,17 @@ interface Props {
 /**
  * "Perbaiki Kata" personal find-and-replace modal.
  * Pre-fills "Kata Asli" with the user's selected text.
- * Persists to localStorage under `perbaikan_${slug}`.
+ * Persists locally (localStorage) AND shared (Vercel KV via API).
  */
 export default function PerbaikanKataModal({
-  open, slug, initialDari, onClose, onSaved,
+  open, slug, initialDari, nickname, onClose, onSaved,
 }: Props) {
   const [dari, setDari] = useState(initialDari);
   const [ke, setKe] = useState("");
   const [caseSensitive, setCaseSensitive] = useState(false);
+  const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [sharedOk, setSharedOk] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   // Reset state when opening with new selected text
@@ -32,6 +35,7 @@ export default function PerbaikanKataModal({
       setKe("");
       setCaseSensitive(false);
       setSaved(false);
+      setSharedOk(false);
       setError(null);
     }
   }, [open, initialDari]);
@@ -46,9 +50,7 @@ export default function PerbaikanKataModal({
     return () => window.removeEventListener("keydown", onKey);
   }, [open, onClose]);
 
-  if (!open) return null;
-
-  function onSubmit(e?: React.FormEvent) {
+  async function onSubmit(e?: React.FormEvent) {
     e?.preventDefault();
     const trimmedDari = dari.trim();
     const trimmedKe = ke;
@@ -60,17 +62,30 @@ export default function PerbaikanKataModal({
       setError("Kata Pengganti harus berbeda dari Kata Asli");
       return;
     }
-    addPerbaikan(slug, {
-      dari: trimmedDari,
-      ke: trimmedKe,
-      caseSensitive,
-    });
-    setSaved(true);
-    setTimeout(() => {
-      onSaved();
-      onClose();
-    }, 800);
+
+    setSaving(true);
+    setError(null);
+    try {
+      const res = await addPerbaikanShared(slug, {
+        dari: trimmedDari,
+        ke: trimmedKe,
+        caseSensitive,
+        by: nickname || undefined,
+      });
+      setSharedOk(res.shared);
+      setSaved(true);
+      setTimeout(() => {
+        onSaved();
+        onClose();
+      }, 900);
+    } catch (err) {
+      setError("Gagal menyimpan. Coba lagi.");
+    } finally {
+      setSaving(false);
+    }
   }
+
+  if (!open) return null;
 
   const dariLen = dari.length;
   const keLen = ke.length;
@@ -92,9 +107,12 @@ export default function PerbaikanKataModal({
             <h3 className="font-bold text-base flex items-center gap-2">
               <span>✏️</span>
               <span>Perbaiki Kata</span>
+              <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                dibagikan
+              </span>
             </h3>
             <p className="text-xs opacity-60 mt-0.5">
-              Berlaku untuk semua chapter novel ini di perangkat kamu
+              Berlaku untuk semua chapter novel ini & semua pembaca
             </p>
           </div>
           <button
@@ -112,7 +130,9 @@ export default function PerbaikanKataModal({
             <div className="text-5xl mb-3">✅</div>
             <p className="font-semibold">Tersimpan!</p>
             <p className="text-xs opacity-60 mt-1">
-              Kata langsung diterapkan ke chapter
+              {sharedOk
+                ? "Tersimpan lokal & dibagikan ke semua pembaca"
+                : "Tersimpan lokal (offline — akan sync saat online)"}
             </p>
           </div>
         ) : (
@@ -191,7 +211,8 @@ export default function PerbaikanKataModal({
 
             {/* Info */}
             <div className="text-[11px] opacity-60 leading-relaxed">
-              💡 Disimpan lokal di browser kamu per novel. Buka halaman{" "}
+              💾 Tersimpan di server — <strong>semua pembaca novel ini</strong> akan
+              melihat perbaikan kamu otomatis. Buka halaman{" "}
               <span className="font-semibold">Daftar Perbaikan</span> untuk
               lihat, edit, atau hapus.
             </div>

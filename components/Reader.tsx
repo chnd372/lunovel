@@ -4,7 +4,7 @@ import { useEffect, useState, useRef, useMemo } from "react";
 import type { ReaderSettings, Chapter, Novel, ReaderTheme } from "@/lib/types";
 import { estimateReadingMinutes } from "@/lib/data";
 import { applyCorrections, getCorrections } from "@/lib/corrections";
-import { applyPerbaikan } from "@/lib/perbaikanKata";
+import { applyPerbaikan, syncSharedRules } from "@/lib/perbaikanKata";
 import TextSelectionHandler from "@/components/TextSelectionHandler";
 import Comments from "@/components/Comments";
 import { useRouter } from "next/navigation";
@@ -85,11 +85,20 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
     function onChange(e: Event) {
       const detail = (e as CustomEvent).detail;
       if (!detail || detail.slug === novel.slug) {
-        setPerbaikanVersion((v) => v + 1);
+        setPerbaikanVersion((v: number) => v + 1);
       }
     }
     window.addEventListener("lunovel:perbaikan-changed", onChange);
     return () => window.removeEventListener("lunovel:perbaikan-changed", onChange);
+  }, [novel.slug]);
+
+  // Fetch shared find/replace rules from API on mount (KV authoritative, local cache fallback)
+  useEffect(() => {
+    const ac = new AbortController();
+    syncSharedRules(novel.slug, ac.signal)
+      .then(() => setPerbaikanVersion((v: number) => v + 1))
+      .catch(() => {});
+    return () => ac.abort();
   }, [novel.slug]);
 
   // Load settings on mount

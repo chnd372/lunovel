@@ -1,7 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePerbaikan } from "@/lib/perbaikanKata";
+import {
+  usePerbaikan, syncSharedRules,
+  removePerbaikanShared, clearPerbaikanShared,
+} from "@/lib/perbaikanKata";
 import type { Novel } from "@/lib/types";
 
 interface Props {
@@ -11,9 +14,10 @@ interface Props {
 /**
  * Per-novel persistent find & replace manager.
  * Edit/remove existing rules, add new ones manually, see live counts.
+ * All changes are shared with every reader of this novel (via Vercel KV).
  */
 export default function PerbaikanKataManager({ novel }: Props) {
-  const { list, add, update, remove, clear } = usePerbaikan(novel.slug);
+  const { list, add, update, remove, clear, sync } = usePerbaikan(novel.slug);
   const [hydrated, setHydrated] = useState(false);
   const [editing, setEditing] = useState<number | null>(null);
   const [editDari, setEditDari] = useState("");
@@ -23,8 +27,17 @@ export default function PerbaikanKataManager({ novel }: Props) {
   const [addDari, setAddDari] = useState("");
   const [addKe, setAddKe] = useState("");
   const [addCS, setAddCS] = useState(false);
+  const [backend, setBackend] = useState<"kv" | "none" | "unknown">("unknown");
 
-  useEffect(() => setHydrated(true), []);
+  useEffect(() => {
+    setHydrated(true);
+    syncSharedRules(novel.slug)
+      .then((res) => {
+        setBackend(res.backend);
+        sync();
+      })
+      .catch(() => setBackend("none"));
+  }, [novel.slug, sync]);
 
   function startEdit(i: number) {
     const r = list[i];
@@ -34,15 +47,27 @@ export default function PerbaikanKataManager({ novel }: Props) {
     setEditCS(r.caseSensitive);
   }
 
-  function saveEdit() {
+  async function saveEdit() {
     if (editing === null) return;
     if (!editDari.trim() || !editKe) return;
     update(editing, { dari: editDari.trim(), ke: editKe, caseSensitive: editCS });
     setEditing(null);
     notifyChange();
+    // Push updated rule to shared store
+    try {
+      await fetch(`/api/perbaikan/${encodeURIComponent(novel.slug)}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          dari: editDari.trim(),
+          ke: editKe,
+          caseSensitive: editCS,
+        }),
+      });
+    } catch {}
   }
 
-  function submitAdd(e?: React.FormEvent) {
+  async function submitAdd(e?: React.FormEvent) {
     e?.preventDefault();
     if (!addDari.trim() || !addKe) return;
     add({ dari: addDari.trim(), ke: addKe, caseSensitive: addCS });
@@ -51,6 +76,18 @@ export default function PerbaikanKataManager({ novel }: Props) {
     setAddCS(false);
     setShowAdd(false);
     notifyChange();
+    try {
+      const res = await fetch(`/api/perbaikan/${encodeURIComponent(novel.slug)}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          dari: addDari.trim(),
+          ke: addKe,
+          caseSensitive: addCS,
+        }),
+      });
+      if (res.ok) setBackend("kv");
+    } catch {}
   }
 
   function notifyChange() {
@@ -60,12 +97,18 @@ export default function PerbaikanKataManager({ novel }: Props) {
     }));
   }
 
-  function confirmClear() {
+  async function doRemove(idx: number) {
+    await removePerbaikanShared(novel.slug, idx);
+    sync();
+    notifyChange();
+  }
+
+  async function confirmClear() {
     if (typeof window === "undefined") return;
-    if (window.confirm(`Hapus semua ${list.length} perbaikan untuk "${novel.title}"?`)) {
-      clear();
-      notifyChange();
-    }
+    if (!window.confirm(`Hapus semua ${list.length} perbaikan untuk "${novel.title}"?`)) return;
+    await clearPerbaikanShared(novel.slug);
+    clear();
+    notifyChange();
   }
 
   if (!hydrated) {
@@ -82,7 +125,7 @@ export default function PerbaikanKataManager({ novel }: Props) {
     <div className="space-y-4">
       {/* Stats + actions bar */}
       <div className="flex items-center justify-between gap-3 flex-wrap">
-        <div className="text-sm opacity-70">
+        <div className="text-sm opacity-70 flex items-center gap-2 flex-wrap">
           {list.length === 0 ? (
             <span>Belum ada perbaikan tersimpan</span>
           ) : (
@@ -91,6 +134,15 @@ export default function PerbaikanKataManager({ novel }: Props) {
               kata perbaikan tersimpan
             </span>
           )}
+          <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded ${
+            backend === "kv"
+              ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+              : backend === "none"
+              ? "bg-amber-500/10 text-amber-700 dark:text-amber-400"
+              : "bg-black/5 dark:bg-white/10 opacity-60"
+          }`}>
+            {backend === "kv" ? "🌐 dibagikan ke semua" : backend === "none" ? "⚠️ hanya lokal" : "..."}
+          </span>
         </div>
         <div className="flex gap-2">
           {list.length > 0 && (
@@ -251,10 +303,7 @@ export default function PerbaikanKataManager({ novel }: Props) {
                           ✏️
                         </button>
                         <button
-                          onClick={() => {
-                            remove(i);
-                            notifyChange();
-                          }}
+                          onClick={() => doRemove(i)}
                           className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-red-500/10 text-sm"
                           aria-label="Hapus"
                           title="Hapus"

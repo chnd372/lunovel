@@ -3,25 +3,34 @@
 import { useState, useCallback } from "react";
 
 /**
- * Personal word-correction entry.
- * Stored in localStorage under key `perbaikan_${slug}`.
- * Unlike `corrections` (which is crowdsourced/optional), these are private
- * find-and-replace rules the user applies to their own reading experience.
+ * Personal + shared word-correction entry.
+ * Storage strategy (hybrid):
+ *   1. localStorage `perbaikan_${slug}` — local cache, works offline
+ *   2. Vercel KV via /api/perbaikan/[slug]   — shared with all visitors
+ *
+ * On mount, the Reader fetches shared rules from the API and writes them to
+ * localStorage (KV is authoritative). New rules added by the user go to BOTH:
+ *   - localStorage immediately (instant render)
+ *   - API POST (so others see it)
+ *
+ * If the API is down or KV isn't configured, the feature still works locally.
  */
+
 export interface PerbaikanKata {
-  dari: string;        // original (wrong) text
-  ke: string;          // replacement
+  dari: string;          // original (wrong) text
+  ke: string;            // replacement
   caseSensitive: boolean;
-  createdAt: string;   // ISO timestamp
+  createdAt: string;     // ISO timestamp
+  by?: string;           // contributor name (when sourced from shared)
 }
 
-const keyFor = (slug: string) => `perbaikan_${slug}`;
+const localKey = (slug: string) => `perbaikan_${slug}`;
 
-/** SSR-safe read. Returns [] on server. */
+/** SSR-safe local read. Returns [] on server. */
 export function getPerbaikan(slug: string): PerbaikanKata[] {
   if (typeof window === "undefined") return [];
   try {
-    const raw = localStorage.getItem(keyFor(slug));
+    const raw = localStorage.getItem(localKey(slug));
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     return Array.isArray(parsed) ? parsed.filter(isValid) : [];
@@ -34,24 +43,93 @@ function isValid(x: any): x is PerbaikanKata {
 }
 
 function persist(slug: string, list: PerbaikanKata[]) {
-  try {
-    localStorage.setItem(keyFor(slug), JSON.stringify(list));
-  } catch {}
+  try { localStorage.setItem(localKey(slug), JSON.stringify(list)); } catch {}
 }
 
-/** Append (or replace existing match by `dari`). */
+/** Merge: shared rules win on conflict (by `dari`, case-insensitive). */
+function mergeRules(local: PerbaikanKata[], shared: PerbaikanKata[]): PerbaikanKata[] {
+  const out: PerbaikanKata[] = [];
+  const seenLower = new Set<string>();
+  // Shared first (authoritative)
+  for (const r of shared) {
+    const k = r.dari.toLowerCase();
+    if (seenLower.has(k)) continue;
+    seenLower.add(k);
+    out.push(r);
+  }
+  // Then any local-only entries (offline-only corrections)
+  for (const r of local) {
+    const k = r.dari.toLowerCase();
+    if (seenLower.has(k)) continue;
+    seenLower.add(k);
+    out.push(r);
+  }
+  return out;
+}
+
+/**
+ * Fetch shared rules from API and merge into localStorage.
+ * Safe to call on every chapter mount — debounced via AbortController upstream.
+ * Returns the merged list.
+ */
+export async function syncSharedRules(
+  slug: string,
+  signal?: AbortSignal,
+): Promise<{ merged: PerbaikanKata[]; backend: "kv" | "none" }> {
+  const local = getPerbaikan(slug);
+  try {
+    const res = await fetch(`/api/perbaikan/${encodeURIComponent(slug)}`, {
+      cache: "no-store",
+      signal,
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    const shared: PerbaikanKata[] = Array.isArray(json.rules)
+      ? json.rules.filter(isValid)
+      : [];
+    const merged = mergeRules(local, shared);
+    persist(slug, merged);
+    return { merged, backend: json.backend === "kv" ? "kv" : "none" };
+  } catch {
+    return { merged: local, backend: "none" };
+  }
+}
+
+/** Append (or replace existing match by `dari`). Returns new list. */
 export function addPerbaikan(
   slug: string,
   entry: Omit<PerbaikanKata, "createdAt">,
 ): PerbaikanKata[] {
   const list = getPerbaikan(slug);
-  // dedupe by `dari` (case-insensitive)
   const lower = entry.dari.toLowerCase();
   const idx = list.findIndex((p) => p.dari.toLowerCase() === lower);
   const next: PerbaikanKata = { ...entry, createdAt: new Date().toISOString() };
   if (idx >= 0) list[idx] = next; else list.push(next);
   persist(slug, list);
   return list;
+}
+
+/** Async variant: save locally AND post to API for sharing. */
+export async function addPerbaikanShared(
+  slug: string,
+  entry: Omit<PerbaikanKata, "createdAt">,
+): Promise<{ list: PerbaikanKata[]; shared: boolean }> {
+  const list = addPerbaikan(slug, entry);
+  let shared = false;
+  try {
+    const res = await fetch(`/api/perbaikan/${encodeURIComponent(slug)}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        dari: entry.dari,
+        ke: entry.ke,
+        caseSensitive: entry.caseSensitive,
+        by: entry.by,
+      }),
+    });
+    shared = res.ok;
+  } catch { /* offline — still saved locally */ }
+  return { list, shared };
 }
 
 export function updatePerbaikan(
@@ -72,13 +150,37 @@ export function removePerbaikan(slug: string, idx: number): PerbaikanKata[] {
   return list;
 }
 
-export function clearPerbaikan(slug: string): void {
+/** Async delete: remove locally + tell API. */
+export async function removePerbaikanShared(
+  slug: string,
+  idx: number,
+): Promise<PerbaikanKata[]> {
+  const list = getPerbaikan(slug);
+  const target = list[idx];
+  const next = removePerbaikan(slug, idx);
+  if (target) {
+    try {
+      await fetch(
+        `/api/perbaikan/${encodeURIComponent(slug)}?dari=${encodeURIComponent(target.dari)}`,
+        { method: "DELETE" },
+      );
+    } catch { /* ignore */ }
+  }
+  return next;
+}
+
+export async function clearPerbaikanShared(slug: string): Promise<void> {
   persist(slug, []);
+  try {
+    await fetch(`/api/perbaikan/${encodeURIComponent(slug)}?all=1`, {
+      method: "DELETE",
+    });
+  } catch { /* ignore */ }
 }
 
 /**
- * Apply all personal find-and-replace rules to text.
- * Pure function (uses getPerbaikan which is SSR-safe).
+ * Apply all find-and-replace rules to text. Pure sync function.
+ * Reads from localStorage (which has been hydrated by syncSharedRules).
  */
 export function applyPerbaikan(text: string, slug: string): {
   text: string;
@@ -97,16 +199,12 @@ export function applyPerbaikan(text: string, slug: string): {
 
 function replace(text: string, rule: PerbaikanKata): string {
   if (!rule.dari) return text;
-  // Escape regex special chars in `dari`
   const escaped = rule.dari.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const flags = "g" + (rule.caseSensitive ? "" : "i");
-  // No \b boundaries — phrases can include spaces/punct.
-  // We want literal replacement including unicode.
-  const re = new RegExp(escaped, flags);
-  return text.replace(re, rule.ke);
+  return text.replace(new RegExp(escaped, flags), rule.ke);
 }
 
-/** Total count of replacements across all novels (for site stats). */
+/** Total count across all novels (local only). */
 export function getAllPerbaikanCount(): number {
   if (typeof window === "undefined") return 0;
   let count = 0;
@@ -141,9 +239,14 @@ export function usePerbaikan(slug: string) {
   }, [slug]);
 
   const clear = useCallback(() => {
-    clearPerbaikan(slug);
+    persist(slug, []);
     setList([]);
   }, [slug]);
 
-  return { list, refresh, add, update, remove, clear };
+  const sync = useCallback(async () => {
+    const { merged } = await syncSharedRules(slug);
+    setList(merged);
+  }, [slug]);
+
+  return { list, refresh, add, update, remove, clear, sync };
 }
