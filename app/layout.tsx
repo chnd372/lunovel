@@ -4,18 +4,52 @@ import Navbar from "@/components/Navbar";
 import { ThemeScript } from "@/components/Navbar";
 
 const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://lunovel.vercel.app";
 const tagline = "Baca novel gratis, online. Terjemahan & original, update setiap hari.";
 
+// Single source of truth for the brand image (used by every page that doesn't
+// have a more specific cover). Pages override this in their own generateMetadata.
+const defaultOgImage = {
+  url: "/og-default.png",
+  width: 1200,
+  height: 630,
+  alt: `${siteName} — ${tagline}`,
+};
+
 export const metadata: Metadata = {
-  title: { default: siteName, template: `%s · ${siteName}` },
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${siteName} - Baca Novel Gratis Online`,
+    template: `%s · ${siteName}`,
+  },
   description: tagline,
-  keywords: ["novel", "baca novel", "novel terjemahan", "novel Indonesia", "xianxia", "fantasi"],
+  keywords: ["novel", "baca novel", "novel terjemahan", "novel Indonesia", "xianxia", "fantasi", "web novel", "novel online gratis"],
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
+  applicationName: siteName,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
   openGraph: {
-    title: siteName,
-    description: tagline,
     type: "website",
     locale: "id_ID",
+    url: siteUrl,
     siteName,
+    title: `${siteName} - Baca Novel Gratis Online`,
+    description: tagline,
+    images: [defaultOgImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteName} - Baca Novel Gratis Online`,
+    description: tagline,
+    images: [defaultOgImage.url],
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 };
 

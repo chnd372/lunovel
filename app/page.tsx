@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getAllNovels, getChaptersByNovel, allGenres } from "@/lib/data";
 import NovelCard from "@/components/NovelCard";
 import ContinueReading from "@/components/ContinueReading";
@@ -6,6 +7,14 @@ import SiteStats from "@/components/SiteStats";
 import HomeTabs from "@/components/HomeTabs";
 
 export const dynamic = "force-dynamic";
+
+const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
+
+export const metadata: Metadata = {
+  title: `${siteName} - Baca Novel Gratis Online`,
+  description: "Baca ribuan chapter novel terjemahan & original bahasa Indonesia. Online, gratis, tanpa iklan. Ongoing & completed, update setiap hari.",
+  alternates: { canonical: "/" },
+};
 
 export default async function HomePage() {
   const novels = await getAllNovels();

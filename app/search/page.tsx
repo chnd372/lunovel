@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { searchNovels, allGenres, getAllNovels } from "@/lib/data";
 import NovelCard from "@/components/NovelCard";
 import Link from "next/link";
@@ -6,6 +7,25 @@ export const dynamic = "force-dynamic";
 
 interface Props {
   searchParams: { q?: string; genre?: string; status?: string; type?: string };
+}
+
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
+
+export function generateMetadata({ searchParams }: Props): Metadata {
+  const { q, genre, status, type } = searchParams;
+  const parts: string[] = [];
+  if (q) parts.push(`"${q}"`);
+  if (genre) parts.push(genre);
+  if (status) parts.push(status === "ongoing" ? "Ongoing" : status === "completed" ? "Completed" : status);
+  if (type) parts.push(type === "translated" ? "Terjemahan" : "Original");
+  const label = parts.length > 0 ? parts.join(" · ") : "Semua Novel";
+  const title = parts.length > 0 ? `Cari: ${label} - ${SITE_NAME}` : `Cari Novel - ${SITE_NAME}`;
+  return {
+    title,
+    description: `Cari novel${q ? ` "${q}"` : ""}${genre ? ` genre ${genre}` : ""}${status ? ` status ${status}` : ""}${type ? ` ${type === "translated" ? "terjemahan" : "original"}` : ""}. Ribuan chapter siap dibaca online gratis di ${SITE_NAME}.`,
+    alternates: { canonical: "/search" },
+    robots: { index: false, follow: true }, // search result pages shouldn't be indexed
+  };
 }
 
 export default async function SearchPage({ searchParams }: Props) {

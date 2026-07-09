@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getNovelBySlug, getChaptersByNovel } from "@/lib/data";
 import ChapterList from "@/components/ChapterList";
@@ -12,6 +13,49 @@ export const dynamic = "force-dynamic";
 interface Props {
   params: { slug: string };
   searchParams: { sort?: string };
+}
+
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
+
+// Sinopsis → meta description (≤ 160 chars, word-boundary safe).
+function truncate(text: string, max = 160): string {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const cut = clean.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trimEnd() + "…";
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const novel = await getNovelBySlug(params.slug);
+  if (!novel) return { title: "Novel tidak ditemukan" };
+
+  const description = truncate(novel.description || `${novel.title} — baca online gratis di ${SITE_NAME}.`);
+  const ogImage = novel.cover
+    ? [{ url: novel.cover, width: 800, height: 1200, alt: novel.title }]
+    : undefined;
+
+  return {
+    title: `${novel.title} - ${SITE_NAME}`,
+    description,
+    keywords: [novel.title, ...(novel.genres || []), novel.author].filter(Boolean) as string[],
+    alternates: { canonical: `/novel/${novel.slug}` },
+    openGraph: {
+      type: "book",
+      title: `${novel.title} - ${SITE_NAME}`,
+      description,
+      url: `/novel/${novel.slug}`,
+      siteName: SITE_NAME,
+      locale: "id_ID",
+      images: ogImage,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${novel.title} - ${SITE_NAME}`,
+      description,
+      images: ogImage?.map((i) => i.url),
+    },
+  };
 }
 
 type SortOrder = "newest" | "oldest";
