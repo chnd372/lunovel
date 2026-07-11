@@ -12,12 +12,10 @@ import { getChunkedChapter, getChunkedChapterList } from "./chunks";
 import novelsData from "@/data/novels.json";
 import laskarPelangiData from "@/data/chapters/laskar-pelangi.json";
 import sherlockData from "@/data/chapters/sherlock-holmes-collection.json";
-import wmwData from "@/data/chapters/warlock-of-magus-world.json";
 
 const chapterData: Record<string, Chapter[]> = {
   "laskar-pelangi": laskarPelangiData as Chapter[],
   "sherlock-holmes-collection": sherlockData as Chapter[],
-  "warlock-of-magus-world": wmwData as Chapter[],
 };
 
 export async function getAllNovels(): Promise<Novel[]> {

@@ -1,5 +1,6 @@
 import type { Chapter } from "./types";
 import moipMeta from "@/data/chapters/moip-meta.json";
+import wmwMeta from "@/data/chapters/warlock-meta.json";
 
 interface ChapterMetaEntry {
   chunk_idx: number;
@@ -16,7 +17,10 @@ interface NovelMeta {
   chapter_map: Record<string, ChapterMetaEntry>;
 }
 
-const MOIP_META = moipMeta as NovelMeta;
+const META: Record<string, NovelMeta> = {
+  moip: moipMeta as NovelMeta,
+  "warlock-of-magus-world": wmwMeta as NovelMeta,
+};
 
 async function loadChunk(novelId: string, chunkIdx: number): Promise<Chapter[]> {
   const pad = String(chunkIdx).padStart(2, "0");
@@ -25,7 +29,7 @@ async function loadChunk(novelId: string, chunkIdx: number): Promise<Chapter[]> 
 }
 
 function findMeta(novelId: string): NovelMeta | null {
-  return novelId === "moip" ? MOIP_META : null;
+  return META[novelId] ?? null;
 }
 
 export async function getChunkedChapter(
@@ -54,15 +58,30 @@ export async function getChunkedChapterList(
     (a, b) => parseFloat(a) - parseFloat(b),
   );
 
-  // Lightweight list: number + title + word_count, no content.
+  // Lightweight list: number + title + word_count + published_at, no content.
   // Returns empty content; chapter page uses getChunkedChapter() for full text.
-  return keys.map((k) => ({
-    id: `${novelId}-ch${k.replace(".", "_")}`,
-    novel_id: novelId,
-    number: parseFloat(k),
-    title: meta.chapter_map[k].title,
-    content: "",
-    word_count: meta.chapter_map[k].word_count,
-    published_at: "2026-07-09T00:00:00Z",
-  }));
+  // ponytail: stable per-chapter dates derived from chapter number; replace with
+  // real upload timestamps once chapter-level metadata exists in the source.
+  const total = keys.length;
+  return keys.map((k, idx) => {
+    const number = parseFloat(k);
+    // Distribute across (total) days ending at "today" UTC midnight so the last
+    // chapter is ~1 day old and the first is ~total days old. Only chapters
+    // within the last 3 days will get the UP badge.
+    const daysAgo = Math.max(1, total - idx);
+    const published_at = new Date(Date.UTC(
+      new Date().getUTCFullYear(),
+      new Date().getUTCMonth(),
+      new Date().getUTCDate() - daysAgo,
+    )).toISOString();
+    return {
+      id: `${novelId}-ch${k.replace(".", "_")}`,
+      novel_id: novelId,
+      number,
+      title: meta.chapter_map[k].title,
+      content: "",
+      word_count: meta.chapter_map[k].word_count,
+      published_at,
+    };
+  });
 }

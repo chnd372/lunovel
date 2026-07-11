@@ -1,0 +1,1808 @@
+{
+  "novel_id": "warlock-of-magus-world",
+  "total_chapters": 300,
+  "chunks": 6,
+  "chunk_size": 50,
+  "chapter_map": {
+    "1": {
+      "chunk_idx": 0,
+      "local_idx": 0,
+      "title": "Reinkarnasi",
+      "word_count": 1774
+    },
+    "2": {
+      "chunk_idx": 0,
+      "local_idx": 1,
+      "title": "Chip AI",
+      "word_count": 1734
+    },
+    "3": {
+      "chunk_idx": 0,
+      "local_idx": 2,
+      "title": "Kuda",
+      "word_count": 1878
+    },
+    "4": {
+      "chunk_idx": 0,
+      "local_idx": 3,
+      "title": "Budidaya",
+      "word_count": 1657
+    },
+    "5": {
+      "chunk_idx": 0,
+      "local_idx": 4,
+      "title": "Pisau Silang",
+      "word_count": 1775
+    },
+    "6": {
+      "chunk_idx": 0,
+      "local_idx": 5,
+      "title": "Ketidaksepakatan",
+      "word_count": 1783
+    },
+    "7": {
+      "chunk_idx": 0,
+      "local_idx": 6,
+      "title": "Pemerasan",
+      "word_count": 1160
+    },
+    "8": {
+      "chunk_idx": 0,
+      "local_idx": 7,
+      "title": "Aliansi",
+      "word_count": 1615
+    },
+    "9": {
+      "chunk_idx": 0,
+      "local_idx": 8,
+      "title": "Memasuki Dataran",
+      "word_count": 1644
+    },
+    "10": {
+      "chunk_idx": 0,
+      "local_idx": 9,
+      "title": "Paket Serigala Direwolf",
+      "word_count": 1765
+    },
+    "11": {
+      "chunk_idx": 0,
+      "local_idx": 10,
+      "title": "Tebasan Silang",
+      "word_count": 1614
+    },
+    "12": {
+      "chunk_idx": 0,
+      "local_idx": 11,
+      "title": "Mengambil Tindakan",
+      "word_count": 1399
+    },
+    "13": {
+      "chunk_idx": 0,
+      "local_idx": 12,
+      "title": "Kedatangan",
+      "word_count": 1499
+    },
+    "14": {
+      "chunk_idx": 0,
+      "local_idx": 13,
+      "title": "Tes Bakat",
+      "word_count": 1371
+    },
+    "15": {
+      "chunk_idx": 0,
+      "local_idx": 14,
+      "title": "Acolytes",
+      "word_count": 1407
+    },
+    "16": {
+      "chunk_idx": 0,
+      "local_idx": 15,
+      "title": "Kepulauan Chernobyl",
+      "word_count": 1512
+    },
+    "17": {
+      "chunk_idx": 0,
+      "local_idx": 16,
+      "title": "Dapat diarahkan",
+      "word_count": 1340
+    },
+    "18": {
+      "chunk_idx": 0,
+      "local_idx": 17,
+      "title": "Perselisihan",
+      "word_count": 1663
+    },
+    "19": {
+      "chunk_idx": 0,
+      "local_idx": 18,
+      "title": "Tiba Di Akademi",
+      "word_count": 1453
+    },
+    "20": {
+      "chunk_idx": 0,
+      "local_idx": 19,
+      "title": "Pemilihan Mentor",
+      "word_count": 1643
+    },
+    "21": {
+      "chunk_idx": 0,
+      "local_idx": 20,
+      "title": "Kroft",
+      "word_count": 1622
+    },
+    "22": {
+      "chunk_idx": 0,
+      "local_idx": 21,
+      "title": "Teknik Meditasi",
+      "word_count": 1487
+    },
+    "23": {
+      "chunk_idx": 0,
+      "local_idx": 22,
+      "title": "Di Dalam Kompleks Akademi",
+      "word_count": 1678
+    },
+    "24": {
+      "chunk_idx": 0,
+      "local_idx": 23,
+      "title": "Level 1 Acolyte",
+      "word_count": 1688
+    },
+    "25": {
+      "chunk_idx": 0,
+      "local_idx": 24,
+      "title": "Ramuan Dasar",
+      "word_count": 1502
+    },
+    "26": {
+      "chunk_idx": 0,
+      "local_idx": 25,
+      "title": "Upaya Memulai",
+      "word_count": 1608
+    },
+    "27": {
+      "chunk_idx": 0,
+      "local_idx": 26,
+      "title": "Pembuatan Ramuan yang Sukses",
+      "word_count": 1641
+    },
+    "28": {
+      "chunk_idx": 0,
+      "local_idx": 27,
+      "title": "Dijual",
+      "word_count": 1717
+    },
+    "29": {
+      "chunk_idx": 0,
+      "local_idx": 28,
+      "title": "Mantra Peringkat 0",
+      "word_count": 1670
+    },
+    "30": {
+      "chunk_idx": 0,
+      "local_idx": 29,
+      "title": "Bereksperimen Dengan Mantra",
+      "word_count": 1739
+    },
+    "31": {
+      "chunk_idx": 0,
+      "local_idx": 30,
+      "title": "Misi Patroli",
+      "word_count": 1726
+    },
+    "32": {
+      "chunk_idx": 0,
+      "local_idx": 31,
+      "title": "Gagak Bermata Merah",
+      "word_count": 1762
+    },
+    "33": {
+      "chunk_idx": 0,
+      "local_idx": 32,
+      "title": "Beruang Berbukit yang Kasar",
+      "word_count": 1550
+    },
+    "34": {
+      "chunk_idx": 0,
+      "local_idx": 33,
+      "title": "Terobosan Ksatria",
+      "word_count": 1657
+    },
+    "35": {
+      "chunk_idx": 0,
+      "local_idx": 34,
+      "title": "Kembali Ke Akademi",
+      "word_count": 1652
+    },
+    "36": {
+      "chunk_idx": 0,
+      "local_idx": 35,
+      "title": "Hambatan",
+      "word_count": 1732
+    },
+    "37": {
+      "chunk_idx": 0,
+      "local_idx": 36,
+      "title": "Ramuan Kuno",
+      "word_count": 1712
+    },
+    "38": {
+      "chunk_idx": 0,
+      "local_idx": 37,
+      "title": "Nyssa",
+      "word_count": 1698
+    },
+    "39": {
+      "chunk_idx": 0,
+      "local_idx": 38,
+      "title": "Dua Metode",
+      "word_count": 1750
+    },
+    "40": {
+      "chunk_idx": 0,
+      "local_idx": 39,
+      "title": "Sebuah Kata Nasihat",
+      "word_count": 1784
+    },
+    "41": {
+      "chunk_idx": 0,
+      "local_idx": 40,
+      "title": "Melakukan Pembelian",
+      "word_count": 1790
+    },
+    "42": {
+      "chunk_idx": 0,
+      "local_idx": 41,
+      "title": "Pergi Sementara",
+      "word_count": 1729
+    },
+    "43": {
+      "chunk_idx": 0,
+      "local_idx": 42,
+      "title": "Setan Pohon Raksasa",
+      "word_count": 1674
+    },
+    "44": {
+      "chunk_idx": 0,
+      "local_idx": 43,
+      "title": "Kota Batu Abu-abu",
+      "word_count": 1641
+    },
+    "45": {
+      "chunk_idx": 0,
+      "local_idx": 44,
+      "title": "Pengakuan",
+      "word_count": 1691
+    },
+    "46": {
+      "chunk_idx": 0,
+      "local_idx": 45,
+      "title": "Penyergapan",
+      "word_count": 1617
+    },
+    "47": {
+      "chunk_idx": 0,
+      "local_idx": 46,
+      "title": "Ketidaknyamanan",
+      "word_count": 1676
+    },
+    "48": {
+      "chunk_idx": 0,
+      "local_idx": 47,
+      "title": "Pasar",
+      "word_count": 1766
+    },
+    "49": {
+      "chunk_idx": 0,
+      "local_idx": 48,
+      "title": "Pemulihan",
+      "word_count": 1629
+    },
+    "50": {
+      "chunk_idx": 0,
+      "local_idx": 49,
+      "title": "Pasar Ellinel",
+      "word_count": 1673
+    },
+    "51": {
+      "chunk_idx": 1,
+      "local_idx": 0,
+      "title": "Ajaran Lowian",
+      "word_count": 1651
+    },
+    "52": {
+      "chunk_idx": 1,
+      "local_idx": 1,
+      "title": "Budak",
+      "word_count": 1727
+    },
+    "53": {
+      "chunk_idx": 1,
+      "local_idx": 2,
+      "title": "Bawahan",
+      "word_count": 1661
+    },
+    "54": {
+      "chunk_idx": 1,
+      "local_idx": 3,
+      "title": "Kota Roran",
+      "word_count": 1593
+    },
+    "55": {
+      "chunk_idx": 1,
+      "local_idx": 4,
+      "title": "Elang Roran",
+      "word_count": 1712
+    },
+    "56": {
+      "chunk_idx": 1,
+      "local_idx": 5,
+      "title": "Kunjungan",
+      "word_count": 1637
+    },
+    "57": {
+      "chunk_idx": 1,
+      "local_idx": 6,
+      "title": "Murphy",
+      "word_count": 1655
+    },
+    "58": {
+      "chunk_idx": 1,
+      "local_idx": 7,
+      "title": "Perjamuan",
+      "word_count": 1583
+    },
+    "59": {
+      "chunk_idx": 1,
+      "local_idx": 8,
+      "title": "Rekaman",
+      "word_count": 1709
+    },
+    "60": {
+      "chunk_idx": 1,
+      "local_idx": 9,
+      "title": "Hove Daun Violet",
+      "word_count": 1620
+    },
+    "61": {
+      "chunk_idx": 1,
+      "local_idx": 10,
+      "title": "Ngarai Brey",
+      "word_count": 1659
+    },
+    "62": {
+      "chunk_idx": 1,
+      "local_idx": 11,
+      "title": "Ramuan yang Dimodifikasi",
+      "word_count": 1647
+    },
+    "63": {
+      "chunk_idx": 1,
+      "local_idx": 12,
+      "title": "Organisme Bermutasi",
+      "word_count": 1724
+    },
+    "64": {
+      "chunk_idx": 1,
+      "local_idx": 13,
+      "title": "Hutan Layu",
+      "word_count": 1605
+    },
+    "65": {
+      "chunk_idx": 1,
+      "local_idx": 14,
+      "title": "Bawah Tanah yang dalam",
+      "word_count": 1562
+    },
+    "66": {
+      "chunk_idx": 1,
+      "local_idx": 15,
+      "title": "Belenggu Rune",
+      "word_count": 1520
+    },
+    "67": {
+      "chunk_idx": 1,
+      "local_idx": 16,
+      "title": "Ramuan Pertahanan",
+      "word_count": 1629
+    },
+    "68": {
+      "chunk_idx": 1,
+      "local_idx": 17,
+      "title": "Kembali ke Kota Malam Ekstrim",
+      "word_count": 1614
+    },
+    "69": {
+      "chunk_idx": 1,
+      "local_idx": 18,
+      "title": "Jejak Pendirian",
+      "word_count": 1618
+    },
+    "70": {
+      "chunk_idx": 1,
+      "local_idx": 19,
+      "title": "Batu tulis menggerogoti",
+      "word_count": 1628
+    },
+    "71": {
+      "chunk_idx": 1,
+      "local_idx": 20,
+      "title": "Mempersiapkan Terobosan",
+      "word_count": 1718
+    },
+    "72": {
+      "chunk_idx": 1,
+      "local_idx": 21,
+      "title": "Maju Ke Level 3 Acolyte",
+      "word_count": 1641
+    },
+    "73": {
+      "chunk_idx": 1,
+      "local_idx": 22,
+      "title": "Pemeriksaan ulang",
+      "word_count": 1560
+    },
+    "74": {
+      "chunk_idx": 1,
+      "local_idx": 23,
+      "title": "Serholm Penyihir Besar",
+      "word_count": 1598
+    },
+    "75": {
+      "chunk_idx": 1,
+      "local_idx": 24,
+      "title": "Menahan Tawanan",
+      "word_count": 1679
+    },
+    "76": {
+      "chunk_idx": 1,
+      "local_idx": 25,
+      "title": "Bereksperimen Dan Mengendapkan",
+      "word_count": 1615
+    },
+    "77": {
+      "chunk_idx": 1,
+      "local_idx": 26,
+      "title": "Berita Dari Akademi",
+      "word_count": 1671
+    },
+    "78": {
+      "chunk_idx": 1,
+      "local_idx": 27,
+      "title": "Pengaturan",
+      "word_count": 1708
+    },
+    "79": {
+      "chunk_idx": 1,
+      "local_idx": 28,
+      "title": "Merapikan",
+      "word_count": 1621
+    },
+    "80": {
+      "chunk_idx": 1,
+      "local_idx": 29,
+      "title": "Kembali",
+      "word_count": 1645
+    },
+    "81": {
+      "chunk_idx": 1,
+      "local_idx": 30,
+      "title": "Kera Granit",
+      "word_count": 1613
+    },
+    "82": {
+      "chunk_idx": 1,
+      "local_idx": 31,
+      "title": "Cara Menuju Terobosan",
+      "word_count": 1550
+    },
+    "83": {
+      "chunk_idx": 1,
+      "local_idx": 32,
+      "title": "Pertumpahan Darah Di Pesawat Rahasia",
+      "word_count": 1598
+    },
+    "84": {
+      "chunk_idx": 1,
+      "local_idx": 33,
+      "title": "Rahasia yang Diungkapkan",
+      "word_count": 1523
+    },
+    "85": {
+      "chunk_idx": 1,
+      "local_idx": 34,
+      "title": "Ketidakjelasan",
+      "word_count": 1578
+    },
+    "86": {
+      "chunk_idx": 1,
+      "local_idx": 35,
+      "title": "Liontin Bintang Jatuh",
+      "word_count": 1573
+    },
+    "87": {
+      "chunk_idx": 1,
+      "local_idx": 36,
+      "title": "Persaingan",
+      "word_count": 1594
+    },
+    "88": {
+      "chunk_idx": 1,
+      "local_idx": 37,
+      "title": "Pertumpahan Darah Dimulai",
+      "word_count": 1621
+    },
+    "89": {
+      "chunk_idx": 1,
+      "local_idx": 38,
+      "title": "Memasuki Pesawat Rahasia",
+      "word_count": 1575
+    },
+    "90": {
+      "chunk_idx": 1,
+      "local_idx": 39,
+      "title": "Memasang Perangkap",
+      "word_count": 1559
+    },
+    "91": {
+      "chunk_idx": 1,
+      "local_idx": 40,
+      "title": "Menemukan Jayden",
+      "word_count": 1521
+    },
+    "92": {
+      "chunk_idx": 1,
+      "local_idx": 41,
+      "title": "Mencolok",
+      "word_count": 1496
+    },
+    "93": {
+      "chunk_idx": 1,
+      "local_idx": 42,
+      "title": "Pengaktifan",
+      "word_count": 1499
+    },
+    "94": {
+      "chunk_idx": 1,
+      "local_idx": 43,
+      "title": "Menghancurkan diri sendiri",
+      "word_count": 1549
+    },
+    "95": {
+      "chunk_idx": 1,
+      "local_idx": 44,
+      "title": "1 Versus 2",
+      "word_count": 1505
+    },
+    "96": {
+      "chunk_idx": 1,
+      "local_idx": 45,
+      "title": "Membunuh Dua Acolyte",
+      "word_count": 1570
+    },
+    "97": {
+      "chunk_idx": 1,
+      "local_idx": 46,
+      "title": "Kesimpulan",
+      "word_count": 1583
+    },
+    "98": {
+      "chunk_idx": 1,
+      "local_idx": 47,
+      "title": "Pembunuh Diidentifikasi",
+      "word_count": 1646
+    },
+    "99": {
+      "chunk_idx": 1,
+      "local_idx": 48,
+      "title": "Air Grine",
+      "word_count": 1613
+    },
+    "100": {
+      "chunk_idx": 1,
+      "local_idx": 49,
+      "title": "Pengecualian",
+      "word_count": 1494
+    },
+    "101": {
+      "chunk_idx": 2,
+      "local_idx": 0,
+      "title": "Pendekar Pedang Bermerek",
+      "word_count": 1589
+    },
+    "102": {
+      "chunk_idx": 2,
+      "local_idx": 1,
+      "title": "Membuat Ramuan Kuno",
+      "word_count": 1518
+    },
+    "103": {
+      "chunk_idx": 2,
+      "local_idx": 2,
+      "title": "Sebuah Pertemuan",
+      "word_count": 1510
+    },
+    "104": {
+      "chunk_idx": 2,
+      "local_idx": 3,
+      "title": "Partisipasi",
+      "word_count": 1529
+    },
+    "105": {
+      "chunk_idx": 2,
+      "local_idx": 4,
+      "title": "Kota Bulan Sitar",
+      "word_count": 1611
+    },
+    "106": {
+      "chunk_idx": 2,
+      "local_idx": 5,
+      "title": "Mayfly Cahaya Bulan",
+      "word_count": 1584
+    },
+    "107": {
+      "chunk_idx": 2,
+      "local_idx": 6,
+      "title": "Pemusnahan Total",
+      "word_count": 1453
+    },
+    "108": {
+      "chunk_idx": 2,
+      "local_idx": 7,
+      "title": "Pintu Masuk",
+      "word_count": 1480
+    },
+    "109": {
+      "chunk_idx": 2,
+      "local_idx": 8,
+      "title": "Cara Untuk Masuk",
+      "word_count": 1552
+    },
+    "110": {
+      "chunk_idx": 2,
+      "local_idx": 9,
+      "title": "Ular Mengerikan Hitam",
+      "word_count": 1446
+    },
+    "111": {
+      "chunk_idx": 2,
+      "local_idx": 10,
+      "title": "Gulir Kontrak",
+      "word_count": 1546
+    },
+    "112": {
+      "chunk_idx": 2,
+      "local_idx": 11,
+      "title": "Siluman Bayangan",
+      "word_count": 1561
+    },
+    "113": {
+      "chunk_idx": 2,
+      "local_idx": 12,
+      "title": "Intisari Darah",
+      "word_count": 1531
+    },
+    "114": {
+      "chunk_idx": 2,
+      "local_idx": 13,
+      "title": "Taman Dylan",
+      "word_count": 1547
+    },
+    "115": {
+      "chunk_idx": 2,
+      "local_idx": 14,
+      "title": "Berselisih",
+      "word_count": 1535
+    },
+    "116": {
+      "chunk_idx": 2,
+      "local_idx": 15,
+      "title": "Mengambil Tindakan",
+      "word_count": 1524
+    },
+    "117": {
+      "chunk_idx": 2,
+      "local_idx": 16,
+      "title": "Benar Atau Salah",
+      "word_count": 1550
+    },
+    "118": {
+      "chunk_idx": 2,
+      "local_idx": 17,
+      "title": "Menghancurkan Sisa-sisa",
+      "word_count": 1680
+    },
+    "119": {
+      "chunk_idx": 2,
+      "local_idx": 18,
+      "title": "Tukang sihir/Warlock",
+      "word_count": 1579
+    },
+    "120": {
+      "chunk_idx": 2,
+      "local_idx": 19,
+      "title": "Pemurnian",
+      "word_count": 1624
+    },
+    "121": {
+      "chunk_idx": 2,
+      "local_idx": 20,
+      "title": "Legenda",
+      "word_count": 1651
+    },
+    "122": {
+      "chunk_idx": 2,
+      "local_idx": 21,
+      "title": "Upaya Untuk Terobosan",
+      "word_count": 1571
+    },
+    "123": {
+      "chunk_idx": 2,
+      "local_idx": 22,
+      "title": "Penyihir Peringkat 1",
+      "word_count": 1603
+    },
+    "124": {
+      "chunk_idx": 2,
+      "local_idx": 23,
+      "title": "Mantra bawaan",
+      "word_count": 1608
+    },
+    "125": {
+      "chunk_idx": 2,
+      "local_idx": 24,
+      "title": "Keluarga Tyler",
+      "word_count": 1606
+    },
+    "126": {
+      "chunk_idx": 2,
+      "local_idx": 25,
+      "title": "Tanah liat",
+      "word_count": 1583
+    },
+    "127": {
+      "chunk_idx": 2,
+      "local_idx": 26,
+      "title": "Mengalahkan",
+      "word_count": 1451
+    },
+    "128": {
+      "chunk_idx": 2,
+      "local_idx": 27,
+      "title": "Fayle",
+      "word_count": 1628
+    },
+    "129": {
+      "chunk_idx": 2,
+      "local_idx": 28,
+      "title": "Kutukan yang Tidak Dapat Disembuhkan",
+      "word_count": 1533
+    },
+    "130": {
+      "chunk_idx": 2,
+      "local_idx": 29,
+      "title": "Kereta Kuda",
+      "word_count": 1624
+    },
+    "131": {
+      "chunk_idx": 2,
+      "local_idx": 30,
+      "title": "Pengejar",
+      "word_count": 1637
+    },
+    "132": {
+      "chunk_idx": 2,
+      "local_idx": 31,
+      "title": "Jejak Rahasia",
+      "word_count": 1627
+    },
+    "133": {
+      "chunk_idx": 2,
+      "local_idx": 32,
+      "title": "Konversi Esensi Unsur",
+      "word_count": 1645
+    },
+    "134": {
+      "chunk_idx": 2,
+      "local_idx": 33,
+      "title": "Upgrade",
+      "word_count": 1542
+    },
+    "135": {
+      "chunk_idx": 2,
+      "local_idx": 34,
+      "title": "Kota Pemancing",
+      "word_count": 1558
+    },
+    "136": {
+      "chunk_idx": 2,
+      "local_idx": 35,
+      "title": "Pub Kapak Rusak",
+      "word_count": 1700
+    },
+    "137": {
+      "chunk_idx": 2,
+      "local_idx": 36,
+      "title": "Serigala Lupin Duduk",
+      "word_count": 1579
+    },
+    "138": {
+      "chunk_idx": 2,
+      "local_idx": 37,
+      "title": "Gurun Batu Kapur",
+      "word_count": 1658
+    },
+    "139": {
+      "chunk_idx": 2,
+      "local_idx": 38,
+      "title": "Batu Tulis Penjaga",
+      "word_count": 1650
+    },
+    "140": {
+      "chunk_idx": 2,
+      "local_idx": 39,
+      "title": "Raksasa Emas",
+      "word_count": 1685
+    },
+    "141": {
+      "chunk_idx": 2,
+      "local_idx": 40,
+      "title": "Kary Vultures",
+      "word_count": 1544
+    },
+    "142": {
+      "chunk_idx": 2,
+      "local_idx": 41,
+      "title": "Bola Api Laten",
+      "word_count": 1570
+    },
+    "143": {
+      "chunk_idx": 2,
+      "local_idx": 42,
+      "title": "Kota Andre",
+      "word_count": 1612
+    },
+    "144": {
+      "chunk_idx": 2,
+      "local_idx": 43,
+      "title": "Pengejaran",
+      "word_count": 1688
+    },
+    "145": {
+      "chunk_idx": 2,
+      "local_idx": 44,
+      "title": "Kota Teljose",
+      "word_count": 1588
+    },
+    "146": {
+      "chunk_idx": 2,
+      "local_idx": 45,
+      "title": "Jenna",
+      "word_count": 1600
+    },
+    "147": {
+      "chunk_idx": 2,
+      "local_idx": 46,
+      "title": "Nubuatan",
+      "word_count": 1576
+    },
+    "148": {
+      "chunk_idx": 2,
+      "local_idx": 47,
+      "title": "Pusat Komunal",
+      "word_count": 1631
+    },
+    "149": {
+      "chunk_idx": 2,
+      "local_idx": 48,
+      "title": "Masalah Sepele",
+      "word_count": 1667
+    },
+    "150": {
+      "chunk_idx": 2,
+      "local_idx": 49,
+      "title": "Kristal",
+      "word_count": 1532
+    },
+    "151": {
+      "chunk_idx": 3,
+      "local_idx": 0,
+      "title": "Penyerapan",
+      "word_count": 1606
+    },
+    "152": {
+      "chunk_idx": 3,
+      "local_idx": 1,
+      "title": "Transisi Garis Keturunan",
+      "word_count": 1553
+    },
+    "153": {
+      "chunk_idx": 3,
+      "local_idx": 2,
+      "title": "Mencari Entri",
+      "word_count": 1659
+    },
+    "154": {
+      "chunk_idx": 3,
+      "local_idx": 3,
+      "title": "Taman Empat Musim",
+      "word_count": 1652
+    },
+    "155": {
+      "chunk_idx": 3,
+      "local_idx": 4,
+      "title": "Ramuan Pemurnian Jeffrey",
+      "word_count": 1513
+    },
+    "156": {
+      "chunk_idx": 3,
+      "local_idx": 5,
+      "title": "Lulus",
+      "word_count": 1615
+    },
+    "157": {
+      "chunk_idx": 3,
+      "local_idx": 6,
+      "title": "Reynold",
+      "word_count": 1517
+    },
+    "158": {
+      "chunk_idx": 3,
+      "local_idx": 7,
+      "title": "Decarte",
+      "word_count": 1627
+    },
+    "159": {
+      "chunk_idx": 3,
+      "local_idx": 8,
+      "title": "Pertukaran",
+      "word_count": 1551
+    },
+    "160": {
+      "chunk_idx": 3,
+      "local_idx": 9,
+      "title": "Pesawat Rahasia Empat Musim",
+      "word_count": 1594
+    },
+    "161": {
+      "chunk_idx": 3,
+      "local_idx": 10,
+      "title": "Hujan buatan manusia",
+      "word_count": 1620
+    },
+    "162": {
+      "chunk_idx": 3,
+      "local_idx": 11,
+      "title": "Sebuah Pertemuan",
+      "word_count": 1604
+    },
+    "163": {
+      "chunk_idx": 3,
+      "local_idx": 12,
+      "title": "Kolaborasi",
+      "word_count": 1643
+    },
+    "164": {
+      "chunk_idx": 3,
+      "local_idx": 13,
+      "title": "Berpartisipasi Dan Menjarah",
+      "word_count": 1629
+    },
+    "165": {
+      "chunk_idx": 3,
+      "local_idx": 14,
+      "title": "Telapak Tangan Merah",
+      "word_count": 1489
+    },
+    "166": {
+      "chunk_idx": 3,
+      "local_idx": 15,
+      "title": "Retret yang Sukses",
+      "word_count": 1601
+    },
+    "167": {
+      "chunk_idx": 3,
+      "local_idx": 16,
+      "title": "Kepada Maraud",
+      "word_count": 1558
+    },
+    "168": {
+      "chunk_idx": 3,
+      "local_idx": 17,
+      "title": "Dalam Retrospeksi",
+      "word_count": 1658
+    },
+    "169": {
+      "chunk_idx": 3,
+      "local_idx": 18,
+      "title": "Air Mata Maria",
+      "word_count": 1509
+    },
+    "170": {
+      "chunk_idx": 3,
+      "local_idx": 19,
+      "title": "Putri dari Negara yang Dikalahkan",
+      "word_count": 1537
+    },
+    "171": {
+      "chunk_idx": 3,
+      "local_idx": 20,
+      "title": "Budak Penyihir",
+      "word_count": 1512
+    },
+    "172": {
+      "chunk_idx": 3,
+      "local_idx": 21,
+      "title": "Satu tahun",
+      "word_count": 1652
+    },
+    "173": {
+      "chunk_idx": 3,
+      "local_idx": 22,
+      "title": "Wyvern Racun",
+      "word_count": 1527
+    },
+    "174": {
+      "chunk_idx": 3,
+      "local_idx": 23,
+      "title": "Sekte Pembunuh Roh Kuno",
+      "word_count": 1538
+    },
+    "175": {
+      "chunk_idx": 3,
+      "local_idx": 24,
+      "title": "Cincin Kuningan dan Jaye",
+      "word_count": 1568
+    },
+    "176": {
+      "chunk_idx": 3,
+      "local_idx": 25,
+      "title": "Sebuah Banshee",
+      "word_count": 1627
+    },
+    "177": {
+      "chunk_idx": 3,
+      "local_idx": 26,
+      "title": "Ngengat Pemakan Roh",
+      "word_count": 1529
+    },
+    "178": {
+      "chunk_idx": 3,
+      "local_idx": 27,
+      "title": "Roh Pendendam &#8212; Kejahatan yang Menjijikkan",
+      "word_count": 1507
+    },
+    "179": {
+      "chunk_idx": 3,
+      "local_idx": 28,
+      "title": "Pertempuran sengit",
+      "word_count": 1535
+    },
+    "180": {
+      "chunk_idx": 3,
+      "local_idx": 29,
+      "title": "Serangan Diam-diam",
+      "word_count": 1604
+    },
+    "181": {
+      "chunk_idx": 3,
+      "local_idx": 30,
+      "title": "Organisme Hidup No. 1",
+      "word_count": 1541
+    },
+    "182": {
+      "chunk_idx": 3,
+      "local_idx": 31,
+      "title": "Lab Eksperimen #1",
+      "word_count": 1484
+    },
+    "183": {
+      "chunk_idx": 3,
+      "local_idx": 32,
+      "title": "Gunung Tulang Putih",
+      "word_count": 1520
+    },
+    "184": {
+      "chunk_idx": 3,
+      "local_idx": 33,
+      "title": "Kebangkitan",
+      "word_count": 1514
+    },
+    "185": {
+      "chunk_idx": 3,
+      "local_idx": 34,
+      "title": "The Gargamel",
+      "word_count": 1559
+    },
+    "186": {
+      "chunk_idx": 3,
+      "local_idx": 35,
+      "title": "Formasi Mantra Hisap",
+      "word_count": 1619
+    },
+    "187": {
+      "chunk_idx": 3,
+      "local_idx": 36,
+      "title": "Situasi Darurat",
+      "word_count": 1545
+    },
+    "188": {
+      "chunk_idx": 3,
+      "local_idx": 37,
+      "title": "Eksperimen Branding",
+      "word_count": 1491
+    },
+    "189": {
+      "chunk_idx": 3,
+      "local_idx": 38,
+      "title": "Perang Besar Penyihir",
+      "word_count": 1549
+    },
+    "190": {
+      "chunk_idx": 3,
+      "local_idx": 39,
+      "title": "Pesawat Rahasia Sungai Abadi",
+      "word_count": 1545
+    },
+    "191": {
+      "chunk_idx": 3,
+      "local_idx": 40,
+      "title": "Menerbitkan Misi",
+      "word_count": 1495
+    },
+    "192": {
+      "chunk_idx": 3,
+      "local_idx": 41,
+      "title": "Ruang Tersembunyi Perpustakaan",
+      "word_count": 1554
+    },
+    "193": {
+      "chunk_idx": 3,
+      "local_idx": 42,
+      "title": "Bahasa Turin",
+      "word_count": 1537
+    },
+    "194": {
+      "chunk_idx": 3,
+      "local_idx": 43,
+      "title": "Pemerasan",
+      "word_count": 1541
+    },
+    "195": {
+      "chunk_idx": 3,
+      "local_idx": 44,
+      "title": "Terburu-buru",
+      "word_count": 1515
+    },
+    "196": {
+      "chunk_idx": 3,
+      "local_idx": 45,
+      "title": "Kenalan",
+      "word_count": 1544
+    },
+    "197": {
+      "chunk_idx": 3,
+      "local_idx": 46,
+      "title": "George dan Bessita",
+      "word_count": 1666
+    },
+    "198": {
+      "chunk_idx": 3,
+      "local_idx": 47,
+      "title": "Jamu",
+      "word_count": 1420
+    },
+    "199": {
+      "chunk_idx": 3,
+      "local_idx": 48,
+      "title": "Jenis Tumbuhan-Transfigurasi",
+      "word_count": 1508
+    },
+    "200": {
+      "chunk_idx": 3,
+      "local_idx": 49,
+      "title": "Penyihir Kegelapan!",
+      "word_count": 1520
+    },
+    "201": {
+      "chunk_idx": 4,
+      "local_idx": 0,
+      "title": "Ledakan",
+      "word_count": 1462
+    },
+    "202": {
+      "chunk_idx": 4,
+      "local_idx": 1,
+      "title": "Kalung",
+      "word_count": 1441
+    },
+    "203": {
+      "chunk_idx": 4,
+      "local_idx": 2,
+      "title": "Kutukan",
+      "word_count": 1422
+    },
+    "204": {
+      "chunk_idx": 4,
+      "local_idx": 3,
+      "title": "Ngarai Marat",
+      "word_count": 1565
+    },
+    "205": {
+      "chunk_idx": 4,
+      "local_idx": 4,
+      "title": "Dolorin",
+      "word_count": 1541
+    },
+    "206": {
+      "chunk_idx": 4,
+      "local_idx": 5,
+      "title": "Penjaga Magus",
+      "word_count": 1590
+    },
+    "207": {
+      "chunk_idx": 4,
+      "local_idx": 6,
+      "title": "Panen",
+      "word_count": 1492
+    },
+    "208": {
+      "chunk_idx": 4,
+      "local_idx": 7,
+      "title": "Konflik dengan Ciel",
+      "word_count": 1454
+    },
+    "209": {
+      "chunk_idx": 4,
+      "local_idx": 8,
+      "title": "Dioptimalkan dan Mudah",
+      "word_count": 1444
+    },
+    "210": {
+      "chunk_idx": 4,
+      "local_idx": 9,
+      "title": "Serahkan",
+      "word_count": 1481
+    },
+    "211": {
+      "chunk_idx": 4,
+      "local_idx": 10,
+      "title": "Untuk Mengembalikan",
+      "word_count": 1501
+    },
+    "212": {
+      "chunk_idx": 4,
+      "local_idx": 11,
+      "title": "Poin Prestasi",
+      "word_count": 1516
+    },
+    "213": {
+      "chunk_idx": 4,
+      "local_idx": 12,
+      "title": "Penunjukan Baru",
+      "word_count": 1524
+    },
+    "214": {
+      "chunk_idx": 4,
+      "local_idx": 13,
+      "title": "Demonstrasi Kekuatan",
+      "word_count": 1523
+    },
+    "215": {
+      "chunk_idx": 4,
+      "local_idx": 14,
+      "title": "Wakil Ketua Tim Berburu",
+      "word_count": 1649
+    },
+    "216": {
+      "chunk_idx": 4,
+      "local_idx": 15,
+      "title": "Zona Berburu 3",
+      "word_count": 1584
+    },
+    "217": {
+      "chunk_idx": 4,
+      "local_idx": 16,
+      "title": "Kabut asap hitam",
+      "word_count": 1471
+    },
+    "218": {
+      "chunk_idx": 4,
+      "local_idx": 17,
+      "title": "Api Hitam",
+      "word_count": 1461
+    },
+    "219": {
+      "chunk_idx": 4,
+      "local_idx": 18,
+      "title": "Penangkaran Total",
+      "word_count": 1548
+    },
+    "220": {
+      "chunk_idx": 4,
+      "local_idx": 19,
+      "title": "Acolyte",
+      "word_count": 1496
+    },
+    "221": {
+      "chunk_idx": 4,
+      "local_idx": 20,
+      "title": "Menyelamatkan Seorang Gadis Dalam Kesusahan",
+      "word_count": 1388
+    },
+    "222": {
+      "chunk_idx": 4,
+      "local_idx": 21,
+      "title": "Rupa",
+      "word_count": 1365
+    },
+    "223": {
+      "chunk_idx": 4,
+      "local_idx": 22,
+      "title": "Logam Cair",
+      "word_count": 1436
+    },
+    "224": {
+      "chunk_idx": 4,
+      "local_idx": 23,
+      "title": "Logam Dan Gravitasi",
+      "word_count": 1417
+    },
+    "225": {
+      "chunk_idx": 4,
+      "local_idx": 24,
+      "title": "Buka",
+      "word_count": 1474
+    },
+    "226": {
+      "chunk_idx": 4,
+      "local_idx": 25,
+      "title": "Permulaan",
+      "word_count": 1465
+    },
+    "227": {
+      "chunk_idx": 4,
+      "local_idx": 26,
+      "title": "Transisi",
+      "word_count": 1421
+    },
+    "228": {
+      "chunk_idx": 4,
+      "local_idx": 27,
+      "title": "Mengejar",
+      "word_count": 1520
+    },
+    "229": {
+      "chunk_idx": 4,
+      "local_idx": 28,
+      "title": "Penentuan",
+      "word_count": 1500
+    },
+    "230": {
+      "chunk_idx": 4,
+      "local_idx": 29,
+      "title": "Dibunuh",
+      "word_count": 1458
+    },
+    "231": {
+      "chunk_idx": 4,
+      "local_idx": 30,
+      "title": "Burung kotor jahat",
+      "word_count": 1457
+    },
+    "232": {
+      "chunk_idx": 4,
+      "local_idx": 31,
+      "title": "Inspektur Patroli Markas Besar",
+      "word_count": 1595
+    },
+    "233": {
+      "chunk_idx": 4,
+      "local_idx": 32,
+      "title": "Menipu",
+      "word_count": 1554
+    },
+    "234": {
+      "chunk_idx": 4,
+      "local_idx": 33,
+      "title": "Menggunakan Pelarut",
+      "word_count": 1516
+    },
+    "235": {
+      "chunk_idx": 4,
+      "local_idx": 34,
+      "title": "Pertemuan",
+      "word_count": 1549
+    },
+    "236": {
+      "chunk_idx": 4,
+      "local_idx": 35,
+      "title": "Pesona",
+      "word_count": 1466
+    },
+    "237": {
+      "chunk_idx": 4,
+      "local_idx": 36,
+      "title": "Penipuan",
+      "word_count": 1372
+    },
+    "238": {
+      "chunk_idx": 4,
+      "local_idx": 37,
+      "title": "Kambing hitam",
+      "word_count": 1670
+    },
+    "239": {
+      "chunk_idx": 4,
+      "local_idx": 38,
+      "title": "Penampilan Blood Rogue",
+      "word_count": 1573
+    },
+    "240": {
+      "chunk_idx": 4,
+      "local_idx": 39,
+      "title": "Malaikat Suci",
+      "word_count": 1544
+    },
+    "241": {
+      "chunk_idx": 4,
+      "local_idx": 40,
+      "title": "Membunuh Pierre",
+      "word_count": 1560
+    },
+    "242": {
+      "chunk_idx": 4,
+      "local_idx": 41,
+      "title": "Kantong Kulit",
+      "word_count": 1439
+    },
+    "243": {
+      "chunk_idx": 4,
+      "local_idx": 42,
+      "title": "Perlindungan",
+      "word_count": 1698
+    },
+    "244": {
+      "chunk_idx": 4,
+      "local_idx": 43,
+      "title": "Pembunuhan",
+      "word_count": 1601
+    },
+    "245": {
+      "chunk_idx": 4,
+      "local_idx": 44,
+      "title": "Sekejap Mata",
+      "word_count": 1540
+    },
+    "246": {
+      "chunk_idx": 4,
+      "local_idx": 45,
+      "title": "Berselisih",
+      "word_count": 1483
+    },
+    "247": {
+      "chunk_idx": 4,
+      "local_idx": 46,
+      "title": "Ular Menyala",
+      "word_count": 1503
+    },
+    "248": {
+      "chunk_idx": 4,
+      "local_idx": 47,
+      "title": "Kemunculan Magus Peringkat 2",
+      "word_count": 1463
+    },
+    "249": {
+      "chunk_idx": 4,
+      "local_idx": 48,
+      "title": "Mengakui",
+      "word_count": 1555
+    },
+    "250": {
+      "chunk_idx": 4,
+      "local_idx": 49,
+      "title": "Lightning Corp",
+      "word_count": 1571
+    },
+    "251": {
+      "chunk_idx": 5,
+      "local_idx": 0,
+      "title": "Penyuapan",
+      "word_count": 1616
+    },
+    "252": {
+      "chunk_idx": 5,
+      "local_idx": 1,
+      "title": "Tak terkendali",
+      "word_count": 1657
+    },
+    "253": {
+      "chunk_idx": 5,
+      "local_idx": 2,
+      "title": "Terungkap",
+      "word_count": 1491
+    },
+    "254": {
+      "chunk_idx": 5,
+      "local_idx": 3,
+      "title": "Kueri",
+      "word_count": 1531
+    },
+    "255": {
+      "chunk_idx": 5,
+      "local_idx": 4,
+      "title": "Token Kontribusi",
+      "word_count": 1507
+    },
+    "256": {
+      "chunk_idx": 5,
+      "local_idx": 5,
+      "title": "Ancaman",
+      "word_count": 1527
+    },
+    "257": {
+      "chunk_idx": 5,
+      "local_idx": 6,
+      "title": "Bintang Laut Bermata Seribu",
+      "word_count": 1520
+    },
+    "258": {
+      "chunk_idx": 5,
+      "local_idx": 7,
+      "title": "Prestasi",
+      "word_count": 1586
+    },
+    "259": {
+      "chunk_idx": 5,
+      "local_idx": 8,
+      "title": "Persiapan",
+      "word_count": 1625
+    },
+    "260": {
+      "chunk_idx": 5,
+      "local_idx": 9,
+      "title": "Babak Lain",
+      "word_count": 1535
+    },
+    "261": {
+      "chunk_idx": 5,
+      "local_idx": 10,
+      "title": "Perselisihan",
+      "word_count": 1501
+    },
+    "262": {
+      "chunk_idx": 5,
+      "local_idx": 11,
+      "title": "Untuk Menginformasikan",
+      "word_count": 1485
+    },
+    "263": {
+      "chunk_idx": 5,
+      "local_idx": 12,
+      "title": "Pengaktifan",
+      "word_count": 1469
+    },
+    "264": {
+      "chunk_idx": 5,
+      "local_idx": 13,
+      "title": "Kristalisasi Kekuatan Spiritual",
+      "word_count": 1547
+    },
+    "265": {
+      "chunk_idx": 5,
+      "local_idx": 14,
+      "title": "Rune Penghancuran Diri",
+      "word_count": 1518
+    },
+    "266": {
+      "chunk_idx": 5,
+      "local_idx": 15,
+      "title": "Beracun",
+      "word_count": 1494
+    },
+    "267": {
+      "chunk_idx": 5,
+      "local_idx": 16,
+      "title": "Sentuhan Panas",
+      "word_count": 1498
+    },
+    "268": {
+      "chunk_idx": 5,
+      "local_idx": 17,
+      "title": "Pemusnahan",
+      "word_count": 1518
+    },
+    "269": {
+      "chunk_idx": 5,
+      "local_idx": 18,
+      "title": "Aransemen",
+      "word_count": 1508
+    },
+    "270": {
+      "chunk_idx": 5,
+      "local_idx": 19,
+      "title": "Kembali Ke Kota",
+      "word_count": 1718
+    },
+    "271": {
+      "chunk_idx": 5,
+      "local_idx": 20,
+      "title": "Materialisasi",
+      "word_count": 1540
+    },
+    "272": {
+      "chunk_idx": 5,
+      "local_idx": 21,
+      "title": "Memperbaiki",
+      "word_count": 1444
+    },
+    "273": {
+      "chunk_idx": 5,
+      "local_idx": 22,
+      "title": "Pintu Besi Brambles",
+      "word_count": 1636
+    },
+    "274": {
+      "chunk_idx": 5,
+      "local_idx": 23,
+      "title": "Pengumpulan Informasi",
+      "word_count": 1513
+    },
+    "275": {
+      "chunk_idx": 5,
+      "local_idx": 24,
+      "title": "Acara Perdagangan",
+      "word_count": 1577
+    },
+    "276": {
+      "chunk_idx": 5,
+      "local_idx": 25,
+      "title": "Lema",
+      "word_count": 1592
+    },
+    "277": {
+      "chunk_idx": 5,
+      "local_idx": 26,
+      "title": "Kilauan Fajar Pertama",
+      "word_count": 1565
+    },
+    "278": {
+      "chunk_idx": 5,
+      "local_idx": 27,
+      "title": "Umpan",
+      "word_count": 1504
+    },
+    "279": {
+      "chunk_idx": 5,
+      "local_idx": 28,
+      "title": "Serigala Tunggal",
+      "word_count": 1580
+    },
+    "280": {
+      "chunk_idx": 5,
+      "local_idx": 29,
+      "title": "Peringkat 3",
+      "word_count": 1532
+    },
+    "281": {
+      "chunk_idx": 5,
+      "local_idx": 30,
+      "title": "Sage",
+      "word_count": 1512
+    },
+    "282": {
+      "chunk_idx": 5,
+      "local_idx": 31,
+      "title": "Obstruksi",
+      "word_count": 1447
+    },
+    "283": {
+      "chunk_idx": 5,
+      "local_idx": 32,
+      "title": "Selamat tinggal",
+      "word_count": 1467
+    },
+    "284": {
+      "chunk_idx": 5,
+      "local_idx": 33,
+      "title": "Kecakapan",
+      "word_count": 1509
+    },
+    "285": {
+      "chunk_idx": 5,
+      "local_idx": 34,
+      "title": "Pengejaran",
+      "word_count": 1474
+    },
+    "286": {
+      "chunk_idx": 5,
+      "local_idx": 35,
+      "title": "Milik",
+      "word_count": 1529
+    },
+    "287": {
+      "chunk_idx": 5,
+      "local_idx": 36,
+      "title": "Teleportasi",
+      "word_count": 1446
+    },
+    "288": {
+      "chunk_idx": 5,
+      "local_idx": 37,
+      "title": "Cedera",
+      "word_count": 1410
+    },
+    "289": {
+      "chunk_idx": 5,
+      "local_idx": 38,
+      "title": "Mandul",
+      "word_count": 1526
+    },
+    "290": {
+      "chunk_idx": 5,
+      "local_idx": 39,
+      "title": "Bantuan yang Dibutuhkan",
+      "word_count": 1718
+    },
+    "291": {
+      "chunk_idx": 5,
+      "local_idx": 40,
+      "title": "Harta",
+      "word_count": 1621
+    },
+    "292": {
+      "chunk_idx": 5,
+      "local_idx": 41,
+      "title": "Kota Potter",
+      "word_count": 1557
+    },
+    "293": {
+      "chunk_idx": 5,
+      "local_idx": 42,
+      "title": "Membuka Toko",
+      "word_count": 1509
+    },
+    "294": {
+      "chunk_idx": 5,
+      "local_idx": 43,
+      "title": "Pedang Meteor",
+      "word_count": 1468
+    },
+    "295": {
+      "chunk_idx": 5,
+      "local_idx": 44,
+      "title": "Main",
+      "word_count": 1523
+    },
+    "296": {
+      "chunk_idx": 5,
+      "local_idx": 45,
+      "title": "Plot Twist",
+      "word_count": 1453
+    },
+    "297": {
+      "chunk_idx": 5,
+      "local_idx": 46,
+      "title": "Baelin Dan Gadis",
+      "word_count": 1515
+    },
+    "298": {
+      "chunk_idx": 5,
+      "local_idx": 47,
+      "title": "Menyelamatkan",
+      "word_count": 1503
+    },
+    "299": {
+      "chunk_idx": 5,
+      "local_idx": 48,
+      "title": "Kuncup Bunga Berdarah Naga",
+      "word_count": 1467
+    },
+    "300": {
+      "chunk_idx": 5,
+      "local_idx": 49,
+      "title": "Naga Bumi Bertanduk Kambing",
+      "word_count": 1539
+    }
+  }
+}
