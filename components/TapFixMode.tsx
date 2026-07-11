@@ -273,7 +273,7 @@ export default function TapFixMode({ slug, contentRef, nickname }: Props) {
         title={active ? "Matikan Mode Perbaiki Kata" : "Aktifkan Mode Perbaiki Kata (tap kata untuk edit)"}
         aria-label="Mode Perbaiki Kata"
         aria-pressed={active}
-        className={`fixed z-40 bottom-20 right-4 sm:bottom-6 sm:right-6 w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-2xl font-bold transition-all duration-200 select-none touch-manipulation ${
+        className={`fixed z-40 bottom-20 right-4 sm:bottom-6 sm:right-6 w-10 h-10 rounded-full shadow-lg flex items-center justify-center text-base font-bold transition-all duration-200 select-none touch-manipulation ${
           active
             ? "bg-accent text-white scale-110 ring-4 ring-accent/30 animate-pulse"
             : "bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-200 border border-black/10 dark:border-white/10 hover:scale-105"

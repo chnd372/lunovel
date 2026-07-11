@@ -39,7 +39,7 @@ export default function Navbar() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const [q, setQ] = useState("");
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
+  const [genres, setGenres] = useState<string[]>([]);
 
   useEffect(() => {
     const isDark = document.documentElement.classList.contains("dark");
@@ -49,7 +49,6 @@ export default function Navbar() {
   // Close drawer on route change so the user lands on the new page cleanly
   useEffect(() => {
     setMobileOpen(false);
-    setSearchOpen(false);
   }, [pathname]);
 
   // Body scroll lock + ESC-to-close while the drawer is open
@@ -60,7 +59,6 @@ export default function Navbar() {
     function onKey(e: KeyboardEvent) {
       if (e.key === "Escape") {
         setMobileOpen(false);
-        setSearchOpen(false);
       }
     }
     window.addEventListener("keydown", onKey);
@@ -69,6 +67,22 @@ export default function Navbar() {
       window.removeEventListener("keydown", onKey);
     };
   }, [mobileOpen]);
+
+  // Lazy-load genres from the public search endpoint once the drawer mounts.
+  // We only render genres inside the mobile drawer, so we only fetch on demand.
+  useEffect(() => {
+    if (!mobileOpen || genres.length > 0) return;
+    let cancelled = false;
+    fetch("/api/genres")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((data: string[]) => {
+        if (!cancelled) setGenres(Array.isArray(data) ? data : []);
+      })
+      .catch(() => {/* swallow — drawer still works without genres */});
+    return () => {
+      cancelled = true;
+    };
+  }, [mobileOpen, genres.length]);
 
   function toggleTheme() {
     const next = theme === "dark" ? "light" : "dark";
@@ -81,21 +95,20 @@ export default function Navbar() {
     e.preventDefault();
     const term = q.trim();
     if (term) {
-      setSearchOpen(false);
       setMobileOpen(false);
       router.push(`/search?q=${encodeURIComponent(term)}`);
     }
   }
 
   return (
-    <header className="sticky top-0 z-40 bg-bg-light/90 dark:bg-bg-dark/90 backdrop-blur border-b border-black/10 dark:border-white/10">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 h-16 flex items-center gap-2 sm:gap-4">
+    <header className="sticky top-0 z-40 bg-bg-light dark:bg-bg-dark md:bg-bg-light/90 md:dark:bg-bg-dark/90 md:backdrop-blur border-b border-black/10 dark:border-white/10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 h-12 md:h-16 flex items-center gap-2 sm:gap-4">
         {/* Logo */}
         <Link
           href="/"
-          className="text-lg sm:text-xl font-bold text-accent shrink-0 flex items-center gap-1.5 sm:gap-2"
+          className="text-base sm:text-xl font-bold text-accent shrink-0 flex items-center gap-1.5 sm:gap-2"
         >
-          <span className="text-2xl">🌙</span>
+          <span className="text-xl sm:text-2xl">🌙</span>
           <span className="font-serif tracking-tight">{siteName}</span>
         </Link>
 
@@ -129,23 +142,23 @@ export default function Navbar() {
           />
         </form>
 
-        {/* Mobile right cluster: search toggle, theme, hamburger */}
-        <div className="ml-auto flex items-center gap-1 md:gap-2 md:ml-0">
-          {/* Mobile: search toggle (icon only when collapsed, full bar when expanded) */}
+        {/* Mobile right cluster: search + theme + hamburger.
+            Header is 48px tall, so icons only — search input lives in the drawer. */}
+        <div className="ml-auto flex items-center gap-0.5 md:gap-2 md:ml-0">
+          {/* Search — routes to /search page on mobile (no overlay) */}
           <button
-            onClick={() => setSearchOpen((v) => !v)}
-            aria-label={searchOpen ? "Tutup pencarian" : "Buka pencarian"}
-            aria-expanded={searchOpen}
-            className="md:hidden p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 shrink-0 text-lg"
+            onClick={() => router.push("/search")}
+            aria-label="Buka pencarian"
+            className="md:hidden p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 shrink-0 text-lg leading-none"
           >
-            {searchOpen ? "✕" : "🔍"}
+            🔍
           </button>
 
           {/* Theme */}
           <button
             onClick={toggleTheme}
             aria-label={theme === "dark" ? "Mode terang" : "Mode gelap"}
-            className="p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 shrink-0 text-lg"
+            className="md:hidden p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 shrink-0 text-lg leading-none"
           >
             {theme === "dark" ? "☀️" : "🌙"}
           </button>
@@ -155,30 +168,11 @@ export default function Navbar() {
             onClick={() => setMobileOpen(true)}
             aria-label="Buka menu"
             aria-expanded={mobileOpen}
-            className="md:hidden p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 shrink-0 text-lg"
+            className="md:hidden p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 shrink-0 text-xl leading-none"
           >
             ☰
           </button>
         </div>
-      </div>
-
-      {/* Mobile expanded search bar — full width, slides down under header */}
-      <div
-        className={`md:hidden overflow-hidden border-t border-black/5 dark:border-white/5 transition-[max-height,opacity] duration-200 ease-out ${
-          searchOpen ? "max-h-20 opacity-100" : "max-h-0 opacity-0"
-        }`}
-        aria-hidden={!searchOpen}
-      >
-        <form onSubmit={onSearch} className="px-3 py-2 bg-bg-light/95 dark:bg-bg-dark/95">
-          <input
-            type="search"
-            autoFocus={searchOpen}
-            placeholder="Cari novel, penulis, genre..."
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-            className="w-full px-3 py-2 rounded-lg bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-          />
-        </form>
       </div>
 
       {/* Mobile drawer */}
@@ -206,7 +200,7 @@ export default function Navbar() {
           }`}
         >
           {/* Drawer header */}
-          <div className="flex items-center justify-between px-4 h-16 border-b border-black/10 dark:border-white/10 shrink-0">
+          <div className="flex items-center justify-between px-4 h-12 md:h-16 border-b border-black/10 dark:border-white/10 shrink-0">
             <span className="font-bold text-accent flex items-center gap-2">
               <span>🌙</span>
               <span className="font-serif">{siteName}</span>
@@ -222,6 +216,20 @@ export default function Navbar() {
 
           {/* Drawer nav — tap targets ≥44px per Apple HIG */}
           <nav className="flex-1 overflow-y-auto py-2">
+            {/* Search input (mobile only — desktop has inline search in header) */}
+            <form onSubmit={onSearch} className="md:hidden px-3 pb-3">
+              <div className="relative">
+                <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-sm opacity-50">🔍</span>
+                <input
+                  type="search"
+                  placeholder="Cari novel, penulis..."
+                  value={q}
+                  onChange={(e) => setQ(e.target.value)}
+                  className="w-full pl-8 pr-3 py-2 rounded-lg bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                />
+              </div>
+            </form>
+
             {NAV_ITEMS.map((item) => {
               const active = item.match ? item.match(pathname) : false;
               return (
@@ -240,6 +248,27 @@ export default function Navbar() {
                 </Link>
               );
             })}
+
+            {/* Genres — only inside drawer on mobile (per spec). Desktop renders them inline on home. */}
+            {genres.length > 0 && (
+              <div className="md:hidden mt-4 px-4 pb-2 border-t border-black/5 dark:border-white/5 pt-3">
+                <h3 className="text-[11px] uppercase tracking-wider opacity-50 font-bold mb-2">
+                  Genre
+                </h3>
+                <div className="flex flex-wrap gap-1.5">
+                  {genres.map((g) => (
+                    <Link
+                      key={g}
+                      href={`/search?genre=${encodeURIComponent(g)}`}
+                      onClick={() => setMobileOpen(false)}
+                      className="px-2.5 py-1 text-xs rounded-full bg-black/5 dark:bg-white/10 hover:bg-accent hover:text-white transition"
+                    >
+                      {g}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </nav>
 
           {/* Drawer footer: theme toggle */}

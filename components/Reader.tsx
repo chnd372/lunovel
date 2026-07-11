@@ -175,35 +175,190 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
     return () => window.removeEventListener("scroll", onScroll);
   }, [novel.id, chapter.id, chapter.number]);
 
-  // Keyboard nav
+  // Keyboard nav + help overlay
+  const [showHelp, setShowHelp] = useState(false);
   useEffect(() => {
+    function isEditable(el: EventTarget | null): boolean {
+      if (!(el instanceof HTMLElement)) return false;
+      const tag = el.tagName;
+      return (
+        tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" ||
+        el.isContentEditable
+      );
+    }
     function onKey(e: KeyboardEvent) {
-      if (e.key === "ArrowLeft" && prevChapter) {
+      // Help overlay first so Esc inside it doesn't trigger reader nav.
+      if (showHelp) {
+        if (e.key === "Escape" || e.key === "?") {
+          e.preventDefault();
+          setShowHelp(false);
+        }
+        return;
+      }
+      if (isEditable(e.target)) return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+      const k = e.key;
+      // Help
+      if (k === "?" || (e.shiftKey && k === "/")) {
+        e.preventDefault();
+        setShowHelp(true);
+        return;
+      }
+      // Prev chapter
+      if ((k === "ArrowLeft" || k === "a" || k === "A") && prevChapter) {
+        e.preventDefault();
         router.push(`/read/${novel.slug}/${prevChapter.number}`);
-      } else if (e.key === "ArrowRight" && nextChapter) {
+        return;
+      }
+      // Next chapter
+      if ((k === "ArrowRight" || k === "d" || k === "D") && nextChapter) {
+        e.preventDefault();
         router.push(`/read/${novel.slug}/${nextChapter.number}`);
-      } else if (e.key === "Escape") {
+        return;
+      }
+      // Scroll top
+      if (k === "Home" || k === "t" || k === "T") {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+      // Scroll bottom
+      if (k === "End" || k === "b" || k === "B") {
+        e.preventDefault();
+        window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
+        return;
+      }
+      // Back to novel page
+      if (k === "Escape") {
         router.push(`/novel/${novel.slug}`);
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [router, novel.slug, prevChapter, nextChapter]);
+  }, [router, novel.slug, prevChapter, nextChapter, showHelp]);
 
   const theme = themes[settings.theme];
   const minutes = estimateReadingMinutes(chapter.word_count);
         const paragraphs = chapterContent.split(/\n\n+/);
+
+  // Share state
+  const [shareOpen, setShareOpen] = useState(false);
+  const [toast, setToast] = useState<string | null>(null);
+  // Close share dropdown on outside click + escape
+  const shareRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!shareOpen) return;
+    function onDoc(e: MouseEvent) {
+      if (shareRef.current && !shareRef.current.contains(e.target as Node)) {
+        setShareOpen(false);
+      }
+    }
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        e.stopPropagation();
+        e.preventDefault();
+        setShareOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", onDoc);
+    document.addEventListener("keydown", onKey, true);
+    return () => {
+      document.removeEventListener("mousedown", onDoc);
+      document.removeEventListener("keydown", onKey, true);
+    };
+  }, [shareOpen]);
+  // Auto-dismiss toast
+  useEffect(() => {
+    if (!toast) return;
+    const id = setTimeout(() => setToast(null), 2200);
+    return () => clearTimeout(id);
+  }, [toast]);
+
+  function showToast(msg: string) {
+    setToast(msg);
+  }
+
+  function buildShareUrl() {
+    if (typeof window === "undefined") return "";
+    return `${window.location.origin}/read/${novel.slug}/${chapter.number}`;
+  }
+  function buildShareText() {
+    return `Baca ${novel.title} Ch ${chapter.number} di Lunovel`;
+  }
+
+  async function copyLink() {
+    const url = buildShareUrl();
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(url);
+      } else {
+        // Fallback for non-secure contexts
+        const ta = document.createElement("textarea");
+        ta.value = url;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+      }
+      showToast("Link berhasil disalin!");
+      setShareOpen(false);
+    } catch {
+      showToast("Gagal menyalin link");
+    }
+  }
+
+  async function nativeShare() {
+    if (typeof navigator === "undefined" || !navigator.share) return;
+    try {
+      await navigator.share({
+        title: `${novel.title} — Chapter ${chapter.number}`,
+        text: buildShareText(),
+        url: buildShareUrl(),
+      });
+      setShareOpen(false);
+    } catch (err) {
+      // User cancellation throws AbortError — silently ignore
+      if ((err as DOMException)?.name !== "AbortError") {
+        showToast("Gagal membagikan");
+      }
+    }
+  }
+
+  function openShare(target: "wa" | "tg" | "tw") {
+    const url = buildShareUrl();
+    const text = buildShareText();
+    let href = "";
+    if (target === "wa") {
+      href = `https://wa.me/?text=${encodeURIComponent(`${text}: ${url}`)}`;
+    } else if (target === "tg") {
+      href = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+    } else {
+      href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    }
+    window.open(href, "_blank", "noopener,noreferrer");
+    setShareOpen(false);
+  }
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${theme.bg} ${theme.text}`}>
       {/* Hide the site Navbar when in reader — we manage our own header */}
       <style dangerouslySetInnerHTML={{ __html: `header.sticky, [data-bottom-nav] { display: none !important; }` }} />
       
-      {/* Top progress bar */}
-      <div className="fixed top-0 left-0 right-0 h-1 bg-black/5 z-50">
+      {/* Top progress bar — 3px, gradient, GPU-smooth via scaleX */}
+      <div
+        className="fixed top-0 left-0 right-0 h-[3px] z-50 pointer-events-none"
+        style={{ background: "linear-gradient(to right, rgba(237,78,8,0.08), rgba(237,78,8,0.15))" }}
+      >
         <div
-          className="h-full bg-accent transition-all duration-150"
-          style={{ width: `${progress}%` }}
+          className="h-full origin-left will-change-transform"
+          style={{
+            transform: `scaleX(${progress / 100})`,
+            background: "linear-gradient(to right, #ed4e08 0%, #ff6a2a 50%, #ed4e08 100%)",
+            transition: "transform 150ms cubic-bezier(0.4, 0, 0.2, 1)",
+          }}
         />
       </div>
 
@@ -441,7 +596,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
         <div className="mt-16 pt-8 border-t border-current/10 text-center">
           <div className="text-3xl mb-4 opacity-30">⁂</div>
           <p className="text-sm opacity-60 mb-6">Akhir Chapter {chapter.number}</p>
-          <div className="flex gap-3 justify-center flex-wrap">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-stretch sm:items-center sm:justify-center">
             {prevChapter ? (
               <button
                 onClick={() => router.push(`/read/${novel.slug}/${prevChapter.number}`)}
@@ -458,6 +613,68 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
             >
               📋 Daftar Chapter
             </button>
+
+            {/* Share button + dropdown */}
+            <div ref={shareRef} className="relative">
+              <button
+                onClick={() => setShareOpen((v) => !v)}
+                aria-label="Bagikan chapter"
+                aria-expanded={shareOpen}
+                className="w-full px-4 py-2 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-sm font-medium inline-flex items-center justify-center gap-1.5"
+              >
+                🔗 <span>Bagikan</span>
+              </button>
+              {shareOpen && (
+                <div
+                  role="menu"
+                  className={`absolute bottom-full mb-2 left-1/2 -translate-x-1/2 sm:left-auto sm:right-0 sm:translate-x-0 min-w-[220px] rounded-xl shadow-2xl border border-black/10 dark:border-white/10 overflow-hidden z-10 ${theme.bg}`}
+                >
+                  {/* Native share — first option if supported */}
+                  {typeof navigator !== "undefined" && typeof navigator.share === "function" && (
+                    <button
+                      onClick={nativeShare}
+                      role="menuitem"
+                      className="w-full text-left px-4 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/10 flex items-center gap-3"
+                    >
+                      <span className="text-base">📤</span>
+                      <span>Bagikan...</span>
+                    </button>
+                  )}
+                  <button
+                    onClick={copyLink}
+                    role="menuitem"
+                    className="w-full text-left px-4 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/10 flex items-center gap-3"
+                  >
+                    <span className="text-base">📋</span>
+                    <span>Copy Link</span>
+                  </button>
+                  <button
+                    onClick={() => openShare("wa")}
+                    role="menuitem"
+                    className="w-full text-left px-4 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/10 flex items-center gap-3"
+                  >
+                    <span className="text-base">💬</span>
+                    <span>WhatsApp</span>
+                  </button>
+                  <button
+                    onClick={() => openShare("tg")}
+                    role="menuitem"
+                    className="w-full text-left px-4 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/10 flex items-center gap-3"
+                  >
+                    <span className="text-base">✈️</span>
+                    <span>Telegram</span>
+                  </button>
+                  <button
+                    onClick={() => openShare("tw")}
+                    role="menuitem"
+                    className="w-full text-left px-4 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/10 flex items-center gap-3"
+                  >
+                    <span className="text-base">🐦</span>
+                    <span>Twitter / X</span>
+                  </button>
+                </div>
+              )}
+            </div>
             {nextChapter ? (
               <button
                 onClick={() => router.push(`/read/${novel.slug}/${nextChapter.number}`)}
@@ -477,6 +694,70 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
         chapterId={chapter.id}
         novelId={novel.id}
       />
+
+      {/* Toast */}
+      {toast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed bottom-16 right-4 z-[55] px-4 py-2.5 rounded-xl text-sm font-medium shadow-2xl"
+          style={{ background: "#1f2937", color: "#fff" }}
+        >
+          {toast}
+        </div>
+      )}
+
+      {/* Keyboard help overlay */}
+      {showHelp && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center p-4"
+          style={{ background: "rgba(0,0,0,0.6)" }}
+          onClick={() => setShowHelp(false)}
+        >
+          <div
+            className={`max-w-sm w-full rounded-2xl p-6 shadow-2xl ${theme.bg} ${theme.text}`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-bold">Keyboard Shortcuts</h2>
+              <button
+                onClick={() => setShowHelp(false)}
+                className="opacity-60 hover:opacity-100 text-sm"
+                aria-label="Close"
+              >
+                ✕
+              </button>
+            </div>
+            <ul className="space-y-2 text-sm">
+              <li className="flex justify-between gap-4">
+                <span>Chapter sebelumnya</span>
+                <kbd className="px-1.5 py-0.5 rounded bg-black/10 dark:bg-white/10 font-mono text-[11px]">← / A</kbd>
+              </li>
+              <li className="flex justify-between gap-4">
+                <span>Chapter selanjutnya</span>
+                <kbd className="px-1.5 py-0.5 rounded bg-black/10 dark:bg-white/10 font-mono text-[11px]">→ / D</kbd>
+              </li>
+              <li className="flex justify-between gap-4">
+                <span>Scroll ke atas</span>
+                <kbd className="px-1.5 py-0.5 rounded bg-black/10 dark:bg-white/10 font-mono text-[11px]">Home / T</kbd>
+              </li>
+              <li className="flex justify-between gap-4">
+                <span>Scroll ke bawah</span>
+                <kbd className="px-1.5 py-0.5 rounded bg-black/10 dark:bg-white/10 font-mono text-[11px]">End / B</kbd>
+              </li>
+              <li className="flex justify-between gap-4">
+                <span>Kembali ke daftar chapter</span>
+                <kbd className="px-1.5 py-0.5 rounded bg-black/10 dark:bg-white/10 font-mono text-[11px]">Esc</kbd>
+              </li>
+              <li className="flex justify-between gap-4">
+                <span>Bantuan ini</span>
+                <kbd className="px-1.5 py-0.5 rounded bg-black/10 dark:bg-white/10 font-mono text-[11px]">?</kbd>
+              </li>
+            </ul>
+            <p className="mt-4 text-[11px] opacity-60 text-center">Tekan Esc atau ? untuk tutup</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

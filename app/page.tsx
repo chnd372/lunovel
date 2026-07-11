@@ -1,10 +1,17 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllNovels, getChaptersByNovel, allGenres } from "@/lib/data";
+import {
+  getAllNovels,
+  getChaptersByNovel,
+  allGenres,
+  getLatestChapters,
+} from "@/lib/data";
 import NovelCard from "@/components/NovelCard";
 import ContinueReading from "@/components/ContinueReading";
 import SiteStats from "@/components/SiteStats";
 import HomeTabs from "@/components/HomeTabs";
+import MobileFeaturedSlider from "@/components/MobileFeaturedSlider";
+import MobileLatestChapters from "@/components/MobileLatestChapters";
 
 export const dynamic = "force-dynamic";
 
@@ -35,11 +42,12 @@ export default async function HomePage() {
 
   const featured = enriched[0];
   const rest = enriched.slice(1);
+  const latestChapters = await getLatestChapters(8);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6 space-y-8">
-      {/* Hero */}
-      <section className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-accent/15 via-accent/5 to-transparent border border-accent/20">
+    <div className="max-w-7xl mx-auto px-3 md:px-4 py-3 md:py-6 space-y-4 md:space-y-8">
+      {/* === DESKTOP HERO (md+) — unchanged from original === */}
+      <section className="hidden md:block relative rounded-2xl overflow-hidden bg-gradient-to-br from-accent/15 via-accent/5 to-transparent border border-accent/20">
         <div className="px-6 sm:px-10 py-8 sm:py-12 flex flex-col sm:flex-row items-center gap-6">
           <div className="flex-1 space-y-3">
             <div className="text-xs uppercase tracking-widest text-accent font-bold">
@@ -71,6 +79,18 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* === MOBILE HERO REPLACEMENT (mobile only) === */}
+      {enriched.length > 0 && (
+        <div className="md:hidden">
+          <MobileFeaturedSlider
+            items={enriched.slice(0, 3).map((e) => ({
+              novel: e.novel,
+              chapterCount: e.chapterCount,
+            }))}
+          />
+        </div>
+      )}
+
       {enriched.length === 0 ? (
         <div className="text-center py-20">
           <p className="text-4xl mb-3">📚</p>
@@ -81,15 +101,70 @@ export default async function HomePage() {
         </div>
       ) : (
         <>
-          {/* Continue Reading — client-side, only shows if user has history */}
-          <ContinueReading />
+          {/* Continue Reading — client-side, only shows if user has history.
+              On mobile we hide it because BottomNav already exposes "Baca". */}
+          <div className="hidden md:block">
+            <ContinueReading />
+          </div>
 
-          {/* Site Stats */}
-          <SiteStats />
+          {/* Site Stats — desktop only */}
+          <div className="hidden md:block">
+            <SiteStats />
+          </div>
 
-          {/* Featured */}
+          {/* === MOBILE: Update Terbaru (horizontal compact grid) === */}
+          {rest.length > 0 && (
+            <section className="md:hidden">
+              <div className="flex items-center justify-between mb-2 px-0">
+                <h2 className="text-sm font-bold uppercase tracking-wider opacity-80">
+                  📚 Update Terbaru
+                </h2>
+                <Link
+                  href="/search"
+                  className="text-[11px] font-semibold text-accent hover:underline"
+                >
+                  LIHAT SEMUA →
+                </Link>
+              </div>
+              <div className="-mx-3 overflow-x-auto scrollbar-none">
+                <div className="flex gap-2.5 px-3 pb-1">
+                  {enriched.map(({ novel, chapterCount, lastChapter }) => (
+                    <Link
+                      key={novel.id}
+                      href={`/novel/${novel.slug}`}
+                      className="shrink-0 w-[30vw] max-w-[140px] group"
+                    >
+                      <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-accent/10 mb-1.5">
+                        {novel.cover ? (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img
+                            src={novel.cover}
+                            alt={novel.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-3xl">📖</div>
+                        )}
+                      </div>
+                      <div className="text-xs font-semibold leading-tight line-clamp-1">
+                        {novel.title}
+                      </div>
+                      {lastChapter && (
+                        <div className="text-[10px] opacity-60 line-clamp-1">
+                          Chapter {lastChapter.number}
+                        </div>
+                      )}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* === DESKTOP: Featured card (unchanged) === */}
           {featured && (
-            <section>
+            <section className="hidden md:block">
               <Link
                 href={`/novel/${featured.novel.slug}`}
                 className="block group rounded-xl overflow-hidden bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 hover:shadow-lg transition-all"
@@ -135,14 +210,17 @@ export default async function HomePage() {
             </section>
           )}
 
-          {/* Genre-based tabs + Update Terbaru (replaces old genre chips + cards) */}
-          <section>
+          {/* === MOBILE: Latest chapters list === */}
+          <MobileLatestChapters items={latestChapters} />
+
+          {/* === DESKTOP: Genre-based tabs + Update Terbaru === */}
+          <section className="hidden md:block">
             <HomeTabs enriched={enriched} />
           </section>
 
-          {/* Quick genre links */}
+          {/* === DESKTOP: Quick genre links (hidden on mobile — moved to drawer) === */}
           {genres.length > 0 && (
-            <section>
+            <section className="hidden md:block">
               <h2 className="text-lg sm:text-xl font-bold mb-3">Jelajahi Genre</h2>
               <div className="flex flex-wrap gap-2">
                 {genres.map((g) => (

@@ -235,7 +235,9 @@ function timeAgoID(iso: string): string {
 
 /** UP badge rule: chapter updated within last 3 days. */
 function isRecentlyUpdated(iso: string): boolean {
+  if (!iso) return false;
   const then = new Date(iso).getTime();
+  if (Number.isNaN(then)) return false;
   const diffMs = Date.now() - then;
   return diffMs >= 0 && diffMs < 3 * 24 * 60 * 60 * 1000;
 }
