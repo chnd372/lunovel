@@ -49,7 +49,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   await Promise.all(
     files
-      .filter((f) => f.endsWith(".json") && f !== "moip-meta.json")
+      .filter((f) => f.endsWith(".json") && !f.endsWith("-meta.json"))
       .map(async (f) => {
         const chunks = await readJSON<Chapter[]>(`data/chapters/${f}`);
         for (const c of chunks) {
