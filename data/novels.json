@@ -32,5 +32,35 @@
     "rating": 9.2,
     "created_at": "2024-01-01T00:00:00Z",
     "updated_at": "2026-07-09T08:00:00Z"
+  },
+  {
+    "id": "warlock-of-magus-world",
+    "slug": "warlock-of-the-magus-world",
+    "title": "Warlock of The Magus World",
+    "alt_titles": [
+      "Wujie Shushi",
+      "巫界术士"
+    ],
+    "author": "Wen Chao Gong, 文抄公",
+    "status": "ongoing",
+    "type": "translated",
+    "language": "id",
+    "original_language": "Chinese",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Ecchi",
+      "Fantasy",
+      "Sci-fi",
+      "Seinen",
+      "Supernatural",
+      "Xianxia"
+    ],
+    "description": "Apa yang terjadi ketika seorang ilmuwan dari dunia futuristik bereinkarnasi di Dunia Sihir dan Ksatria?",
+    "cover": "/covers/warlock-of-the-magus-world.jpg",
+    "release_year": 2022,
+    "rating": 7.4,
+    "created_at": "2026-07-11T00:00:00Z",
+    "updated_at": "2026-07-11T00:00:00Z"
   }
 ]

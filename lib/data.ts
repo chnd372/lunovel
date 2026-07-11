@@ -12,10 +12,12 @@ import { getChunkedChapter, getChunkedChapterList } from "./chunks";
 import novelsData from "@/data/novels.json";
 import laskarPelangiData from "@/data/chapters/laskar-pelangi.json";
 import sherlockData from "@/data/chapters/sherlock-holmes-collection.json";
+import wmwData from "@/data/chapters/warlock-of-magus-world.json";
 
 const chapterData: Record<string, Chapter[]> = {
   "laskar-pelangi": laskarPelangiData as Chapter[],
   "sherlock-holmes-collection": sherlockData as Chapter[],
+  "warlock-of-magus-world": wmwData as Chapter[],
 };
 
 export async function getAllNovels(): Promise<Novel[]> {
@@ -104,6 +106,26 @@ export function allGenres(novels: Novel[]): string[] {
   const set = new Set<string>();
   novels.forEach((s) => s.genres.forEach((g) => set.add(g)));
   return Array.from(set).sort();
+}
+
+export interface ChapterWithNovel {
+  novel: Novel;
+  chapter: Chapter;
+}
+
+/** Latest chapters across all novels, sorted by published_at desc. */
+export async function getLatestChapters(limit = 10): Promise<ChapterWithNovel[]> {
+  const novels = await getAllNovels();
+  const groups = await Promise.all(
+    novels.map(async (n) => {
+      const chapters = await getChaptersByNovel(n.id);
+      return chapters.map((c) => ({ novel: n, chapter: c }));
+    }),
+  );
+  return groups
+    .flat()
+    .sort((a, b) => b.chapter.published_at.localeCompare(a.chapter.published_at))
+    .slice(0, limit);
 }
 
 /** Estimate reading time in minutes (200 words/min average) */
