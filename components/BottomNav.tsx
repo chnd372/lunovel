@@ -3,12 +3,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import novelsData from "@/data/novels.json";
 
 // Bottom navigation — mobile only. Rendered in app/layout.tsx after the
 // page content so it can sit position:fixed without disturbing stacking.
-// Active route is detected from pathname; the "Baca" tab links to the last
-// valid history entry, or /novel (always 200) when nothing valid exists.
+// Active route is detected from pathname; the "Baca" tab links to /profile
+// (where last-read chapter lives in the history list) when no other match.
 const ITEMS = [
   { href: "/", label: "Beranda", icon: "🏠", match: (p: string) => p === "/" },
   { href: "/search", label: "Cari", icon: "🔍", match: (p: string) => p.startsWith("/search") },
@@ -16,17 +15,12 @@ const ITEMS = [
   { href: "/profile", label: "Profil", icon: "👤", match: (p: string) => p.startsWith("/profile") },
 ] as const;
 
-const VALID_SLUGS = new Set(
-  (novelsData as Array<{ slug: string }>).map((n) => n.slug),
-);
-
 export default function BottomNav() {
   const pathname = usePathname();
-  const [lastRead, setLastRead] = useState<string>("/novel");
+  const [lastRead, setLastRead] = useState<string>("/profile");
 
-  // Pull last-read href from localStorage history; validates slug against the
-  // known novel list so stale entries (deleted novels, renamed slugs) don't
-  // 404. Falls back to /novel so the tab is always navigable.
+  // Pull last-read href from localStorage history; falls back to /profile
+  // so the tab is always navigable.
   useEffect(() => {
     try {
       const raw = localStorage.getItem("lunovel_history");
@@ -38,7 +32,7 @@ export default function BottomNav() {
       }>;
       const withSlug = hist.filter(
         (h): h is { novel_slug: string; chapter_number: number; read_at?: string } =>
-          Boolean(h.novel_slug && h.chapter_number && VALID_SLUGS.has(h.novel_slug)),
+          Boolean(h.novel_slug && h.chapter_number),
       );
       const latest = withSlug.sort((a, b) =>
         (b.read_at ?? "").localeCompare(a.read_at ?? ""),
@@ -47,7 +41,7 @@ export default function BottomNav() {
         setLastRead(`/read/${latest.novel_slug}/${latest.chapter_number}`);
       }
     } catch {
-      // localStorage may be disabled — keep /novel default
+      // localStorage may be disabled — keep default
     }
   }, []);
 
