@@ -1,0 +1,80 @@
+{
+  "novel_id": "moip",
+  "total_chapters": 12,
+  "chunks": 1,
+  "chunk_size": 50,
+  "chapter_map": {
+    "980": {
+      "chunk_idx": 0,
+      "local_idx": 0,
+      "title": "Generous Assistance",
+      "word_count": 2735
+    },
+    "981": {
+      "chunk_idx": 0,
+      "local_idx": 1,
+      "title": "Wanting to \"Beat Ning Zhuo to Death\"",
+      "word_count": 2510
+    },
+    "982": {
+      "chunk_idx": 0,
+      "local_idx": 2,
+      "title": "Yang Fish",
+      "word_count": 2596
+    },
+    "983": {
+      "chunk_idx": 0,
+      "local_idx": 3,
+      "title": "Pure Yang Patriarch Pill",
+      "word_count": 2705
+    },
+    "984": {
+      "chunk_idx": 0,
+      "local_idx": 4,
+      "title": "Renowned Artisan Realm!",
+      "word_count": 2666
+    },
+    "985": {
+      "chunk_idx": 0,
+      "local_idx": 5,
+      "title": "Under the Truth Bell",
+      "word_count": 2702
+    },
+    "986": {
+      "chunk_idx": 0,
+      "local_idx": 6,
+      "title": "Ning Zhuo Takes an Oath",
+      "word_count": 2004
+    },
+    "987": {
+      "chunk_idx": 0,
+      "local_idx": 7,
+      "title": "The Youth Sheds Tears!",
+      "word_count": 2264
+    },
+    "988": {
+      "chunk_idx": 0,
+      "local_idx": 8,
+      "title": "Return My Yang Fish",
+      "word_count": 2681
+    },
+    "989": {
+      "chunk_idx": 0,
+      "local_idx": 9,
+      "title": "Winning Before the Battle Even Begins!",
+      "word_count": 2857
+    },
+    "990": {
+      "chunk_idx": 0,
+      "local_idx": 10,
+      "title": "Return",
+      "word_count": 2348
+    },
+    "991": {
+      "chunk_idx": 0,
+      "local_idx": 11,
+      "title": "Arrangements",
+      "word_count": 1972
+    }
+  }
+}
