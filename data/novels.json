@@ -62,5 +62,34 @@
     "rating": 7.4,
     "created_at": "2026-07-11T00:00:00Z",
     "updated_at": "2026-07-11T00:00:00Z"
+  },
+  {
+    "id": "my-longevity-simulation",
+    "slug": "my-longevity-simulation",
+    "title": "My Longevity Simulation",
+    "alt_titles": [
+      "Immortality Simulator",
+      "My Simulated Road to Immortality",
+      "我的模擬長生路"
+    ],
+    "author": "Angry Squid",
+    "description": "Jalan keabadian hampir tidak mungkin tercapai.\nLebih jauh lagi, dunia abadi telah sepenuhnya diubah oleh wabah!\nKetika makhluk abadi menghubungi manusia yang terinfeksi, basis kultivasi mereka jatuh, atau lebih buruk lagi, mereka kembali ke surga; dengan demikian, alam abadi dan alam fana telah dipisahkan selamanya.\nSelain itu, semua seni abadi mungkin hanya memiliki satu praktisi; dengan demikian, dunia keabadian telah menjadi hutan yang gelap.\n…\nMeskipun Li Fan memiliki ambisi besar ketika dia pertama kali pindah ke dunia ini, dia hanya bisa terjebak dalam keadaan biasa-biasa saja, perlahan-lahan menyia-nyiakan kehidupan duniawinya.\nUntungnya, saat dia sekarat, dia akhirnya membangunkan harta karun tertinggi yang dapat mengubah kebenaran menjadi kebohongan dan kenyataan menjadi mimpi, membalikkan waktu ke saat dia pertama kali tiba!\nSetelah itu, Li Fan memulai perjalanannya yang tak berujung menuju keabadian!\nDalam kehidupan keduanya, Li Fan naik melalui politik dan memerintah dunia setelah 50 tahun, tetapi setelah mencari di seluruh dunia, dia tidak menemukan jejak Dao Abadi. Hanya di akhir hidupnya, dia baru bisa melihat sekilas jalan abadi.\nDi kehidupan ketiga, meskipun upaya besar dan skema yang disusun dengan hati-hati, Li Fan akhirnya tidak bisa menahan satu serangan pedang abadi!\nDi kehidupan keempat…\n…\nAku, Li Fan, seorang manusia biasa, tidak akan menyimpan penyesalan selama seribu kehidupan, semua untuk mengejar keabadian!",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Mature",
+      "Mystery",
+      "Psychological",
+      "Xianxia"
+    ],
+    "status": "ongoing",
+    "type": "Web Novel",
+    "language": "id",
+    "original_language": "Chinese",
+    "rating": 9.0,
+    "release_year": 2024,
+    "cover": "/covers/my-longevity-simulation.jpg",
+    "created_at": "2026-08-04T00:00:00Z",
+    "updated_at": "2026-08-04T14:00:00Z"
   }
 ]
