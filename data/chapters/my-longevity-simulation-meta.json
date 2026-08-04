@@ -1,0 +1,1208 @@
+{
+  "novel_id": "my-longevity-simulation",
+  "total_chapters": 200,
+  "chunks": 4,
+  "chunk_size": 50,
+  "chapter_map": {
+    "1": {
+      "chunk_idx": 0,
+      "local_idx": 0,
+      "title": "Dari Mana Immortals Come?",
+      "word_count": 4779
+    },
+    "2": {
+      "chunk_idx": 0,
+      "local_idx": 1,
+      "title": "Bercita-cita untuk Seek Eternal Life",
+      "word_count": 1928
+    },
+    "3": {
+      "chunk_idx": 0,
+      "local_idx": 2,
+      "title": "Keinginan Manusia untuk Capture Immortals",
+      "word_count": 1421
+    },
+    "4": {
+      "chunk_idx": 0,
+      "local_idx": 3,
+      "title": "Immortal Spells dan Swords",
+      "word_count": 1898
+    },
+    "5": {
+      "chunk_idx": 0,
+      "local_idx": 4,
+      "title": "Flatland Ripples",
+      "word_count": 1241
+    },
+    "6": {
+      "chunk_idx": 0,
+      "local_idx": 5,
+      "title": "Duduk di Gunung dan Menonton Immortals Fight",
+      "word_count": 2144
+    },
+    "7": {
+      "chunk_idx": 0,
+      "local_idx": 6,
+      "title": "Blazing Dragon Menelan api merah Sword",
+      "word_count": 1125
+    },
+    "8": {
+      "chunk_idx": 0,
+      "local_idx": 7,
+      "title": "Eternal Separation Manusia dan Immortals",
+      "word_count": 4380
+    },
+    "9": {
+      "chunk_idx": 0,
+      "local_idx": 8,
+      "title": "Takdir memiliki Unforeseen Paths",
+      "word_count": 1384
+    },
+    "10": {
+      "chunk_idx": 0,
+      "local_idx": 9,
+      "title": "Unique Paths Menuju Keabadian",
+      "word_count": 1207
+    },
+    "11": {
+      "chunk_idx": 0,
+      "local_idx": 10,
+      "title": "Labor Tirelessly dalam Mengejar Keabadian",
+      "word_count": 1676
+    },
+    "12": {
+      "chunk_idx": 0,
+      "local_idx": 11,
+      "title": "Second Anchor Point Emerges",
+      "word_count": 1476
+    },
+    "13": {
+      "chunk_idx": 0,
+      "local_idx": 12,
+      "title": "Membentuk World",
+      "word_count": 1295
+    },
+    "14": {
+      "chunk_idx": 0,
+      "local_idx": 13,
+      "title": "Light Emerging dari tiga belas tahun Darkness",
+      "word_count": 1298
+    },
+    "15": {
+      "chunk_idx": 0,
+      "local_idx": 14,
+      "title": "Foundation Establishment Remains",
+      "word_count": 1671
+    },
+    "16": {
+      "chunk_idx": 0,
+      "local_idx": 15,
+      "title": "Grasping Immortals Dalam Palm",
+      "word_count": 1684
+    },
+    "17": {
+      "chunk_idx": 0,
+      "local_idx": 16,
+      "title": "Everything Is Siap",
+      "word_count": 2167
+    },
+    "18": {
+      "chunk_idx": 0,
+      "local_idx": 17,
+      "title": "Diving Into Penggemar Abyss",
+      "word_count": 1849
+    },
+    "19": {
+      "chunk_idx": 0,
+      "local_idx": 18,
+      "title": "The Abyss Ingin Melahap",
+      "word_count": 6788
+    },
+    "20": {
+      "chunk_idx": 0,
+      "local_idx": 19,
+      "title": "Unintentional Success",
+      "word_count": 1397
+    },
+    "21": {
+      "chunk_idx": 0,
+      "local_idx": 20,
+      "title": "The Cultivation Realm",
+      "word_count": 1096
+    },
+    "22": {
+      "chunk_idx": 0,
+      "local_idx": 21,
+      "title": "Fellow Escapees",
+      "word_count": 1143
+    },
+    "23": {
+      "chunk_idx": 0,
+      "local_idx": 22,
+      "title": "Mendaftar di Liuli Island",
+      "word_count": 1090
+    },
+    "24": {
+      "chunk_idx": 0,
+      "local_idx": 23,
+      "title": "Purge Miasma hingga Refine Qi",
+      "word_count": 1261
+    },
+    "25": {
+      "chunk_idx": 0,
+      "local_idx": 24,
+      "title": "Wealth Moves Perubahan Heart",
+      "word_count": 2552
+    },
+    "26": {
+      "chunk_idx": 0,
+      "local_idx": 25,
+      "title": "Skillful Persuasion",
+      "word_count": 1700
+    },
+    "27": {
+      "chunk_idx": 0,
+      "local_idx": 26,
+      "title": "The Wise Recognize Talents",
+      "word_count": 1119
+    },
+    "28": {
+      "chunk_idx": 0,
+      "local_idx": 27,
+      "title": "Tempest Ravages Langit",
+      "word_count": 994
+    },
+    "29": {
+      "chunk_idx": 0,
+      "local_idx": 28,
+      "title": "Setting Sail",
+      "word_count": 1033
+    },
+    "30": {
+      "chunk_idx": 0,
+      "local_idx": 29,
+      "title": "Harta Karun Deep Sea",
+      "word_count": 1191
+    },
+    "31": {
+      "chunk_idx": 0,
+      "local_idx": 30,
+      "title": "Kembali ke Liuli Island",
+      "word_count": 1035
+    },
+    "32": {
+      "chunk_idx": 0,
+      "local_idx": 31,
+      "title": "Treasure Seer Physique",
+      "word_count": 1157
+    },
+    "33": {
+      "chunk_idx": 0,
+      "local_idx": 32,
+      "title": "Two Talented Sisters",
+      "word_count": 1165
+    },
+    "34": {
+      "chunk_idx": 0,
+      "local_idx": 33,
+      "title": "Mantra Cleansing Heart Penggemar Effect",
+      "word_count": 1145
+    },
+    "35": {
+      "chunk_idx": 0,
+      "local_idx": 34,
+      "title": "Fruits Are All Preordained",
+      "word_count": 1077
+    },
+    "36": {
+      "chunk_idx": 0,
+      "local_idx": 35,
+      "title": "Fortuitous Find",
+      "word_count": 1113
+    },
+    "37": {
+      "chunk_idx": 0,
+      "local_idx": 36,
+      "title": "Canghai Pearl",
+      "word_count": 1277
+    },
+    "38": {
+      "chunk_idx": 0,
+      "local_idx": 37,
+      "title": "Memasuki Pure Body Spirit Pool",
+      "word_count": 1166
+    },
+    "39": {
+      "chunk_idx": 0,
+      "local_idx": 38,
+      "title": "The First Pelajaran Cultivation",
+      "word_count": 1237
+    },
+    "40": {
+      "chunk_idx": 0,
+      "local_idx": 39,
+      "title": "Unexpected Gains",
+      "word_count": 1249
+    },
+    "41": {
+      "chunk_idx": 0,
+      "local_idx": 40,
+      "title": "Duduk di Gunung dan Menuai Harvest",
+      "word_count": 1167
+    },
+    "42": {
+      "chunk_idx": 0,
+      "local_idx": 41,
+      "title": "Babak 42: Abadi dan Mortals Can Not Coexist",
+      "word_count": 1309
+    },
+    "43": {
+      "chunk_idx": 0,
+      "local_idx": 42,
+      "title": "Babak 43: Memadatkan Akar Langit dan Bumi",
+      "word_count": 1281
+    },
+    "44": {
+      "chunk_idx": 0,
+      "local_idx": 43,
+      "title": "Maju ke Qi Condensation Stage",
+      "word_count": 1103
+    },
+    "45": {
+      "chunk_idx": 0,
+      "local_idx": 44,
+      "title": "Qi Condensation Stage",
+      "word_count": 1252
+    },
+    "46": {
+      "chunk_idx": 0,
+      "local_idx": 45,
+      "title": "Tianxuan Mirror",
+      "word_count": 1263
+    },
+    "47": {
+      "chunk_idx": 0,
+      "local_idx": 46,
+      "title": "Tianxuan Mirror Enlightenment",
+      "word_count": 1246
+    },
+    "48": {
+      "chunk_idx": 0,
+      "local_idx": 47,
+      "title": "Extinct Liuli Fish",
+      "word_count": 1126
+    },
+    "49": {
+      "chunk_idx": 0,
+      "local_idx": 48,
+      "title": "Rare Opportunity",
+      "word_count": 1217
+    },
+    "50": {
+      "chunk_idx": 0,
+      "local_idx": 49,
+      "title": "Taian Fruits",
+      "word_count": 1157
+    },
+    "51": {
+      "chunk_idx": 1,
+      "local_idx": 0,
+      "title": "Fruit Harvesting",
+      "word_count": 1129
+    },
+    "52": {
+      "chunk_idx": 1,
+      "local_idx": 1,
+      "title": "Guarding Taian Island",
+      "word_count": 1181
+    },
+    "53": {
+      "chunk_idx": 1,
+      "local_idx": 2,
+      "title": "Bencana untuk Cultivators",
+      "word_count": 1564
+    },
+    "54": {
+      "chunk_idx": 1,
+      "local_idx": 3,
+      "title": "The Scheme Langit dan Bumi",
+      "word_count": 1201
+    },
+    "55": {
+      "chunk_idx": 1,
+      "local_idx": 4,
+      "title": "Babak 55: Mengatasi Kematian hingga Obtain Life",
+      "word_count": 1184
+    },
+    "56": {
+      "chunk_idx": 1,
+      "local_idx": 5,
+      "title": "Kasih Sayang terhadap Mortals",
+      "word_count": 1211
+    },
+    "57": {
+      "chunk_idx": 1,
+      "local_idx": 6,
+      "title": "Unexpected Opportunity",
+      "word_count": 1153
+    },
+    "58": {
+      "chunk_idx": 1,
+      "local_idx": 7,
+      "title": "Memahami Aura Surga dan Earth",
+      "word_count": 1093
+    },
+    "59": {
+      "chunk_idx": 1,
+      "local_idx": 8,
+      "title": "Transformasi Cong Yun Sea",
+      "word_count": 1250
+    },
+    "60": {
+      "chunk_idx": 1,
+      "local_idx": 9,
+      "title": "Tinjauan dan Perencanaan",
+      "word_count": 1164
+    },
+    "61": {
+      "chunk_idx": 1,
+      "local_idx": 10,
+      "title": "Formless Killing Intent",
+      "word_count": 2365
+    },
+    "62": {
+      "chunk_idx": 1,
+      "local_idx": 11,
+      "title": "Pursued Without Reason",
+      "word_count": 1260
+    },
+    "63": {
+      "chunk_idx": 1,
+      "local_idx": 12,
+      "title": "Kembali ke Liuli Island",
+      "word_count": 1191
+    },
+    "64": {
+      "chunk_idx": 1,
+      "local_idx": 13,
+      "title": "Babak 64: Bergabung kembali dengan Ten Thousand Immortals Alliance",
+      "word_count": 1184
+    },
+    "65": {
+      "chunk_idx": 1,
+      "local_idx": 14,
+      "title": "One Hundred Thousand Contribution Points",
+      "word_count": 1168
+    },
+    "66": {
+      "chunk_idx": 1,
+      "local_idx": 15,
+      "title": "Keturunan Anomalies",
+      "word_count": 1128
+    },
+    "67": {
+      "chunk_idx": 1,
+      "local_idx": 16,
+      "title": "Babak 67: Netherworld Spirit Illusion Technique",
+      "word_count": 1143
+    },
+    "68": {
+      "chunk_idx": 1,
+      "local_idx": 17,
+      "title": "Illusory Spirit Resembling Azure Flames",
+      "word_count": 1100
+    },
+    "69": {
+      "chunk_idx": 1,
+      "local_idx": 18,
+      "title": "Babak 69: Ini Actually You",
+      "word_count": 1113
+    },
+    "70": {
+      "chunk_idx": 1,
+      "local_idx": 19,
+      "title": "Babak 70: Mencari Nascent Soul Technique",
+      "word_count": 1224
+    },
+    "71": {
+      "chunk_idx": 1,
+      "local_idx": 20,
+      "title": "The Mortals dari Dali",
+      "word_count": 1204
+    },
+    "72": {
+      "chunk_idx": 1,
+      "local_idx": 21,
+      "title": "Babak 72: Suara tiba-tiba Immortal Restoration",
+      "word_count": 1180
+    },
+    "73": {
+      "chunk_idx": 1,
+      "local_idx": 22,
+      "title": "Investment",
+      "word_count": 1196
+    },
+    "74": {
+      "chunk_idx": 1,
+      "local_idx": 23,
+      "title": "Momen Leisure",
+      "word_count": 1188
+    },
+    "75": {
+      "chunk_idx": 1,
+      "local_idx": 24,
+      "title": "Menghadapi Dragonwhale",
+      "word_count": 1127
+    },
+    "76": {
+      "chunk_idx": 1,
+      "local_idx": 25,
+      "title": "Dragonwhale Execution",
+      "word_count": 1097
+    },
+    "77": {
+      "chunk_idx": 1,
+      "local_idx": 26,
+      "title": "Babak 77: Stalking Shadow Technique",
+      "word_count": 1084
+    },
+    "78": {
+      "chunk_idx": 1,
+      "local_idx": 27,
+      "title": "The Opening dari Cloud Water Heavenly Palace",
+      "word_count": 1186
+    },
+    "79": {
+      "chunk_idx": 1,
+      "local_idx": 28,
+      "title": "Babak 79: Kepala Teaching Hall",
+      "word_count": 1139
+    },
+    "80": {
+      "chunk_idx": 1,
+      "local_idx": 29,
+      "title": "Babak 80: Ingatlah untuk Sleep Early",
+      "word_count": 1161
+    },
+    "81": {
+      "chunk_idx": 1,
+      "local_idx": 30,
+      "title": "The Trial dari Focus",
+      "word_count": 1118
+    },
+    "82": {
+      "chunk_idx": 1,
+      "local_idx": 31,
+      "title": "Babak 82: Uji Coba Courage",
+      "word_count": 1130
+    },
+    "83": {
+      "chunk_idx": 1,
+      "local_idx": 32,
+      "title": "Babak 83: Ujian Keabadian",
+      "word_count": 2565
+    },
+    "84": {
+      "chunk_idx": 1,
+      "local_idx": 33,
+      "title": "Babak 84: Demon Refining Gu Daoist",
+      "word_count": 2352
+    },
+    "85": {
+      "chunk_idx": 1,
+      "local_idx": 34,
+      "title": "Babak 85: All Things adalah Like Insects",
+      "word_count": 1162
+    },
+    "86": {
+      "chunk_idx": 1,
+      "local_idx": 35,
+      "title": "The Revelation dari suara Cloud Water Map",
+      "word_count": 1196
+    },
+    "87": {
+      "chunk_idx": 1,
+      "local_idx": 36,
+      "title": "Babak 87: Treasure Obtained",
+      "word_count": 1129
+    },
+    "88": {
+      "chunk_idx": 1,
+      "local_idx": 37,
+      "title": "Executing Sikong Yi",
+      "word_count": 1130
+    },
+    "89": {
+      "chunk_idx": 1,
+      "local_idx": 38,
+      "title": "Babak 89: The Sun Stealing Sect",
+      "word_count": 1118
+    },
+    "90": {
+      "chunk_idx": 1,
+      "local_idx": 39,
+      "title": "Everything Has dan Cause",
+      "word_count": 1101
+    },
+    "91": {
+      "chunk_idx": 1,
+      "local_idx": 40,
+      "title": "Membuat Clone",
+      "word_count": 1935
+    },
+    "92": {
+      "chunk_idx": 1,
+      "local_idx": 41,
+      "title": "Li Fan dan Fan Lin",
+      "word_count": 1135
+    },
+    "93": {
+      "chunk_idx": 1,
+      "local_idx": 42,
+      "title": "Babak 93: The Heavenly Doctor's Immortal Sutra",
+      "word_count": 1124
+    },
+    "94": {
+      "chunk_idx": 1,
+      "local_idx": 43,
+      "title": "Babak 94: Kelahiran Kembali Zhang Haobo",
+      "word_count": 1281
+    },
+    "95": {
+      "chunk_idx": 1,
+      "local_idx": 44,
+      "title": "Babak 95: Kehidupan dan Death Interlocking",
+      "word_count": 1111
+    },
+    "96": {
+      "chunk_idx": 1,
+      "local_idx": 45,
+      "title": "The Opportunity dari Ten Thousand Immortals Pavilion",
+      "word_count": 1129
+    },
+    "97": {
+      "chunk_idx": 1,
+      "local_idx": 46,
+      "title": "Babak 97: Mechanical Death",
+      "word_count": 1175
+    },
+    "98": {
+      "chunk_idx": 1,
+      "local_idx": 47,
+      "title": "Babak 98: Discerning One Fate Through Two Lifetimes",
+      "word_count": 1172
+    },
+    "99": {
+      "chunk_idx": 1,
+      "local_idx": 48,
+      "title": "Babak 99: Kamu Lebih Kuat, So Am I",
+      "word_count": 975
+    },
+    "100": {
+      "chunk_idx": 1,
+      "local_idx": 49,
+      "title": "Babak 100: Zhang Haobo Tests His Sword",
+      "word_count": 993
+    },
+    "101": {
+      "chunk_idx": 2,
+      "local_idx": 0,
+      "title": "Naga Roar Under Sea",
+      "word_count": 1159
+    },
+    "102": {
+      "chunk_idx": 2,
+      "local_idx": 1,
+      "title": "Tian Yang Roar",
+      "word_count": 1077
+    },
+    "103": {
+      "chunk_idx": 2,
+      "local_idx": 2,
+      "title": "The Battle dari Soul Transformation",
+      "word_count": 1101
+    },
+    "104": {
+      "chunk_idx": 2,
+      "local_idx": 3,
+      "title": "Forgotten Catastrophes",
+      "word_count": 1000
+    },
+    "105": {
+      "chunk_idx": 2,
+      "local_idx": 4,
+      "title": "Babak 105: Surga di Langit dan Bumi",
+      "word_count": 1201
+    },
+    "106": {
+      "chunk_idx": 2,
+      "local_idx": 5,
+      "title": "Sudden Enlightenment Li Fan",
+      "word_count": 1171
+    },
+    "107": {
+      "chunk_idx": 2,
+      "local_idx": 6,
+      "title": "Six-Headed Monstrosity",
+      "word_count": 1038
+    },
+    "108": {
+      "chunk_idx": 2,
+      "local_idx": 7,
+      "title": "Single Rib",
+      "word_count": 1065
+    },
+    "109": {
+      "chunk_idx": 2,
+      "local_idx": 8,
+      "title": "All Transform Menjadi Heavenly Treasures",
+      "word_count": 1257
+    },
+    "110": {
+      "chunk_idx": 2,
+      "local_idx": 9,
+      "title": "Membangun Fondasi dengan Myself",
+      "word_count": 947
+    },
+    "112": {
+      "chunk_idx": 2,
+      "local_idx": 10,
+      "title": "Blue Wind",
+      "word_count": 1127
+    },
+    "113": {
+      "chunk_idx": 2,
+      "local_idx": 11,
+      "title": "The Medicine King Sect dari Ancient Times",
+      "word_count": 1114
+    },
+    "114": {
+      "chunk_idx": 2,
+      "local_idx": 12,
+      "title": "Hujan dan Wind Enlightenment",
+      "word_count": 1229
+    },
+    "115": {
+      "chunk_idx": 2,
+      "local_idx": 13,
+      "title": "Fondasi Establishment Grandmaster",
+      "word_count": 1071
+    },
+    "116": {
+      "chunk_idx": 2,
+      "local_idx": 14,
+      "title": "Mortal Technique Thieves",
+      "word_count": 1162
+    },
+    "117": {
+      "chunk_idx": 2,
+      "local_idx": 15,
+      "title": "Devouring White Mist Barrier",
+      "word_count": 1193
+    },
+    "118": {
+      "chunk_idx": 2,
+      "local_idx": 16,
+      "title": "Pencerahan Sword Wind",
+      "word_count": 1150
+    },
+    "119": {
+      "chunk_idx": 2,
+      "local_idx": 17,
+      "title": "The Five Element Subworlds",
+      "word_count": 1110
+    },
+    "120": {
+      "chunk_idx": 2,
+      "local_idx": 18,
+      "title": "Keinginan Li Fan untuk Create Techniques",
+      "word_count": 1187
+    },
+    "121": {
+      "chunk_idx": 2,
+      "local_idx": 19,
+      "title": "Wooden Staff Mengalahkan Yang Abadi",
+      "word_count": 1154
+    },
+    "122": {
+      "chunk_idx": 2,
+      "local_idx": 20,
+      "title": "A Bamboo Slip hingga Transcend",
+      "word_count": 1173
+    },
+    "123": {
+      "chunk_idx": 2,
+      "local_idx": 21,
+      "title": "Kembali ke Cloud Water Heavenly Palace",
+      "word_count": 1253
+    },
+    "124": {
+      "chunk_idx": 2,
+      "local_idx": 22,
+      "title": "Berjudi di Fish",
+      "word_count": 1199
+    },
+    "125": {
+      "chunk_idx": 2,
+      "local_idx": 23,
+      "title": "Heaven Defying Keberuntungan?",
+      "word_count": 1195
+    },
+    "126": {
+      "chunk_idx": 2,
+      "local_idx": 24,
+      "title": "Seven-Colored Immortal-Felling Formation",
+      "word_count": 1101
+    },
+    "127": {
+      "chunk_idx": 2,
+      "local_idx": 25,
+      "title": "Nasib dari Masa Lalu",
+      "word_count": 1117
+    },
+    "128": {
+      "chunk_idx": 2,
+      "local_idx": 26,
+      "title": "Cutting Through Wind Disaster dengan Pedang",
+      "word_count": 1129
+    },
+    "129": {
+      "chunk_idx": 2,
+      "local_idx": 27,
+      "title": "Second Young Master Zhao Purchase",
+      "word_count": 1118
+    },
+    "130": {
+      "chunk_idx": 2,
+      "local_idx": 28,
+      "title": "Illusions Play dengan Hearts",
+      "word_count": 1105
+    },
+    "131": {
+      "chunk_idx": 2,
+      "local_idx": 29,
+      "title": "Resonansi Ancient Relics",
+      "word_count": 1034
+    },
+    "132": {
+      "chunk_idx": 2,
+      "local_idx": 30,
+      "title": "Catatan Penulis",
+      "word_count": 1078
+    },
+    "133": {
+      "chunk_idx": 2,
+      "local_idx": 31,
+      "title": "The Wind Shepherd Haobo",
+      "word_count": 1117
+    },
+    "134": {
+      "chunk_idx": 2,
+      "local_idx": 32,
+      "title": "Kembali ke Dali After Ten Years",
+      "word_count": 1115
+    },
+    "135": {
+      "chunk_idx": 2,
+      "local_idx": 33,
+      "title": "Teman An Old",
+      "word_count": 1146
+    },
+    "136": {
+      "chunk_idx": 2,
+      "local_idx": 34,
+      "title": "Fate Changes dengan Fortune",
+      "word_count": 1191
+    },
+    "137": {
+      "chunk_idx": 2,
+      "local_idx": 35,
+      "title": "Li Fan Menyembah Master",
+      "word_count": 1063
+    },
+    "138": {
+      "chunk_idx": 2,
+      "local_idx": 36,
+      "title": "Decisively Condensing Angin kencang False Golden Core",
+      "word_count": 1043
+    },
+    "139": {
+      "chunk_idx": 2,
+      "local_idx": 37,
+      "title": "Mengendarai Angin, Menghadap Sepuluh Thousand Immortals",
+      "word_count": 1153
+    },
+    "140": {
+      "chunk_idx": 2,
+      "local_idx": 38,
+      "title": "Bahkan Soul Transformation adalah Semut",
+      "word_count": 1193
+    },
+    "141": {
+      "chunk_idx": 2,
+      "local_idx": 39,
+      "title": "Fortunately Obtaining dan Canghai Pearl",
+      "word_count": 1070
+    },
+    "142": {
+      "chunk_idx": 2,
+      "local_idx": 40,
+      "title": "Far Away dari Cong Yun Sea",
+      "word_count": 1120
+    },
+    "143": {
+      "chunk_idx": 2,
+      "local_idx": 41,
+      "title": "The Appearance dari Crimson Flame",
+      "word_count": 1222
+    },
+    "144": {
+      "chunk_idx": 2,
+      "local_idx": 42,
+      "title": "All Immortals Execute Crimson Flame",
+      "word_count": 3510
+    },
+    "145": {
+      "chunk_idx": 2,
+      "local_idx": 43,
+      "title": "Ink Death Exterminates Cong Yun Sea",
+      "word_count": 3405
+    },
+    "146": {
+      "chunk_idx": 2,
+      "local_idx": 44,
+      "title": "Blue Feather Scatters Treasures",
+      "word_count": 1163
+    },
+    "147": {
+      "chunk_idx": 2,
+      "local_idx": 45,
+      "title": "Keunikan Fate",
+      "word_count": 1178
+    },
+    "148": {
+      "chunk_idx": 2,
+      "local_idx": 46,
+      "title": "Membeli Ten Thousand Immortals Formation Flags",
+      "word_count": 1213
+    },
+    "149": {
+      "chunk_idx": 2,
+      "local_idx": 47,
+      "title": "Li Fan Memulai Foundation Establishment",
+      "word_count": 1871
+    },
+    "150": {
+      "chunk_idx": 2,
+      "local_idx": 48,
+      "title": "Memulihkan Mountain Meditation Technique",
+      "word_count": 1106
+    },
+    "151": {
+      "chunk_idx": 2,
+      "local_idx": 49,
+      "title": "First Investment",
+      "word_count": 1019
+    },
+    "152": {
+      "chunk_idx": 3,
+      "local_idx": 0,
+      "title": "First Trial dari Mountain Meditation Technique",
+      "word_count": 1184
+    },
+    "153": {
+      "chunk_idx": 3,
+      "local_idx": 1,
+      "title": "Mingyue Palace",
+      "word_count": 2222
+    },
+    "154": {
+      "chunk_idx": 3,
+      "local_idx": 2,
+      "title": "Memahami Telapak Tangan Sea Covering",
+      "word_count": 1053
+    },
+    "155": {
+      "chunk_idx": 3,
+      "local_idx": 3,
+      "title": "Infinite Formation",
+      "word_count": 1131
+    },
+    "156": {
+      "chunk_idx": 3,
+      "local_idx": 4,
+      "title": "Poor Dog Has Nothing untuk Ditawarkan",
+      "word_count": 1083
+    },
+    "157": {
+      "chunk_idx": 3,
+      "local_idx": 5,
+      "title": "Meteor Descends di Cangwu",
+      "word_count": 1342
+    },
+    "158": {
+      "chunk_idx": 3,
+      "local_idx": 6,
+      "title": "Development Amid Liku-liku",
+      "word_count": 1171
+    },
+    "159": {
+      "chunk_idx": 3,
+      "local_idx": 7,
+      "title": "Crazy Expansion",
+      "word_count": 1384
+    },
+    "160": {
+      "chunk_idx": 3,
+      "local_idx": 8,
+      "title": "Mingyue Soars ke Langit",
+      "word_count": 1058
+    },
+    "161": {
+      "chunk_idx": 3,
+      "local_idx": 9,
+      "title": "Melarikan Diri dari Death",
+      "word_count": 1121
+    },
+    "162": {
+      "chunk_idx": 3,
+      "local_idx": 10,
+      "title": "The Calamity Has Long Been Destined",
+      "word_count": 1324
+    },
+    "163": {
+      "chunk_idx": 3,
+      "local_idx": 11,
+      "title": "Foundation Establishment Slaughters Nascent Soul",
+      "word_count": 1303
+    },
+    "164": {
+      "chunk_idx": 3,
+      "local_idx": 12,
+      "title": "Mendirikan Yayasan di atas Hundred Lifetimes",
+      "word_count": 2676
+    },
+    "165": {
+      "chunk_idx": 3,
+      "local_idx": 13,
+      "title": "Learning All Hukum Dunia",
+      "word_count": 1189
+    },
+    "166": {
+      "chunk_idx": 3,
+      "local_idx": 14,
+      "title": "Investor He Zhenghao",
+      "word_count": 1182
+    },
+    "167": {
+      "chunk_idx": 3,
+      "local_idx": 15,
+      "title": "Ice Intent Heartless Pill",
+      "word_count": 1161
+    },
+    "168": {
+      "chunk_idx": 3,
+      "local_idx": 16,
+      "title": "Menyerang balik Immortal Cultivation World",
+      "word_count": 1122
+    },
+    "169": {
+      "chunk_idx": 3,
+      "local_idx": 17,
+      "title": "Clear Wind Hall",
+      "word_count": 1172
+    },
+    "170": {
+      "chunk_idx": 3,
+      "local_idx": 18,
+      "title": "Clear Wind Meniup Spirit Tree",
+      "word_count": 1210
+    },
+    "171": {
+      "chunk_idx": 3,
+      "local_idx": 19,
+      "title": "Nothing New",
+      "word_count": 1158
+    },
+    "172": {
+      "chunk_idx": 3,
+      "local_idx": 20,
+      "title": "Bergabung dengan Ten Thousand Immortals Alliance",
+      "word_count": 1076
+    },
+    "173": {
+      "chunk_idx": 3,
+      "local_idx": 21,
+      "title": "Fallen Immortal Realm",
+      "word_count": 1151
+    },
+    "174": {
+      "chunk_idx": 3,
+      "local_idx": 22,
+      "title": "Chen Ying Mengungkapkan Secret Realm",
+      "word_count": 1120
+    },
+    "175": {
+      "chunk_idx": 3,
+      "local_idx": 23,
+      "title": "A Glimpse Reflecting Ribuan Years",
+      "word_count": 1109
+    },
+    "176": {
+      "chunk_idx": 3,
+      "local_idx": 24,
+      "title": "Memimpikan Purple Heaven Sect",
+      "word_count": 1171
+    },
+    "177": {
+      "chunk_idx": 3,
+      "local_idx": 25,
+      "title": "Transforming Life dan Yielding Longevity Fruits",
+      "word_count": 1197
+    },
+    "178": {
+      "chunk_idx": 3,
+      "local_idx": 26,
+      "title": "Ningyuan Encounters Pengepungan",
+      "word_count": 1203
+    },
+    "179": {
+      "chunk_idx": 3,
+      "local_idx": 27,
+      "title": "Fallen Immortal Realm, Venerable Heart Refinement Mantra",
+      "word_count": 1363
+    },
+    "180": {
+      "chunk_idx": 3,
+      "local_idx": 28,
+      "title": "Bergabung dengan Ten Thousand Immortals Alliance",
+      "word_count": 1085
+    },
+    "181": {
+      "chunk_idx": 3,
+      "local_idx": 29,
+      "title": "Ten Thousand Immortals Grand Formation",
+      "word_count": 1092
+    },
+    "182": {
+      "chunk_idx": 3,
+      "local_idx": 30,
+      "title": "Gunung dan River Formation",
+      "word_count": 1120
+    },
+    "183": {
+      "chunk_idx": 3,
+      "local_idx": 31,
+      "title": "White Jade Inquiry Platform",
+      "word_count": 1129
+    },
+    "184": {
+      "chunk_idx": 3,
+      "local_idx": 32,
+      "title": "Taian Island Spy",
+      "word_count": 1135
+    },
+    "185": {
+      "chunk_idx": 3,
+      "local_idx": 33,
+      "title": "Memisahkan Mind",
+      "word_count": 1163
+    },
+    "186": {
+      "chunk_idx": 3,
+      "local_idx": 34,
+      "title": "Nine Teams dari Martial Hall",
+      "word_count": 1132
+    },
+    "187": {
+      "chunk_idx": 3,
+      "local_idx": 35,
+      "title": "Formation Battle Against Beasts",
+      "word_count": 1159
+    },
+    "188": {
+      "chunk_idx": 3,
+      "local_idx": 36,
+      "title": "White Snow Jatuh pada Red Plum Blossoms",
+      "word_count": 1193
+    },
+    "189": {
+      "chunk_idx": 3,
+      "local_idx": 37,
+      "title": "Immortal Ancestor",
+      "word_count": 1155
+    },
+    "190": {
+      "chunk_idx": 3,
+      "local_idx": 38,
+      "title": "The Show Begins",
+      "word_count": 1174
+    },
+    "191": {
+      "chunk_idx": 3,
+      "local_idx": 39,
+      "title": "Economic Bubble",
+      "word_count": 1166
+    },
+    "192": {
+      "chunk_idx": 3,
+      "local_idx": 40,
+      "title": "The Dealer Memasuki Game",
+      "word_count": 1152
+    },
+    "193": {
+      "chunk_idx": 3,
+      "local_idx": 41,
+      "title": "Profit Without Capital",
+      "word_count": 1006
+    },
+    "194": {
+      "chunk_idx": 3,
+      "local_idx": 42,
+      "title": "Kata-Kata untuk Menyelesaikan Storm",
+      "word_count": 1128
+    },
+    "195": {
+      "chunk_idx": 3,
+      "local_idx": 43,
+      "title": "Finally Showing Signs",
+      "word_count": 1081
+    },
+    "196": {
+      "chunk_idx": 3,
+      "local_idx": 44,
+      "title": "Kembali ke Fallen Immortal Realm",
+      "word_count": 1096
+    },
+    "197": {
+      "chunk_idx": 3,
+      "local_idx": 45,
+      "title": "Purple Heaven Soul Observation Technique",
+      "word_count": 1115
+    },
+    "198": {
+      "chunk_idx": 3,
+      "local_idx": 46,
+      "title": "Perbedaan Ribuan Tahun",
+      "word_count": 1645
+    },
+    "199": {
+      "chunk_idx": 3,
+      "local_idx": 47,
+      "title": "The Unstoppable New Law",
+      "word_count": 2170
+    },
+    "200": {
+      "chunk_idx": 3,
+      "local_idx": 48,
+      "title": "Seven Aperture Exquisite Heart",
+      "word_count": 1074
+    },
+    "201": {
+      "chunk_idx": 3,
+      "local_idx": 49,
+      "title": "Coercing He Zhenghao",
+      "word_count": 1675
+    }
+  }
+}
