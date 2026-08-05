@@ -49,7 +49,15 @@ function saveSettings(s: ReaderSettings) {
   try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(s)); } catch {}
 }
 
-function saveHistory(novelId: string, novelSlug: string, chapterId: string, chapterNumber: number, percent: number) {
+function saveHistory(
+  novelId: string,
+  novelSlug: string,
+  novelTitle: string,
+  chapterId: string,
+  chapterNumber: number,
+  chapterTitle: string,
+  percent: number,
+) {
   try {
     const raw = localStorage.getItem(HISTORY_KEY);
     const list: any[] = raw ? JSON.parse(raw) : [];
@@ -57,8 +65,10 @@ function saveHistory(novelId: string, novelSlug: string, chapterId: string, chap
     filtered.unshift({
       novel_id: novelId,
       novel_slug: novelSlug,
+      novel_title: novelTitle,
       chapter_id: chapterId,
       chapter_number: chapterNumber,
+      chapter_title: chapterTitle,
       scroll_percent: Math.round(percent),
       read_at: new Date().toISOString(),
     });
@@ -74,6 +84,20 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
   const [showHeader, setShowHeader] = useState(true);
   const [perbaikanVersion, setPerbaikanVersion] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
+
+  // Restore last scroll position for this chapter
+  useEffect(() => {
+    try {
+      const key = `lunovel_scroll_${novel.id}_${chapter.number}`;
+      const saved = localStorage.getItem(key);
+      if (saved) {
+        const y = parseInt(saved, 10);
+        if (!Number.isNaN(y)) {
+          window.requestAnimationFrame(() => window.scrollTo({ top: y, behavior: "auto" }));
+        }
+      }
+    } catch {}
+  }, [novel.id, chapter.number]);
 
   // Apply approved corrections to chapter content
   const { text: correctedContent, applied: appliedCorrections } = applyCorrections(chapter.content, novel.id);
@@ -165,9 +189,20 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
       setProgress(Math.min(100, Math.max(0, pct)));
-      // Save history when past 30%
-      if (pct > 30) {
-        saveHistory(novel.id, novel.slug, chapter.id, chapter.number, pct);
+      try {
+        localStorage.setItem(`lunovel_scroll_${novel.id}_${chapter.number}`, String(scrollTop));
+      } catch {}
+      // Save history when past 20%
+      if (pct > 20) {
+        saveHistory(
+          novel.id,
+          novel.slug,
+          novel.title,
+          chapter.id,
+          chapter.number,
+          chapter.title || `Chapter ${chapter.number}`,
+          pct,
+        );
       }
       setShowHeader(scrollTop < 100);
     }
@@ -241,6 +276,8 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
   const theme = themes[settings.theme];
   const minutes = estimateReadingMinutes(chapter.word_count);
         const paragraphs = chapterContent.split(/\n\n+/);
+
+  const resumeLabel = progress > 0 ? `Lanjut dari ${Math.round(progress)}%` : "Baru mulai";
 
   // Share state
   const [shareOpen, setShareOpen] = useState(false);
