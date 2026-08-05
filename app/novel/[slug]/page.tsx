@@ -5,6 +5,7 @@ import { getNovelBySlug, getChaptersByNovel } from "@/lib/data";
 import ChapterList from "@/components/ChapterList";
 
 import BookmarkButton from "@/components/BookmarkButton";
+import ResumeReadingButton from "@/components/ResumeReadingButton";
 import CorrectionPanel from "@/components/CorrectionPanel";
 import Comments from "@/components/Comments";
 
@@ -162,6 +163,7 @@ export default async function NovelPage({ params, searchParams }: Props) {
                 ⏭ Chapter Terakhir
               </Link>
             )}
+            <ResumeReadingButton novelId={novel.id} slug={novel.slug} />
             <BookmarkButton novel={novel} />
             <Link
               href={`/novel/${novel.slug}/perbaikan`}
