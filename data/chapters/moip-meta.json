@@ -1,6 +1,6 @@
 {
   "novel_id": "moip",
-  "total_chapters": 1003,
+  "total_chapters": 1020,
   "chunks": 21,
   "chunk_size": 50,
   "chapter_map": {
@@ -6021,6 +6021,108 @@
       "local_idx": 2,
       "title": "Arrangements",
       "word_count": 1972
+    },
+    "992": {
+      "chunk_idx": 20,
+      "local_idx": 3,
+      "title": "Preparations for Battle",
+      "word_count": 2162
+    },
+    "993": {
+      "chunk_idx": 20,
+      "local_idx": 4,
+      "title": "Chunyangzi vs Liang Ming",
+      "word_count": 2130
+    },
+    "994": {
+      "chunk_idx": 20,
+      "local_idx": 5,
+      "title": "Soaring",
+      "word_count": 2064
+    },
+    "995": {
+      "chunk_idx": 20,
+      "local_idx": 6,
+      "title": "Stalemate",
+      "word_count": 2266
+    },
+    "996": {
+      "chunk_idx": 20,
+      "local_idx": 7,
+      "title": "A Solitary Yang Cannot Grow",
+      "word_count": 1918
+    },
+    "997": {
+      "chunk_idx": 20,
+      "local_idx": 8,
+      "title": "The Curse of Knowledge",
+      "word_count": 1915
+    },
+    "998": {
+      "chunk_idx": 20,
+      "local_idx": 9,
+      "title": "Myriad Phenomena Cradle!",
+      "word_count": 2015
+    },
+    "999": {
+      "chunk_idx": 20,
+      "local_idx": 10,
+      "title": "Cultivating Techniques is Also Cultivating the Mind",
+      "word_count": 1785
+    },
+    "1000": {
+      "chunk_idx": 20,
+      "local_idx": 11,
+      "title": "This Battle, I Win!",
+      "word_count": 2562
+    },
+    "1001": {
+      "chunk_idx": 20,
+      "local_idx": 12,
+      "title": "It's All Ning Zhuo's Fault",
+      "word_count": 2688
+    },
+    "1002": {
+      "chunk_idx": 20,
+      "local_idx": 13,
+      "title": "I Want You All to Submit",
+      "word_count": 1997
+    },
+    "1003": {
+      "chunk_idx": 20,
+      "local_idx": 14,
+      "title": "Yang Dao Grandmaster",
+      "word_count": 2662
+    },
+    "1004": {
+      "chunk_idx": 20,
+      "local_idx": 15,
+      "title": "Where is My Medicinal Efficacy?!",
+      "word_count": 2863
+    },
+    "1005": {
+      "chunk_idx": 20,
+      "local_idx": 16,
+      "title": "Repairing the Furnace",
+      "word_count": 2139
+    },
+    "1006": {
+      "chunk_idx": 20,
+      "local_idx": 17,
+      "title": "You Should Join My Artifact Forging Hall",
+      "word_count": 2083
+    },
+    "1007": {
+      "chunk_idx": 20,
+      "local_idx": 18,
+      "title": "The Furnace is Complete!",
+      "word_count": 2198
+    },
+    "1008": {
+      "chunk_idx": 20,
+      "local_idx": 19,
+      "title": "Constructing the Treasure Land",
+      "word_count": 1980
     }
   }
 }
