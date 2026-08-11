@@ -85,6 +85,13 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
   const [perbaikanVersion, setPerbaikanVersion] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
 
+  // Auto-prefetch next chapter for instant transition
+  useEffect(() => {
+    if (nextChapter) {
+      router.prefetch(`/read/${novel.slug}/${nextChapter.number}`);
+    }
+  }, [router, novel.slug, nextChapter]);
+
   // Restore last scroll position for this chapter
   useEffect(() => {
     try {
