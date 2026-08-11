@@ -175,7 +175,7 @@ export default function PerbaikanKataModal({
             disabled={!dari.trim() || !ke.trim() || dari.trim() === ke.trim()}
             className="flex-1 py-2.5 text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-500 text-white transition-all disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-blue-900/30"
           >
-            "✓ Simpan"
+            ✓ Simpan
           </button>
         </div>
 
