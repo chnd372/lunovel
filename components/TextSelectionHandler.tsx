@@ -97,7 +97,7 @@ export default function TextSelectionHandler({
 
   return (
     <>
-      {/* 1. Floating Pencil Button — fixed bottom-right, never blocks copy menu */}
+      {/* 1. Minimal floating pencil button — fixed bottom-right */}
       {selection && !showModal && (
         <button
           onClick={(e) => {
@@ -105,11 +105,11 @@ export default function TextSelectionHandler({
             e.stopPropagation();
             setShowModal(true);
           }}
-          className="fixed z-50 bottom-24 right-4 sm:bottom-8 sm:right-6 flex items-center gap-1.5 px-3 py-2 bg-neutral-900 dark:bg-neutral-800 text-white border border-neutral-700 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all text-sm font-medium"
+          className="fixed z-50 bottom-24 right-4 sm:bottom-8 sm:right-6 w-10 h-10 flex items-center justify-center bg-neutral-900 dark:bg-neutral-800 text-white border border-neutral-700 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all"
           aria-label="Ganti Teks"
           title="Ganti Teks"
         >
-          ✏️ <span className="text-xs">Ganti</span>
+          ✏️
         </button>
       )}
 
