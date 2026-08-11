@@ -116,31 +116,30 @@ export async function addPerbaikanShared(
 ): Promise<{ list: PerbaikanKata[]; shared: boolean }> {
   const list = addPerbaikan(slug, entry);
   let shared = false;
-  
-  // Set 1.5 seconds timeout to avoid button getting stuck if Vercel KV is slow/down
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 1500);
+
+  // 100% reliable timeout wrapper using Promise.race (safeguard for old Android WebViews)
+  const fetchPromise = fetch(`/api/perbaikan/${encodeURIComponent(slug)}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      dari: entry.dari,
+      ke: entry.ke,
+      caseSensitive: entry.caseSensitive,
+      by: entry.by,
+    }),
+  });
+
+  const timeoutPromise = new Promise<Response>((_, reject) =>
+    setTimeout(() => reject(new Error("Timeout")), 1500)
+  );
 
   try {
-    const res = await fetch(`/api/perbaikan/${encodeURIComponent(slug)}`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      signal: controller.signal,
-      body: JSON.stringify({
-        dari: entry.dari,
-        ke: entry.ke,
-        caseSensitive: entry.caseSensitive,
-        by: entry.by,
-      }),
-    });
+    const res = await Promise.race([fetchPromise, timeoutPromise]);
     shared = res.ok;
   } catch (err) {
-    // network error, timeout, or abort
-    console.warn("Shared perbaikan sync warning:", err);
-  } finally {
-    clearTimeout(timeoutId);
+    console.warn("Shared perbaikan sync timeout/error, saved locally:", err);
   }
-  
+
   return { list, shared };
 }
 
@@ -171,23 +170,35 @@ export async function removePerbaikanShared(
   const target = list[idx];
   const next = removePerbaikan(slug, idx);
   if (target) {
+    const fetchPromise = fetch(
+      `/api/perbaikan/${encodeURIComponent(slug)}?dari=${encodeURIComponent(target.dari)}`,
+      { method: "DELETE" }
+    );
+    const timeoutPromise = new Promise<Response>((_, reject) =>
+      setTimeout(() => reject(new Error("Timeout")), 1500)
+    );
     try {
-      await fetch(
-        `/api/perbaikan/${encodeURIComponent(slug)}?dari=${encodeURIComponent(target.dari)}`,
-        { method: "DELETE" },
-      );
-    } catch { /* ignore */ }
+      await Promise.race([fetchPromise, timeoutPromise]);
+    } catch (err) {
+      console.warn("Shared perbaikan delete sync timeout/error:", err);
+    }
   }
   return next;
 }
 
 export async function clearPerbaikanShared(slug: string): Promise<void> {
   persist(slug, []);
+  const fetchPromise = fetch(`/api/perbaikan/${encodeURIComponent(slug)}?all=1`, {
+    method: "DELETE",
+  });
+  const timeoutPromise = new Promise<Response>((_, reject) =>
+    setTimeout(() => reject(new Error("Timeout")), 1500)
+  );
   try {
-    await fetch(`/api/perbaikan/${encodeURIComponent(slug)}?all=1`, {
-      method: "DELETE",
-    });
-  } catch { /* ignore */ }
+    await Promise.race([fetchPromise, timeoutPromise]);
+  } catch (err) {
+    console.warn("Shared perbaikan clear sync timeout/error:", err);
+  }
 }
 
 /**

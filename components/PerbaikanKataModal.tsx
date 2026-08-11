@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { addPerbaikanShared } from "@/lib/perbaikanKata";
+import { addPerbaikan, addPerbaikanShared } from "@/lib/perbaikanKata";
 
 interface Props {
   open: boolean;
@@ -18,37 +18,51 @@ export default function PerbaikanKataModal({
   const [dari, setDari] = useState("");
   const [ke, setKe] = useState("");
   const [caseSensitive, setCaseSensitive] = useState(false);
-  const [saving, setSaving] = useState(false);
-
   // Sync from parent when initialDari changes or modal opens
   useEffect(() => {
     if (open) {
       setDari(initialDari || "");
       setKe("");
       setCaseSensitive(false);
-      setSaving(false);
-    }
+      }
   }, [open, initialDari]);
 
   async function handleSave() {
     if (!dari.trim() || !ke.trim()) return;
     if (dari.trim() === ke.trim()) return;
 
-    setSaving(true);
+    // 1. Optimistic Update: Save locally instantly
     try {
-      await addPerbaikanShared({
-        slug,
+      addPerbaikan(slug, {
         dari: dari.trim(),
         ke: ke.trim(),
         caseSensitive,
         by: nickname?.trim() || "anon",
       });
-      onSaved?.();
-    } catch (e) {
-      console.error("PerbaikanKataModal save error:", e);
-    } finally {
-      setSaving(false);
+    } catch (err) {
+      console.error("Local save error:", err);
     }
+
+    // 2. Instantly notify parent to close modal and apply changes to DOM
+    onSaved?.();
+
+    // 3. Fire-and-forget sync to Vercel KV in background
+    // Since modal is already closed, user never feels any delay or hang!
+    const payload = {
+      dari: dari.trim(),
+      ke: ke.trim(),
+      caseSensitive,
+      by: nickname?.trim() || "anon",
+    };
+    
+    // Call API in background asynchronously
+    fetch(`/api/perbaikan/${encodeURIComponent(slug)}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    }).catch((err) => {
+      console.warn("Background perbaikan sync failed:", err);
+    });
   }
 
   function handleKeyDown(e: React.KeyboardEvent) {
@@ -158,10 +172,10 @@ export default function PerbaikanKataModal({
           </button>
           <button
             onClick={handleSave}
-            disabled={!dari.trim() || !ke.trim() || dari.trim() === ke.trim() || saving}
+            disabled={!dari.trim() || !ke.trim() || dari.trim() === ke.trim()}
             className="flex-1 py-2.5 text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-500 text-white transition-all disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-blue-900/30"
           >
-            {saving ? "⏳ Menyimpan..." : "✓ Simpan"}
+            "✓ Simpan"
           </button>
         </div>
 
