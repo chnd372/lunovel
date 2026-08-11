@@ -80,10 +80,11 @@ function saveHistory(
     localStorage.setItem(HISTORY_KEY, JSON.stringify(filtered.slice(0, 50)));
 
     // Sync to Supabase in background if logged in
-    if (supabase) {
-      supabase.auth.getUser().then(({ data: { user } }) => {
+    const client = supabase;
+    if (client) {
+      client.auth.getUser().then(({ data: { user } }) => {
         if (user) {
-          supabase.from("history").upsert({
+          client.from("history").upsert({
             user_id: user.id,
             series_id: novelId,
             chapter_id: chapterId,
