@@ -29,6 +29,13 @@ export const metadata: Metadata = {
   creator: siteName,
   publisher: siteName,
   applicationName: siteName,
+  manifest: "/manifest.json",
+  themeColor: "#171717",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: siteName,
+  },
   robots: {
     index: true,
     follow: true,
