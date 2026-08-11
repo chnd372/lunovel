@@ -100,11 +100,12 @@ function saveHistory(
   } catch {}
 }
 
-function applyGlossary(text: string): string {
+function applyGlossary(text: string, slug: string): string {
   let result = text;
-  const terms = Object.keys(glossaryData).sort((a, b) => b.length - a.length);
+  const novelGlossary = (glossaryData as any)[slug] || {};
+  const terms = Object.keys(novelGlossary).sort((a, b) => b.length - a.length);
   for (const term of terms) {
-    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const escaped = term.replace(/[.*+?^${}()|[\\\]\\\\]/g, "\\$&");
     const re = new RegExp(`\\b(${escaped})\\b`, "gi");
     result = result.replace(re, `<span class="glossary-term cursor-help underline decoration-dashed decoration-amber-500/60 hover:text-amber-400 transition-colors" data-term="${term}">$1</span>`);
   }
@@ -129,8 +130,9 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
       const target = e.target as HTMLElement;
       if (target.classList.contains("glossary-term")) {
         const term = target.getAttribute("data-term");
-        if (term && term in glossaryData) {
-          setSelectedTerm({ term, definition: (glossaryData as any)[term] });
+        const novelGlossary = (glossaryData as any)[novel.slug] || {};
+        if (term && term in novelGlossary) {
+          setSelectedTerm({ term, definition: novelGlossary[term] });
         }
       }
     }
@@ -676,7 +678,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
             const allCorrs = [...pendingCorrs, ...approvedCorrs];
             
             // Simple approach: highlight original text that has pending corrections
-            let rendered = applyGlossary(p);
+            let rendered = applyGlossary(p, novel.slug);
             for (const corr of pendingCorrs) {
               if (rendered.includes(corr.original)) {
                 rendered = rendered.replace(
