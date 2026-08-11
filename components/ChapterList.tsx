@@ -1,36 +1,27 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import type { Chapter, Novel } from "@/lib/types";
 
 interface Props {
   novel: Novel;
   chapters: Chapter[];
-  /** initial sort order coming from server (search param) */
   initialSort?: "newest" | "oldest";
   currentChapter?: number;
 }
 
-/**
- * Chapter list with search bar + sort toggle + responsive card grid.
- *
- * Search supports comma- or "atau"-separated chapter numbers:
- *   "69 atau 76"  → matches ch 69 & 76
- *   "69, 76, 100" → matches ch 69, 76 & 100
- *   "69"          → matches ch 69 only
- * Empty input → show all chapters (no filter).
- *
- * Sort persists per-novel in localStorage as `chapters_sort_${slug}`.
- * Server still passes an initial order via `initialSort` for SSR.
- */
+const PAGE_SIZE = 100; // Render 100 chapters per batch
+
 export default function ChapterList({
   novel, chapters, initialSort = "newest", currentChapter,
 }: Props) {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<"newest" | "oldest">(initialSort);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const sentinelRef = useRef<HTMLDivElement>(null);
 
-  // Hydrate sort from localStorage after mount (server already passed initial)
+  // Hydrate sort from localStorage after mount
   useEffect(() => {
     try {
       const v = localStorage.getItem(`chapters_sort_${novel.slug}`);
@@ -38,39 +29,60 @@ export default function ChapterList({
     } catch {}
   }, [novel.slug]);
 
+  // Reset visible count when filter/sort changes
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [query, sort]);
+
   function toggleSort() {
     const next = sort === "newest" ? "oldest" : "newest";
     setSort(next);
     try { localStorage.setItem(`chapters_sort_${novel.slug}`, next); } catch {}
   }
 
-  // Filter by query (supports "69 atau 76" / "69, 76" / "69")
+  // Filter by query
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return chapters;
-    // Split on "atau" or comma (also handle Chinese "或" just in case)
     const tokens = q.split(/\s*atau\s*|,+|\s+atau\s+|\s*或\s*/i)
-      .map((t) => t.trim())
-      .filter(Boolean);
+      .map((t) => t.trim()).filter(Boolean);
     if (tokens.length === 0) return chapters;
     return chapters.filter((ch) => {
       const num = String(ch.number);
       return tokens.some((tok) => {
-        // Numeric match: ch.number string contains token
         if (num.includes(tok)) return true;
-        // Title match fallback
         if ((ch.title ?? "").toLowerCase().includes(tok)) return true;
         return false;
       });
     });
   }, [chapters, query]);
 
-  // Display order — respect current sort
+  // Sort
   const ordered = useMemo(() => {
     return sort === "oldest"
       ? [...filtered].sort((a, b) => a.number - b.number)
       : [...filtered].sort((a, b) => b.number - a.number);
   }, [filtered, sort]);
+
+  // Only render visible slice
+  const visible = useMemo(() => ordered.slice(0, visibleCount), [ordered, visibleCount]);
+  const hasMore = visibleCount < ordered.length;
+
+  // IntersectionObserver for infinite scroll
+  const loadMore = useCallback(() => {
+    setVisibleCount((prev) => Math.min(prev + PAGE_SIZE, ordered.length));
+  }, [ordered.length]);
+
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => { if (entries[0].isIntersecting) loadMore(); },
+      { rootMargin: "400px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [loadMore]);
 
   if (chapters.length === 0) {
     return (
@@ -82,13 +94,10 @@ export default function ChapterList({
 
   return (
     <div>
-      {/* Toolbar: search + sort */}
+      {/* Toolbar */}
       <div className="flex items-center gap-2 p-3 border-b border-black/5 dark:border-white/5">
-        {/* Search */}
         <div className="relative flex-1 min-w-0">
-          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm opacity-60 pointer-events-none">
-            🔍
-          </span>
+          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm opacity-60 pointer-events-none">🔍</span>
           <input
             type="text"
             inputMode="search"
@@ -98,51 +107,69 @@ export default function ChapterList({
             className="w-full pl-9 pr-3 py-2 text-sm rounded-lg bg-black/5 dark:bg-white/[0.06] border border-black/5 dark:border-white/10 placeholder:opacity-50 focus:outline-none focus:ring-2 focus:ring-accent/60 focus:border-accent/40"
           />
         </div>
-
-        {/* Sort toggle */}
         <button
           onClick={toggleSort}
-          title={sort === "newest" ? "Urut: Terbaru → Terlama (klik untuk ubah)" : "Urut: Terlama → Terbaru (klik untuk ubah)"}
+          title={sort === "newest" ? "Urut: Terbaru → Terlama" : "Urut: Terlama → Terbaru"}
           className="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg bg-black/5 dark:bg-white/[0.06] border border-black/5 dark:border-white/10 hover:bg-black/10 dark:hover:bg-white/[0.1] transition-colors"
         >
-          <span className="text-base leading-none">
-            {sort === "newest" ? "↓" : "↑"}
-          </span>
-          <span className="hidden sm:inline">
-            {sort === "newest" ? "Terbaru" : "Terlama"}
-          </span>
+          <span className="text-base leading-none">{sort === "newest" ? "↓" : "↑"}</span>
+          <span className="hidden sm:inline">{sort === "newest" ? "Terbaru" : "Terlama"}</span>
         </button>
       </div>
 
-      {/* Result count (only when filtering) */}
+      {/* Result count when filtering */}
       {query.trim() && (
         <div className="px-4 py-2 text-xs opacity-60 border-b border-black/5 dark:border-white/5">
           {filtered.length === 0 ? (
             <span>Tidak ada chapter yang cocok dengan "{query}"</span>
           ) : (
-            <span>
-              Menampilkan {filtered.length} dari {chapters.length} chapter
-            </span>
+            <span>Menampilkan {filtered.length} dari {chapters.length} chapter</span>
           )}
         </div>
       )}
 
-      {/* Card grid */}
+      {/* Chapter count indicator */}
+      {!query.trim() && (
+        <div className="px-4 py-2 text-xs opacity-40 border-b border-black/5 dark:border-white/5">
+          {chapters.length} chapter tersedia · Menampilkan {Math.min(visibleCount, ordered.length)} chapter
+        </div>
+      )}
+
+      {/* Card grid — only renders `visible` slice */}
       {ordered.length === 0 ? (
         <div className="text-center py-12 opacity-60 text-sm">
           Coba cari dengan nomor lain (contoh: "1" atau "1, 5, 10")
         </div>
       ) : (
-        <div className="p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {ordered.map((ch) => (
-            <ChapterCard
-              key={ch.id}
-              novel={novel}
-              chapter={ch}
-              isCurrent={ch.number === currentChapter}
-            />
-          ))}
-        </div>
+        <>
+          <div className="p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {visible.map((ch) => (
+              <ChapterCard
+                key={ch.id}
+                novel={novel}
+                chapter={ch}
+                isCurrent={ch.number === currentChapter}
+              />
+            ))}
+          </div>
+
+          {/* Sentinel for infinite scroll */}
+          {hasMore && (
+            <div ref={sentinelRef} className="flex justify-center py-6">
+              <div className="flex items-center gap-2 text-xs opacity-50">
+                <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                Memuat {Math.min(PAGE_SIZE, ordered.length - visibleCount)} chapter lagi...
+              </div>
+            </div>
+          )}
+
+          {/* End of list */}
+          {!hasMore && ordered.length > PAGE_SIZE && (
+            <div className="text-center py-4 text-xs opacity-30">
+              ✓ Semua {ordered.length} chapter ditampilkan
+            </div>
+          )}
+        </>
       )}
     </div>
   );
@@ -167,7 +194,6 @@ function ChapterCard({
         ${isCurrent ? "ring-2 ring-accent border-accent/40" : ""}
       `}
     >
-      {/* UP badge */}
       {isUpdated && (
         <span
           className="absolute top-2 right-2 px-1.5 py-0.5 text-[9px] font-bold uppercase rounded tracking-wider pointer-events-none"
@@ -177,7 +203,6 @@ function ChapterCard({
         </span>
       )}
 
-      {/* Thumbnail */}
       <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden bg-neutral-700/80 flex items-center justify-center">
         {cover ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -192,7 +217,6 @@ function ChapterCard({
         )}
       </div>
 
-      {/* Content */}
       <div className="flex-1 min-w-0 flex flex-col justify-center">
         <div className="text-sm font-semibold line-clamp-1 pr-10">
           Chapter {chapter.number}
@@ -207,7 +231,6 @@ function ChapterCard({
         </div>
       </div>
 
-      {/* Current indicator stripe */}
       {isCurrent && (
         <span className="absolute left-0 top-0 bottom-0 w-0.5 bg-accent" />
       )}
@@ -215,7 +238,6 @@ function ChapterCard({
   );
 }
 
-/** Indonesian relative time matching spec wording. */
 function timeAgoID(iso: string): string {
   const now = Date.now();
   const then = new Date(iso).getTime();
@@ -233,7 +255,6 @@ function timeAgoID(iso: string): string {
   return new Date(iso).toLocaleDateString("id-ID", { year: "numeric", month: "short", day: "numeric" });
 }
 
-/** UP badge rule: chapter updated within last 3 days. */
 function isRecentlyUpdated(iso: string): boolean {
   if (!iso) return false;
   const then = new Date(iso).getTime();
