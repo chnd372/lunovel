@@ -21,7 +21,6 @@ export default function TextSelectionHandler({
   } | null>(null);
   
   const [showModal, setShowModal] = useState(false);
-  const popupRef = useRef<HTMLDivElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastTextRef = useRef<string>("");
 
@@ -98,29 +97,20 @@ export default function TextSelectionHandler({
 
   return (
     <>
-      {/* 1. Floating Pencil Button ONLY (No huge form) */}
+      {/* 1. Floating Pencil Button — fixed bottom-right, never blocks copy menu */}
       {selection && !showModal && (
-        <div
-          ref={popupRef}
-          className="fixed z-50 transform -translate-x-1/2 -translate-y-full animate-in fade-in zoom-in duration-200"
-          style={{
-            top: Math.max(8, selection.rect.top - 12),
-            left: selection.rect.left + selection.rect.width / 2,
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            setShowModal(true);
           }}
+          className="fixed z-50 bottom-24 right-4 sm:bottom-8 sm:right-6 flex items-center gap-1.5 px-3 py-2 bg-neutral-900 dark:bg-neutral-800 text-white border border-neutral-700 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all text-sm font-medium"
+          aria-label="Ganti Teks"
+          title="Ganti Teks"
         >
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setShowModal(true);
-            }}
-            className="flex items-center justify-center w-10 h-10 bg-neutral-900 dark:bg-neutral-800 text-white border border-neutral-700 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all"
-            aria-label="Ganti Teks"
-            title="Ganti Teks (Client-side)"
-          >
-            ✏️
-          </button>
-        </div>
+          ✏️ <span className="text-xs">Ganti</span>
+        </button>
       )}
 
       {/* 2. Modal Dialog (Dark Mode) - opens only when pencil is clicked */}
