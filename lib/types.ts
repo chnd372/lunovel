@@ -1,6 +1,6 @@
 export type NovelStatus = "ongoing" | "completed" | "hiatus";
 export type NovelType = "translated" | "original";
-export type ReaderTheme = "light" | "sepia" | "dark";
+export type ReaderTheme = "light" | "sepia" | "dark" | "cyan";
 
 export interface Novel {
   id: string;

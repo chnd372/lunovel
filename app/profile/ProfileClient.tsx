@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Novel } from "@/lib/types";
 import { getAllNovels, getChaptersByNovel } from "@/lib/data";
+import { supabase } from "@/lib/supabase";
 
 interface HistoryEntry {
   novel_id: string;
@@ -21,17 +22,33 @@ export default function ProfileClient() {
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [novels, setNovels] = useState<Novel[]>([]);
   const [chapterTitles, setChapterTitles] = useState<Record<string, string>>({});
+  const [user, setUser] = useState<any>(null);
+  const [syncing, setSyncing] = useState(false);
 
   useEffect(() => {
-    setBookmarks(JSON.parse(localStorage.getItem(BM_KEY) || "[]"));
-    setHistory(JSON.parse(localStorage.getItem(HIST_KEY) || "[]"));
+    // 1. Get local data
+    const localBms = JSON.parse(localStorage.getItem(BM_KEY) || "[]");
+    const localHist = JSON.parse(localStorage.getItem(HIST_KEY) || "[]");
+    setBookmarks(localBms);
+    setHistory(localHist);
 
-    // Load novel data for bookmark/history
+    // 2. Fetch Supabase user and sync
+    if (supabase) {
+      supabase.auth.getUser().then(({ data: { user } }) => {
+        if (user) {
+          setUser(user);
+          syncSupabaseData(user, localBms, localHist);
+        }
+      });
+    }
+
+    // 3. Load novel & chapter titles
     (async () => {
       const all = await getAllNovels();
       setNovels(all);
       const titles: Record<string, string> = {};
-      for (const h of JSON.parse(localStorage.getItem(HIST_KEY) || "[]")) {
+      const targetHist = user ? history : localHist;
+      for (const h of targetHist) {
         try {
           const chs = await getChaptersByNovel(h.novel_id);
           const ch = chs.find((c) => c.id === h.chapter_id);
@@ -40,7 +57,87 @@ export default function ProfileClient() {
       }
       setChapterTitles(titles);
     })();
-  }, []);
+  }, [user]);
+
+  async function syncSupabaseData(currUser: any, localBms: string[], localHist: HistoryEntry[]) {
+    if (!supabase) return;
+    setSyncing(true);
+    try {
+      // --- Bookmarks Sync ---
+      const { data: dbBms } = await supabase
+        .from("bookmarks")
+        .select("series_id")
+        .eq("user_id", currUser.id);
+      
+      const dbBmIds = (dbBms || []).map((b) => b.series_id);
+      const mergedBms = Array.from(new Set([...localBms, ...dbBmIds]));
+      
+      // Update local storage
+      localStorage.setItem(BM_KEY, JSON.stringify(mergedBms));
+      setBookmarks(mergedBms);
+
+      // Write local-only bookmarks to DB
+      const localOnlyBms = localBms.filter((id) => !dbBmIds.includes(id));
+      if (localOnlyBms.length > 0) {
+        await supabase.from("bookmarks").insert(
+          localOnlyBms.map((id) => ({ user_id: currUser.id, series_id: id }))
+        );
+      }
+
+      // --- History Sync ---
+      const { data: dbHist } = await supabase
+        .from("history")
+        .select("series_id, chapter_id, chapter_number, page, read_at")
+        .eq("user_id", currUser.id);
+
+      const dbEntries: HistoryEntry[] = (dbHist || []).map((h) => ({
+        novel_id: h.series_id,
+        chapter_id: h.chapter_id,
+        chapter_number: Number(h.chapter_number),
+        scroll_percent: h.page || 0, // 'page' stores scroll percent
+        read_at: h.read_at,
+      }));
+
+      // Merge history entries by novel_id (newest wins)
+      const histMap = new Map<string, HistoryEntry>();
+      [...localHist, ...dbEntries].forEach((h) => {
+        const existing = histMap.get(h.novel_id);
+        if (!existing || new Date(h.read_at) > new Date(existing.read_at)) {
+          histMap.set(h.novel_id, h);
+        }
+      });
+      const mergedHist = Array.from(histMap.values());
+      
+      localStorage.setItem(HIST_KEY, JSON.stringify(mergedHist));
+      setHistory(mergedHist);
+
+      // Upload newer local progress to Supabase
+      for (const lh of localHist) {
+        const matchingDb = dbEntries.find((dh) => dh.novel_id === lh.novel_id);
+        if (!matchingDb || new Date(lh.read_at) > new Date(matchingDb.read_at)) {
+          await supabase.from("history").upsert({
+            user_id: currUser.id,
+            series_id: lh.novel_id,
+            chapter_id: lh.chapter_id,
+            chapter_number: lh.chapter_number,
+            page: lh.scroll_percent,
+            read_at: lh.read_at,
+          });
+        }
+      }
+    } catch (e) {
+      console.error("Supabase sync error:", e);
+    } finally {
+      setSyncing(false);
+    }
+  }
+
+  async function handleLogout() {
+    if (!supabase) return;
+    await supabase.auth.signOut();
+    setUser(null);
+    window.location.reload();
+  }
 
   const bookmarkNovels = novels.filter((n) => bookmarks.includes(n.id));
   const historyEntries = history
@@ -52,7 +149,33 @@ export default function ProfileClient() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6 space-y-8">
-      <h1 className="text-2xl sm:text-3xl font-bold font-serif">Profil Lo</h1>
+      {/* User Header */}
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pb-4 border-b border-black/5 dark:border-white/5">
+        <div>
+          <h1 className="text-2xl sm:text-3xl font-bold font-serif">Profil Lo</h1>
+          {user && (
+            <p className="text-xs opacity-60 mt-1">
+              Masuk sebagai <span className="font-semibold text-accent">{user.email}</span>
+              {syncing && " (⏳ Menyinkronkan...)"}
+            </p>
+          )}
+        </div>
+        {user ? (
+          <button
+            onClick={handleLogout}
+            className="px-3 py-1.5 text-xs font-semibold text-red-500 hover:text-white border border-red-500/35 hover:bg-red-500/90 rounded-lg transition-colors"
+          >
+            Logout
+          </button>
+        ) : (
+          <Link
+            href="/login"
+            className="px-3 py-1.5 text-xs font-semibold text-accent hover:text-white border border-accent/35 hover:bg-accent rounded-lg transition-colors"
+          >
+            Login Cloud
+          </Link>
+        )}
+      </div>
 
       {/* History */}
       <section>
@@ -128,12 +251,7 @@ export default function ProfileClient() {
       </section>
 
       <div className="text-xs opacity-60 text-center pt-4 border-t border-black/5 dark:border-white/5">
-        Data lo disimpan secara lokal di browser ini.
-        <br />
-        <Link href="/login" className="text-accent hover:underline">
-          Setup akun cloud
-        </Link>{" "}
-        untuk sinkronisasi antar device.
+        {user ? "Data lo disinkronkan dengan aman di cloud." : "Data lo disimpan secara lokal di browser ini."}
       </div>
     </div>
   );

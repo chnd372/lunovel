@@ -4,12 +4,15 @@ import { useEffect, useState, useRef, useMemo } from "react";
 import type { ReaderSettings, Chapter, Novel, ReaderTheme } from "@/lib/types";
 import { estimateReadingMinutes } from "@/lib/data";
 import { applyCorrections, getCorrections } from "@/lib/corrections";
+import { supabase } from "@/lib/supabase";
 import {
   applyPerbaikan, applyPerbaikanToDOM, syncSharedRules,
 } from "@/lib/perbaikanKata";
 import TextSelectionHandler from "@/components/TextSelectionHandler";
 import TapFixMode from "@/components/TapFixMode";
 import Comments from "@/components/Comments";
+import GlossaryTooltip from "@/components/GlossaryTooltip";
+import glossaryData from "@/data/glossary.json";
 import { useRouter } from "next/navigation";
 
 interface Props {
@@ -34,6 +37,7 @@ const themes: Record<ReaderTheme, { bg: string; text: string; label: string; ico
   light: { bg: "bg-[#fafaf8]", text: "text-[#1a1a1a]", label: "Light", icon: "☀️" },
   sepia: { bg: "bg-[#f4ecd8]", text: "text-[#5b4636]", label: "Sepia", icon: "📜" },
   dark:  { bg: "bg-[#0d0d0d]", text: "text-[#e8e8e8]", label: "Dark",  icon: "🌙" },
+  cyan:  { bg: "bg-[#0f1c24]", text: "text-[#d1e2ec]", label: "Cyan",  icon: "🌃" },
 };
 
 function loadSettings(): ReaderSettings {
@@ -59,6 +63,7 @@ function saveHistory(
   percent: number,
 ) {
   try {
+    const readAt = new Date().toISOString();
     const raw = localStorage.getItem(HISTORY_KEY);
     const list: any[] = raw ? JSON.parse(raw) : [];
     const filtered = list.filter((h: any) => h.novel_id !== novelId);
@@ -70,10 +75,39 @@ function saveHistory(
       chapter_number: chapterNumber,
       chapter_title: chapterTitle,
       scroll_percent: Math.round(percent),
-      read_at: new Date().toISOString(),
+      read_at: readAt,
     });
     localStorage.setItem(HISTORY_KEY, JSON.stringify(filtered.slice(0, 50)));
+
+    // Sync to Supabase in background if logged in
+    if (supabase) {
+      supabase.auth.getUser().then(({ data: { user } }) => {
+        if (user) {
+          supabase.from("history").upsert({
+            user_id: user.id,
+            series_id: novelId,
+            chapter_id: chapterId,
+            chapter_number: chapterNumber,
+            page: Math.round(percent),
+            read_at: readAt,
+          }).then(({ error }) => {
+            if (error) console.error("Error syncing history to Supabase:", error);
+          });
+        }
+      });
+    }
   } catch {}
+}
+
+function applyGlossary(text: string): string {
+  let result = text;
+  const terms = Object.keys(glossaryData).sort((a, b) => b.length - a.length);
+  for (const term of terms) {
+    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(`\\b(${escaped})\\b`, "gi");
+    result = result.replace(re, `<span class="glossary-term cursor-help underline decoration-dashed decoration-amber-500/60 hover:text-amber-400 transition-colors" data-term="${term}">$1</span>`);
+  }
+  return result;
 }
 
 export default function Reader({ novel, chapter, prevChapter, nextChapter }: Props) {
@@ -84,6 +118,24 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
   const [showHeader, setShowHeader] = useState(true);
   const [perbaikanVersion, setPerbaikanVersion] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
+  const [selectedTerm, setSelectedTerm] = useState<{term: string, definition: string} | null>(null);
+
+  // Click handler for glossary terms
+  useEffect(() => {
+    const el = contentRef.current;
+    if (!el) return;
+    function onClick(e: MouseEvent) {
+      const target = e.target as HTMLElement;
+      if (target.classList.contains("glossary-term")) {
+        const term = target.getAttribute("data-term");
+        if (term && term in glossaryData) {
+          setSelectedTerm({ term, definition: (glossaryData as any)[term] });
+        }
+      }
+    }
+    el.addEventListener("click", onClick);
+    return () => el.removeEventListener("click", onClick);
+  }, []);
 
   // Auto-prefetch next chapter for instant transition
   useEffect(() => {
@@ -574,6 +626,14 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
         contentRef={contentRef}
       />
 
+            {selectedTerm && (
+        <GlossaryTooltip 
+          term={selectedTerm.term} 
+          definition={selectedTerm.definition} 
+          onClose={() => setSelectedTerm(null)} 
+        />
+      )}
+      
       {/* Article */}
       <article
         ref={contentRef}
@@ -615,7 +675,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
             const allCorrs = [...pendingCorrs, ...approvedCorrs];
             
             // Simple approach: highlight original text that has pending corrections
-            let rendered = p;
+            let rendered = applyGlossary(p);
             for (const corr of pendingCorrs) {
               if (rendered.includes(corr.original)) {
                 rendered = rendered.replace(
