@@ -172,6 +172,13 @@ export default async function NovelPage({ params, searchParams }: Props) {
             >
               ✏️ Perbaikan Kata
             </Link>
+            <Link
+              href={`/novel/${novel.slug}/search`}
+              className="px-3 py-2 rounded-lg bg-black/5 dark:bg-white/10 text-sm font-medium hover:bg-black/10 dark:hover:bg-white/20 inline-flex items-center gap-1.5"
+              title="Cari kata kunci, nama tokoh, atau dialog di seluruh isi novel"
+            >
+              🔍 Cari Isi
+            </Link>
           </div>
         </div>
       </div>

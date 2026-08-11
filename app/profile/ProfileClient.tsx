@@ -24,6 +24,50 @@ export default function ProfileClient() {
   const [chapterTitles, setChapterTitles] = useState<Record<string, string>>({});
   const [user, setUser] = useState<any>(null);
   const [syncing, setSyncing] = useState(false);
+  const [totalWords, setTotalWords] = useState(0);
+
+  // Calculate Reading Stats
+  const stats = useMemo(() => {
+    if (history.length === 0) return { streak: 0, totalChapters: 0, timeMin: 0 };
+
+    // 1. Calculate Streak
+    const dates = history
+      .map((h) => h.read_at.split("T")[0])
+      .filter((v, i, a) => a.indexOf(v) === i) // Unique dates
+      .sort((a, b) => new Date(b).getTime() - new Date(a).getTime()); // Newest first
+
+    let streak = 0;
+    if (dates.length > 0) {
+      const todayStr = new Date().toISOString().split("T")[0];
+      const yesterday = new Date();
+      yesterday.setDate(yesterday.getDate() - 1);
+      const yesterdayStr = yesterday.toISOString().split("T")[0];
+
+      let current = dates[0];
+      // Check if user read today or yesterday to count active streak
+      if (current === todayStr || current === yesterdayStr) {
+        streak = 1;
+        for (let i = 1; i < dates.length; i++) {
+          const prevDate = new Date(current);
+          const checkDate = new Date(dates[i]);
+          const diffDays = Math.round((prevDate.getTime() - checkDate.getTime()) / (1000 * 60 * 60 * 24));
+          
+          if (diffDays === 1) {
+            streak++;
+            current = dates[i];
+          } else if (diffDays > 1) {
+            break;
+          }
+        }
+      }
+    }
+
+    return {
+      streak,
+      totalChapters: history.length,
+      timeMin: Math.round(totalWords / 200), // average 200 words per minute
+    };
+  }, [history, totalWords]);
 
   useEffect(() => {
     // 1. Get local data
@@ -47,15 +91,20 @@ export default function ProfileClient() {
       const all = await getAllNovels();
       setNovels(all);
       const titles: Record<string, string> = {};
+      let wordsSum = 0;
       const targetHist = user ? history : localHist;
       for (const h of targetHist) {
         try {
           const chs = await getChaptersByNovel(h.novel_id);
           const ch = chs.find((c) => c.id === h.chapter_id);
-          if (ch) titles[h.chapter_id] = ch.title || `Chapter ${ch.number}`;
+          if (ch) {
+            titles[h.chapter_id] = ch.title || `Chapter ${ch.number}`;
+            wordsSum += ch.word_count || 0;
+          }
         } catch {}
       }
       setChapterTitles(titles);
+      setTotalWords(wordsSum);
     })();
   }, [user]);
 
@@ -152,7 +201,26 @@ export default function ProfileClient() {
       {/* User Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pb-4 border-b border-black/5 dark:border-white/5">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-bold font-serif">Profil Lo</h1>
+                <h1 className="text-2xl sm:text-3xl font-bold font-serif">Profil Lo</h1>
+
+      {/* Reading Stats Dashboard */}
+      <div className="grid grid-cols-3 gap-3">
+        <div className="p-4 rounded-2xl bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/20 text-center space-y-1">
+          <div className="text-2xl">🔥</div>
+          <div className="text-xl sm:text-2xl font-black text-amber-500 font-mono">{stats.streak}</div>
+          <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider opacity-60">Hari Streak</div>
+        </div>
+        <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 text-center space-y-1">
+          <div className="text-2xl">📖</div>
+          <div className="text-xl sm:text-2xl font-black text-blue-500 font-mono">{stats.totalChapters}</div>
+          <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider opacity-60">Bab Dibaca</div>
+        </div>
+        <div className="p-4 rounded-2xl bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 border border-emerald-500/20 text-center space-y-1">
+          <div className="text-2xl">⚡</div>
+          <div className="text-xl sm:text-2xl font-black text-emerald-500 font-mono">{stats.timeMin}m</div>
+          <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider opacity-60">Menit Baca</div>
+        </div>
+      </div>
           {user && (
             <p className="text-xs opacity-60 mt-1">
               Masuk sebagai <span className="font-semibold text-accent">{user.email}</span>
