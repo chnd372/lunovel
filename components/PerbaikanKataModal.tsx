@@ -41,7 +41,7 @@ export default function PerbaikanKataModal({
         dari: dari.trim(),
         ke: ke.trim(),
         caseSensitive,
-        submittedBy: nickname?.trim() || "anon",
+        by: nickname?.trim() || "anon",
       });
       onSaved?.();
     } catch (e) {

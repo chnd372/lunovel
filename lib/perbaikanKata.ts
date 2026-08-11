@@ -116,10 +116,16 @@ export async function addPerbaikanShared(
 ): Promise<{ list: PerbaikanKata[]; shared: boolean }> {
   const list = addPerbaikan(slug, entry);
   let shared = false;
+  
+  // Set 1.5 seconds timeout to avoid button getting stuck if Vercel KV is slow/down
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 1500);
+
   try {
     const res = await fetch(`/api/perbaikan/${encodeURIComponent(slug)}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
+      signal: controller.signal,
       body: JSON.stringify({
         dari: entry.dari,
         ke: entry.ke,
@@ -128,7 +134,13 @@ export async function addPerbaikanShared(
       }),
     });
     shared = res.ok;
-  } catch { /* offline — still saved locally */ }
+  } catch (err) {
+    // network error, timeout, or abort
+    console.warn("Shared perbaikan sync warning:", err);
+  } finally {
+    clearTimeout(timeoutId);
+  }
+  
   return { list, shared };
 }
 
