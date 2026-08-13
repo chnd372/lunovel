@@ -101,14 +101,34 @@ function saveHistory(
 }
 
 function applyGlossary(text: string, slug: string): string {
-  let result = text;
+  // Decode HTML entities first
+  let result = text.replace(/&quot;/g, '"').replace(/&gt;/g, '>').replace(/&lt;/g, '<');
+  
   const novelGlossary = (glossaryData as any)[slug] || {};
+  // Sort by length DESC: longest terms first to avoid substring conflicts
+  // (e.g. "nameless true immortal" before "true immortal")
   const terms = Object.keys(novelGlossary).sort((a, b) => b.length - a.length);
+  
+  // Use token placeholders to prevent nested re-matching
+  const tokens: string[] = [];
+  
   for (const term of terms) {
-    const escaped = term.replace(/[.*+?^${}()|[\\\]\\\\]/g, "\\$&");
-    const re = new RegExp(`\\b(${escaped})\\b`, "gi");
-    result = result.replace(re, `<span class="glossary-term cursor-help underline decoration-dashed decoration-amber-500/60 hover:text-amber-400 transition-colors" data-term="${term}">$1</span>`);
+    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    // Match whole phrase, case-insensitive, not inside a word
+    const re = new RegExp(`(?<![a-zA-Z])(${escaped})(?![a-zA-Z])`, "gi");
+    
+    result = result.replace(re, (match) => {
+      const token = `\x00TOK${tokens.length}\x00`;
+      tokens.push(`<span class="glossary-term cursor-help underline decoration-dashed decoration-amber-500/60 hover:text-amber-400 transition-colors" data-term="${term}">${match}</span>`);
+      return token;
+    });
   }
+  
+  // Replace all tokens with their actual HTML
+  for (let i = 0; i < tokens.length; i++) {
+    result = result.replace(`\x00TOK${i}\x00`, tokens[i]);
+  }
+  
   return result;
 }
 
