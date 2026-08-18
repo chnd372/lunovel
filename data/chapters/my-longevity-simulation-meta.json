@@ -1,7 +1,7 @@
 {
   "novel_id": "my-longevity-simulation",
-  "total_chapters": 1770,
-  "chunks": 59,
+  "total_chapters": 1771,
+  "chunks": 60,
   "chunk_size": 30,
   "chapter_map": {
     "1": {
@@ -7748,2879 +7748,2885 @@
       "chunk_idx": 43,
       "local_idx": 0,
       "title": "Golden Needle Reverses Xuanhuang",
-      "word_count": 4164
+      "word_count": 4269
     },
     "1301": {
       "chunk_idx": 43,
       "local_idx": 1,
       "title": "Xuanhuang Wind Calamity Tribulation",
-      "word_count": 4175
+      "word_count": 4206
     },
     "1302": {
       "chunk_idx": 43,
       "local_idx": 2,
       "title": "Returning to Void, Ultimately Reverting to Truth",
-      "word_count": 4183
+      "word_count": 4251
     },
     "1303": {
       "chunk_idx": 43,
       "local_idx": 3,
       "title": "Looking Back and Reviewing",
-      "word_count": 2409
+      "word_count": 2486
     },
     "1304": {
       "chunk_idx": 43,
       "local_idx": 4,
       "title": "Return to [Truth] Truly Changes",
-      "word_count": 4401
+      "word_count": 4364
     },
     "1305": {
       "chunk_idx": 43,
       "local_idx": 5,
       "title": "The White Ring Descends into the Mortal World",
-      "word_count": 2607
+      "word_count": 2575
     },
     "1306": {
       "chunk_idx": 43,
       "local_idx": 6,
       "title": "Changes Between the Immortal and Mortal Realms",
-      "word_count": 4211
+      "word_count": 4282
     },
     "1307": {
       "chunk_idx": 43,
       "local_idx": 7,
       "title": "Bestowing the Dao of the Star Sea",
-      "word_count": 2384
+      "word_count": 2414
     },
     "1308": {
       "chunk_idx": 43,
       "local_idx": 8,
       "title": "The First Transformation of the Xuanhuang Realm",
-      "word_count": 2443
+      "word_count": 2420
     },
     "1309": {
       "chunk_idx": 43,
       "local_idx": 9,
       "title": "First Encounter with the Carefree Paradies",
-      "word_count": 2351
+      "word_count": 2398
     },
     "1310": {
       "chunk_idx": 43,
       "local_idx": 10,
       "title": "Demon Beasts Secretly Devour Spirits",
-      "word_count": 3565
+      "word_count": 3617
     },
     "1311": {
       "chunk_idx": 43,
       "local_idx": 11,
       "title": "The Initial Revival of Xuanhuang",
-      "word_count": 2422
+      "word_count": 2370
     },
     "1312": {
       "chunk_idx": 43,
       "local_idx": 12,
       "title": "Immortal-Mortal Miasma Slays Immortals",
-      "word_count": 2620
+      "word_count": 2627
     },
     "1313": {
       "chunk_idx": 43,
       "local_idx": 13,
       "title": "The Floating Across Starry Sky Formation Complete",
-      "word_count": 2532
+      "word_count": 2617
     },
     "1314": {
       "chunk_idx": 43,
       "local_idx": 14,
       "title": "Ji Yuzhen's Memories",
-      "word_count": 2452
+      "word_count": 2404
     },
     "1315": {
       "chunk_idx": 43,
       "local_idx": 15,
       "title": "The Xuantian Sect Dharma Kings",
-      "word_count": 2577
+      "word_count": 2480
     },
     "1316": {
       "chunk_idx": 43,
       "local_idx": 16,
       "title": "A Single Sword Crossing the Star Sea",
-      "word_count": 2505
+      "word_count": 2481
     },
     "1317": {
       "chunk_idx": 43,
       "local_idx": 17,
       "title": "True Immortal Power Draws the Enemy",
-      "word_count": 2523
+      "word_count": 2459
     },
     "1318": {
       "chunk_idx": 43,
       "local_idx": 18,
       "title": "Trade Beneath the High Wall",
-      "word_count": 2437
+      "word_count": 2433
     },
     "1319": {
       "chunk_idx": 43,
       "local_idx": 19,
       "title": "The Shortcut to Attaining the Dao",
-      "word_count": 2439
+      "word_count": 2408
     },
     "1320": {
       "chunk_idx": 43,
       "local_idx": 20,
       "title": "The Shock of Creation",
-      "word_count": 2363
+      "word_count": 2369
     },
     "1321": {
       "chunk_idx": 43,
       "local_idx": 21,
       "title": "The Mystery of Controlled Immortal Ancestor",
-      "word_count": 2767
+      "word_count": 2511
     },
     "1322": {
       "chunk_idx": 43,
       "local_idx": 22,
-      "title": "The Divine Tree Conceals an Immortal Script Character",
-      "word_count": 2286
+      "title": "Pohon Ilahi Menyembunyikan Karakter Skrip Abadi",
+      "word_count": 2419
     },
     "1323": {
       "chunk_idx": 43,
       "local_idx": 23,
-      "title": "Entropy Reversal and Rejuvenation",
-      "word_count": 2323
+      "title": "Pembalikan Entropi dan Peremajaan",
+      "word_count": 2340
     },
     "1324": {
       "chunk_idx": 43,
       "local_idx": 24,
-      "title": "Blood Reveals Memories of a True Immortal",
-      "word_count": 2342
+      "title": "Darah Mengungkap Memori Immortal Sejati",
+      "word_count": 2351
     },
     "1325": {
       "chunk_idx": 43,
       "local_idx": 25,
-      "title": "The Beginning of Creating an Immortal",
-      "word_count": 2457
+      "title": "Awal Mula Menciptakan Abadi",
+      "word_count": 2480
     },
     "1326": {
       "chunk_idx": 43,
       "local_idx": 26,
-      "title": "Feigning Madness to Witness the High Wall",
-      "word_count": 2452
+      "title": "Berpura-pura Gila untuk Menyaksikan Tembok Tinggi",
+      "word_count": 2592
     },
     "1327": {
       "chunk_idx": 43,
       "local_idx": 27,
-      "title": "Ascending to the Immortal's Shadow",
-      "word_count": 2337
+      "title": "Naik ke Bayangan Abadi",
+      "word_count": 2574
+    },
+    "1328": {
+      "chunk_idx": 43,
+      "local_idx": 28,
+      "title": "Kegelapan Berkumpul di Antara Puncak",
+      "word_count": 2533
     },
     "1329": {
       "chunk_idx": 43,
-      "local_idx": 28,
-      "title": "A Finger Descends, Destroying the Firmament",
-      "word_count": 2412
+      "local_idx": 29,
+      "title": "Jari Turun, Menghancurkan Cakrawala",
+      "word_count": 2523
     },
     "1330": {
-      "chunk_idx": 43,
-      "local_idx": 29,
-      "title": "An Immortal Fall Annihilates All Things",
-      "word_count": 2402
+      "chunk_idx": 44,
+      "local_idx": 0,
+      "title": "Kejatuhan Abadi Memusnahkan Segala Sesuatu | Simulasi Kelanggenganku",
+      "word_count": 2461
     },
     "1331": {
       "chunk_idx": 44,
-      "local_idx": 0,
-      "title": "The Depressions of the Darkest Star Sea",
-      "word_count": 2466
+      "local_idx": 1,
+      "title": "Cekungan Laut Bintang Gelap",
+      "word_count": 2459
     },
     "1332": {
       "chunk_idx": 44,
-      "local_idx": 1,
-      "title": "Tempting Mo Rubin Once More",
-      "word_count": 2484
+      "local_idx": 2,
+      "title": "Menggoda Mo Rubin Sekali Lagi",
+      "word_count": 2547
     },
     "1333": {
       "chunk_idx": 44,
-      "local_idx": 2,
-      "title": "The Mystery of the Xuantian King's Disappearance",
-      "word_count": 2463
+      "local_idx": 3,
+      "title": "Misteri Hilangnya Raja Xuantian",
+      "word_count": 2517
     },
     "1334": {
       "chunk_idx": 44,
-      "local_idx": 3,
-      "title": "The Revival of True Immortal You",
-      "word_count": 2397
+      "local_idx": 4,
+      "title": "Kebangkitan Sang Abadi Sejati | Simulasi Umur Panjang Saya",
+      "word_count": 2433
     },
     "1335": {
       "chunk_idx": 44,
-      "local_idx": 4,
-      "title": "The Dao Annihilation Calamity of the Immortal Realm",
-      "word_count": 2472
+      "local_idx": 5,
+      "title": "Bencana Pemusnahan Dao di Alam Immortal",
+      "word_count": 2454
     },
     "1336": {
       "chunk_idx": 44,
-      "local_idx": 5,
-      "title": "Before the Dao of Inscription",
-      "word_count": 2513
+      "local_idx": 6,
+      "title": "Sebelum Dao Prasasti",
+      "word_count": 2567
     },
     "1337": {
       "chunk_idx": 44,
-      "local_idx": 6,
-      "title": "Taijia Realm Divine Art",
-      "word_count": 2538
+      "local_idx": 7,
+      "title": "Seni Ilahi Realm Taijia",
+      "word_count": 2573
     },
     "1338": {
       "chunk_idx": 44,
-      "local_idx": 7,
-      "title": "Ten Thousand Years of Favorability",
-      "word_count": 2529
+      "local_idx": 8,
+      "title": "Sepuluh Ribu Tahun Favorabilitas",
+      "word_count": 2511
     },
     "1339": {
       "chunk_idx": 44,
-      "local_idx": 8,
-      "title": "The Xuan Shang of Those Bygone Years",
-      "word_count": 2433
+      "local_idx": 9,
+      "title": "Xuan Shang dari Masa Lampau",
+      "word_count": 2430
     },
     "1340": {
       "chunk_idx": 44,
-      "local_idx": 9,
-      "title": "Sun Piaomiao's Journey Across the Starry Sky",
-      "word_count": 2511
+      "local_idx": 10,
+      "title": "Perjalanan Sun Piaomiao Menembus Langit Berbintang",
+      "word_count": 2510
     },
     "1341": {
       "chunk_idx": 44,
-      "local_idx": 10,
-      "title": "The Cause of the World's Destruction Back Then",
-      "word_count": 2300
+      "local_idx": 11,
+      "title": "Penyebab Kehancuran Dunia Kala Itu",
+      "word_count": 2412
     },
     "1342": {
       "chunk_idx": 44,
-      "local_idx": 11,
-      "title": "A True Immortal Lays Out the Go Board",
-      "word_count": 2467
+      "local_idx": 12,
+      "title": "Abadi Sejati Menata Papan Go",
+      "word_count": 2521
     },
     "1343": {
       "chunk_idx": 44,
-      "local_idx": 12,
-      "title": "Forging Fragments of the Immortal World",
-      "word_count": 2435
+      "local_idx": 13,
+      "title": "Menempa Fragmen Dunia Abadi",
+      "word_count": 2482
     },
     "1344": {
       "chunk_idx": 44,
-      "local_idx": 13,
-      "title": "Li Fan's Self Defense",
-      "word_count": 2281
+      "local_idx": 14,
+      "title": "Pertahanan Diri Li Fan",
+      "word_count": 2307
     },
     "1345": {
       "chunk_idx": 44,
-      "local_idx": 14,
-      "title": "The Divine Art That Equalizes Heaven",
-      "word_count": 2447
+      "local_idx": 15,
+      "title": "Ilmu Ilahi Penyelaras Surga",
+      "word_count": 2481
     },
     "1346": {
       "chunk_idx": 44,
-      "local_idx": 15,
-      "title": "Bearing the Weight of the Immortal Realm",
-      "word_count": 2745
+      "local_idx": 16,
+      "title": "Menanggung Beban Alam Immortal",
+      "word_count": 2517
     },
     "1347": {
       "chunk_idx": 44,
-      "local_idx": 16,
-      "title": "Sharing the Fate of the Immortal Ark",
-      "word_count": 2440
+      "local_idx": 17,
+      "title": "Berbagi Takdir dengan Bahtera Immortal",
+      "word_count": 2486
     },
     "1348": {
       "chunk_idx": 44,
-      "local_idx": 17,
-      "title": "The Immortal Ark's Seizing Heaven Plan",
-      "word_count": 2419
+      "local_idx": 18,
+      "title": "Rencana Perebutan Langit Bahtera Abadi",
+      "word_count": 2466
     },
     "1349": {
       "chunk_idx": 44,
-      "local_idx": 18,
-      "title": "The Anomalous Change of [Truth]",
-      "word_count": 2357
+      "local_idx": 19,
+      "title": "Perubahan Aneh dari [Kebenaran] | Simulasi Keabadianku",
+      "word_count": 2415
     },
     "1350": {
       "chunk_idx": 44,
-      "local_idx": 19,
-      "title": "Earthly Fissures Spread Throughout the Star Sea",
-      "word_count": 2336
+      "local_idx": 20,
+      "title": "Retakan Bumi Menyebar Luas Di Lautan Bintang",
+      "word_count": 2458
     },
     "1351": {
       "chunk_idx": 44,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "The Perfected One Upholds the Will of Heaven",
       "word_count": 2575
     },
     "1352": {
       "chunk_idx": 44,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Dao Annihilation Descends Upon the Star Sea",
       "word_count": 2420
     },
     "1353": {
       "chunk_idx": 44,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "A Single Thread Pierces the High Wall",
       "word_count": 2452
     },
     "1354": {
       "chunk_idx": 44,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "All Living Beings Comprehend the Principles of Immortality",
       "word_count": 2480
     },
     "1355": {
       "chunk_idx": 44,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Elevating the World's Heavenly Mandate",
       "word_count": 2533
     },
     "1356": {
       "chunk_idx": 44,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "An Initial Understanding of the Mysteries of the Paradise",
       "word_count": 2367
     },
     "1357": {
       "chunk_idx": 44,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "The Secret of Severing Xuanhuang",
       "word_count": 4850
     },
     "1358": {
       "chunk_idx": 44,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "The Immortal Puppet Finally Descends into the World",
       "word_count": 4127
     },
     "1359": {
       "chunk_idx": 44,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Star Sea Plague of Life and Death",
       "word_count": 4280
     },
     "1360": {
-      "chunk_idx": 44,
-      "local_idx": 29,
+      "chunk_idx": 45,
+      "local_idx": 0,
       "title": "The Mortal Cauldron Transforms into an Immortal Go Piece",
       "word_count": 1280
     },
     "1361": {
       "chunk_idx": 45,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "The Immortal Puppet Secretly Boards the Ark",
       "word_count": 3845
     },
     "1362": {
       "chunk_idx": 45,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Immortal Realm Dao-Burning Calamity",
       "word_count": 4335
     },
     "1363": {
       "chunk_idx": 45,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "The Immortal Formation Traps the Heavenly Doctor",
       "word_count": 4110
     },
     "1364": {
       "chunk_idx": 45,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "The Great Venerable of All Laws",
       "word_count": 2550
     },
     "1365": {
       "chunk_idx": 45,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "The Heavenly Demon Finally Awakens",
       "word_count": 2512
     },
     "1366": {
       "chunk_idx": 45,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "The Secret Hidden Within the Heavenly Doctor's Heart",
       "word_count": 2562
     },
     "1367": {
       "chunk_idx": 45,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "The Former Residence of the Xuantian King",
       "word_count": 2455
     },
     "1369": {
       "chunk_idx": 45,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "The Eternal Obsession Rises",
       "word_count": 2303
     },
     "1370": {
       "chunk_idx": 45,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "The Star Sea Ascension into the Immortal Domain",
       "word_count": 2420
     },
     "1371": {
       "chunk_idx": 45,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "The Immortal Go Pieces Merge",
       "word_count": 2513
     },
     "1372": {
       "chunk_idx": 45,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "The Secret of the Medicine King Stone Pill",
       "word_count": 1896
     },
     "1373": {
       "chunk_idx": 45,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "The Dao Refining Medicine King Scripture",
       "word_count": 2575
     },
     "1374": {
       "chunk_idx": 45,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "The Equal Heaven Star Spirit",
       "word_count": 2512
     },
     "1375": {
       "chunk_idx": 45,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "A First Glimpse Beyond the High Wall",
       "word_count": 2659
     },
     "1376": {
       "chunk_idx": 45,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Ink Death the Celestial Spirit",
       "word_count": 2483
     },
     "1377": {
       "chunk_idx": 45,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "The Living Being Ascends to Immortal Shape",
       "word_count": 2476
     },
     "1378": {
       "chunk_idx": 45,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Qiushui Enter the Star Sea",
       "word_count": 2644
     },
     "1379": {
       "chunk_idx": 45,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Condensing the Eternal Remnant Will",
       "word_count": 2496
     },
     "1380": {
       "chunk_idx": 45,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Secrets Hidden Within the Nether Prison",
       "word_count": 2565
     },
     "1381": {
       "chunk_idx": 45,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Hunting Ink Death in the Present",
       "word_count": 2538
     },
     "1382": {
       "chunk_idx": 45,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "The Death of Li Fan Once Before",
       "word_count": 2471
     },
     "1383": {
       "chunk_idx": 45,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "The Dao Annihilation Calamity Descends",
       "word_count": 2672
     },
     "1384": {
       "chunk_idx": 45,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "The Bone of the Nameless Immortal|My Longevity Simulation",
       "word_count": 2567
     },
     "1385": {
       "chunk_idx": 45,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "The Stone Stele Derives Immortal Script",
       "word_count": 2502
     },
     "1386": {
       "chunk_idx": 45,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Mortal Menyelintas Pemandangan Immortal Realm",
       "word_count": 2482
     },
     "1387": {
       "chunk_idx": 45,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Kembalinya yang Tanpa Batas",
       "word_count": 2484
     },
     "1388": {
       "chunk_idx": 45,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Array Menempa Xuanhuang Realm",
       "word_count": 1893
     },
     "1389": {
       "chunk_idx": 45,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Beberapa Tamu di High Wall",
       "word_count": 2515
     },
     "1390": {
       "chunk_idx": 45,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Dust Abyss Dao Kehidupan dan Kematian",
       "word_count": 2326
     },
     "1391": {
-      "chunk_idx": 45,
-      "local_idx": 29,
+      "chunk_idx": 46,
+      "local_idx": 0,
       "title": "Prasasti Batu Menyingkap Karakter Immortal",
       "word_count": 2426
     },
     "1392": {
       "chunk_idx": 46,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Hati Pelayan Xuanhuang",
       "word_count": 2430
     },
     "1393": {
       "chunk_idx": 46,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Tian Beast Mati dan Bangkit Kembali",
       "word_count": 2603
     },
     "1394": {
       "chunk_idx": 46,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Transformasi Baru Xuanhuang",
       "word_count": 1996
     },
     "1395": {
       "chunk_idx": 46,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Langit dan Bumi Menempa Obat Besar",
       "word_count": 2532
     },
     "1396": {
       "chunk_idx": 46,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Hendak Menenggelamkan Star Sea",
       "word_count": 1297
     },
     "1397": {
       "chunk_idx": 46,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Tiga Cabang Menurunkan Dunia Baru",
       "word_count": 3100
     },
     "1398": {
       "chunk_idx": 46,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Jentikan Jari Menulis High Wall",
       "word_count": 2474
     },
     "1399": {
       "chunk_idx": 46,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Return to Truth Turns the Tide (7K)",
       "word_count": 4010
     },
     "1400": {
       "chunk_idx": 46,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Barulah Sebab di Masa Silam",
       "word_count": 2466
     },
     "1401": {
       "chunk_idx": 46,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Tian Berjasa Besar (Revisi Selesai)",
       "word_count": 2515
     },
     "1402": {
       "chunk_idx": 46,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Xuanhuang Ascends to Immortal Domain (7K)",
       "word_count": 4064
     },
     "1403": {
       "chunk_idx": 46,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Integrating With Dao to Prove Half-Immortality (7K)",
       "word_count": 4049
     },
     "1404": {
       "chunk_idx": 46,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Dao Tersembunyi, Waktu Terhenti",
       "word_count": 2374
     },
     "1405": {
       "chunk_idx": 46,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Really Return Menyingkap Pertanda Akhir",
       "word_count": 2541
     },
     "1406": {
       "chunk_idx": 46,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Illusion Array Mempermainkan Heavenly Doctor",
       "word_count": 1935
     },
     "1407": {
       "chunk_idx": 46,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Xuanhuang Dibuat Insir",
       "word_count": 2345
     },
     "1408": {
       "chunk_idx": 46,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Akhirnya Memecahkan Misteri Transmission of Dharma",
       "word_count": 3112
     },
     "1409": {
       "chunk_idx": 46,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Meresahkan Kekuatan Realitas",
       "word_count": 2814
     },
     "1410": {
       "chunk_idx": 46,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Tianxuan Mengukir Demonic Sound",
       "word_count": 2330
     },
     "1411": {
       "chunk_idx": 46,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Dua Mystic Sound di Immortal Realm",
       "word_count": 2356
     },
     "1412": {
       "chunk_idx": 46,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Rahasia Tengkorak Heavenly Sovereign",
       "word_count": 2486
     },
     "1413": {
       "chunk_idx": 46,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Membunuh White yang Jahat dalam Sekejap",
       "word_count": 2439
     },
     "1414": {
       "chunk_idx": 46,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Mr. White yang Sejati dan Baik",
       "word_count": 2300
     },
     "1415": {
       "chunk_idx": 46,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Heavenly Doctor Memahami Dao dan Mati",
       "word_count": 2299
     },
     "1416": {
       "chunk_idx": 46,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Saat Palsu, Palsu Pun Menjadi Nyata",
       "word_count": 1518
     },
     "1417": {
       "chunk_idx": 46,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Menyelamatkan Qiao Shidao",
       "word_count": 2498
     },
     "1418": {
       "chunk_idx": 46,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Ancient Dao Berwujud",
       "word_count": 2400
     },
     "1419": {
       "chunk_idx": 46,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Dao Annihilation Bergerak Maju ke Masa Silam",
       "word_count": 2414
     },
     "1420": {
       "chunk_idx": 46,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Eksperimentalitas Pembuktian Dao",
       "word_count": 2373
     },
     "1421": {
-      "chunk_idx": 46,
-      "local_idx": 29,
+      "chunk_idx": 47,
+      "local_idx": 0,
       "title": "Membangun Ulang Derivation Method Jade",
       "word_count": 2452
     },
     "1422": {
       "chunk_idx": 47,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Rahasia Xuantian Holy Envoy",
       "word_count": 2579
     },
     "1423": {
       "chunk_idx": 47,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Harus Membunuh Nameless Immortal",
       "word_count": 2552
     },
     "1424": {
       "chunk_idx": 47,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Dao Origin Menurunkan Myriad Phases",
       "word_count": 2524
     },
     "1425": {
       "chunk_idx": 47,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Heaven-Reaching Great Dao Array",
       "word_count": 2554
     },
     "1426": {
       "chunk_idx": 47,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Wujud Dao Annihilation Mo Sha",
       "word_count": 2352
     },
     "1427": {
       "chunk_idx": 47,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Jatuh ke Endless Reincarnation",
       "word_count": 1922
     },
     "1428": {
       "chunk_idx": 47,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Meramu Dream Array dari Hati",
       "word_count": 1775
     },
     "1429": {
       "chunk_idx": 47,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Memperbaiki Qingming Pearl",
       "word_count": 2472
     },
     "1430": {
       "chunk_idx": 47,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Mortal Menjadikan Mayat sebagai Guru",
       "word_count": 2401
     },
     "1431": {
       "chunk_idx": 47,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Paradise Turun ke Xuanhuang",
       "word_count": 2488
     },
     "1432": {
       "chunk_idx": 47,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Great Dao Berwujud",
       "word_count": 2325
     },
     "1433": {
       "chunk_idx": 47,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Primordial Possibility",
       "word_count": 2376
     },
     "1434": {
       "chunk_idx": 47,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Immortal Berburu True Immortal",
       "word_count": 2446
     },
     "1435": {
       "chunk_idx": 47,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Dao Origin Menenun Dao Web",
       "word_count": 2181
     },
     "1436": {
       "chunk_idx": 47,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Diam-diam Menyusup ke Shuo Star Sea",
       "word_count": 2403
     },
     "1437": {
       "chunk_idx": 47,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Mystic Sound Melingkupi Ghost City",
       "word_count": 2461
     },
     "1438": {
       "chunk_idx": 47,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Satu Tangan Menutupi Great Dao",
       "word_count": 2414
     },
     "1439": {
       "chunk_idx": 47,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Pikiran Berwujud Divine",
       "word_count": 2457
     },
     "1440": {
       "chunk_idx": 47,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Kematian Nameless Immortal",
       "word_count": 2527
     },
     "1441": {
       "chunk_idx": 47,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Buah Pikiran Semua Makhluk",
       "word_count": 2320
     },
     "1442": {
       "chunk_idx": 47,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Kulit Immortal Menutupi Kelahiran Baru",
       "word_count": 2313
     },
     "1443": {
       "chunk_idx": 47,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Kekuatan Infinite Immortal",
       "word_count": 2367
     },
     "1444": {
       "chunk_idx": 47,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Palsu Terhubung ke Limitless Sea",
       "word_count": 2352
     },
     "1445": {
       "chunk_idx": 47,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "185 - Chapter 1445: Semut Mengepung dan Membunuh Immortal",
       "word_count": 2447
     },
     "1446": {
       "chunk_idx": 47,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Berburu True Immortal Pertama Kali",
       "word_count": 2637
     },
     "1447": {
       "chunk_idx": 47,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Mendayung Melawan Arus Long River",
       "word_count": 2428
     },
     "1448": {
       "chunk_idx": 47,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Xiyi Masuk ke Mystic Coffin",
       "word_count": 2647
     },
     "1449": {
       "chunk_idx": 47,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Holy Merchant Meninggalkan Misteri",
       "word_count": 2257
     },
     "1450": {
       "chunk_idx": 47,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Great Sun Flame Menempa Tubuh",
       "word_count": 2519
     },
     "1451": {
-      "chunk_idx": 47,
-      "local_idx": 29,
+      "chunk_idx": 48,
+      "local_idx": 0,
       "title": "- Mencari Kembali [Creation Art]",
       "word_count": 2474
     },
     "1452": {
       "chunk_idx": 48,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Dao Web Menempa Great Furnace",
       "word_count": 2550
     },
     "1453": {
       "chunk_idx": 48,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Kuburan Sepuluh Ribu Bintang Menelan Tulang",
       "word_count": 2467
     },
     "1454": {
       "chunk_idx": 48,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Deep Net Memenjarakan Para Immortal",
       "word_count": 2346
     },
     "1455": {
       "chunk_idx": 48,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Pembedahan Hidup Mayat True Immortal",
       "word_count": 2484
     },
     "1456": {
       "chunk_idx": 48,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Immortal Platform Menyegel True Immortal",
       "word_count": 2579
     },
     "1457": {
       "chunk_idx": 48,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Dua Immortal Bertarung di dalam Coffin",
       "word_count": 2452
     },
     "1458": {
       "chunk_idx": 48,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Uji Coba Pertama True Also False",
       "word_count": 2432
     },
     "1459": {
       "chunk_idx": 48,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Misteri Tersembunyi di Balik Wall",
       "word_count": 2520
     },
     "1460": {
       "chunk_idx": 48,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Li Buren sang Penghancur Dunia",
       "word_count": 2452
     },
     "1461": {
       "chunk_idx": 48,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Really Return Berdiri di Atas Limitless Sea",
       "word_count": 2523
     },
     "1462": {
       "chunk_idx": 48,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "- Fable of Shanhai",
       "word_count": 2470
     },
     "1463": {
       "chunk_idx": 48,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Great Void Ditetapkan",
       "word_count": 2459
     },
     "1464": {
       "chunk_idx": 48,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Compassionate World Reincarnation Sect",
       "word_count": 2376
     },
     "1465": {
       "chunk_idx": 48,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Petunjuk Really Return",
       "word_count": 2466
     },
     "1466": {
       "chunk_idx": 48,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Menanggung Dao Annihilation Tribulation di Pundak",
       "word_count": 2409
     },
     "1467": {
       "chunk_idx": 48,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Immortal Penjaga Makam yang Memandang Lautan",
       "word_count": 1766
     },
     "1468": {
       "chunk_idx": 48,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Satu Era Satu Immortal Emperor",
       "word_count": 2500
     },
     "1469": {
       "chunk_idx": 48,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Kemurahan Rubah yang Meminjam Keperkasaan Harimau",
       "word_count": 2474
     },
     "1470": {
       "chunk_idx": 48,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Tiga True Immortal Terkuat",
       "word_count": 2423
     },
     "1471": {
       "chunk_idx": 48,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Menggantikan Menyampaikan Marvelous Method",
       "word_count": 1900
     },
     "1472": {
       "chunk_idx": 48,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Belas Kasih Menahan Dao Annihilation",
       "word_count": 2588
     },
     "1473": {
       "chunk_idx": 48,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Tulang Origin Berubah Menjadi Pilar",
       "word_count": 2484
     },
     "1474": {
       "chunk_idx": 48,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Bersandar Kekuasan untuk Menindas Hunger Immortal",
       "word_count": 2560
     },
     "1475": {
       "chunk_idx": 48,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Garis Keturunan Really Return yang Sah",
       "word_count": 2503
     },
     "1476": {
       "chunk_idx": 48,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Bayang-bayang Nameless Immortal",
       "word_count": 2534
     },
     "1477": {
       "chunk_idx": 48,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "217 - Chapter 1477: Masa Lalu Hunger Immortal",
       "word_count": 2448
     },
     "1478": {
       "chunk_idx": 48,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Asal-mula Mo Sha",
       "word_count": 2365
     },
     "1479": {
       "chunk_idx": 48,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Satu Dao Satu Tangga",
       "word_count": 2525
     },
     "1480": {
       "chunk_idx": 48,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Four Holy Sovereigns Immortal Realm",
       "word_count": 2482
     },
     "1481": {
-      "chunk_idx": 48,
-      "local_idx": 29,
+      "chunk_idx": 49,
+      "local_idx": 0,
       "title": "Mengundang Dispersion para Great Dao",
       "word_count": 2343
     },
     "1482": {
       "chunk_idx": 49,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Tujuan Really Return",
       "word_count": 2416
     },
     "1483": {
       "chunk_idx": 49,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Memahami Prinsip Limitless",
       "word_count": 2444
     },
     "1484": {
       "chunk_idx": 49,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Dao di Luar Dao",
       "word_count": 2426
     },
     "1485": {
       "chunk_idx": 49,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Memancing Xing Wuque",
       "word_count": 2544
     },
     "1486": {
       "chunk_idx": 49,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "- Matters of the Heavenly King back then",
       "word_count": 2383
     },
     "1487": {
       "chunk_idx": 49,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Immortal Realm Naik Lagi",
       "word_count": 2343
     },
     "1488": {
       "chunk_idx": 49,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Saat Membuktikan Dao Nameless",
       "word_count": 1276
     },
     "1489": {
       "chunk_idx": 49,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Number / Ordinal1489Chapter Taishang Dao Book",
       "word_count": 3195
     },
     "1490": {
       "chunk_idx": 49,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Myriad Phases Dao Web Selesai (6K)",
       "word_count": 3784
     },
     "1491": {
       "chunk_idx": 49,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "231 - Chapter 1491: Really Return Memberikan Divine Skill",
       "word_count": 2492
     },
     "1492": {
       "chunk_idx": 49,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Menciptakan Primordial Immortal Realm",
       "word_count": 2468
     },
     "1493": {
       "chunk_idx": 49,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Lukisan Menggoda Para Immortal",
       "word_count": 2478
     },
     "1494": {
       "chunk_idx": 49,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Berubah Menjadi Fifth Holy Sovereign",
       "word_count": 2592
     },
     "1495": {
       "chunk_idx": 49,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Angin Pemakaman Menyapu Immortal Realm",
       "word_count": 2675
     },
     "1496": {
       "chunk_idx": 49,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Batas Really Return",
       "word_count": 2584
     },
     "1497": {
       "chunk_idx": 49,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Menelan External Dao Secara Utuh",
       "word_count": 2578
     },
     "1498": {
       "chunk_idx": 49,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Terkejut Menyadari Anomali Cat Treasure",
       "word_count": 2588
     },
     "1499": {
       "chunk_idx": 49,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Derivation Method Naik Derivation Dao",
       "word_count": 2549
     },
     "1500": {
       "chunk_idx": 49,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Dua Harta Menembus Dao Web",
       "word_count": 2521
     },
     "1501": {
       "chunk_idx": 49,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Langsung Menyerang Jantung Musuh",
       "word_count": 2453
     },
     "1502": {
       "chunk_idx": 49,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Immortal Realm Seluruhnya Sekte (Minta Tiket Bulanan)",
       "word_count": 2619
     },
     "1503": {
       "chunk_idx": 49,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Satu Spirit Stone Mountain dan Sea",
       "word_count": 2629
     },
     "1504": {
       "chunk_idx": 49,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Misteri Pertempuran Akhir (Bab Tambahan Tiket Bulanan)",
       "word_count": 2660
     },
     "1505": {
       "chunk_idx": 49,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Bintang Menggantung di Atas Mountain dan Sea",
       "word_count": 1989
     },
     "1506": {
       "chunk_idx": 49,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Kegunaan Baru Mo Sha",
       "word_count": 1228
     },
     "1507": {
       "chunk_idx": 49,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Other Shore Immortal di dalam Coffin",
       "word_count": 2023
     },
     "1508": {
       "chunk_idx": 49,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Semua Realm Aku Satu",
       "word_count": 2014
     },
     "1509": {
       "chunk_idx": 49,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Dao Menyatukan Giant Rat Immortal",
       "word_count": 2641
     },
     "1510": {
       "chunk_idx": 49,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Immortal Emperor Satu Miliar Tahun",
       "word_count": 2603
     },
     "1511": {
-      "chunk_idx": 49,
-      "local_idx": 29,
+      "chunk_idx": 50,
+      "local_idx": 0,
       "title": "Angka Immortal Tetap Ada Terhitung",
       "word_count": 2537
     },
     "1512": {
       "chunk_idx": 50,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Memancing di Tengah Dao Annihilation",
       "word_count": 2406
     },
     "1513": {
       "chunk_idx": 50,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Reinkarnasi Membangun Immortal Dyke",
       "word_count": 2594
     },
     "1514": {
       "chunk_idx": 50,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Angin Besar Berhembung di Mountain dan Sea",
       "word_count": 2505
     },
     "1515": {
       "chunk_idx": 50,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Purple Robe Dao Datang dari Luar",
       "word_count": 2546
     },
     "1516": {
       "chunk_idx": 50,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Dao Era Projection Pearl",
       "word_count": 2642
     },
     "1517": {
       "chunk_idx": 50,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Remnant Thought Menjadi Dao Boat",
       "word_count": 2717
     },
     "1518": {
       "chunk_idx": 50,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Semua Makhluk Kembali ke Dao",
       "word_count": 2589
     },
     "1519": {
       "chunk_idx": 50,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "259 - Chapter 1519: Jalan Longevity Mountain dan Sea",
       "word_count": 2372
     },
     "1520": {
       "chunk_idx": 50,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Memperoleh Longevity Creation",
       "word_count": 2670
     },
     "1521": {
       "chunk_idx": 50,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Tubuh Menyatu dengan Mountain dan Sea",
       "word_count": 2622
     },
     "1522": {
       "chunk_idx": 50,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Mortal Jatuh ke Tengah Debu Fana",
       "word_count": 2439
     },
     "1523": {
       "chunk_idx": 50,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "263 - Chapter 1523: Tubuh yang Tak Mati dan Tak Musnah",
       "word_count": 2442
     },
     "1524": {
       "chunk_idx": 50,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "- Chapter 1524: Takdir Semua Orang Telah Berubah",
       "word_count": 2484
     },
     "1525": {
       "chunk_idx": 50,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Vitalitas Menelan Ruo Tree",
       "word_count": 2523
     },
     "1526": {
       "chunk_idx": 50,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Lukisan Menyembunyikan Perahu Melawan Arus",
       "word_count": 2356
     },
     "1527": {
       "chunk_idx": 50,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Hidden Emperor Menciptakan Immortal Boat",
       "word_count": 2449
     },
     "1528": {
       "chunk_idx": 50,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Percikan Menyelamatkan Dunia Fana",
       "word_count": 2400
     },
     "1529": {
       "chunk_idx": 50,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Anchor Point Lintas Ruang-Waktu",
       "word_count": 2475
     },
     "1530": {
       "chunk_idx": 50,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Versi Sederhana Illusion Also Real",
       "word_count": 2567
     },
     "1531": {
       "chunk_idx": 50,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Sistem Great Heavenly Sovereign",
       "word_count": 1997
     },
     "1532": {
       "chunk_idx": 50,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Burning Dao Furnace Membakar Dao",
       "word_count": 1849
     },
     "1533": {
       "chunk_idx": 50,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Pertempuran Yang Hilang Fallen Immortal",
       "word_count": 2516
     },
     "1534": {
       "chunk_idx": 50,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Spacetime Anchor Point Tetap",
       "word_count": 2499
     },
     "1535": {
       "chunk_idx": 50,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Taiyuan Revival Furnace",
       "word_count": 2485
     },
     "1536": {
       "chunk_idx": 50,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Anchor Point Long River Tetap",
       "word_count": 2458
     },
     "1537": {
       "chunk_idx": 50,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Nine Star Pearl Utuh",
       "word_count": 2528
     },
     "1538": {
       "chunk_idx": 50,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Dua Pemisahan Memelihara Immortal Seed",
       "word_count": 2426
     },
     "1539": {
       "chunk_idx": 50,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Kehidupan yang Tak Berujung",
       "word_count": 2537
     },
     "1540": {
       "chunk_idx": 50,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Para Jenius Semua Tunduk",
       "word_count": 2531
     },
     "1541": {
-      "chunk_idx": 50,
-      "local_idx": 29,
+      "chunk_idx": 51,
+      "local_idx": 0,
       "title": "Xuanhuang Melahirkan True Immortal",
       "word_count": 2491
     },
     "1542": {
       "chunk_idx": 51,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Identitas Great Heavenly Sovereign",
       "word_count": 2592
     },
     "1543": {
       "chunk_idx": 51,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Bab Terakhir Fabel",
       "word_count": 2413
     },
     "1544": {
       "chunk_idx": 51,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Menangkap Great Heavenly Sovereign",
       "word_count": 2430
     },
     "1545": {
       "chunk_idx": 51,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Masa Silam Great Heavenly Sovereign",
       "word_count": 2434
     },
     "1546": {
       "chunk_idx": 51,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "First Generation Menjadi Immortal Puppet",
       "word_count": 2431
     },
     "1547": {
       "chunk_idx": 51,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Long River Hilang Selamanya",
       "word_count": 2340
     },
     "1548": {
       "chunk_idx": 51,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Tatapan Mountain dan Sea",
       "word_count": 2510
     },
     "1549": {
       "chunk_idx": 51,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Belas Kasih Mengendalikan Heavenly Doctor",
       "word_count": 2499
     },
     "1550": {
       "chunk_idx": 51,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Leluhur Transmission of Dharma",
       "word_count": 2421
     },
     "1551": {
       "chunk_idx": 51,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Stacked Paper Two Division Immortal",
       "word_count": 2374
     },
     "1552": {
       "chunk_idx": 51,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Fallen Immortal Menelan Taiyuan",
       "word_count": 2534
     },
     "1553": {
       "chunk_idx": 51,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Heavenly Capital Kembali Berubah Menjadi Pilar",
       "word_count": 2598
     },
     "1554": {
       "chunk_idx": 51,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Dao Virtue Memiliki True Immortal",
       "word_count": 2573
     },
     "1555": {
       "chunk_idx": 51,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Akankah Berhasil atau Tidak",
       "word_count": 2659
     },
     "1556": {
       "chunk_idx": 51,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Pill Menempa Xuanhuang Realm",
       "word_count": 2653
     },
     "1557": {
       "chunk_idx": 51,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Darah Mortal Memelihara Langit dan Bumi",
       "word_count": 2601
     },
     "1558": {
       "chunk_idx": 51,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Aku adalah Ayah Xuanhuang",
       "word_count": 2687
     },
     "1559": {
       "chunk_idx": 51,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Hati Khawatir Memikirkan Really Return",
       "word_count": 2459
     },
     "1560": {
       "chunk_idx": 51,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Tak Dapat Lari dari Takdir Penyatuan",
       "word_count": 2504
     },
     "1561": {
       "chunk_idx": 51,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Peningkatan yang Tanpa Batas",
       "word_count": 2503
     },
     "1562": {
       "chunk_idx": 51,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Satu Tangan Menutupi Bright Moon",
       "word_count": 2507
     },
     "1563": {
       "chunk_idx": 51,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Tuan Fallen Immortal Realm",
       "word_count": 2531
     },
     "1564": {
       "chunk_idx": 51,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Xuanhuang First Star",
       "word_count": 2583
     },
     "1565": {
       "chunk_idx": 51,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Taishang Dao Book Appears",
       "word_count": 2284
     },
     "1566": {
       "chunk_idx": 51,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "No Need to Prove Longevity",
       "word_count": 2337
     },
     "1567": {
       "chunk_idx": 51,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Dao One Devours Mountain and Sea",
       "word_count": 2366
     },
     "1568": {
       "chunk_idx": 51,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Menyusup ke Merchant Immortal Boat",
       "word_count": 2389
     },
     "1569": {
       "chunk_idx": 51,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Berjumpa Cat Treasure di Immortal Boat",
       "word_count": 2354
     },
     "1570": {
       "chunk_idx": 51,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Titik Pemulihan Sisa-sisa Immortal",
       "word_count": 1333
     },
     "1571": {
-      "chunk_idx": 51,
-      "local_idx": 29,
+      "chunk_idx": 52,
+      "local_idx": 0,
       "title": "Sang Yang Tak Mati dan Tak Musnah",
       "word_count": 1493
     },
     "1572": {
       "chunk_idx": 52,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Eternal Selalu Berubah Menjadi Dao",
       "word_count": 1577
     },
     "1573": {
       "chunk_idx": 52,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Dao Menempa Mountain dan Sea Bersama",
       "word_count": 1255
     },
     "1574": {
       "chunk_idx": 52,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Berakar dari Divine Shaman Realm",
       "word_count": 1342
     },
     "1575": {
       "chunk_idx": 52,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Xuanhuang Mengukir Eternal",
       "word_count": 1425
     },
     "1576": {
       "chunk_idx": 52,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Menyegel Dewa dengan Nama Abadi",
       "word_count": 1796
     },
     "1577": {
       "chunk_idx": 52,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Holy Dynasty Tercermin Sepanjang Zaman",
       "word_count": 2315
     },
     "1578": {
       "chunk_idx": 52,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Tujuh Marvelous Medicine Direbut dari Langit",
       "word_count": 1727
     },
     "1579": {
       "chunk_idx": 52,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Dao One Berubah Menjadi Mo Sha",
       "word_count": 2646
     },
     "1580": {
       "chunk_idx": 52,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "320 - Chapter 1580: Memperkokoh Prinsip Langit dan Bumi",
       "word_count": 1882
     },
     "1581": {
       "chunk_idx": 52,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Xuanhuang Dao Integration Immortal",
       "word_count": 2495
     },
     "1582": {
       "chunk_idx": 52,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Sage Menambal Void Realm",
       "word_count": 1489
     },
     "1583": {
       "chunk_idx": 52,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Ucapan Terlontar, Hukum Mengikuti",
       "word_count": 1348
     },
     "1584": {
       "chunk_idx": 52,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Menghancurkan Mekanisme Hundred Refinement Waktu",
       "word_count": 2660
     },
     "1585": {
       "chunk_idx": 52,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Xuan Merchant Tak Pernah Berpisah",
       "word_count": 2451
     },
     "1586": {
       "chunk_idx": 52,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Immortal Boat Hendak Tenggelam",
       "word_count": 1979
     },
     "1587": {
       "chunk_idx": 52,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Catatan Bertahan Hidup di Ancestral Realm",
       "word_count": 1267
     },
     "1588": {
       "chunk_idx": 52,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Bertahan Hidup di Tengah Keputusasaan",
       "word_count": 2654
     },
     "1589": {
       "chunk_idx": 52,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Penyeberangan Dunia Semakin Sempurna",
       "word_count": 2654
     },
     "1590": {
       "chunk_idx": 52,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Xuanhuang Menyeberangi Dao Annihilation",
       "word_count": 2543
     },
     "1591": {
       "chunk_idx": 52,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Heavenly Book Menghancurkan Guangwu",
       "word_count": 2381
     },
     "1592": {
       "chunk_idx": 52,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Mountain dan Sea Menumbuhkan Lingkaran Tahun",
       "word_count": 2330
     },
     "1593": {
       "chunk_idx": 52,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Angal Bertiap Tepat, Satu Layar Terkembang",
       "word_count": 2465
     },
     "1594": {
       "chunk_idx": 52,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Really Return Singkat Terbangun",
       "word_count": 2607
     },
     "1595": {
       "chunk_idx": 52,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Taichu Mengandung Makhluk Hidup",
       "word_count": 2549
     },
     "1596": {
       "chunk_idx": 52,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Flame Hebat Membakar Mountain dan Sea",
       "word_count": 2425
     },
     "1597": {
       "chunk_idx": 52,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Immortal Boat Masuk ke Dao Annihilation",
       "word_count": 2364
     },
     "1598": {
       "chunk_idx": 52,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Makhluk Hidup Menurunkan Taiji",
       "word_count": 2609
     },
     "1599": {
       "chunk_idx": 52,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Mountain dan Sea Menyingkap Wujud Sejati",
       "word_count": 2656
     },
     "1600": {
       "chunk_idx": 52,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Percikan Menyebar ke Seluruh Mountain dan Sea",
       "word_count": 2498
     },
     "1601": {
-      "chunk_idx": 52,
-      "local_idx": 29,
+      "chunk_idx": 53,
+      "local_idx": 0,
       "title": "Other Shore Bersinar Terang",
       "word_count": 2336
     },
     "1602": {
       "chunk_idx": 53,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "yang Setingkat dengan Mountain dan Sea",
       "word_count": 2551
     },
     "1603": {
       "chunk_idx": 53,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Mountain dan Sea Berkorban Demi Bertahan Hidup",
       "word_count": 2441
     },
     "1604": {
       "chunk_idx": 53,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Other Beach Terlihat di Kejauhan",
       "word_count": 2553
     },
     "1605": {
       "chunk_idx": 53,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Transcendence Terlemah",
       "word_count": 2490
     },
     "1606": {
       "chunk_idx": 53,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "346 - Chapter 1606: Li Fan Berjumpa Para Sage",
       "word_count": 2243
     },
     "1607": {
       "chunk_idx": 53,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Santai Menembus Kabut Misteri",
       "word_count": 2429
     },
     "1608": {
       "chunk_idx": 53,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Peringatan Really Return",
       "word_count": 2624
     },
     "1609": {
       "chunk_idx": 53,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Other Shore Penuh Pemandangan Aneh",
       "word_count": 2433
     },
     "1610": {
       "chunk_idx": 53,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Menipu Sage dengan Siasat",
       "word_count": 2480
     },
     "1611": {
       "chunk_idx": 53,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Jebakan Dipecah, Akhirnya Really Return",
       "word_count": 2454
     },
     "1612": {
       "chunk_idx": 53,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Li Fan Mengasah Really Return",
       "word_count": 2516
     },
     "1613": {
       "chunk_idx": 53,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Merusak Diri untuk Menciptakan Sage",
       "word_count": 2456
     },
     "1614": {
       "chunk_idx": 53,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Catatan Kultivasi Yuyue",
       "word_count": 2492
     },
     "1615": {
       "chunk_idx": 53,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Nenek Tua Mencari Kesempatan Immortal",
       "word_count": 2566
     },
     "1616": {
       "chunk_idx": 53,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Kengerian Penumpukan Spiritualitas",
       "word_count": 2383
     },
     "1617": {
       "chunk_idx": 53,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "New Method Membuka Jalan Buntu",
       "word_count": 2714
     },
     "1618": {
       "chunk_idx": 53,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Li Fan Menemui True Self",
       "word_count": 2573
     },
     "1619": {
       "chunk_idx": 53,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Aku yang Menjadi Venerable",
       "word_count": 2407
     },
     "1620": {
       "chunk_idx": 53,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Mortal Memandang Bibi Menjadi Immortal",
       "word_count": 2441
     },
     "1621": {
       "chunk_idx": 53,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Anjing di Depan Pintu Holy Sovereign",
       "word_count": 2306
     },
     "1622": {
       "chunk_idx": 53,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Pelbagai Harta Dao Palace",
       "word_count": 2437
     },
     "1623": {
       "chunk_idx": 53,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Bibi Kena-target oleh Heavenly Doctor",
       "word_count": 2402
     },
     "1624": {
       "chunk_idx": 53,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Wu Liang Berpisah dari Xuanhuang",
       "word_count": 2296
     },
     "1625": {
       "chunk_idx": 53,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "365 - Chapter 1625: Berjumpa Lagi dengan He Gan Immortal",
       "word_count": 2295
     },
     "1626": {
       "chunk_idx": 53,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Faceless Dao Virtue Immortal",
       "word_count": 2452
     },
     "1627": {
       "chunk_idx": 53,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Intuition Melompati Reinkarnasi Really Return",
       "word_count": 2378
     },
     "1628": {
       "chunk_idx": 53,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Mountain dan Sea Mati dan Hidup Kembali",
       "word_count": 1277
     },
     "1629": {
       "chunk_idx": 53,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Kultivasi He Gan Immortal",
       "word_count": 1109
     },
     "1630": {
       "chunk_idx": 53,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Kelahiran Seorang Sage",
       "word_count": 2568
     },
     "1631": {
-      "chunk_idx": 53,
-      "local_idx": 29,
+      "chunk_idx": 54,
+      "local_idx": 0,
       "title": "Diam-diam Mengintip Virtue Dao Method",
       "word_count": 2657
     },
     "1632": {
       "chunk_idx": 54,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Wacana Hebat tentang Prinsip Menjadi Sage",
       "word_count": 2454
     },
     "1633": {
       "chunk_idx": 54,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Akumulasi Eternal Silence Spirit",
       "word_count": 1250
     },
     "1634": {
       "chunk_idx": 54,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Aturan Spiritualitas",
       "word_count": 1304
     },
     "1635": {
       "chunk_idx": 54,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Diam-diam Menghitung Wuji",
       "word_count": 2393
     },
     "1636": {
       "chunk_idx": 54,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Masing-masing Punya Fortune Sendiri",
       "word_count": 2455
     },
     "1637": {
       "chunk_idx": 54,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Jalan Naik Gunang Membunuh Immortal",
       "word_count": 1439
     },
     "1638": {
       "chunk_idx": 54,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Kongyou Awalnya Hanya Mainan",
       "word_count": 2461
     },
     "1639": {
       "chunk_idx": 54,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Mountain dan Sea Tak Mengampuni Immortal",
       "word_count": 2409
     },
     "1640": {
       "chunk_idx": 54,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Mountain dan Sea Immortal Outer Heaven",
       "word_count": 1244
     },
     "1641": {
       "chunk_idx": 54,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Sage Terakhir Mountain dan Sea",
       "word_count": 1213
     },
     "1642": {
       "chunk_idx": 54,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Menelusuri Pelaku yang Sama",
       "word_count": 2362
     },
     "1643": {
       "chunk_idx": 54,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Reverse Spirit Disaster Para Sage",
       "word_count": 2433
     },
     "1644": {
       "chunk_idx": 54,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Penurunan Ulang Pertama Sepuluh Ribu Dao",
       "word_count": 2534
     },
     "1645": {
       "chunk_idx": 54,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Memahami Method Sebelum Void Realm",
       "word_count": 2543
     },
     "1646": {
       "chunk_idx": 54,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Void Realm Menghalangi Really Return",
       "word_count": 2549
     },
     "1647": {
       "chunk_idx": 54,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Fortune Sage Dao Turun ke Tubuh",
       "word_count": 2557
     },
     "1648": {
       "chunk_idx": 54,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Ambisi Successor Dao",
       "word_count": 2633
     },
     "1649": {
       "chunk_idx": 54,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Santai Sepibu Tahun Berlalu",
       "word_count": 2792
     },
     "1650": {
       "chunk_idx": 54,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Dao Annihilation Mengakhiri Segalanya",
       "word_count": 2545
     },
     "1651": {
       "chunk_idx": 54,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Pertarungan Panggung Keponakan dan Bibi",
       "word_count": 2508
     },
     "1652": {
       "chunk_idx": 54,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Menggoda dengan Niat Transcendence",
       "word_count": 2440
     },
     "1653": {
       "chunk_idx": 54,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Successor Dao Menukar Shed Skin",
       "word_count": 2626
     },
     "1654": {
       "chunk_idx": 54,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Mountain Sea Bronze Ancient Green",
       "word_count": 2508
     },
     "1655": {
       "chunk_idx": 54,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Yuyue Akhirnya Transcend",
       "word_count": 2505
     },
     "1656": {
       "chunk_idx": 54,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Keluarga sebagai Niat Penyeberangan",
       "word_count": 2449
     },
     "1657": {
       "chunk_idx": 54,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Really Return Menambal Cacat Langit",
       "word_count": 2480
     },
     "1658": {
       "chunk_idx": 54,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Inscription Dao Immortal Muncul Kembali",
       "word_count": 2498
     },
     "1659": {
       "chunk_idx": 54,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Fantasi Memulihkan Immortal Realm",
       "word_count": 2316
     },
     "1660": {
       "chunk_idx": 54,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "400 - Chapter 1660: Mountain dan Sea Pertama Terlahir",
       "word_count": 2301
     },
     "1661": {
-      "chunk_idx": 54,
-      "local_idx": 29,
+      "chunk_idx": 55,
+      "local_idx": 0,
       "title": "Marvelous Method di Akhir Zaman",
       "word_count": 2550
     },
     "1662": {
       "chunk_idx": 55,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Mountain dan Sea Great Dao Muncul",
       "word_count": 2515
     },
     "1663": {
       "chunk_idx": 55,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "First True Xuanpin",
       "word_count": 2531
     },
     "1664": {
       "chunk_idx": 55,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "404 - Chapter 1664: Tianluo Pernah Menangkap Dao",
       "word_count": 2505
     },
     "1665": {
       "chunk_idx": 55,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Li Fan Berpura-pura Menjadi Sage",
       "word_count": 2500
     },
     "1666": {
       "chunk_idx": 55,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Sekali Tertangkap, Selamanya Tertangkap",
       "word_count": 1370
     },
     "1667": {
       "chunk_idx": 55,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Pejalan di Akhir Zaman",
       "word_count": 1305
     },
     "1668": {
       "chunk_idx": 55,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Salvation Two Division Method",
       "word_count": 2706
     },
     "1669": {
       "chunk_idx": 55,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Menginfus Infinite Spirit",
       "word_count": 2419
     },
     "1670": {
       "chunk_idx": 55,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Para Sage Menampilkan Divine Ability",
       "word_count": 2381
     },
     "1671": {
       "chunk_idx": 55,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "411 - Chapter 1671: Harta di Mata Para Sage",
       "word_count": 2342
     },
     "1672": {
       "chunk_idx": 55,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Ingin Pergi, Tubuh Tak Dapat Berpisah",
       "word_count": 2669
     },
     "1673": {
       "chunk_idx": 55,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Really Return Akhirnya Menampakkan Wajah",
       "word_count": 2651
     },
     "1674": {
       "chunk_idx": 55,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Lone Star Tiba-tiba Menggantung Tinggi",
       "word_count": 2429
     },
     "1675": {
       "chunk_idx": 55,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Star Radiance Meninggalkan Ringkasan",
       "word_count": 2562
     },
     "1676": {
       "chunk_idx": 55,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "True Spirit Menggoda Menjadi Sage",
       "word_count": 2433
     },
     "1677": {
       "chunk_idx": 55,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Keberadaan Xuan Heavenly King",
       "word_count": 2440
     },
     "1678": {
       "chunk_idx": 55,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Mountain dan Sea Menyimpan Marvelous Fortune",
       "word_count": 2472
     },
     "1679": {
       "chunk_idx": 55,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Tiga Sage Didirikan di Hari yang Sama",
       "word_count": 2674
     },
     "1680": {
       "chunk_idx": 55,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Tali Transformasi Menghubungkan Mountain dan Sea",
       "word_count": 2646
     },
     "1681": {
       "chunk_idx": 55,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "All-Knowing Sin Immortal",
       "word_count": 2534
     },
     "1682": {
       "chunk_idx": 55,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Urutan Para Sage Tercantum",
       "word_count": 1488
     },
     "1683": {
       "chunk_idx": 55,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Memasuki Void Realm",
       "word_count": 1250
     },
     "1684": {
       "chunk_idx": 55,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Sage Medicine Membantu Eksplorasi Realm",
       "word_count": 2725
     },
     "1685": {
       "chunk_idx": 55,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Menurunkan Ulang Sitting Heaven Technique",
       "word_count": 1433
     },
     "1686": {
       "chunk_idx": 55,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Mountain dan Sea Tersambung Kembali",
       "word_count": 1403
     },
     "1687": {
       "chunk_idx": 55,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "427 - Chapter 1687: Diam-diam Mengintip Rahasia Mountain dan Sea",
       "word_count": 1369
     },
     "1688": {
       "chunk_idx": 55,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Taichu Hazy Object",
       "word_count": 1338
     },
     "1689": {
       "chunk_idx": 55,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Life Hub Mengubah Creation",
       "word_count": 2579
     },
     "1690": {
       "chunk_idx": 55,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Memahami Dao di Antara Void dan Reality",
       "word_count": 2349
     },
     "1691": {
-      "chunk_idx": 55,
-      "local_idx": 29,
+      "chunk_idx": 56,
+      "local_idx": 0,
       "title": "Lebih Suka Santai daripada Menjadi Sage",
       "word_count": 2699
     },
     "1692": {
       "chunk_idx": 56,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Backlash Besar Void Realm",
       "word_count": 2495
     },
     "1693": {
       "chunk_idx": 56,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Mountain dan Sea Akhirnya Tersambung",
       "word_count": 2385
     },
     "1694": {
       "chunk_idx": 56,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "- Really Kelaparan",
       "word_count": 2583
     },
     "1695": {
       "chunk_idx": 56,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "- Chapter 1695: Memecahkan Permainan, Membuktikan Misteri",
       "word_count": 2616
     },
     "1696": {
       "chunk_idx": 56,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Hal yang Diabaikan Tiga Sage",
       "word_count": 2663
     },
     "1697": {
       "chunk_idx": 56,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Mountain dan Sea Tak Punya Boundary Monument",
       "word_count": 2726
     },
     "1698": {
       "chunk_idx": 56,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Tiga Sage Jatuh Bersama",
       "word_count": 2458
     },
     "1699": {
       "chunk_idx": 56,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Para Sage Bertarung di Akhir Zaman",
       "word_count": 2492
     },
     "1700": {
       "chunk_idx": 56,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Kembali Mendapatkan Alamiah",
       "word_count": 2672
     },
     "1701": {
       "chunk_idx": 56,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Void Realm Lays Killing Intent",
       "word_count": 2335
     },
     "1702": {
       "chunk_idx": 56,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "- San Sheng Zhe Dou Fa",
       "word_count": 2454
     },
     "1703": {
       "chunk_idx": 56,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "- Qie Ji Duo Huan Zhen",
       "word_count": 2371
     },
     "1704": {
       "chunk_idx": 56,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Xuanji Ring di dalam Hati",
       "word_count": 2726
     },
     "1705": {
       "chunk_idx": 56,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "445 - Chapter 1705: Wacana Potensial Mountain dan Sea",
       "word_count": 2456
     },
     "1706": {
       "chunk_idx": 56,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Hati Bersatu Melawan Empat Sage",
       "word_count": 2751
     },
     "1707": {
       "chunk_idx": 56,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Penjelasan Hebat tentang Kemampuan Tiga Sage",
       "word_count": 2563
     },
     "1708": {
       "chunk_idx": 56,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Menghadapi God, Setelah Really Return",
       "word_count": 2746
     },
     "1709": {
       "chunk_idx": 56,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Mountain dan Sea Sage-Creating Method",
       "word_count": 2603
     },
     "1710": {
       "chunk_idx": 56,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Mortal Menunjukkan Kekuatan Sage di Depan Para Sage",
       "word_count": 2825
     },
     "1711": {
       "chunk_idx": 56,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Li Fan Bertarung Melawan Tiga Sage",
       "word_count": 2769
     },
     "1712": {
       "chunk_idx": 56,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Tiga Pihak Bersatu Kembali",
       "word_count": 2514
     },
     "1713": {
       "chunk_idx": 56,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Enam Sage Saling Bertarung",
       "word_count": 2632
     },
     "1714": {
       "chunk_idx": 56,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Method Memutus Masa Depan",
       "word_count": 2503
     },
     "1715": {
       "chunk_idx": 56,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Guardian of the Tomb Menyelamatkan Keadaan",
       "word_count": 2545
     },
     "1716": {
       "chunk_idx": 56,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Di Balik Layar Void Realm Muncul",
       "word_count": 2675
     },
     "1717": {
       "chunk_idx": 56,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "457 - Chapter 1717: Kebenaran Really Return",
       "word_count": 2441
     },
     "1718": {
       "chunk_idx": 56,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Guardian of the Tomb Bersatu dengan Hebat",
       "word_count": 2744
     },
     "1719": {
       "chunk_idx": 56,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Kekuatan Berubah Mengikuti Peristiwa Dunia",
       "word_count": 2806
     },
     "1720": {
       "chunk_idx": 56,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Tubuh Menanggung Divine Power Tiga Sage",
       "word_count": 2711
     },
     "1721": {
-      "chunk_idx": 56,
-      "local_idx": 29,
+      "chunk_idx": 57,
+      "local_idx": 0,
       "title": "Mengamati Sage untuk Memahami Method",
       "word_count": 1390
     },
     "1722": {
       "chunk_idx": 57,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Void Realm Mengangkat Senjata Lagi",
       "word_count": 1439
     },
     "1723": {
       "chunk_idx": 57,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Tiga Memecahkan Bahaya",
       "word_count": 2814
     },
     "1724": {
       "chunk_idx": 57,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Mountain dan Sea Menyembunyikan Lifeline",
       "word_count": 2635
     },
     "1725": {
       "chunk_idx": 57,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Kehidupan Mengandung Para Sage",
       "word_count": 2732
     },
     "1726": {
       "chunk_idx": 57,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Dari Akhir Menuju Taichu",
       "word_count": 2431
     },
     "1727": {
       "chunk_idx": 57,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Net Nirwujud Turun dari Langit",
       "word_count": 2512
     },
     "1728": {
       "chunk_idx": 57,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Transformasi Taiwei Sage Emperor",
       "word_count": 2608
     },
     "1729": {
       "chunk_idx": 57,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Mountain dan Sea Capai Puncak dan Menelan",
       "word_count": 1322
     },
     "1730": {
       "chunk_idx": 57,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Seeking Net Terbelah dan Berubah",
       "word_count": 1274
     },
     "1731": {
       "chunk_idx": 57,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Mountain Devouring Sea Swallowing System",
       "word_count": 2596
     },
     "1732": {
       "chunk_idx": 57,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Menangani Orang dengan Caranya Sendiri",
       "word_count": 2643
     },
     "1733": {
       "chunk_idx": 57,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Usia Mountain dan Sea",
       "word_count": 2620
     },
     "1734": {
       "chunk_idx": 57,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Buku Sejarah Seribu Miliar Tahun",
       "word_count": 1472
     },
     "1735": {
       "chunk_idx": 57,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "Evolusi Mountain dan Sea",
       "word_count": 1276
     },
     "1736": {
       "chunk_idx": 57,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Diam-diam Menalar, Meminjam Kehidupan",
       "word_count": 2657
     },
     "1737": {
       "chunk_idx": 57,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Melayang Memandang Masa Depan",
       "word_count": 2578
     },
     "1738": {
       "chunk_idx": 57,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Mortal adalah Manusia Sempurna Sejati",
       "word_count": 1275
     },
     "1739": {
       "chunk_idx": 57,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Hati Bersatu untuk Memecahkan Kebingungan",
       "word_count": 1276
     },
     "1740": {
       "chunk_idx": 57,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Pencerahan Mendadak Salvation Method",
       "word_count": 2873
     },
     "1741": {
       "chunk_idx": 57,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Saat Tiga Sage Jatuh Bersama",
       "word_count": 1290
     },
     "1742": {
       "chunk_idx": 57,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "Hari Sifat Asli Para Sage",
       "word_count": 1259
     },
     "1743": {
       "chunk_idx": 57,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Mountain dan Sea Masuk ke dalam Lukisan",
       "word_count": 1365
     },
     "1744": {
       "chunk_idx": 57,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Mountain dan Sea Sulit Bertahan Lagi",
       "word_count": 1306
     },
     "1745": {
       "chunk_idx": 57,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Dewa Baru Turun ke Dunia",
       "word_count": 2886
     },
     "1746": {
       "chunk_idx": 57,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "Creation Merenggut Hati Manusia",
       "word_count": 2640
     },
     "1747": {
       "chunk_idx": 57,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "Really Return Tenang di Depan God",
       "word_count": 2564
     },
     "1748": {
       "chunk_idx": 57,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "Tubuh Menjadi Tuan Void Realm",
       "word_count": 2390
     },
     "1749": {
       "chunk_idx": 57,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Tanpa Paksaan Semua Dikeluarkan",
       "word_count": 2645
     },
     "1750": {
       "chunk_idx": 57,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Catatan Li Fan Menciptakan Dewa",
       "word_count": 2578
     },
     "1751": {
-      "chunk_idx": 57,
-      "local_idx": 29,
+      "chunk_idx": 58,
+      "local_idx": 0,
       "title": "Pertarungan Dewa Baru di Void Realm",
       "word_count": 2614
     },
     "1752": {
       "chunk_idx": 58,
-      "local_idx": 0,
+      "local_idx": 1,
       "title": "Dewa Pernah Mengubah Mountain dan Sea",
       "word_count": 2548
     },
     "1753": {
       "chunk_idx": 58,
-      "local_idx": 1,
+      "local_idx": 2,
       "title": "Pencuri Besar Mountain dan Sea",
       "word_count": 1362
     },
     "1754": {
       "chunk_idx": 58,
-      "local_idx": 2,
+      "local_idx": 3,
       "title": "Anggun Mempermainkan Tiga Sage",
       "word_count": 1371
     },
     "1755": {
       "chunk_idx": 58,
-      "local_idx": 3,
+      "local_idx": 4,
       "title": "Pernah Menang dalam Urusan Void Realm",
       "word_count": 1244
     },
     "1756": {
       "chunk_idx": 58,
-      "local_idx": 4,
+      "local_idx": 5,
       "title": "Bintang Turun Menelan Tubuh Mortal",
       "word_count": 1302
     },
     "1757": {
       "chunk_idx": 58,
-      "local_idx": 5,
+      "local_idx": 6,
       "title": "Akhirnya Memecahkan Misteri Mountain dan Sea",
       "word_count": 2818
     },
     "1758": {
       "chunk_idx": 58,
-      "local_idx": 6,
+      "local_idx": 7,
       "title": "Bintang Jatuh ke Debu Fana",
       "word_count": 2940
     },
     "1759": {
       "chunk_idx": 58,
-      "local_idx": 7,
+      "local_idx": 8,
       "title": "Duduk Menyaksikan Kembalinya True God",
       "word_count": 2948
     },
     "1760": {
       "chunk_idx": 58,
-      "local_idx": 8,
+      "local_idx": 9,
       "title": "Bayang-bayang Bertumpuk Para Dewa",
       "word_count": 2799
     },
     "1761": {
       "chunk_idx": 58,
-      "local_idx": 9,
+      "local_idx": 10,
       "title": "Sage Spirit Semua Masuk ke Net",
       "word_count": 2572
     },
     "1762": {
       "chunk_idx": 58,
-      "local_idx": 10,
+      "local_idx": 11,
       "title": "Merusak Pantangan, Para Sage Bertarung",
       "word_count": 2700
     },
     "1763": {
       "chunk_idx": 58,
-      "local_idx": 11,
+      "local_idx": 12,
       "title": "Awal Dewa Terbelah di Mountain dan Sea",
       "word_count": 2573
     },
     "1764": {
       "chunk_idx": 58,
-      "local_idx": 12,
+      "local_idx": 13,
       "title": "Mortal Adalah Satu-satunya yang Unik",
       "word_count": 2637
     },
     "1765": {
       "chunk_idx": 58,
-      "local_idx": 13,
+      "local_idx": 14,
       "title": "God-Slaying Transformation",
       "word_count": 2759
     },
     "1766": {
       "chunk_idx": 58,
-      "local_idx": 14,
+      "local_idx": 15,
       "title": "Transformation Niat Baik",
       "word_count": 2487
     },
     "1767": {
       "chunk_idx": 58,
-      "local_idx": 15,
+      "local_idx": 16,
       "title": "Menjadi Tamu Dewa",
       "word_count": 2603
     },
     "1768": {
       "chunk_idx": 58,
-      "local_idx": 16,
+      "local_idx": 17,
       "title": "Memotong Master Takdir",
       "word_count": 2639
     },
     "1769": {
       "chunk_idx": 58,
-      "local_idx": 17,
+      "local_idx": 18,
       "title": "Meninggalkan Really Return",
       "word_count": 2769
     },
     "1770": {
       "chunk_idx": 58,
-      "local_idx": 18,
+      "local_idx": 19,
       "title": "Kebenaran Hilang, Tersembunyi",
       "word_count": 2631
     },
     "1771": {
       "chunk_idx": 58,
-      "local_idx": 19,
+      "local_idx": 20,
       "title": "Memandang dari Luar Tubuh",
       "word_count": 2626
     },
     "1772": {
       "chunk_idx": 58,
-      "local_idx": 20,
+      "local_idx": 21,
       "title": "False Universe Ada",
       "word_count": 2602
     },
     "1773": {
       "chunk_idx": 58,
-      "local_idx": 21,
+      "local_idx": 22,
       "title": "Cicada Tersembunyi",
       "word_count": 2542
     },
     "1774": {
       "chunk_idx": 58,
-      "local_idx": 22,
+      "local_idx": 23,
       "title": "Derivation yang Baik",
       "word_count": 2541
     },
     "1775": {
       "chunk_idx": 58,
-      "local_idx": 23,
+      "local_idx": 24,
       "title": "Dao Scar",
       "word_count": 2489
     },
     "1776": {
       "chunk_idx": 58,
-      "local_idx": 24,
+      "local_idx": 25,
       "title": "- Rasa Ilahi",
       "word_count": 2477
     },
     "1777": {
       "chunk_idx": 58,
-      "local_idx": 25,
+      "local_idx": 26,
       "title": "True dan False",
       "word_count": 1175
     },
     "1778": {
       "chunk_idx": 58,
-      "local_idx": 26,
+      "local_idx": 27,
       "title": "- New Ark",
       "word_count": 1423
     },
     "1779": {
       "chunk_idx": 58,
-      "local_idx": 27,
+      "local_idx": 28,
       "title": "Cahaya Pelita",
       "word_count": 1373
     },
     "1780": {
       "chunk_idx": 58,
-      "local_idx": 28,
+      "local_idx": 29,
       "title": "Dewa Kembali",
       "word_count": 1307
     },
     "1781": {
-      "chunk_idx": 58,
-      "local_idx": 29,
+      "chunk_idx": 59,
+      "local_idx": 0,
       "title": "Akhir",
       "word_count": 3004
     }
