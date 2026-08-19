@@ -675,12 +675,44 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
           >
             {chapter.title || `Chapter ${chapter.number}`}
           </h1>
-          <div className="text-xs opacity-60 flex items-center gap-3 flex-wrap">
+          <div className="text-xs opacity-60 flex items-center gap-3 flex-wrap mb-4">
             <span>{chapter.word_count.toLocaleString("id-ID")} kata</span>
             <span>·</span>
             <span>~{minutes} menit baca</span>
             <span>·</span>
             <span>{progress.toFixed(0)}% selesai</span>
+          </div>
+
+          {/* Navigasi Atas - Mirip bawah tapi disesuaikan untuk layar kecil */}
+          <div className="flex justify-between items-center gap-2 mt-4 pt-4 border-t border-current/10">
+            {prevChapter ? (
+              <button
+                onClick={() => router.push(`/read/${novel.slug}/${prevChapter.number}`)}
+                className="flex-1 py-2 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
+              >
+                ← Prev
+              </button>
+            ) : (
+              <span className="flex-1 py-2 text-xs opacity-40 text-center">Awal</span>
+            )}
+            
+            <button
+              onClick={() => router.push(`/novel/${novel.slug}`)}
+              className="flex-1 py-2 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
+            >
+              📋 Daftar
+            </button>
+            
+            {nextChapter ? (
+              <button
+                onClick={() => router.push(`/read/${novel.slug}/${nextChapter.number}`)}
+                className="flex-1 py-2 rounded-lg bg-accent text-white hover:bg-accent/90 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
+              >
+                Next →
+              </button>
+            ) : (
+              <span className="flex-1 py-2 text-xs opacity-40 text-center">Akhir</span>
+            )}
           </div>
         </header>
 
