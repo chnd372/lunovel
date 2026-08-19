@@ -755,33 +755,36 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
         <div className="mt-16 pt-8 border-t border-current/10 text-center">
           <div className="text-3xl mb-4 opacity-30">⁂</div>
           <p className="text-sm opacity-60 mb-6">Akhir Chapter {chapter.number}</p>
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-stretch sm:items-center sm:justify-center">
+          
+          {/* Navigasi Bawah - Sejajar & Rapi seperti di atas */}
+          <div className="flex justify-between items-center gap-2 max-w-md mx-auto">
             {prevChapter ? (
               <button
                 onClick={() => router.push(`/read/${novel.slug}/${prevChapter.number}`)}
-                className="px-4 py-2 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-sm font-medium"
+                className="flex-1 py-2.5 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
               >
                 ← Chapter {prevChapter.number}
               </button>
             ) : (
-              <span className="px-4 py-2 text-sm opacity-40">Chapter pertama</span>
+              <span className="flex-1 py-2.5 text-xs opacity-40 text-center">Chapter pertama</span>
             )}
+            
             <button
               onClick={() => router.push(`/novel/${novel.slug}`)}
-              className="px-4 py-2 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-sm font-medium"
+              className="flex-1 py-2.5 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
             >
-              📋 Daftar Chapter
+              📋 Daftar
             </button>
 
-            {/* Share button + dropdown */}
+            {/* Share button - Icon-Only minimal */}
             <div ref={shareRef} className="relative">
               <button
                 onClick={() => setShareOpen((v) => !v)}
                 aria-label="Bagikan chapter"
                 aria-expanded={shareOpen}
-                className="w-full px-4 py-2 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-sm font-medium inline-flex items-center justify-center gap-1.5"
+                className="p-2.5 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-sm font-medium flex items-center justify-center"
               >
-                🔗 <span>Bagikan</span>
+                🔗
               </button>
               {shareOpen && (
                 <div
@@ -834,15 +837,16 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
                 </div>
               )}
             </div>
+
             {nextChapter ? (
               <button
                 onClick={() => router.push(`/read/${novel.slug}/${nextChapter.number}`)}
-                className="px-4 py-2 rounded-lg bg-accent text-white hover:bg-accent/90 text-sm font-medium"
+                className="flex-1 py-2.5 rounded-lg bg-accent text-white hover:bg-accent/90 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
               >
                 Chapter {nextChapter.number} →
               </button>
             ) : (
-              <span className="px-4 py-2 text-sm opacity-40">Chapter terakhir 🎉</span>
+              <span className="flex-1 py-2.5 text-xs opacity-40 text-center">Chapter terakhir 🎉</span>
             )}
           </div>
         </div>
