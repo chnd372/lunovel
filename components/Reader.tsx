@@ -20,6 +20,7 @@ interface Props {
   chapter: Chapter;
   prevChapter: { number: number } | null;
   nextChapter: { number: number } | null;
+  allChapters: { number: number; title?: string }[];
 }
 
 const SETTINGS_KEY = "lunovel_reader_settings";
@@ -132,15 +133,29 @@ function applyGlossary(text: string, slug: string): string {
   return result;
 }
 
-export default function Reader({ novel, chapter, prevChapter, nextChapter }: Props) {
+export default function Reader({ novel, chapter, prevChapter, nextChapter, allChapters }: Props) {
   const router = useRouter();
   const [settings, setSettings] = useState<ReaderSettings>(defaultSettings);
   const [showSettings, setShowSettings] = useState(false);
+  const [showChapterList, setShowChapterList] = useState(false);
+  const [chapterSearch, setChapterSearch] = useState("");
+  const chapterListRef = useRef<HTMLDivElement>(null);
+  const activeChapterRef = useRef<HTMLButtonElement>(null);
   const [progress, setProgress] = useState(0);
   const [showHeader, setShowHeader] = useState(true);
   const [perbaikanVersion, setPerbaikanVersion] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
   const [selectedTerm, setSelectedTerm] = useState<{term: string, definition: string} | null>(null);
+
+  // Auto-scroll chapter list to current chapter when sheet opens
+  useEffect(() => {
+    if (showChapterList && activeChapterRef.current && chapterListRef.current) {
+      setTimeout(() => {
+        activeChapterRef.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+      }, 120);
+    }
+    if (showChapterList) setChapterSearch("");
+  }, [showChapterList]);
 
   // Click handler for glossary terms
   useEffect(() => {
@@ -649,6 +664,88 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
         contentRef={contentRef}
       />
 
+      {/* Chapter List Bottom Sheet */}
+      {showChapterList && (
+        <div
+          className="fixed inset-0 z-[55] flex flex-col justify-end"
+          onClick={() => setShowChapterList(false)}
+        >
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+          <div
+            className="relative w-full max-w-lg mx-auto flex flex-col bg-[#1a1614] rounded-t-2xl shadow-2xl ring-1 ring-white/10"
+            style={{ maxHeight: "85vh" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Handle bar */}
+            <div className="flex justify-center pt-3 pb-1">
+              <div className="w-10 h-1 rounded-full bg-white/20" />
+            </div>
+
+            {/* Header */}
+            <div className="flex items-center justify-between px-4 py-2 border-b border-white/10">
+              <span className="font-semibold text-sm text-white/90">
+                {novel.title} — {allChapters.length} Chapter
+              </span>
+              <button
+                onClick={() => setShowChapterList(false)}
+                className="text-white/50 hover:text-white text-lg leading-none px-1"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Search */}
+            <div className="px-3 pt-2 pb-1">
+              <input
+                type="text"
+                placeholder="Cari chapter..."
+                value={chapterSearch}
+                onChange={(e) => setChapterSearch(e.target.value)}
+                className="w-full bg-white/10 text-white text-sm rounded-lg px-3 py-2 placeholder:text-white/40 outline-none border border-white/10 focus:border-accent"
+              />
+            </div>
+
+            {/* Chapter list */}
+            <div ref={chapterListRef} className="overflow-y-auto flex-1 pb-safe">
+              {allChapters
+                .filter((ch) => {
+                  const q = chapterSearch.trim().toLowerCase();
+                  if (!q) return true;
+                  return (
+                    String(ch.number).includes(q) ||
+                    (ch.title ?? "").toLowerCase().includes(q)
+                  );
+                })
+                .sort((a, b) => a.number - b.number)
+                .map((ch) => {
+                  const isActive = ch.number === chapter.number;
+                  return (
+                    <button
+                      key={ch.number}
+                      ref={isActive ? activeChapterRef : undefined}
+                      onClick={() => {
+                        setShowChapterList(false);
+                        router.push(`/read/${novel.slug}/${ch.number}`);
+                      }}
+                      className={`w-full flex items-center justify-between px-4 py-3 text-sm border-b border-white/5 hover:bg-white/5 text-left transition-colors ${
+                        isActive ? "bg-accent/15 text-accent" : "text-white/80"
+                      }`}
+                    >
+                      <span className="flex-1 line-clamp-1 pr-3">
+                        <span className="opacity-50 mr-2 font-mono text-xs">{ch.number}</span>
+                        {ch.title || `Chapter ${ch.number}`}
+                      </span>
+                      {isActive && (
+                        <span className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
+                      )}
+                    </button>
+                  );
+                })}
+            </div>
+          </div>
+        </div>
+      )}
+
             {selectedTerm && (
         <GlossaryTooltip 
           term={selectedTerm.term} 
@@ -697,7 +794,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
             )}
             
             <button
-              onClick={() => router.push(`/novel/${novel.slug}`)}
+              onClick={() => setShowChapterList(true)}
               className="flex-1 py-2 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
             >
               📋 Daftar
@@ -770,7 +867,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
             )}
             
             <button
-              onClick={() => router.push(`/novel/${novel.slug}`)}
+              onClick={() => setShowChapterList(true)}
               className="flex-1 py-2.5 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
             >
               📋 Daftar
