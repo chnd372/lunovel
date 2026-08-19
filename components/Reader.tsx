@@ -763,10 +763,10 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
                 onClick={() => router.push(`/read/${novel.slug}/${prevChapter.number}`)}
                 className="flex-1 py-2.5 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
               >
-                ← Chapter {prevChapter.number}
+                ← Prev
               </button>
             ) : (
-              <span className="flex-1 py-2.5 text-xs opacity-40 text-center">Chapter pertama</span>
+              <span className="flex-1 py-2.5 text-xs opacity-40 text-center">Awal</span>
             )}
             
             <button
@@ -843,10 +843,10 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter }: Pro
                 onClick={() => router.push(`/read/${novel.slug}/${nextChapter.number}`)}
                 className="flex-1 py-2.5 rounded-lg bg-accent text-white hover:bg-accent/90 text-xs font-medium whitespace-nowrap overflow-hidden text-ellipsis px-1 text-center"
               >
-                Chapter {nextChapter.number} →
+                Next →
               </button>
             ) : (
-              <span className="flex-1 py-2.5 text-xs opacity-40 text-center">Chapter terakhir 🎉</span>
+              <span className="flex-1 py-2.5 text-xs opacity-40 text-center">Akhir</span>
             )}
           </div>
         </div>
