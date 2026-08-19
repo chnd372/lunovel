@@ -75,6 +75,7 @@ export default async function ReadPage({ params }: Props) {
         chapter={chapter}
         prevChapter={prev ? { number: prev.number } : null}
         nextChapter={next ? { number: next.number } : null}
+        allChapters={allChapters.map((c) => ({ number: c.number, title: c.title }))}
       />
     </ErrorBoundary>
   );
