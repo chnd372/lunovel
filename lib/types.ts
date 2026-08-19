@@ -20,6 +20,7 @@ export interface Novel {
   original_language?: string; // bahasa asal kalau translated
   created_at?: string;
   updated_at?: string;
+  books?: { name: string; chapter_start: number; chapter_end: number }[]; // per-book grouping
 }
 
 export interface Chapter {
