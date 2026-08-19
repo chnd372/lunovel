@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getNovelBySlug, getChaptersByNovel } from "@/lib/data";
 import ChapterList from "@/components/ChapterList";
-
+import BookAccordion from "@/components/BookAccordion";
 import BookmarkButton from "@/components/BookmarkButton";
 import ResumeReadingButton from "@/components/ResumeReadingButton";
 import CorrectionPanel from "@/components/CorrectionPanel";
@@ -190,9 +190,13 @@ export default async function NovelPage({ params, searchParams }: Props) {
           <span className="text-xs opacity-60">{chapters.length} entries</span>
         </div>
         
-        <div className="rounded-xl overflow-hidden bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5">
-          <ChapterList novel={novel} chapters={orderedChapters} />
-        </div>
+        {novel.books && novel.books.length > 0 ? (
+          <BookAccordion novel={novel} chapters={chapters} />
+        ) : (
+          <div className="rounded-xl overflow-hidden bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5">
+            <ChapterList novel={novel} chapters={orderedChapters} />
+          </div>
+        )}
       </section>
 
       {/* Novel-level discussion (separate from chapter-threaded comments) */}
