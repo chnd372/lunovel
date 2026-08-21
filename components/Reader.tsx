@@ -198,11 +198,22 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
 
   // Apply approved corrections to chapter content
   const { text: correctedContent, applied: appliedCorrections } = applyCorrections(chapter.content, novel.id);
+  
+  // Strip duplicate English chapter title from start of content (common in raw files)
+  const cleanedContent = useMemo(() => {
+    const lines = correctedContent.split('\n');
+    // If first line is "Chapter NNNN: Title" in English, remove it
+    if (lines[0] && /^Chapter\s+\d+[:\s]/i.test(lines[0])) {
+      return lines.slice(1).join('\n').trim();
+    }
+    return correctedContent;
+  }, [correctedContent]);
+  
   // Apply personal find/replace rules (per-novel localStorage).
   // perbaikanVersion bump forces re-apply after user adds a new rule via modal.
   const { text: chapterContent } = useMemo(
-    () => applyPerbaikan(correctedContent, novel.slug),
-    [correctedContent, novel.slug, perbaikanVersion],
+    () => applyPerbaikan(cleanedContent, novel.slug),
+    [cleanedContent, novel.slug, perbaikanVersion],
   );
 
   // Listen for perbaikan changes (new rule added via TextSelectionHandler modal)
@@ -757,7 +768,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
       {/* Article */}
       <article
         ref={contentRef}
-        className="mx-auto px-4 md:px-6 pt-16 pb-32"
+        className="mx-auto px-4 md:px-6 pt-16 pb-32 w-full break-words overflow-x-hidden"
         style={{ maxWidth: settings.max_width + 32 }}
       >
         <header className="mb-8 pb-6 border-b border-current/10">
@@ -814,13 +825,17 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
         </header>
 
         <div
-          className={`${settings.font_family === "serif" ? "font-serif" : settings.font_family === "sans" ? "font-sans" : "font-mono"}`}
+          className={`w-full break-words ${settings.font_family === "serif" ? "font-serif" : settings.font_family === "sans" ? "font-sans" : "font-mono"}`}
           style={{
             fontSize: settings.font_size,
             lineHeight: settings.line_height,
           }}
         >
           {paragraphs.map((p, i) => {
+            // Replace long divider lines like === or --- with styled hr
+            if (/^[=\-_]{4,}$/.test(p.trim())) {
+              return <hr key={i} className="my-8 border-t border-current/20" />;
+            }
             // Apply inline highlighting for pending/approved corrections
             const pendingCorrs = typeof window !== "undefined" ? getCorrections(novel.id, "pending") : [];
             const approvedCorrs = typeof window !== "undefined" ? getCorrections(novel.id, "approved") : [];
