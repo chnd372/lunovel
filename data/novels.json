@@ -127,7 +127,7 @@
     "cover": "/covers/infinite-bloodcore.jpg",
     "created_at": "2026-08-18T00:00:00Z",
     "updated_at": "2026-08-19T00:00:00Z",
-    "total_chapters": 212,
+    "total_chapters": 967,
     "coo_status": "968 Chapters (Hiatus) — Book 1: 212 ch (Complete), Book 2: 756 ch (Complete), Book 3: Forthcoming",
     "books": [
       {
@@ -138,7 +138,7 @@
       {
         "name": "Book 2",
         "chapter_start": 213,
-        "chapter_end": 968
+        "chapter_end": 967
       }
     ]
   }
