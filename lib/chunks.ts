@@ -1,5 +1,6 @@
 import type { Chapter } from "./types";
 import moipMeta from "@/data/chapters/moip-meta.json";
+import survivingmartialartssaintMeta from "@/data/chapters/surviving-martial-arts-saint-meta.json";
 import wmwMeta from "@/data/chapters/warlock-meta.json";
 import mlsMeta from "@/data/chapters/my-longevity-simulation-meta.json";
 import ibcMeta from "@/data/chapters/infinite-bloodcore-meta.json";
@@ -24,7 +25,8 @@ const META: Record<string, NovelMeta> = {
   "warlock-of-magus-world": wmwMeta as NovelMeta,
   "my-longevity-simulation": mlsMeta as NovelMeta,
   "infinite-bloodcore": ibcMeta as NovelMeta,
-};
+  "surviving-martial-arts-saint": survivingmartialartssaintMeta as NovelMeta,
+
 
 async function loadChunk(novelId: string, chunkIdx: number): Promise<Chapter[]> {
   const pad = String(chunkIdx).padStart(2, "0");
