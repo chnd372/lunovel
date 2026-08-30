@@ -1,0 +1,608 @@
+{
+  "novel_id": "surviving-martial-arts-saint",
+  "total_chapters": 100,
+  "chunks": 2,
+  "chunk_size": 50,
+  "chapter_map": {
+    "1": {
+      "chunk_idx": 0,
+      "local_idx": 0,
+      "title": "Masa-Masa Sulit",
+      "word_count": 2402
+    },
+    "2": {
+      "chunk_idx": 0,
+      "local_idx": 1,
+      "title": "Rumah Tua",
+      "word_count": 1644
+    },
+    "3": {
+      "chunk_idx": 0,
+      "local_idx": 2,
+      "title": "Sepupu",
+      "word_count": 1537
+    },
+    "4": {
+      "chunk_idx": 0,
+      "local_idx": 3,
+      "title": "Pertemuan",
+      "word_count": 1630
+    },
+    "5": {
+      "chunk_idx": 0,
+      "local_idx": 4,
+      "title": "Berguru",
+      "word_count": 2124
+    },
+    "6": {
+      "chunk_idx": 0,
+      "local_idx": 5,
+      "title": "Masalah",
+      "word_count": 2197
+    },
+    "7": {
+      "chunk_idx": 0,
+      "local_idx": 6,
+      "title": "Pembunuhan",
+      "word_count": 2151
+    },
+    "8": {
+      "chunk_idx": 0,
+      "local_idx": 7,
+      "title": "Posisi Sementara",
+      "word_count": 2210
+    },
+    "9": {
+      "chunk_idx": 0,
+      "local_idx": 8,
+      "title": "Manusia Berubah",
+      "word_count": 2021
+    },
+    "10": {
+      "chunk_idx": 0,
+      "local_idx": 9,
+      "title": "Obvious Strength",
+      "word_count": 2334
+    },
+    "11": {
+      "chunk_idx": 0,
+      "local_idx": 10,
+      "title": "Sponsorship",
+      "word_count": 2662
+    },
+    "12": {
+      "chunk_idx": 0,
+      "local_idx": 11,
+      "title": "Livelihood",
+      "word_count": 2030
+    },
+    "13": {
+      "chunk_idx": 0,
+      "local_idx": 12,
+      "title": "Extermination",
+      "word_count": 1384
+    },
+    "14": {
+      "chunk_idx": 0,
+      "local_idx": 13,
+      "title": "Fierce Battle",
+      "word_count": 1196
+    },
+    "15": {
+      "chunk_idx": 0,
+      "local_idx": 14,
+      "title": "Inner City",
+      "word_count": 1616
+    },
+    "16": {
+      "chunk_idx": 0,
+      "local_idx": 15,
+      "title": "Refusal",
+      "word_count": 1657
+    },
+    "17": {
+      "chunk_idx": 0,
+      "local_idx": 16,
+      "title": "Huiniang",
+      "word_count": 1346
+    },
+    "18": {
+      "chunk_idx": 0,
+      "local_idx": 17,
+      "title": "Competition",
+      "word_count": 2181
+    },
+    "19": {
+      "chunk_idx": 0,
+      "local_idx": 18,
+      "title": "Closing Disciple",
+      "word_count": 1580
+    },
+    "20": {
+      "chunk_idx": 0,
+      "local_idx": 19,
+      "title": "Turmoil",
+      "word_count": 1901
+    },
+    "21": {
+      "chunk_idx": 0,
+      "local_idx": 20,
+      "title": "Shrouded",
+      "word_count": 2067
+    },
+    "22": {
+      "chunk_idx": 0,
+      "local_idx": 21,
+      "title": "Black Blood",
+      "word_count": 2451
+    },
+    "23": {
+      "chunk_idx": 0,
+      "local_idx": 22,
+      "title": "The Colonel",
+      "word_count": 1430
+    },
+    "24": {
+      "chunk_idx": 0,
+      "local_idx": 23,
+      "title": "Sects",
+      "word_count": 1566
+    },
+    "25": {
+      "chunk_idx": 0,
+      "local_idx": 24,
+      "title": "Departure",
+      "word_count": 1479
+    },
+    "26": {
+      "chunk_idx": 0,
+      "local_idx": 25,
+      "title": "Bandit Suppression",
+      "word_count": 1492
+    },
+    "27": {
+      "chunk_idx": 0,
+      "local_idx": 26,
+      "title": "The Cheng Family",
+      "word_count": 1801
+    },
+    "28": {
+      "chunk_idx": 0,
+      "local_idx": 27,
+      "title": "Hidden Strength",
+      "word_count": 1349
+    },
+    "29": {
+      "chunk_idx": 0,
+      "local_idx": 28,
+      "title": "Return",
+      "word_count": 1879
+    },
+    "30": {
+      "chunk_idx": 0,
+      "local_idx": 29,
+      "title": "Ambush",
+      "word_count": 1546
+    },
+    "31": {
+      "chunk_idx": 0,
+      "local_idx": 30,
+      "title": "Banquet",
+      "word_count": 1800
+    },
+    "32": {
+      "chunk_idx": 0,
+      "local_idx": 31,
+      "title": "Rising Waves",
+      "word_count": 1820
+    },
+    "33": {
+      "chunk_idx": 0,
+      "local_idx": 32,
+      "title": "Breaking Point",
+      "word_count": 2251
+    },
+    "34": {
+      "chunk_idx": 0,
+      "local_idx": 33,
+      "title": "Sacrifice",
+      "word_count": 1763
+    },
+    "35": {
+      "chunk_idx": 0,
+      "local_idx": 34,
+      "title": "Turmoil",
+      "word_count": 1355
+    },
+    "36": {
+      "chunk_idx": 0,
+      "local_idx": 35,
+      "title": "Recruitment",
+      "word_count": 1602
+    },
+    "37": {
+      "chunk_idx": 0,
+      "local_idx": 36,
+      "title": "Treasure Fish",
+      "word_count": 1984
+    },
+    "38": {
+      "chunk_idx": 0,
+      "local_idx": 37,
+      "title": "The Eve",
+      "word_count": 1512
+    },
+    "39": {
+      "chunk_idx": 0,
+      "local_idx": 38,
+      "title": "The Examination Begins",
+      "word_count": 1348
+    },
+    "40": {
+      "chunk_idx": 0,
+      "local_idx": 39,
+      "title": "Taking the Stage",
+      "word_count": 1328
+    },
+    "41": {
+      "chunk_idx": 0,
+      "local_idx": 40,
+      "title": "Full Moon",
+      "word_count": 1431
+    },
+    "42": {
+      "chunk_idx": 0,
+      "local_idx": 41,
+      "title": "Second Round",
+      "word_count": 1469
+    },
+    "43": {
+      "chunk_idx": 0,
+      "local_idx": 42,
+      "title": "Sudden Turn",
+      "word_count": 1376
+    },
+    "44": {
+      "chunk_idx": 0,
+      "local_idx": 43,
+      "title": "Acting",
+      "word_count": 1530
+    },
+    "45": {
+      "chunk_idx": 0,
+      "local_idx": 44,
+      "title": "End",
+      "word_count": 1469
+    },
+    "46": {
+      "chunk_idx": 0,
+      "local_idx": 45,
+      "title": "Injuries",
+      "word_count": 1402
+    },
+    "47": {
+      "chunk_idx": 0,
+      "local_idx": 46,
+      "title": "Misunderstanding",
+      "word_count": 3082
+    },
+    "48": {
+      "chunk_idx": 0,
+      "local_idx": 47,
+      "title": "Superior",
+      "word_count": 1551
+    },
+    "49": {
+      "chunk_idx": 0,
+      "local_idx": 48,
+      "title": "Regret",
+      "word_count": 1542
+    },
+    "50": {
+      "chunk_idx": 0,
+      "local_idx": 49,
+      "title": "Buying a House",
+      "word_count": 1793
+    },
+    "51": {
+      "chunk_idx": 1,
+      "local_idx": 0,
+      "title": "Ambush",
+      "word_count": 1303
+    },
+    "52": {
+      "chunk_idx": 1,
+      "local_idx": 1,
+      "title": "Moving House",
+      "word_count": 1341
+    },
+    "53": {
+      "chunk_idx": 1,
+      "local_idx": 2,
+      "title": "Salary Increase",
+      "word_count": 1556
+    },
+    "54": {
+      "chunk_idx": 1,
+      "local_idx": 3,
+      "title": "Marriage Proposal",
+      "word_count": 1295
+    },
+    "55": {
+      "chunk_idx": 1,
+      "local_idx": 4,
+      "title": "The Duel",
+      "word_count": 1656
+    },
+    "56": {
+      "chunk_idx": 1,
+      "local_idx": 5,
+      "title": "Fierce Combat",
+      "word_count": 1521
+    },
+    "57": {
+      "chunk_idx": 1,
+      "local_idx": 6,
+      "title": "Trouble",
+      "word_count": 1396
+    },
+    "58": {
+      "chunk_idx": 1,
+      "local_idx": 7,
+      "title": "Toad Breathing",
+      "word_count": 1661
+    },
+    "59": {
+      "chunk_idx": 1,
+      "local_idx": 8,
+      "title": "Three Months",
+      "word_count": 1390
+    },
+    "60": {
+      "chunk_idx": 1,
+      "local_idx": 9,
+      "title": "Examination",
+      "word_count": 1706
+    },
+    "61": {
+      "chunk_idx": 1,
+      "local_idx": 10,
+      "title": "Heart Barriers",
+      "word_count": 1305
+    },
+    "62": {
+      "chunk_idx": 1,
+      "local_idx": 11,
+      "title": "Madman",
+      "word_count": 1355
+    },
+    "63": {
+      "chunk_idx": 1,
+      "local_idx": 12,
+      "title": "Blue Scale",
+      "word_count": 1413
+    },
+    "64": {
+      "chunk_idx": 1,
+      "local_idx": 13,
+      "title": "Fish Merchant",
+      "word_count": 1492
+    },
+    "65": {
+      "chunk_idx": 1,
+      "local_idx": 14,
+      "title": "Achievement",
+      "word_count": 2176
+    },
+    "66": {
+      "chunk_idx": 1,
+      "local_idx": 15,
+      "title": "Sparring",
+      "word_count": 2935
+    },
+    "67": {
+      "chunk_idx": 1,
+      "local_idx": 16,
+      "title": "The Rising Generation",
+      "word_count": 1486
+    },
+    "68": {
+      "chunk_idx": 1,
+      "local_idx": 17,
+      "title": "To Be Feared",
+      "word_count": 1435
+    },
+    "69": {
+      "chunk_idx": 1,
+      "local_idx": 18,
+      "title": "The Net",
+      "word_count": 1875
+    },
+    "70": {
+      "chunk_idx": 1,
+      "local_idx": 19,
+      "title": "Wind and Snow",
+      "word_count": 2228
+    },
+    "71": {
+      "chunk_idx": 1,
+      "local_idx": 20,
+      "title": "Gao Sheng",
+      "word_count": 1466
+    },
+    "72": {
+      "chunk_idx": 1,
+      "local_idx": 21,
+      "title": "Grudges",
+      "word_count": 1978
+    },
+    "73": {
+      "chunk_idx": 1,
+      "local_idx": 22,
+      "title": "Schemes",
+      "word_count": 1557
+    },
+    "74": {
+      "chunk_idx": 1,
+      "local_idx": 23,
+      "title": "Contest",
+      "word_count": 1275
+    },
+    "75": {
+      "chunk_idx": 1,
+      "local_idx": 24,
+      "title": "Direct Confrontation",
+      "word_count": 1860
+    },
+    "76": {
+      "chunk_idx": 1,
+      "local_idx": 25,
+      "title": "The Merchant Guild",
+      "word_count": 1657
+    },
+    "77": {
+      "chunk_idx": 1,
+      "local_idx": 26,
+      "title": "A Generous Gift",
+      "word_count": 1347
+    },
+    "78": {
+      "chunk_idx": 1,
+      "local_idx": 27,
+      "title": "Regret",
+      "word_count": 1384
+    },
+    "79": {
+      "chunk_idx": 1,
+      "local_idx": 28,
+      "title": "Old Friends",
+      "word_count": 1457
+    },
+    "80": {
+      "chunk_idx": 1,
+      "local_idx": 29,
+      "title": "Waves",
+      "word_count": 1323
+    },
+    "81": {
+      "chunk_idx": 1,
+      "local_idx": 30,
+      "title": "Stirring of the Heart",
+      "word_count": 1298
+    },
+    "82": {
+      "chunk_idx": 1,
+      "local_idx": 31,
+      "title": "Dark Alley",
+      "word_count": 2683
+    },
+    "83": {
+      "chunk_idx": 1,
+      "local_idx": 32,
+      "title": "Changing Sky",
+      "word_count": 2634
+    },
+    "84": {
+      "chunk_idx": 1,
+      "local_idx": 33,
+      "title": "Recommendation",
+      "word_count": 3868
+    },
+    "85": {
+      "chunk_idx": 1,
+      "local_idx": 34,
+      "title": "Departure",
+      "word_count": 2550
+    },
+    "86": {
+      "chunk_idx": 1,
+      "local_idx": 35,
+      "title": "Yunlin",
+      "word_count": 2692
+    },
+    "87": {
+      "chunk_idx": 1,
+      "local_idx": 36,
+      "title": "Qingmu",
+      "word_count": 3671
+    },
+    "88": {
+      "chunk_idx": 1,
+      "local_idx": 37,
+      "title": "Fishing Ground",
+      "word_count": 4446
+    },
+    "89": {
+      "chunk_idx": 1,
+      "local_idx": 38,
+      "title": "Silver Carp",
+      "word_count": 2402
+    },
+    "90": {
+      "chunk_idx": 1,
+      "local_idx": 39,
+      "title": "Demon Sect",
+      "word_count": 2351
+    },
+    "91": {
+      "chunk_idx": 1,
+      "local_idx": 40,
+      "title": "Killing Intent",
+      "word_count": 2638
+    },
+    "92": {
+      "chunk_idx": 1,
+      "local_idx": 41,
+      "title": "Martial Repository",
+      "word_count": 3555
+    },
+    "93": {
+      "chunk_idx": 1,
+      "local_idx": 42,
+      "title": "Spear Technique",
+      "word_count": 2769
+    },
+    "94": {
+      "chunk_idx": 1,
+      "local_idx": 43,
+      "title": "Slaughter",
+      "word_count": 3656
+    },
+    "95": {
+      "chunk_idx": 1,
+      "local_idx": 44,
+      "title": "Tracking",
+      "word_count": 2177
+    },
+    "96": {
+      "chunk_idx": 1,
+      "local_idx": 45,
+      "title": "Misty Rain",
+      "word_count": 2451
+    },
+    "97": {
+      "chunk_idx": 1,
+      "local_idx": 46,
+      "title": "Rain's Momentum",
+      "word_count": 2600
+    },
+    "98": {
+      "chunk_idx": 1,
+      "local_idx": 47,
+      "title": "Marsh",
+      "word_count": 2427
+    },
+    "99": {
+      "chunk_idx": 1,
+      "local_idx": 48,
+      "title": "Ambush",
+      "word_count": 2664
+    },
+    "100": {
+      "chunk_idx": 1,
+      "local_idx": 49,
+      "title": "Cold Flood Dragon Spear",
+      "word_count": 2212
+    }
+  }
+}
