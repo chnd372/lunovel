@@ -50,7 +50,7 @@ export async function getChaptersByNovel(novelId: string): Promise<Chapter[]> {
       .select("*")
       .eq("novel_id", novelId)
       .order("number", { ascending: true });
-    if (!error && data) return data as Chapter[];
+    if (!error && data && data.length > 0) return data as Chapter[];
   }
   // Chunked novels (e.g. moip): return lightweight list (no content)
   const chunkedList = await getChunkedChapterList(novelId);
