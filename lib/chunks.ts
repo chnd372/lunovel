@@ -4,6 +4,7 @@ import survivingmartialartssaintMeta from "@/data/chapters/surviving-martial-art
 import wmwMeta from "@/data/chapters/warlock-meta.json";
 import mlsMeta from "@/data/chapters/my-longevity-simulation-meta.json";
 import ibcMeta from "@/data/chapters/infinite-bloodcore-meta.json";
+import renegadeImmortalMeta from "@/data/chapters/renegade-immortal-meta.json";
 
 interface ChapterMetaEntry {
   chunk_idx: number;
