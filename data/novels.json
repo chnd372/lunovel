@@ -171,5 +171,36 @@
     "cover": "/covers/surviving-martial-arts-saint.jpg",
     "created_at": "2026-08-30T03:42:17Z",
     "updated_at": "2026-08-30T03:42:17Z"
+  },
+  {
+    "id": "renegade-immortal",
+    "slug": "renegade-immortal",
+    "title": "Renegade Immortal",
+    "alt_titles": [
+      "Hain Ölümsüz",
+      "Tiên Nghịch",
+      "Xian Ni",
+      "XN",
+      "仙逆"
+    ],
+    "author": "Er Gen (耳根)",
+    "description": "Wang Lin adalah anak yang cerdas dan berhati baik yang dibesarkan oleh orang tua yang penuh kasih. Meskipun dijauhi oleh kerabat mereka, orang tuanya selalu berharap putra mereka akan bangkit dan mencapai kejayaan. Ketika kesempatan untuk mengejar keabadian akhirnya datang, Wang Lin dengan antusias melangkah ke jalur kultivasi—hanya untuk menyadari bahwa bakatnya paling banter hanya biasa saja.\n\nNamun ini bukan kisah tentang kecerdasan alami.\n\nDengan tekad yang tak tergoyahkan, kecerdasan tajam, dan kemauan yang kuat, Wang Lin memulai perjalanan tanpa henti untuk mengatasi keterbatasannya. Sepanjang perjalanan, ia menghadapi musuh brutal, mendapatkan sekutu yang kuat, dan perlahan berubah dari pemuda naif menjadi kultivator licik yang kejam dan licik yang menentang surga maupun takdir itu sendiri.\n\nDi dunia di mana kekuatan menentukan kelangsungan hidup, dan keabadian adalah mimpi jauh bagi kebanyakan orang, Wang Lin bertahan, didorong oleh tekad dan kebijaksanaan. Saat ia menavigasi jalan berbahaya kultivasi, perjalanannya menginspirasi kekaguman sekaligus rasa hormat, meninggalkan warisan yang tidak mudah dilupakan.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Martial Arts",
+      "Xianxia"
+    ],
+    "status": "completed",
+    "type": "Web Novel",
+    "language": "id",
+    "original_language": "Chinese",
+    "rating": 8.5,
+    "release_year": 2009,
+    "cover": "https://files.catbox.moe/jaq4ii.jpg",
+    "created_at": "2026-09-06T00:00:00Z",
+    "updated_at": "2026-09-06T00:00:00Z"
   }
 ]
