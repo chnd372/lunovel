@@ -27,6 +27,7 @@ const META: Record<string, NovelMeta> = {
   "my-longevity-simulation": mlsMeta as NovelMeta,
   "infinite-bloodcore": ibcMeta as NovelMeta,
   "surviving-martial-arts-saint": survivingmartialartssaintMeta as NovelMeta,
+  "renegade-immortal": renegadeImmortalMeta as NovelMeta,
 };
 
 async function loadChunk(novelId: string, chunkIdx: number): Promise<Chapter[]> {
