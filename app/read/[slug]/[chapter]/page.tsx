@@ -13,19 +13,19 @@ interface Props {
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug, chapter } = await params;
+  const { slug, chapter: chapterSlug } = await params;
   const novel = await getNovelBySlug(slug);
   if (!novel) return { title: "Chapter tidak ditemukan" };
 
-  const chapterNumber = Number(chapter);
+  const chapterNumber = Number(chapterSlug);
   if (Number.isNaN(chapterNumber)) return { title: "Chapter tidak valid" };
 
-  const chapter = await getChapter(novel.id, chapterNumber);
-  if (!chapter) return { title: "Chapter tidak ditemukan" };
+  const chapterData = await getChapter(novel.id, chapterNumber);
+  if (!chapterData) return { title: "Chapter tidak ditemukan" };
 
-  const chLabel = chapter.title ? `Ch ${chapter.number}: ${chapter.title}` : `Chapter ${chapter.number}`;
+  const chLabel = chapterData.title ? `Ch ${chapterData.number}: ${chapterData.title}` : `Chapter ${chapterData.number}`;
   const title = `${chLabel} - ${novel.title}`;
-  const description = `Baca ${novel.title} Chapter ${chapter.number}${chapter.title ? ` - ${chapter.title}` : ""} dalam bahasa Indonesia. Online, gratis, tanpa iklan di ${SITE_NAME}.`;
+  const description = `Baca ${novel.title} Chapter ${chapterData.number}${chapterData.title ? ` - ${chapterData.title}` : ""} dalam bahasa Indonesia. Online, gratis, tanpa iklan di ${SITE_NAME}.`;
   const ogImage = novel.cover
     ? [{ url: novel.cover, width: 800, height: 1200, alt: `${novel.title} — ${chLabel}` }]
     : undefined;
@@ -33,12 +33,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: `/read/${novel.slug}/${chapter.number}` },
+    alternates: { canonical: `/read/${novel.slug}/${chapterData.number}` },
     openGraph: {
       type: "article",
       title,
       description,
-      url: `/read/${novel.slug}/${chapter.number}`,
+      url: `/read/${novel.slug}/${chapterData.number}`,
       siteName: SITE_NAME,
       locale: "id_ID",
       images: ogImage,
@@ -54,11 +54,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ReadPage({ params }: Props) {
-  const { slug, chapter } = await params;
+  const { slug, chapter: chapterSlug } = await params;
   const novel = await getNovelBySlug(slug);
   if (!novel) notFound();
 
-  const chapterNumber = Number(chapter);
+  const chapterNumber = Number(chapterSlug);
   if (Number.isNaN(chapterNumber)) notFound();
 
   const chapter = await getChapter(novel.id, chapterNumber);
