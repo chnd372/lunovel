@@ -18,6 +18,7 @@ const nextConfig = {
   },
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
+  turbopack: {},
 };
 
 module.exports = withPWA(nextConfig);
