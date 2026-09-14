@@ -1,0 +1,608 @@
+{
+  "novel_id": "shadow-slave",
+  "total_chapters": 100,
+  "chunks": 2,
+  "chunk_size": 50,
+  "chapter_map": {
+    "1": {
+      "chunk_idx": 0,
+      "local_idx": 0,
+      "title": "Nightmare Begins",
+      "word_count": 1594
+    },
+    "2": {
+      "chunk_idx": 0,
+      "local_idx": 1,
+      "title": "Slave Caravan",
+      "word_count": 1358
+    },
+    "3": {
+      "chunk_idx": 0,
+      "local_idx": 2,
+      "title": "The Strings of Fate",
+      "word_count": 1313
+    },
+    "4": {
+      "chunk_idx": 0,
+      "local_idx": 3,
+      "title": "Mountain King",
+      "word_count": 1567
+    },
+    "5": {
+      "chunk_idx": 0,
+      "local_idx": 4,
+      "title": "Broken Chains",
+      "word_count": 1285
+    },
+    "6": {
+      "chunk_idx": 0,
+      "local_idx": 5,
+      "title": "Confronting the Tyrant",
+      "word_count": 1549
+    },
+    "7": {
+      "chunk_idx": 0,
+      "local_idx": 6,
+      "title": "Three Slaves and a Hero",
+      "word_count": 1074
+    },
+    "8": {
+      "chunk_idx": 0,
+      "local_idx": 7,
+      "title": "Nothing at All",
+      "word_count": 1249
+    },
+    "9": {
+      "chunk_idx": 0,
+      "local_idx": 8,
+      "title": "Wishful Thinking",
+      "word_count": 1356
+    },
+    "10": {
+      "chunk_idx": 0,
+      "local_idx": 9,
+      "title": "First Man Down",
+      "word_count": 1240
+    },
+    "11": {
+      "chunk_idx": 0,
+      "local_idx": 10,
+      "title": "Crossroads",
+      "word_count": 1333
+    },
+    "12": {
+      "chunk_idx": 0,
+      "local_idx": 11,
+      "title": "The Smell of Blood",
+      "word_count": 1113
+    },
+    "13": {
+      "chunk_idx": 0,
+      "local_idx": 12,
+      "title": "Moment of Truth",
+      "word_count": 1255
+    },
+    "14": {
+      "chunk_idx": 0,
+      "local_idx": 13,
+      "title": "Child of Shadows",
+      "word_count": 1408
+    },
+    "15": {
+      "chunk_idx": 0,
+      "local_idx": 14,
+      "title": "Shadow Slave",
+      "word_count": 1134
+    },
+    "16": {
+      "chunk_idx": 0,
+      "local_idx": 15,
+      "title": "Rebirth",
+      "word_count": 1008
+    },
+    "17": {
+      "chunk_idx": 0,
+      "local_idx": 16,
+      "title": "Three Simple Words",
+      "word_count": 1404
+    },
+    "18": {
+      "chunk_idx": 0,
+      "local_idx": 17,
+      "title": "Absence of Light",
+      "word_count": 1560
+    },
+    "19": {
+      "chunk_idx": 0,
+      "local_idx": 18,
+      "title": "Crossing the Bridge",
+      "word_count": 1161
+    },
+    "20": {
+      "chunk_idx": 0,
+      "local_idx": 19,
+      "title": "Outcast Once Again",
+      "word_count": 1395
+    },
+    "21": {
+      "chunk_idx": 0,
+      "local_idx": 20,
+      "title": "First Performance",
+      "word_count": 1151
+    },
+    "22": {
+      "chunk_idx": 0,
+      "local_idx": 21,
+      "title": "Corpse Corner",
+      "word_count": 1123
+    },
+    "23": {
+      "chunk_idx": 0,
+      "local_idx": 22,
+      "title": "Dreams and Nightmares",
+      "word_count": 1366
+    },
+    "24": {
+      "chunk_idx": 0,
+      "local_idx": 23,
+      "title": "Moving Up in the World",
+      "word_count": 1191
+    },
+    "25": {
+      "chunk_idx": 0,
+      "local_idx": 24,
+      "title": "Wilderness Survival",
+      "word_count": 1339
+    },
+    "26": {
+      "chunk_idx": 0,
+      "local_idx": 25,
+      "title": "Changing Star",
+      "word_count": 1454
+    },
+    "27": {
+      "chunk_idx": 0,
+      "local_idx": 26,
+      "title": "Measure of Power",
+      "word_count": 1357
+    },
+    "28": {
+      "chunk_idx": 0,
+      "local_idx": 27,
+      "title": "Training Montage",
+      "word_count": 1079
+    },
+    "29": {
+      "chunk_idx": 0,
+      "local_idx": 28,
+      "title": "The Last Day on Earth",
+      "word_count": 1276
+    },
+    "30": {
+      "chunk_idx": 0,
+      "local_idx": 29,
+      "title": "Starless Void",
+      "word_count": 1166
+    },
+    "31": {
+      "chunk_idx": 0,
+      "local_idx": 30,
+      "title": "Low Tide",
+      "word_count": 1319
+    },
+    "32": {
+      "chunk_idx": 0,
+      "local_idx": 31,
+      "title": "Making a Choice",
+      "word_count": 1362
+    },
+    "33": {
+      "chunk_idx": 0,
+      "local_idx": 32,
+      "title": "Carapace Scavenger",
+      "word_count": 1178
+    },
+    "34": {
+      "chunk_idx": 0,
+      "local_idx": 33,
+      "title": "Only Steel Remembers",
+      "word_count": 1187
+    },
+    "35": {
+      "chunk_idx": 0,
+      "local_idx": 34,
+      "title": "A Shadow, a Star and an Oracle",
+      "word_count": 1328
+    },
+    "36": {
+      "chunk_idx": 0,
+      "local_idx": 35,
+      "title": "Bonfire",
+      "word_count": 1422
+    },
+    "37": {
+      "chunk_idx": 0,
+      "local_idx": 36,
+      "title": "Getting to Know Each Other",
+      "word_count": 1420
+    },
+    "38": {
+      "chunk_idx": 0,
+      "local_idx": 37,
+      "title": "Questions in the Dark",
+      "word_count": 1603
+    },
+    "39": {
+      "chunk_idx": 0,
+      "local_idx": 38,
+      "title": "Journey to the West",
+      "word_count": 989
+    },
+    "40": {
+      "chunk_idx": 0,
+      "local_idx": 39,
+      "title": "Weak Point",
+      "word_count": 1392
+    },
+    "41": {
+      "chunk_idx": 0,
+      "local_idx": 40,
+      "title": "Strength in Numbers",
+      "word_count": 1439
+    },
+    "42": {
+      "chunk_idx": 0,
+      "local_idx": 41,
+      "title": "Essence of Combat",
+      "word_count": 1007
+    },
+    "43": {
+      "chunk_idx": 0,
+      "local_idx": 42,
+      "title": "Repetition",
+      "word_count": 1216
+    },
+    "44": {
+      "chunk_idx": 0,
+      "local_idx": 43,
+      "title": "Cassie's Dream",
+      "word_count": 1421
+    },
+    "45": {
+      "chunk_idx": 0,
+      "local_idx": 44,
+      "title": "Sound of Laughter",
+      "word_count": 1031
+    },
+    "46": {
+      "chunk_idx": 0,
+      "local_idx": 45,
+      "title": "Experience",
+      "word_count": 1398
+    },
+    "47": {
+      "chunk_idx": 0,
+      "local_idx": 46,
+      "title": "Echo",
+      "word_count": 987
+    },
+    "48": {
+      "chunk_idx": 0,
+      "local_idx": 47,
+      "title": "The Storm",
+      "word_count": 1136
+    },
+    "49": {
+      "chunk_idx": 0,
+      "local_idx": 48,
+      "title": "Natural Element",
+      "word_count": 869
+    },
+    "50": {
+      "chunk_idx": 0,
+      "local_idx": 49,
+      "title": "Death Trap",
+      "word_count": 1342
+    },
+    "51": {
+      "chunk_idx": 1,
+      "local_idx": 0,
+      "title": "Carapace Centurion",
+      "word_count": 1451
+    },
+    "52": {
+      "chunk_idx": 1,
+      "local_idx": 1,
+      "title": "Clarity",
+      "word_count": 1419
+    },
+    "53": {
+      "chunk_idx": 1,
+      "local_idx": 2,
+      "title": "Immortal Flame",
+      "word_count": 1326
+    },
+    "54": {
+      "chunk_idx": 1,
+      "local_idx": 3,
+      "title": "Spoils of War",
+      "word_count": 903
+    },
+    "55": {
+      "chunk_idx": 1,
+      "local_idx": 4,
+      "title": "Lucky People",
+      "word_count": 982
+    },
+    "56": {
+      "chunk_idx": 1,
+      "local_idx": 5,
+      "title": "The Heaviest Thing in the World",
+      "word_count": 960
+    },
+    "57": {
+      "chunk_idx": 1,
+      "local_idx": 6,
+      "title": "Use of Weapons",
+      "word_count": 959
+    },
+    "58": {
+      "chunk_idx": 1,
+      "local_idx": 7,
+      "title": "Survival of the Fittest",
+      "word_count": 938
+    },
+    "59": {
+      "chunk_idx": 1,
+      "local_idx": 8,
+      "title": "Shadow of the Crimson Spire",
+      "word_count": 1300
+    },
+    "60": {
+      "chunk_idx": 1,
+      "local_idx": 9,
+      "title": "Bone Ridge",
+      "word_count": 1316
+    },
+    "61": {
+      "chunk_idx": 1,
+      "local_idx": 10,
+      "title": "Sea of Ash",
+      "word_count": 1456
+    },
+    "62": {
+      "chunk_idx": 1,
+      "local_idx": 11,
+      "title": "Hide and Seek",
+      "word_count": 1346
+    },
+    "63": {
+      "chunk_idx": 1,
+      "local_idx": 12,
+      "title": "Lord of Ashes",
+      "word_count": 1389
+    },
+    "64": {
+      "chunk_idx": 1,
+      "local_idx": 13,
+      "title": "Pursued by Demons",
+      "word_count": 1042
+    },
+    "65": {
+      "chunk_idx": 1,
+      "local_idx": 14,
+      "title": "Lights in the Darkness",
+      "word_count": 1165
+    },
+    "66": {
+      "chunk_idx": 1,
+      "local_idx": 15,
+      "title": "First Part of the Plan",
+      "word_count": 1153
+    },
+    "67": {
+      "chunk_idx": 1,
+      "local_idx": 16,
+      "title": "Racing Against Time:",
+      "word_count": 739
+    },
+    "68": {
+      "chunk_idx": 1,
+      "local_idx": 17,
+      "title": "Beacon of Death",
+      "word_count": 1371
+    },
+    "69": {
+      "chunk_idx": 1,
+      "local_idx": 18,
+      "title": "The Guest",
+      "word_count": 1355
+    },
+    "70": {
+      "chunk_idx": 1,
+      "local_idx": 19,
+      "title": "Judgement of the Blade",
+      "word_count": 1264
+    },
+    "71": {
+      "chunk_idx": 1,
+      "local_idx": 20,
+      "title": "One Small Mistake",
+      "word_count": 1354
+    },
+    "72": {
+      "chunk_idx": 1,
+      "local_idx": 21,
+      "title": "Demon Slayers",
+      "word_count": 1069
+    },
+    "73": {
+      "chunk_idx": 1,
+      "local_idx": 22,
+      "title": "The Circle of Death",
+      "word_count": 1334
+    },
+    "74": {
+      "chunk_idx": 1,
+      "local_idx": 23,
+      "title": "Midnight Shard",
+      "word_count": 949
+    },
+    "75": {
+      "chunk_idx": 1,
+      "local_idx": 24,
+      "title": "Mimpi yang Retak",
+      "word_count": 1583
+    },
+    "76": {
+      "chunk_idx": 1,
+      "local_idx": 25,
+      "title": "The Abyss",
+      "word_count": 1347
+    },
+    "77": {
+      "chunk_idx": 1,
+      "local_idx": 26,
+      "title": "Enthralled",
+      "word_count": 1150
+    },
+    "78": {
+      "chunk_idx": 1,
+      "local_idx": 27,
+      "title": "Bliss",
+      "word_count": 1102
+    },
+    "79": {
+      "chunk_idx": 1,
+      "local_idx": 28,
+      "title": "Twist of Fate",
+      "word_count": 1097
+    },
+    "80": {
+      "chunk_idx": 1,
+      "local_idx": 29,
+      "title": "Spirit of Exploration",
+      "word_count": 1022
+    },
+    "81": {
+      "chunk_idx": 1,
+      "local_idx": 30,
+      "title": "Weaver's Eye",
+      "word_count": 1073
+    },
+    "82": {
+      "chunk_idx": 1,
+      "local_idx": 31,
+      "title": "Ketakutan akan yang Tak Diketahui",
+      "word_count": 1051
+    },
+    "83": {
+      "chunk_idx": 1,
+      "local_idx": 32,
+      "title": "Lima",
+      "word_count": 1212
+    },
+    "84": {
+      "chunk_idx": 1,
+      "local_idx": 33,
+      "title": "Black Seed",
+      "word_count": 904
+    },
+    "85": {
+      "chunk_idx": 1,
+      "local_idx": 34,
+      "title": "One Step at a Time",
+      "word_count": 1184
+    },
+    "86": {
+      "chunk_idx": 1,
+      "local_idx": 35,
+      "title": "Petunjuk Terakhir",
+      "word_count": 827
+    },
+    "87": {
+      "chunk_idx": 1,
+      "local_idx": 36,
+      "title": "Rencana Pelarian",
+      "word_count": 1049
+    },
+    "88": {
+      "chunk_idx": 1,
+      "local_idx": 37,
+      "title": "Pembuat Perahu",
+      "word_count": 901
+    },
+    "89": {
+      "chunk_idx": 1,
+      "local_idx": 38,
+      "title": "Demon's Bones",
+      "word_count": 1024
+    },
+    "90": {
+      "chunk_idx": 1,
+      "local_idx": 39,
+      "title": "Nightfall",
+      "word_count": 1238
+    },
+    "91": {
+      "chunk_idx": 1,
+      "local_idx": 40,
+      "title": "Pelarian",
+      "word_count": 1245
+    },
+    "92": {
+      "chunk_idx": 1,
+      "local_idx": 41,
+      "title": "Journey into the Night",
+      "word_count": 871
+    },
+    "93": {
+      "chunk_idx": 1,
+      "local_idx": 42,
+      "title": "Black Water",
+      "word_count": 936
+    },
+    "94": {
+      "chunk_idx": 1,
+      "local_idx": 43,
+      "title": "Pertempuran di Kedalaman",
+      "word_count": 1221
+    },
+    "95": {
+      "chunk_idx": 1,
+      "local_idx": 44,
+      "title": "Starlight",
+      "word_count": 841
+    },
+    "96": {
+      "chunk_idx": 1,
+      "local_idx": 45,
+      "title": "Exile",
+      "word_count": 879
+    },
+    "97": {
+      "chunk_idx": 1,
+      "local_idx": 46,
+      "title": "Hunter's Dream",
+      "word_count": 1062
+    },
+    "98": {
+      "chunk_idx": 1,
+      "local_idx": 47,
+      "title": "Tamu Tak Diundang",
+      "word_count": 1382
+    },
+    "99": {
+      "chunk_idx": 1,
+      "local_idx": 48,
+      "title": "Pengejaran",
+      "word_count": 870
+    },
+    "100": {
+      "chunk_idx": 1,
+      "local_idx": 49,
+      "title": "Hati yang Bersih",
+      "word_count": 896
+    }
+  }
+}

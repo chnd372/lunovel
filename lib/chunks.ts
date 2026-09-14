@@ -28,11 +28,13 @@ const META: Record<string, NovelMeta> = {
   "infinite-bloodcore": ibcMeta as NovelMeta,
   "surviving-martial-arts-saint": survivingmartialartssaintMeta as NovelMeta,
   "renegade-immortal": renegadeImmortalMeta as NovelMeta,
+  "shadow-slave": shadowSlaveMeta as NovelMeta,
 };
 
 async function loadChunk(novelId: string, chunkIdx: number): Promise<Chapter[]> {
   const pad = String(chunkIdx).padStart(2, "0");
   const mod = await import(`@/data/chapters/${novelId}-content-${pad}.json`);
+import shadowSlaveMeta from "@/data/chapters/shadow-slave-meta.json";
   return mod.default as Chapter[];
 }
 
