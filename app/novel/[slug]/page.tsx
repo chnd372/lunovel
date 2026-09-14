@@ -12,8 +12,8 @@ import Comments from "@/components/Comments";
 export const dynamic = "force-dynamic";
 
 interface Props {
-  params: { slug: string };
-  searchParams: { sort?: string };
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ sort?: string }>;
 }
 
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
@@ -28,7 +28,8 @@ function truncate(text: string, max = 160): string {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const novel = await getNovelBySlug(params.slug);
+  const { slug } = await params;
+  const novel = await getNovelBySlug(slug);
   if (!novel) return { title: "Novel tidak ditemukan" };
 
   const description = truncate(novel.description || `${novel.title} — baca online gratis di ${SITE_NAME}.`);
@@ -73,14 +74,16 @@ const statusLabel: Record<string, string> = {
 };
 
 export default async function NovelPage({ params, searchParams }: Props) {
-  const novel = await getNovelBySlug(params.slug);
+  const { slug } = await params;
+  const query = await searchParams;
+  const novel = await getNovelBySlug(slug);
   if (!novel) notFound();
 
   const chapters = await getChaptersByNovel(novel.id);
   const totalWords = chapters.reduce((s, c) => s + c.word_count, 0);
   const lastChapter = chapters[chapters.length - 1];
   const firstChapter = chapters[0];
-  const sort: SortOrder = searchParams.sort === "oldest" ? "oldest" : "newest";
+  const sort: SortOrder = query.sort === "oldest" ? "oldest" : "newest";
   const orderedChapters = sort === "oldest" ? chapters : chapters.slice().reverse();
 
   return (
