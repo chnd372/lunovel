@@ -7,16 +7,17 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 export const dynamic = "force-dynamic";
 
 interface Props {
-  params: { slug: string; chapter: string };
+  params: Promise<{ slug: string; chapter: string }>;
 }
 
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const novel = await getNovelBySlug(params.slug);
+  const { slug, chapter } = await params;
+  const novel = await getNovelBySlug(slug);
   if (!novel) return { title: "Chapter tidak ditemukan" };
 
-  const chapterNumber = Number(params.chapter);
+  const chapterNumber = Number(chapter);
   if (Number.isNaN(chapterNumber)) return { title: "Chapter tidak valid" };
 
   const chapter = await getChapter(novel.id, chapterNumber);
@@ -53,10 +54,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ReadPage({ params }: Props) {
-  const novel = await getNovelBySlug(params.slug);
+  const { slug, chapter } = await params;
+  const novel = await getNovelBySlug(slug);
   if (!novel) notFound();
 
-  const chapterNumber = Number(params.chapter);
+  const chapterNumber = Number(chapter);
   if (Number.isNaN(chapterNumber)) notFound();
 
   const chapter = await getChapter(novel.id, chapterNumber);
