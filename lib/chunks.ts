@@ -5,6 +5,7 @@ import wmwMeta from "@/data/chapters/warlock-meta.json";
 import mlsMeta from "@/data/chapters/my-longevity-simulation-meta.json";
 import ibcMeta from "@/data/chapters/infinite-bloodcore-meta.json";
 import renegadeImmortalMeta from "@/data/chapters/renegade-immortal-meta.json";
+import shadowSlaveMeta from "@/data/chapters/shadow-slave-meta.json";
 
 interface ChapterMetaEntry {
   chunk_idx: number;
@@ -34,7 +35,6 @@ const META: Record<string, NovelMeta> = {
 async function loadChunk(novelId: string, chunkIdx: number): Promise<Chapter[]> {
   const pad = String(chunkIdx).padStart(2, "0");
   const mod = await import(`@/data/chapters/${novelId}-content-${pad}.json`);
-import shadowSlaveMeta from "@/data/chapters/shadow-slave-meta.json";
   return mod.default as Chapter[];
 }
 
