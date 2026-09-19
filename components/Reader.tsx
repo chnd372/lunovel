@@ -784,7 +784,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
             {chapter.title || `Chapter ${chapter.number}`}
           </h1>
           <div className="text-xs opacity-60 flex items-center gap-3 flex-wrap mb-4">
-            <span>{chapter.word_count.toLocaleString("id-ID")} kata</span>
+            <span>{(chapter.word_count ?? 0).toLocaleString("id-ID")} kata</span>
             <span>·</span>
             <span>~{minutes} menit baca</span>
             <span>·</span>
