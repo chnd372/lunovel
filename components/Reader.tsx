@@ -382,7 +382,8 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
   }, [router, novel.slug, prevChapter, nextChapter, showHelp]);
 
   const theme = themes[settings.theme];
-  const minutes = estimateReadingMinutes(chapter.word_count);
+  const effectiveWordCount = chapter.word_count || chapter.content.split(/\s+/).filter(Boolean).length;
+  const minutes = estimateReadingMinutes(effectiveWordCount);
         const paragraphs = chapterContent.split(/\n\n+/);
 
   const resumeLabel = progress > 0 ? `Lanjut dari ${Math.round(progress)}%` : "Baru mulai";
@@ -784,7 +785,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
             {chapter.title || `Chapter ${chapter.number}`}
           </h1>
           <div className="text-xs opacity-60 flex items-center gap-3 flex-wrap mb-4">
-            <span>{(chapter.word_count ?? 0).toLocaleString("id-ID")} kata</span>
+            <span>{effectiveWordCount.toLocaleString("id-ID")} kata</span>
             <span>·</span>
             <span>~{minutes} menit baca</span>
             <span>·</span>
