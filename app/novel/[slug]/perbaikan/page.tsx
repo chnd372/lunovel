@@ -5,11 +5,12 @@ import PerbaikanKataManager from "@/components/PerbaikanKataManager";
 export const dynamic = "force-dynamic";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export default async function PerbaikanKataPage({ params }: Props) {
-  const novel = await getNovelBySlug(params.slug);
+  const { slug } = await params;
+  const novel = await getNovelBySlug(slug);
   if (!novel) notFound();
 
   return (
