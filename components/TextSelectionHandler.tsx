@@ -23,6 +23,12 @@ export default function TextSelectionHandler({
   const [showModal, setShowModal] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastTextRef = useRef<string>("");
+  const showModalRef = useRef(false);
+  const selectionRef = useRef<typeof selection>(null);
+
+  // Keep refs in sync with state (refs used inside useEffect to avoid stale closure / infinite loop)
+  useEffect(() => { showModalRef.current = showModal; }, [showModal]);
+  useEffect(() => { selectionRef.current = selection; }, [selection]);
 
   const checkSelection = useCallback(() => {
     const sel = window.getSelection();
@@ -46,7 +52,7 @@ export default function TextSelectionHandler({
   useEffect(() => {
     function onChange() {
       // Ignore if modal is already open
-      if (showModal) return;
+      if (showModalRef.current) return;
 
       if (debounceRef.current) clearTimeout(debounceRef.current);
       debounceRef.current = setTimeout(() => {
@@ -59,9 +65,9 @@ export default function TextSelectionHandler({
         }
         
         // If same text, don't flicker
-        if (result.text === lastTextRef.current && selection) {
+        if (result.text === lastTextRef.current && selectionRef.current) {
             // Update rect just in case scroll happened
-            setSelection({ ...selection, rect: result.rect });
+            setSelection({ ...selectionRef.current, rect: result.rect });
             return;
         }
         
@@ -78,7 +84,7 @@ export default function TextSelectionHandler({
       document.removeEventListener("touchend", onChange);
       if (debounceRef.current) clearTimeout(debounceRef.current);
     };
-  }, [checkSelection, showModal, selection]);
+  }, [checkSelection]); // removed showModal + selection deps — refs used instead
 
   // When saved, tell Reader to re-render
   function onPerbaikanSaved() {
