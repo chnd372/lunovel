@@ -1,1 +1,6002 @@
-{"novel_id": "shadow-slave", "total_chapters": 450, "chunks": 9, "chunk_size": 50, "chapter_map": {"1": {"chunk_idx": 0, "local_idx": 0, "title": "Nightmare Begins", "word_count": 1594}, "2": {"chunk_idx": 0, "local_idx": 1, "title": "Slave Caravan", "word_count": 1358}, "3": {"chunk_idx": 0, "local_idx": 2, "title": "The Strings of Fate", "word_count": 1313}, "4": {"chunk_idx": 0, "local_idx": 3, "title": "Mountain King", "word_count": 1567}, "5": {"chunk_idx": 0, "local_idx": 4, "title": "Broken Chains", "word_count": 1285}, "6": {"chunk_idx": 0, "local_idx": 5, "title": "Confronting the Tyrant", "word_count": 1549}, "7": {"chunk_idx": 0, "local_idx": 6, "title": "Three Slaves and a Hero", "word_count": 1074}, "8": {"chunk_idx": 0, "local_idx": 7, "title": "Nothing at All", "word_count": 1249}, "9": {"chunk_idx": 0, "local_idx": 8, "title": "Wishful Thinking", "word_count": 1356}, "10": {"chunk_idx": 0, "local_idx": 9, "title": "First Man Down", "word_count": 1240}, "11": {"chunk_idx": 0, "local_idx": 10, "title": "Crossroads", "word_count": 1333}, "12": {"chunk_idx": 0, "local_idx": 11, "title": "The Smell of Blood", "word_count": 1113}, "13": {"chunk_idx": 0, "local_idx": 12, "title": "Moment of Truth", "word_count": 1255}, "14": {"chunk_idx": 0, "local_idx": 13, "title": "Child of Shadows", "word_count": 1408}, "15": {"chunk_idx": 0, "local_idx": 14, "title": "Shadow Slave", "word_count": 1134}, "16": {"chunk_idx": 0, "local_idx": 15, "title": "Rebirth", "word_count": 1008}, "17": {"chunk_idx": 0, "local_idx": 16, "title": "Three Simple Words", "word_count": 1404}, "18": {"chunk_idx": 0, "local_idx": 17, "title": "Absence of Light", "word_count": 1560}, "19": {"chunk_idx": 0, "local_idx": 18, "title": "Crossing the Bridge", "word_count": 1161}, "20": {"chunk_idx": 0, "local_idx": 19, "title": "Outcast Once Again", "word_count": 1395}, "21": {"chunk_idx": 0, "local_idx": 20, "title": "First Performance", "word_count": 1151}, "22": {"chunk_idx": 0, "local_idx": 21, "title": "Corpse Corner", "word_count": 1123}, "23": {"chunk_idx": 0, "local_idx": 22, "title": "Dreams and Nightmares", "word_count": 1366}, "24": {"chunk_idx": 0, "local_idx": 23, "title": "Moving Up in the World", "word_count": 1191}, "25": {"chunk_idx": 0, "local_idx": 24, "title": "Wilderness Survival", "word_count": 1339}, "26": {"chunk_idx": 0, "local_idx": 25, "title": "Changing Star", "word_count": 1454}, "27": {"chunk_idx": 0, "local_idx": 26, "title": "Measure of Power", "word_count": 1357}, "28": {"chunk_idx": 0, "local_idx": 27, "title": "Training Montage", "word_count": 1079}, "29": {"chunk_idx": 0, "local_idx": 28, "title": "The Last Day on Earth", "word_count": 1276}, "30": {"chunk_idx": 0, "local_idx": 29, "title": "Starless Void", "word_count": 1166}, "31": {"chunk_idx": 0, "local_idx": 30, "title": "Low Tide", "word_count": 1319}, "32": {"chunk_idx": 0, "local_idx": 31, "title": "Making a Choice", "word_count": 1362}, "33": {"chunk_idx": 0, "local_idx": 32, "title": "Carapace Scavenger", "word_count": 1178}, "34": {"chunk_idx": 0, "local_idx": 33, "title": "Only Steel Remembers", "word_count": 1187}, "35": {"chunk_idx": 0, "local_idx": 34, "title": "A Shadow, a Star and an Oracle", "word_count": 1328}, "36": {"chunk_idx": 0, "local_idx": 35, "title": "Bonfire", "word_count": 1422}, "37": {"chunk_idx": 0, "local_idx": 36, "title": "Getting to Know Each Other", "word_count": 1420}, "38": {"chunk_idx": 0, "local_idx": 37, "title": "Questions in the Dark", "word_count": 1603}, "39": {"chunk_idx": 0, "local_idx": 38, "title": "Journey to the West", "word_count": 989}, "40": {"chunk_idx": 0, "local_idx": 39, "title": "Weak Point", "word_count": 1392}, "41": {"chunk_idx": 0, "local_idx": 40, "title": "Strength in Numbers", "word_count": 1439}, "42": {"chunk_idx": 0, "local_idx": 41, "title": "Essence of Combat", "word_count": 1007}, "43": {"chunk_idx": 0, "local_idx": 42, "title": "Repetition", "word_count": 1216}, "44": {"chunk_idx": 0, "local_idx": 43, "title": "Cassie's Dream", "word_count": 1421}, "45": {"chunk_idx": 0, "local_idx": 44, "title": "Sound of Laughter", "word_count": 1031}, "46": {"chunk_idx": 0, "local_idx": 45, "title": "Experience", "word_count": 1398}, "47": {"chunk_idx": 0, "local_idx": 46, "title": "Echo", "word_count": 987}, "48": {"chunk_idx": 0, "local_idx": 47, "title": "The Storm", "word_count": 1136}, "49": {"chunk_idx": 0, "local_idx": 48, "title": "Natural Element", "word_count": 869}, "50": {"chunk_idx": 0, "local_idx": 49, "title": "Death Trap", "word_count": 1342}, "51": {"chunk_idx": 1, "local_idx": 0, "title": "Carapace Centurion", "word_count": 1451}, "52": {"chunk_idx": 1, "local_idx": 1, "title": "Clarity", "word_count": 1419}, "53": {"chunk_idx": 1, "local_idx": 2, "title": "Immortal Flame", "word_count": 1326}, "54": {"chunk_idx": 1, "local_idx": 3, "title": "Spoils of War", "word_count": 903}, "55": {"chunk_idx": 1, "local_idx": 4, "title": "Lucky People", "word_count": 982}, "56": {"chunk_idx": 1, "local_idx": 5, "title": "The Heaviest Thing in the World", "word_count": 960}, "57": {"chunk_idx": 1, "local_idx": 6, "title": "Use of Weapons", "word_count": 959}, "58": {"chunk_idx": 1, "local_idx": 7, "title": "Survival of the Fittest", "word_count": 938}, "59": {"chunk_idx": 1, "local_idx": 8, "title": "Shadow of the Crimson Spire", "word_count": 1300}, "60": {"chunk_idx": 1, "local_idx": 9, "title": "Bone Ridge", "word_count": 1316}, "61": {"chunk_idx": 1, "local_idx": 10, "title": "Sea of Ash", "word_count": 1456}, "62": {"chunk_idx": 1, "local_idx": 11, "title": "Hide and Seek", "word_count": 1346}, "63": {"chunk_idx": 1, "local_idx": 12, "title": "Lord of Ashes", "word_count": 1389}, "64": {"chunk_idx": 1, "local_idx": 13, "title": "Pursued by Demons", "word_count": 1042}, "65": {"chunk_idx": 1, "local_idx": 14, "title": "Lights in the Darkness", "word_count": 1165}, "66": {"chunk_idx": 1, "local_idx": 15, "title": "First Part of the Plan", "word_count": 1153}, "67": {"chunk_idx": 1, "local_idx": 16, "title": "Racing Against Time:", "word_count": 739}, "68": {"chunk_idx": 1, "local_idx": 17, "title": "Beacon of Death", "word_count": 1371}, "69": {"chunk_idx": 1, "local_idx": 18, "title": "The Guest", "word_count": 1355}, "70": {"chunk_idx": 1, "local_idx": 19, "title": "Judgement of the Blade", "word_count": 1264}, "71": {"chunk_idx": 1, "local_idx": 20, "title": "One Small Mistake", "word_count": 1354}, "72": {"chunk_idx": 1, "local_idx": 21, "title": "Demon Slayers", "word_count": 1069}, "73": {"chunk_idx": 1, "local_idx": 22, "title": "The Circle of Death", "word_count": 1334}, "74": {"chunk_idx": 1, "local_idx": 23, "title": "Midnight Shard", "word_count": 949}, "75": {"chunk_idx": 1, "local_idx": 24, "title": "Mimpi yang Retak", "word_count": 1583}, "76": {"chunk_idx": 1, "local_idx": 25, "title": "The Abyss", "word_count": 1347}, "77": {"chunk_idx": 1, "local_idx": 26, "title": "Enthralled", "word_count": 1150}, "78": {"chunk_idx": 1, "local_idx": 27, "title": "Bliss", "word_count": 1102}, "79": {"chunk_idx": 1, "local_idx": 28, "title": "Twist of Fate", "word_count": 1097}, "80": {"chunk_idx": 1, "local_idx": 29, "title": "Spirit of Exploration", "word_count": 1022}, "81": {"chunk_idx": 1, "local_idx": 30, "title": "Weaver's Eye", "word_count": 1073}, "82": {"chunk_idx": 1, "local_idx": 31, "title": "Ketakutan akan yang Tak Diketahui", "word_count": 1051}, "83": {"chunk_idx": 1, "local_idx": 32, "title": "Lima", "word_count": 1212}, "84": {"chunk_idx": 1, "local_idx": 33, "title": "Black Seed", "word_count": 904}, "85": {"chunk_idx": 1, "local_idx": 34, "title": "One Step at a Time", "word_count": 1184}, "86": {"chunk_idx": 1, "local_idx": 35, "title": "Petunjuk Terakhir", "word_count": 827}, "87": {"chunk_idx": 1, "local_idx": 36, "title": "Rencana Pelarian", "word_count": 1049}, "88": {"chunk_idx": 1, "local_idx": 37, "title": "Pembuat Perahu", "word_count": 901}, "89": {"chunk_idx": 1, "local_idx": 38, "title": "Demon's Bones", "word_count": 1024}, "90": {"chunk_idx": 1, "local_idx": 39, "title": "Nightfall", "word_count": 1238}, "91": {"chunk_idx": 1, "local_idx": 40, "title": "Pelarian", "word_count": 1245}, "92": {"chunk_idx": 1, "local_idx": 41, "title": "Journey into the Night", "word_count": 871}, "93": {"chunk_idx": 1, "local_idx": 42, "title": "Black Water", "word_count": 936}, "94": {"chunk_idx": 1, "local_idx": 43, "title": "Pertempuran di Kedalaman", "word_count": 1221}, "95": {"chunk_idx": 1, "local_idx": 44, "title": "Starlight", "word_count": 841}, "96": {"chunk_idx": 1, "local_idx": 45, "title": "Exile", "word_count": 879}, "97": {"chunk_idx": 1, "local_idx": 46, "title": "Hunter's Dream", "word_count": 1062}, "98": {"chunk_idx": 1, "local_idx": 47, "title": "Tamu Tak Diundang", "word_count": 1382}, "99": {"chunk_idx": 1, "local_idx": 48, "title": "Pengejaran", "word_count": 870}, "100": {"chunk_idx": 1, "local_idx": 49, "title": "Hati yang Bersih", "word_count": 896}, "101": {"chunk_idx": 2, "local_idx": 0, "title": "Turf War", "word_count": 901}, "102": {"chunk_idx": 2, "local_idx": 1, "title": "Stone Saint", "word_count": 936}, "103": {"chunk_idx": 2, "local_idx": 2, "title": "Coup de Grace", "word_count": 875}, "104": {"chunk_idx": 2, "local_idx": 3, "title": "Soul Arsenal", "word_count": 1058}, "105": {"chunk_idx": 2, "local_idx": 4, "title": "Living Stone", "word_count": 1051}, "106": {"chunk_idx": 2, "local_idx": 5, "title": "Menciptakan Monster", "word_count": 856}, "107": {"chunk_idx": 2, "local_idx": 6, "title": "Growing Shadow", "word_count": 899}, "108": {"chunk_idx": 2, "local_idx": 7, "title": "Test Dummy", "word_count": 934}, "109": {"chunk_idx": 2, "local_idx": 8, "title": "Soulmates", "word_count": 1026}, "110": {"chunk_idx": 2, "local_idx": 9, "title": "Memento", "word_count": 873}, "111": {"chunk_idx": 2, "local_idx": 10, "title": "Lesser Creature", "word_count": 1045}, "112": {"chunk_idx": 2, "local_idx": 11, "title": "Duel of the Monsters", "word_count": 892}, "113": {"chunk_idx": 2, "local_idx": 12, "title": "Dark Well", "word_count": 1058}, "114": {"chunk_idx": 2, "local_idx": 13, "title": "Voice of Darkness", "word_count": 1036}, "115": {"chunk_idx": 2, "local_idx": 14, "title": "Nightingale", "word_count": 1082}, "116": {"chunk_idx": 2, "local_idx": 15, "title": "Deal with the Devil", "word_count": 1040}, "117": {"chunk_idx": 2, "local_idx": 16, "title": "Cruel Injustice", "word_count": 1045}, "118": {"chunk_idx": 2, "local_idx": 17, "title": "Mirror Image", "word_count": 1038}, "119": {"chunk_idx": 2, "local_idx": 18, "title": "A Fistful of Soul Shards", "word_count": 868}, "120": {"chunk_idx": 2, "local_idx": 19, "title": "Approaching the Castle", "word_count": 915}, "121": {"chunk_idx": 2, "local_idx": 20, "title": "Graveyard of Hope", "word_count": 1290}, "122": {"chunk_idx": 2, "local_idx": 21, "title": "Empat Bulan yang Lalu", "word_count": 1220}, "123": {"chunk_idx": 2, "local_idx": 22, "title": "Helping Hand", "word_count": 1224}, "124": {"chunk_idx": 2, "local_idx": 23, "title": "Desolation", "word_count": 901}, "125": {"chunk_idx": 2, "local_idx": 24, "title": "A Feast in Time of Plague", "word_count": 936}, "126": {"chunk_idx": 2, "local_idx": 25, "title": "Effie", "word_count": 1098}, "127": {"chunk_idx": 2, "local_idx": 26, "title": "Abandon All Hope", "word_count": 1057}, "128": {"chunk_idx": 2, "local_idx": 27, "title": "King of the Hill", "word_count": 1060}, "129": {"chunk_idx": 2, "local_idx": 28, "title": "Solace", "word_count": 1034}, "130": {"chunk_idx": 2, "local_idx": 29, "title": "Kekuatan Selusin Pria", "word_count": 890}, "131": {"chunk_idx": 2, "local_idx": 30, "title": "Traversing the Dark City", "word_count": 996}, "132": {"chunk_idx": 2, "local_idx": 31, "title": "End of the Line", "word_count": 1087}, "133": {"chunk_idx": 2, "local_idx": 32, "title": "Perpisahan", "word_count": 1057}, "134": {"chunk_idx": 2, "local_idx": 33, "title": "Bright Castle", "word_count": 908}, "135": {"chunk_idx": 2, "local_idx": 34, "title": "Hidup Bersama", "word_count": 953}, "136": {"chunk_idx": 2, "local_idx": 35, "title": "Reflection", "word_count": 906}, "137": {"chunk_idx": 2, "local_idx": 36, "title": "All Eyes on Me", "word_count": 1206}, "138": {"chunk_idx": 2, "local_idx": 37, "title": "Pertemuan yang Tak Terduga", "word_count": 903}, "139": {"chunk_idx": 2, "local_idx": 38, "title": "Chapter 139", "word_count": 898}, "140": {"chunk_idx": 2, "local_idx": 39, "title": "True Legacy", "word_count": 893}, "141": {"chunk_idx": 2, "local_idx": 40, "title": "Golden Serpent", "word_count": 937}, "142": {"chunk_idx": 2, "local_idx": 41, "title": "Di Balik Layar", "word_count": 860}, "143": {"chunk_idx": 2, "local_idx": 42, "title": "Gunlaug", "word_count": 903}, "144": {"chunk_idx": 2, "local_idx": 43, "title": "Right of Challenge", "word_count": 1009}, "145": {"chunk_idx": 2, "local_idx": 44, "title": "Justice", "word_count": 1108}, "146": {"chunk_idx": 2, "local_idx": 45, "title": "Kekuatan", "word_count": 1114}, "147": {"chunk_idx": 2, "local_idx": 46, "title": "Guild Hall", "word_count": 939}, "148": {"chunk_idx": 2, "local_idx": 47, "title": "Last Harvest", "word_count": 870}, "149": {"chunk_idx": 2, "local_idx": 48, "title": "Dark Diver", "word_count": 934}, "150": {"chunk_idx": 2, "local_idx": 49, "title": "Kelompok Berburu", "word_count": 1051}, "151": {"chunk_idx": 3, "local_idx": 0, "title": "Head Hunting", "word_count": 1104}, "152": {"chunk_idx": 3, "local_idx": 1, "title": "There and Back Again", "word_count": 881}, "153": {"chunk_idx": 3, "local_idx": 2, "title": "Guiding Star", "word_count": 1055}, "154": {"chunk_idx": 3, "local_idx": 3, "title": "Light of the Seven", "word_count": 1386}, "155": {"chunk_idx": 3, "local_idx": 4, "title": "Rekrutan Pertama", "word_count": 1192}, "156": {"chunk_idx": 3, "local_idx": 5, "title": "Makan Siang Gratis", "word_count": 1102}, "157": {"chunk_idx": 3, "local_idx": 6, "title": "Angin Perubahan", "word_count": 1240}, "158": {"chunk_idx": 3, "local_idx": 7, "title": "Tak Terlihat", "word_count": 1492}, "159": {"chunk_idx": 3, "local_idx": 8, "title": "Wahyu", "word_count": 907}, "160": {"chunk_idx": 3, "local_idx": 9, "title": "Masa Depan", "word_count": 1248}, "161": {"chunk_idx": 3, "local_idx": 10, "title": "Rubicon", "word_count": 1408}, "162": {"chunk_idx": 3, "local_idx": 11, "title": "Lost from Light", "word_count": 1118}, "163": {"chunk_idx": 3, "local_idx": 12, "title": "The Past", "word_count": 936}, "164": {"chunk_idx": 3, "local_idx": 13, "title": "Farewell", "word_count": 1205}, "165": {"chunk_idx": 3, "local_idx": 14, "title": "Kekuatan", "word_count": 850}, "166": {"chunk_idx": 3, "local_idx": 15, "title": "Light and Shadows", "word_count": 1074}, "167": {"chunk_idx": 3, "local_idx": 16, "title": "Unforgivable", "word_count": 1119}, "168": {"chunk_idx": 3, "local_idx": 17, "title": "Di Luar", "word_count": 1046}, "169": {"chunk_idx": 3, "local_idx": 18, "title": "Back to the Future", "word_count": 935}, "170": {"chunk_idx": 3, "local_idx": 19, "title": "Star-Crossed", "word_count": 865}, "171": {"chunk_idx": 3, "local_idx": 20, "title": "Tether", "word_count": 895}, "172": {"chunk_idx": 3, "local_idx": 21, "title": "Memory Market", "word_count": 1041}, "173": {"chunk_idx": 3, "local_idx": 22, "title": "Black Armor", "word_count": 1089}, "174": {"chunk_idx": 3, "local_idx": 23, "title": "Shopping Spree", "word_count": 1087}, "175": {"chunk_idx": 3, "local_idx": 24, "title": "Reuni", "word_count": 1101}, "176": {"chunk_idx": 3, "local_idx": 25, "title": "Coming Clean", "word_count": 1053}, "177": {"chunk_idx": 3, "local_idx": 26, "title": "Cloak and Dagger", "word_count": 872}, "178": {"chunk_idx": 3, "local_idx": 27, "title": "Ekspedisi yang Hilang", "word_count": 1303}, "179": {"chunk_idx": 3, "local_idx": 28, "title": "New Generation", "word_count": 1061}, "180": {"chunk_idx": 3, "local_idx": 29, "title": "Break Point", "word_count": 1404}, "181": {"chunk_idx": 3, "local_idx": 30, "title": "Rules of Hospitality", "word_count": 1121}, "182": {"chunk_idx": 3, "local_idx": 31, "title": "Waktu Makan Malam", "word_count": 1066}, "183": {"chunk_idx": 3, "local_idx": 32, "title": "Learning New Tricks", "word_count": 939}, "184": {"chunk_idx": 3, "local_idx": 33, "title": "Nilai Kerendahan Hati", "word_count": 1042}, "185": {"chunk_idx": 3, "local_idx": 34, "title": "Battle Master", "word_count": 1004}, "186": {"chunk_idx": 3, "local_idx": 35, "title": "Eureka", "word_count": 929}, "187": {"chunk_idx": 3, "local_idx": 36, "title": "Ujian Kekuatan", "word_count": 1053}, "188": {"chunk_idx": 3, "local_idx": 37, "title": "Tentang Surga dan Neraka", "word_count": 1276}, "189": {"chunk_idx": 3, "local_idx": 38, "title": "Sunny's Brilliant Emporium", "word_count": 1048}, "190": {"chunk_idx": 3, "local_idx": 39, "title": "Point of No Return", "word_count": 1124}, "191": {"chunk_idx": 3, "local_idx": 40, "title": "Pursuer", "word_count": 880}, "192": {"chunk_idx": 3, "local_idx": 41, "title": "Mercusuar", "word_count": 912}, "193": {"chunk_idx": 3, "local_idx": 42, "title": "The Catacombs", "word_count": 948}, "194": {"chunk_idx": 3, "local_idx": 43, "title": "Aching Bones", "word_count": 945}, "195": {"chunk_idx": 3, "local_idx": 44, "title": "Rolling Battle", "word_count": 922}, "196": {"chunk_idx": 3, "local_idx": 45, "title": "Divine Intervention", "word_count": 1078}, "197": {"chunk_idx": 3, "local_idx": 46, "title": "Ultimate Test", "word_count": 925}, "198": {"chunk_idx": 3, "local_idx": 47, "title": "Last Stand", "word_count": 865}, "199": {"chunk_idx": 3, "local_idx": 48, "title": "Cliffhanger", "word_count": 1078}, "200": {"chunk_idx": 3, "local_idx": 49, "title": "Descent", "word_count": 890}, "201": {"chunk_idx": 4, "local_idx": 0, "title": "Lord of the Dead", "word_count": 888}, "202": {"chunk_idx": 4, "local_idx": 1, "title": "Risiko dan Imbalan", "word_count": 945}, "203": {"chunk_idx": 4, "local_idx": 2, "title": "Corpse Eater", "word_count": 1041}, "204": {"chunk_idx": 4, "local_idx": 3, "title": "Mysterious Key", "word_count": 991}, "205": {"chunk_idx": 4, "local_idx": 4, "title": "Journey to the South", "word_count": 873}, "206": {"chunk_idx": 4, "local_idx": 5, "title": "Triumph", "word_count": 911}, "207": {"chunk_idx": 4, "local_idx": 6, "title": "Beach Episode", "word_count": 998}, "208": {"chunk_idx": 4, "local_idx": 7, "title": "Something Productive", "word_count": 973}, "209": {"chunk_idx": 4, "local_idx": 8, "title": "Fireside Banter", "word_count": 994}, "210": {"chunk_idx": 4, "local_idx": 9, "title": "Shadow of the Past", "word_count": 923}, "211": {"chunk_idx": 4, "local_idx": 10, "title": "Game of Lies", "word_count": 1018}, "212": {"chunk_idx": 4, "local_idx": 11, "title": "Knights and Knaves", "word_count": 877}, "213": {"chunk_idx": 4, "local_idx": 12, "title": "Sword Saints", "word_count": 853}, "214": {"chunk_idx": 4, "local_idx": 13, "title": "Transient Shadow", "word_count": 872}, "215": {"chunk_idx": 4, "local_idx": 14, "title": "Shapeless", "word_count": 1019}, "216": {"chunk_idx": 4, "local_idx": 15, "title": "Tacit Understanding", "word_count": 941}, "217": {"chunk_idx": 4, "local_idx": 16, "title": "Origin", "word_count": 952}, "218": {"chunk_idx": 4, "local_idx": 17, "title": "Shadow Dance", "word_count": 1007}, "219": {"chunk_idx": 4, "local_idx": 18, "title": "Relik Masa Lalu", "word_count": 894}, "220": {"chunk_idx": 4, "local_idx": 19, "title": "So You're a Spider, So What?", "word_count": 1010}, "221": {"chunk_idx": 4, "local_idx": 20, "title": "Zenith", "word_count": 1048}, "222": {"chunk_idx": 4, "local_idx": 21, "title": "Clearing the Nest", "word_count": 1393}, "223": {"chunk_idx": 4, "local_idx": 22, "title": "Natural Selection", "word_count": 828}, "224": {"chunk_idx": 4, "local_idx": 23, "title": "Pyre", "word_count": 1050}, "225": {"chunk_idx": 4, "local_idx": 24, "title": "On the Shoulders of Giants", "word_count": 904}, "226": {"chunk_idx": 4, "local_idx": 25, "title": "The Fool", "word_count": 874}, "227": {"chunk_idx": 4, "local_idx": 26, "title": "Comparatively Safe", "word_count": 894}, "228": {"chunk_idx": 4, "local_idx": 27, "title": "Menyeberangi Ngarai", "word_count": 939}, "229": {"chunk_idx": 4, "local_idx": 28, "title": "Penumpang", "word_count": 905}, "230": {"chunk_idx": 4, "local_idx": 29, "title": "Precarious Battle", "word_count": 1029}, "231": {"chunk_idx": 4, "local_idx": 30, "title": "Stone Giant", "word_count": 865}, "232": {"chunk_idx": 4, "local_idx": 31, "title": "Sebelum Badai", "word_count": 1065}, "233": {"chunk_idx": 4, "local_idx": 32, "title": "Swarm", "word_count": 851}, "234": {"chunk_idx": 4, "local_idx": 33, "title": "Horde", "word_count": 933}, "235": {"chunk_idx": 4, "local_idx": 34, "title": "Flower Boy", "word_count": 941}, "236": {"chunk_idx": 4, "local_idx": 35, "title": "Ex Machina", "word_count": 1203}, "237": {"chunk_idx": 4, "local_idx": 36, "title": "Wall of Darkness", "word_count": 874}, "238": {"chunk_idx": 4, "local_idx": 37, "title": "lnto the Storm", "word_count": 870}, "239": {"chunk_idx": 4, "local_idx": 38, "title": "Clash of Titans", "word_count": 866}, "240": {"chunk_idx": 4, "local_idx": 39, "title": "Shadow Slave", "word_count": 939}, "241": {"chunk_idx": 4, "local_idx": 40, "title": "Setengah Jalan", "word_count": 848}, "242": {"chunk_idx": 4, "local_idx": 41, "title": "Mainan Baru", "word_count": 943}, "243": {"chunk_idx": 4, "local_idx": 42, "title": "Taring Naga", "word_count": 901}, "244": {"chunk_idx": 4, "local_idx": 43, "title": "Death Zone", "word_count": 957}, "245": {"chunk_idx": 4, "local_idx": 44, "title": "Theatre of Giants", "word_count": 839}, "246": {"chunk_idx": 4, "local_idx": 45, "title": "Bukti Tak Terbantahkan", "word_count": 1034}, "247": {"chunk_idx": 4, "local_idx": 46, "title": "The Mist", "word_count": 950}, "248": {"chunk_idx": 4, "local_idx": 47, "title": "Those Who Survived", "word_count": 849}, "249": {"chunk_idx": 4, "local_idx": 48, "title": "Kutukan Kegelapan", "word_count": 591}, "250": {"chunk_idx": 4, "local_idx": 49, "title": "Defiant Oath", "word_count": 883}, "251": {"chunk_idx": 5, "local_idx": 0, "title": "Boundary of the Underworld", "word_count": 838}, "252": {"chunk_idx": 5, "local_idx": 1, "title": "Unseen", "word_count": 873}, "253": {"chunk_idx": 5, "local_idx": 2, "title": "without a Master", "word_count": 889}, "254": {"chunk_idx": 5, "local_idx": 3, "title": "The First Lord", "word_count": 866}, "255": {"chunk_idx": 5, "local_idx": 4, "title": "Dawn Shard", "word_count": 885}, "256": {"chunk_idx": 5, "local_idx": 5, "title": "Alasan Sebenarnya", "word_count": 972}, "257": {"chunk_idx": 5, "local_idx": 6, "title": "Nightmare Champion", "word_count": 889}, "258": {"chunk_idx": 5, "local_idx": 7, "title": "Chapter 258", "word_count": 873}, "259": {"chunk_idx": 5, "local_idx": 8, "title": "Chapter 259", "word_count": 1019}, "260": {"chunk_idx": 5, "local_idx": 9, "title": "How to be a Hero", "word_count": 918}, "261": {"chunk_idx": 5, "local_idx": 10, "title": "Moon Shard", "word_count": 921}, "262": {"chunk_idx": 5, "local_idx": 11, "title": "Path to Damnation", "word_count": 1099}, "263": {"chunk_idx": 5, "local_idx": 12, "title": "Awal dari Akhir", "word_count": 910}, "264": {"chunk_idx": 5, "local_idx": 13, "title": "First Things First", "word_count": 957}, "265": {"chunk_idx": 5, "local_idx": 14, "title": "Hateful Shadow", "word_count": 856}, "266": {"chunk_idx": 5, "local_idx": 15, "title": "The Devil You Know", "word_count": 993}, "267": {"chunk_idx": 5, "local_idx": 16, "title": "Let There Be Light", "word_count": 1004}, "268": {"chunk_idx": 5, "local_idx": 17, "title": "Clash", "word_count": 835}, "269": {"chunk_idx": 5, "local_idx": 18, "title": "Incarnation of Death", "word_count": 1026}, "270": {"chunk_idx": 5, "local_idx": 19, "title": "Runaway", "word_count": 838}, "271": {"chunk_idx": 5, "local_idx": 20, "title": "Insurmountable", "word_count": 1000}, "272": {"chunk_idx": 5, "local_idx": 21, "title": "Shadow and Darkness", "word_count": 871}, "273": {"chunk_idx": 5, "local_idx": 22, "title": "Chrysalis", "word_count": 872}, "274": {"chunk_idx": 5, "local_idx": 23, "title": "Salvation", "word_count": 928}, "275": {"chunk_idx": 5, "local_idx": 24, "title": "Secrets of the Ruined Temple", "word_count": 888}, "276": {"chunk_idx": 5, "local_idx": 25, "title": "Black Door", "word_count": 938}, "277": {"chunk_idx": 5, "local_idx": 26, "title": "Demon of Fate", "word_count": 1003}, "278": {"chunk_idx": 5, "local_idx": 27, "title": "Weaver's Mask", "word_count": 972}, "279": {"chunk_idx": 5, "local_idx": 28, "title": "Guilty Conscience", "word_count": 935}, "280": {"chunk_idx": 5, "local_idx": 29, "title": "One Last Job", "word_count": 930}, "281": {"chunk_idx": 5, "local_idx": 30, "title": "Seven Heroes", "word_count": 862}, "282": {"chunk_idx": 5, "local_idx": 31, "title": "Pengorbanan", "word_count": 967}, "283": {"chunk_idx": 5, "local_idx": 32, "title": "Final Piece of the Puzzle", "word_count": 890}, "284": {"chunk_idx": 5, "local_idx": 33, "title": "Nothing Serious", "word_count": 910}, "285": {"chunk_idx": 5, "local_idx": 34, "title": "Kill Order", "word_count": 910}, "286": {"chunk_idx": 5, "local_idx": 35, "title": "Blessings of the Fire", "word_count": 932}, "287": {"chunk_idx": 5, "local_idx": 36, "title": "Lonely Star", "word_count": 949}, "288": {"chunk_idx": 5, "local_idx": 37, "title": "Progress Report", "word_count": 1045}, "289": {"chunk_idx": 5, "local_idx": 38, "title": "Dimulainya Pertunjukan", "word_count": 1036}, "290": {"chunk_idx": 5, "local_idx": 39, "title": "Hari Penghakiman", "word_count": 895}, "291": {"chunk_idx": 5, "local_idx": 40, "title": "Eye of the Storm", "word_count": 929}, "292": {"chunk_idx": 5, "local_idx": 41, "title": "Just Cause", "word_count": 866}, "293": {"chunk_idx": 5, "local_idx": 42, "title": "The Challenge", "word_count": 831}, "294": {"chunk_idx": 5, "local_idx": 43, "title": "Song of Steel", "word_count": 858}, "295": {"chunk_idx": 5, "local_idx": 44, "title": "The Duel", "word_count": 882}, "296": {"chunk_idx": 5, "local_idx": 45, "title": "Creature of Light", "word_count": 1033}, "297": {"chunk_idx": 5, "local_idx": 46, "title": "Red Flower", "word_count": 916}, "298": {"chunk_idx": 5, "local_idx": 47, "title": "Api dan Darah", "word_count": 1076}, "299": {"chunk_idx": 5, "local_idx": 48, "title": "Twisted Reflection", "word_count": 939}, "300": {"chunk_idx": 5, "local_idx": 49, "title": "Bright Lord's Slave", "word_count": 1299}, "301": {"chunk_idx": 6, "local_idx": 0, "title": "Heirs to the Throne", "word_count": 913}, "302": {"chunk_idx": 6, "local_idx": 1, "title": "Status Quo", "word_count": 961}, "303": {"chunk_idx": 6, "local_idx": 2, "title": "Helpful Shadow", "word_count": 1010}, "304": {"chunk_idx": 6, "local_idx": 3, "title": "Memburu yang Besar", "word_count": 1004}, "305": {"chunk_idx": 6, "local_idx": 4, "title": "Trail of Blood", "word_count": 932}, "306": {"chunk_idx": 6, "local_idx": 5, "title": "Final Confrontation", "word_count": 1020}, "307": {"chunk_idx": 6, "local_idx": 6, "title": "Takhta Cahaya", "word_count": 1238}, "308": {"chunk_idx": 6, "local_idx": 7, "title": "Handmaiden", "word_count": 877}, "309": {"chunk_idx": 6, "local_idx": 8, "title": "Chapter 309", "word_count": 895}, "310": {"chunk_idx": 6, "local_idx": 9, "title": "Shadow Demon", "word_count": 1007}, "311": {"chunk_idx": 6, "local_idx": 10, "title": "Yang Terakhir", "word_count": 890}, "312": {"chunk_idx": 6, "local_idx": 11, "title": "Rantai Tak Terlihat", "word_count": 1067}, "313": {"chunk_idx": 6, "local_idx": 12, "title": "Starlight Shard", "word_count": 1313}, "314": {"chunk_idx": 6, "local_idx": 13, "title": "Meninggalkan Dark City", "word_count": 1002}, "315": {"chunk_idx": 6, "local_idx": 14, "title": "Pengepungan Crimson Spire (1)", "word_count": 1027}, "316": {"chunk_idx": 6, "local_idx": 15, "title": "Pengepungan Crimson Spire (2)", "word_count": 899}, "317": {"chunk_idx": 6, "local_idx": 16, "title": "Siege of the Crimson Spire (3)", "word_count": 976}, "318": {"chunk_idx": 6, "local_idx": 17, "title": "Siege of the Crimson Spire (4)", "word_count": 897}, "319": {"chunk_idx": 6, "local_idx": 18, "title": "Pengepungan Crimson Spire (5)", "word_count": 1072}, "320": {"chunk_idx": 6, "local_idx": 19, "title": "Siege of the Crimson Spire (6)", "word_count": 912}, "321": {"chunk_idx": 6, "local_idx": 20, "title": "Siege of the Crimson Spire (7)", "word_count": 930}, "322": {"chunk_idx": 6, "local_idx": 21, "title": "siege of the Crimson Spire (8)", "word_count": 1060}, "323": {"chunk_idx": 6, "local_idx": 22, "title": "Pengepungan Menara Merah (9)", "word_count": 861}, "324": {"chunk_idx": 6, "local_idx": 23, "title": "Siege of the Crimson Spire (10)", "word_count": 946}, "325": {"chunk_idx": 6, "local_idx": 24, "title": "Siege of the Crimson Spire (11)", "word_count": 895}, "326": {"chunk_idx": 6, "local_idx": 25, "title": "Siege of the Crimson Spire (12)", "word_count": 1119}, "327": {"chunk_idx": 6, "local_idx": 26, "title": "Sieae of the Crimson Spire (13)", "word_count": 1173}, "328": {"chunk_idx": 6, "local_idx": 27, "title": "Siege of the Crimson Spire (14)", "word_count": 976}, "329": {"chunk_idx": 6, "local_idx": 28, "title": "Siege of the Crimson Spire (15)", "word_count": 1212}, "330": {"chunk_idx": 6, "local_idx": 29, "title": "Pengepungan Crimson Spire (16)", "word_count": 877}, "331": {"chunk_idx": 6, "local_idx": 30, "title": "Siege of the Crimson Spire (17)", "word_count": 950}, "332": {"chunk_idx": 6, "local_idx": 31, "title": "Pengepungan Crimson Spire (18)", "word_count": 1129}, "333": {"chunk_idx": 6, "local_idx": 32, "title": "ln the Belly of the Beast", "word_count": 966}, "334": {"chunk_idx": 6, "local_idx": 33, "title": "Silver Sword", "word_count": 875}, "335": {"chunk_idx": 6, "local_idx": 34, "title": "Ascent", "word_count": 855}, "336": {"chunk_idx": 6, "local_idx": 35, "title": "The Gateway", "word_count": 871}, "337": {"chunk_idx": 6, "local_idx": 36, "title": "Nobody", "word_count": 903}, "338": {"chunk_idx": 6, "local_idx": 37, "title": "Rest of the Mongrels", "word_count": 890}, "339": {"chunk_idx": 6, "local_idx": 38, "title": "Harder, Better, Faster, Stronger", "word_count": 982}, "340": {"chunk_idx": 6, "local_idx": 39, "title": "Honor", "word_count": 1139}, "341": {"chunk_idx": 6, "local_idx": 40, "title": "Seribu", "word_count": 998}, "342": {"chunk_idx": 6, "local_idx": 41, "title": "Crimson Terror", "word_count": 1017}, "343": {"chunk_idx": 6, "local_idx": 42, "title": "Soul Conduit", "word_count": 1178}, "344": {"chunk_idx": 6, "local_idx": 43, "title": "Duka, Nyeri, dan Amarah", "word_count": 976}, "345": {"chunk_idx": 6, "local_idx": 44, "title": "Bayangan dan Cahaya", "word_count": 1138}, "346": {"chunk_idx": 6, "local_idx": 45, "title": "Janji Darah", "word_count": 1021}, "347": {"chunk_idx": 6, "local_idx": 46, "title": "Jatuh Bebas", "word_count": 971}, "348": {"chunk_idx": 6, "local_idx": 47, "title": "Unbroken", "word_count": 882}, "349": {"chunk_idx": 6, "local_idx": 48, "title": "Takdir", "word_count": 1672}, "350": {"chunk_idx": 6, "local_idx": 49, "title": "Akhir dari Mimpi Buruk", "word_count": 1866}, "351": {"chunk_idx": 7, "local_idx": 0, "title": "Sekali Lagi", "word_count": 1041}, "352": {"chunk_idx": 7, "local_idx": 1, "title": "Monster Core", "word_count": 1118}, "353": {"chunk_idx": 7, "local_idx": 2, "title": "Light Bringer", "word_count": 1405}, "354": {"chunk_idx": 7, "local_idx": 3, "title": "Awakening", "word_count": 1232}, "355": {"chunk_idx": 7, "local_idx": 4, "title": "Back to Reality", "word_count": 920}, "356": {"chunk_idx": 7, "local_idx": 5, "title": "Wawancara dengan Sang Bayangan", "word_count": 1111}, "357": {"chunk_idx": 7, "local_idx": 6, "title": "Risiko dan Imbalan", "word_count": 1236}, "358": {"chunk_idx": 7, "local_idx": 7, "title": "Shadow Step", "word_count": 1426}, "359": {"chunk_idx": 7, "local_idx": 8, "title": "Soul Serpent", "word_count": 1074}, "360": {"chunk_idx": 7, "local_idx": 9, "title": "Hancur", "word_count": 1390}, "361": {"chunk_idx": 7, "local_idx": 10, "title": "The Goal", "word_count": 1008}, "362": {"chunk_idx": 7, "local_idx": 11, "title": "Undangan Sarapan", "word_count": 1065}, "363": {"chunk_idx": 7, "local_idx": 12, "title": "Warga Negara Sunny", "word_count": 885}, "364": {"chunk_idx": 7, "local_idx": 13, "title": "Kelas SS Sunless", "word_count": 1034}, "365": {"chunk_idx": 7, "local_idx": 14, "title": "Young Prospect", "word_count": 1205}, "366": {"chunk_idx": 7, "local_idx": 15, "title": "Pelajaran Sejarah", "word_count": 1466}, "367": {"chunk_idx": 7, "local_idx": 16, "title": "Fog of Time", "word_count": 1187}, "368": {"chunk_idx": 7, "local_idx": 17, "title": "Aster, Song, Vale", "word_count": 1210}, "369": {"chunk_idx": 7, "local_idx": 18, "title": "Kekuatan Tersembunyi", "word_count": 1007}, "370": {"chunk_idx": 7, "local_idx": 19, "title": "Laporan Eksplorasi", "word_count": 867}, "371": {"chunk_idx": 7, "local_idx": 20, "title": "Prestasi Akademis", "word_count": 1213}, "372": {"chunk_idx": 7, "local_idx": 21, "title": "Names of the Gods", "word_count": 886}, "373": {"chunk_idx": 7, "local_idx": 22, "title": "Reunited", "word_count": 878}, "374": {"chunk_idx": 7, "local_idx": 23, "title": "Makan Malam dengan Teman", "word_count": 986}, "375": {"chunk_idx": 7, "local_idx": 24, "title": "Jalan Terpisah", "word_count": 1073}, "376": {"chunk_idx": 7, "local_idx": 25, "title": "Broken Oath", "word_count": 1212}, "377": {"chunk_idx": 7, "local_idx": 26, "title": "Mantle of the Underworld", "word_count": 919}, "378": {"chunk_idx": 7, "local_idx": 27, "title": "Awal yang Baru", "word_count": 1298}, "379": {"chunk_idx": 7, "local_idx": 28, "title": "Chained lsles", "word_count": 919}, "380": {"chunk_idx": 7, "local_idx": 29, "title": "Above and Below", "word_count": 1037}, "381": {"chunk_idx": 7, "local_idx": 30, "title": "Roan of White Feather", "word_count": 876}, "382": {"chunk_idx": 7, "local_idx": 31, "title": "The Crushing", "word_count": 918}, "383": {"chunk_idx": 7, "local_idx": 32, "title": "Cowardly Researcher", "word_count": 939}, "384": {"chunk_idx": 7, "local_idx": 33, "title": "Chapter 384", "word_count": 969}, "385": {"chunk_idx": 7, "local_idx": 34, "title": "lron Hand lsland", "word_count": 925}, "386": {"chunk_idx": 7, "local_idx": 35, "title": "Chapter 386", "word_count": 951}, "387": {"chunk_idx": 7, "local_idx": 36, "title": "Bunga Layu", "word_count": 932}, "388": {"chunk_idx": 7, "local_idx": 37, "title": "Vigil", "word_count": 1055}, "389": {"chunk_idx": 7, "local_idx": 38, "title": "Tempat yang Bisa Disebut Miliknya", "word_count": 932}, "390": {"chunk_idx": 7, "local_idx": 39, "title": "My Castle", "word_count": 942}, "391": {"chunk_idx": 7, "local_idx": 40, "title": "Dreamscape", "word_count": 1061}, "392": {"chunk_idx": 7, "local_idx": 41, "title": "Chapter 392", "word_count": 1071}, "393": {"chunk_idx": 7, "local_idx": 42, "title": "Mongrel", "word_count": 1306}, "394": {"chunk_idx": 7, "local_idx": 43, "title": "One Strike", "word_count": 1020}, "395": {"chunk_idx": 7, "local_idx": 44, "title": "Roaring Lion, Hidden Dragon", "word_count": 1272}, "396": {"chunk_idx": 7, "local_idx": 45, "title": "Sensasi Viral", "word_count": 966}, "397": {"chunk_idx": 7, "local_idx": 46, "title": "Mongrel's Wisdom", "word_count": 904}, "398": {"chunk_idx": 7, "local_idx": 47, "title": "Master of his Trade", "word_count": 867}, "399": {"chunk_idx": 7, "local_idx": 48, "title": "Golden Coin", "word_count": 823}, "400": {"chunk_idx": 7, "local_idx": 49, "title": "Panggilan Harta", "word_count": 936}, "401": {"chunk_idx": 8, "local_idx": 0, "title": "Clueless", "word_count": 948}, "402": {"chunk_idx": 8, "local_idx": 1, "title": "Chain worm", "word_count": 987}, "403": {"chunk_idx": 8, "local_idx": 2, "title": "Sky Tide", "word_count": 898}, "404": {"chunk_idx": 8, "local_idx": 3, "title": "Soft Life", "word_count": 1031}, "405": {"chunk_idx": 8, "local_idx": 4, "title": "Kembali ke Sekolah", "word_count": 891}, "406": {"chunk_idx": 8, "local_idx": 5, "title": "Chapter 406", "word_count": 995}, "407": {"chunk_idx": 8, "local_idx": 6, "title": "Kualifikasi Dreamscape", "word_count": 975}, "408": {"chunk_idx": 8, "local_idx": 7, "title": "Oh, Tidak", "word_count": 1104}, "409": {"chunk_idx": 8, "local_idx": 8, "title": "Treasure Hunt", "word_count": 1012}, "410": {"chunk_idx": 8, "local_idx": 9, "title": "Reckoning", "word_count": 1145}, "411": {"chunk_idx": 8, "local_idx": 10, "title": "Reflection", "word_count": 961}, "412": {"chunk_idx": 8, "local_idx": 11, "title": "Perfect Adversary", "word_count": 1126}, "413": {"chunk_idx": 8, "local_idx": 12, "title": "Mirror Beast", "word_count": 860}, "414": {"chunk_idx": 8, "local_idx": 13, "title": "Misteri Dark Mirror", "word_count": 1036}, "415": {"chunk_idx": 8, "local_idx": 14, "title": "Cruel Sight", "word_count": 935}, "416": {"chunk_idx": 8, "local_idx": 15, "title": "Hanged Man", "word_count": 931}, "417": {"chunk_idx": 8, "local_idx": 16, "title": "Shipwreck", "word_count": 936}, "418": {"chunk_idx": 8, "local_idx": 17, "title": "Remnant Crew", "word_count": 866}, "419": {"chunk_idx": 8, "local_idx": 18, "title": "Eureka", "word_count": 1022}, "420": {"chunk_idx": 8, "local_idx": 19, "title": "Amazing Chest Ahead", "word_count": 953}, "421": {"chunk_idx": 8, "local_idx": 20, "title": "Ecstasy of Gold", "word_count": 869}, "422": {"chunk_idx": 8, "local_idx": 21, "title": "Rude Awakening", "word_count": 878}, "423": {"chunk_idx": 8, "local_idx": 22, "title": "Risk and Reward", "word_count": 1049}, "424": {"chunk_idx": 8, "local_idx": 23, "title": "Seretan Sial", "word_count": 961}, "425": {"chunk_idx": 8, "local_idx": 24, "title": "Twisted Rock", "word_count": 931}, "426": {"chunk_idx": 8, "local_idx": 25, "title": "Most Terrible Battle", "word_count": 1425}, "427": {"chunk_idx": 8, "local_idx": 26, "title": "Death of a Mimic", "word_count": 832}, "428": {"chunk_idx": 8, "local_idx": 27, "title": "Covetous Coffer", "word_count": 1037}, "429": {"chunk_idx": 8, "local_idx": 28, "title": "Schism", "word_count": 912}, "430": {"chunk_idx": 8, "local_idx": 29, "title": "Tapestry of Fate", "word_count": 1384}, "431": {"chunk_idx": 8, "local_idx": 30, "title": "Fall From Grace", "word_count": 882}, "432": {"chunk_idx": 8, "local_idx": 31, "title": "First Day of Nothing", "word_count": 1095}, "433": {"chunk_idx": 8, "local_idx": 32, "title": "Lebih Banyak dari Ketidakberadaan yang Sama", "word_count": 873}, "434": {"chunk_idx": 8, "local_idx": 33, "title": "Banyak Hal yang Tak Berarti", "word_count": 1320}, "435": {"chunk_idx": 8, "local_idx": 34, "title": "Listening to Nothing", "word_count": 864}, "436": {"chunk_idx": 8, "local_idx": 35, "title": "Nothing to worry About", "word_count": 998}, "437": {"chunk_idx": 8, "local_idx": 36, "title": "Tiada, Tiada, Tiada", "word_count": 1042}, "438": {"chunk_idx": 8, "local_idx": 37, "title": "Prince of Nothing", "word_count": 1035}, "439": {"chunk_idx": 8, "local_idx": 38, "title": "Chapter 439", "word_count": 978}, "440": {"chunk_idx": 8, "local_idx": 39, "title": "Merciless Stars", "word_count": 925}, "441": {"chunk_idx": 8, "local_idx": 40, "title": "Ocean of Flame", "word_count": 1000}, "442": {"chunk_idx": 8, "local_idx": 41, "title": "Burning Heaven", "word_count": 1021}, "443": {"chunk_idx": 8, "local_idx": 42, "title": "Secrets of the Void", "word_count": 899}, "444": {"chunk_idx": 8, "local_idx": 43, "title": "Obsidian Tower", "word_count": 1098}, "445": {"chunk_idx": 8, "local_idx": 44, "title": "Respite", "word_count": 906}, "446": {"chunk_idx": 8, "local_idx": 45, "title": "Relentless Destroyer", "word_count": 1014}, "447": {"chunk_idx": 8, "local_idx": 46, "title": "Primal Fear", "word_count": 867}, "448": {"chunk_idx": 8, "local_idx": 47, "title": "Golden Needle", "word_count": 1153}, "449": {"chunk_idx": 8, "local_idx": 48, "title": "Kelaparan Seribu Tahun", "word_count": 924}, "450": {"chunk_idx": 8, "local_idx": 49, "title": "Alabaster Phalanx", "word_count": 941}}}
+{
+  "novel_id": "shadow-slave",
+  "total_chapters": 999,
+  "chunks": 20,
+  "chunk_size": 50,
+  "chapter_map": {
+    "1": {
+      "chunk_idx": 0,
+      "local_idx": 0,
+      "title": "Nightmare Begins",
+      "word_count": 1594
+    },
+    "2": {
+      "chunk_idx": 0,
+      "local_idx": 1,
+      "title": "Slave Caravan",
+      "word_count": 1358
+    },
+    "3": {
+      "chunk_idx": 0,
+      "local_idx": 2,
+      "title": "The Strings of Fate",
+      "word_count": 1313
+    },
+    "4": {
+      "chunk_idx": 0,
+      "local_idx": 3,
+      "title": "Mountain King",
+      "word_count": 1567
+    },
+    "5": {
+      "chunk_idx": 0,
+      "local_idx": 4,
+      "title": "Broken Chains",
+      "word_count": 1285
+    },
+    "6": {
+      "chunk_idx": 0,
+      "local_idx": 5,
+      "title": "Confronting the Tyrant",
+      "word_count": 1549
+    },
+    "7": {
+      "chunk_idx": 0,
+      "local_idx": 6,
+      "title": "Three Slaves and a Hero",
+      "word_count": 1074
+    },
+    "8": {
+      "chunk_idx": 0,
+      "local_idx": 7,
+      "title": "Nothing at All",
+      "word_count": 1249
+    },
+    "9": {
+      "chunk_idx": 0,
+      "local_idx": 8,
+      "title": "Wishful Thinking",
+      "word_count": 1356
+    },
+    "10": {
+      "chunk_idx": 0,
+      "local_idx": 9,
+      "title": "First Man Down",
+      "word_count": 1240
+    },
+    "11": {
+      "chunk_idx": 0,
+      "local_idx": 10,
+      "title": "Crossroads",
+      "word_count": 1333
+    },
+    "12": {
+      "chunk_idx": 0,
+      "local_idx": 11,
+      "title": "The Smell of Blood",
+      "word_count": 1113
+    },
+    "13": {
+      "chunk_idx": 0,
+      "local_idx": 12,
+      "title": "Moment of Truth",
+      "word_count": 1255
+    },
+    "14": {
+      "chunk_idx": 0,
+      "local_idx": 13,
+      "title": "Child of Shadows",
+      "word_count": 1408
+    },
+    "15": {
+      "chunk_idx": 0,
+      "local_idx": 14,
+      "title": "Shadow Slave",
+      "word_count": 1134
+    },
+    "16": {
+      "chunk_idx": 0,
+      "local_idx": 15,
+      "title": "Rebirth",
+      "word_count": 1008
+    },
+    "17": {
+      "chunk_idx": 0,
+      "local_idx": 16,
+      "title": "Three Simple Words",
+      "word_count": 1404
+    },
+    "18": {
+      "chunk_idx": 0,
+      "local_idx": 17,
+      "title": "Absence of Light",
+      "word_count": 1560
+    },
+    "19": {
+      "chunk_idx": 0,
+      "local_idx": 18,
+      "title": "Crossing the Bridge",
+      "word_count": 1161
+    },
+    "20": {
+      "chunk_idx": 0,
+      "local_idx": 19,
+      "title": "Outcast Once Again",
+      "word_count": 1395
+    },
+    "21": {
+      "chunk_idx": 0,
+      "local_idx": 20,
+      "title": "First Performance",
+      "word_count": 1151
+    },
+    "22": {
+      "chunk_idx": 0,
+      "local_idx": 21,
+      "title": "Corpse Corner",
+      "word_count": 1123
+    },
+    "23": {
+      "chunk_idx": 0,
+      "local_idx": 22,
+      "title": "Dreams and Nightmares",
+      "word_count": 1366
+    },
+    "24": {
+      "chunk_idx": 0,
+      "local_idx": 23,
+      "title": "Moving Up in the World",
+      "word_count": 1191
+    },
+    "25": {
+      "chunk_idx": 0,
+      "local_idx": 24,
+      "title": "Wilderness Survival",
+      "word_count": 1339
+    },
+    "26": {
+      "chunk_idx": 0,
+      "local_idx": 25,
+      "title": "Changing Star",
+      "word_count": 1454
+    },
+    "27": {
+      "chunk_idx": 0,
+      "local_idx": 26,
+      "title": "Measure of Power",
+      "word_count": 1357
+    },
+    "28": {
+      "chunk_idx": 0,
+      "local_idx": 27,
+      "title": "Training Montage",
+      "word_count": 1079
+    },
+    "29": {
+      "chunk_idx": 0,
+      "local_idx": 28,
+      "title": "The Last Day on Earth",
+      "word_count": 1276
+    },
+    "30": {
+      "chunk_idx": 0,
+      "local_idx": 29,
+      "title": "Starless Void",
+      "word_count": 1166
+    },
+    "31": {
+      "chunk_idx": 0,
+      "local_idx": 30,
+      "title": "Low Tide",
+      "word_count": 1319
+    },
+    "32": {
+      "chunk_idx": 0,
+      "local_idx": 31,
+      "title": "Making a Choice",
+      "word_count": 1362
+    },
+    "33": {
+      "chunk_idx": 0,
+      "local_idx": 32,
+      "title": "Carapace Scavenger",
+      "word_count": 1178
+    },
+    "34": {
+      "chunk_idx": 0,
+      "local_idx": 33,
+      "title": "Only Steel Remembers",
+      "word_count": 1187
+    },
+    "35": {
+      "chunk_idx": 0,
+      "local_idx": 34,
+      "title": "A Shadow, a Star and an Oracle",
+      "word_count": 1328
+    },
+    "36": {
+      "chunk_idx": 0,
+      "local_idx": 35,
+      "title": "Bonfire",
+      "word_count": 1422
+    },
+    "37": {
+      "chunk_idx": 0,
+      "local_idx": 36,
+      "title": "Getting to Know Each Other",
+      "word_count": 1420
+    },
+    "38": {
+      "chunk_idx": 0,
+      "local_idx": 37,
+      "title": "Questions in the Dark",
+      "word_count": 1603
+    },
+    "39": {
+      "chunk_idx": 0,
+      "local_idx": 38,
+      "title": "Journey to the West",
+      "word_count": 989
+    },
+    "40": {
+      "chunk_idx": 0,
+      "local_idx": 39,
+      "title": "Weak Point",
+      "word_count": 1392
+    },
+    "41": {
+      "chunk_idx": 0,
+      "local_idx": 40,
+      "title": "Strength in Numbers",
+      "word_count": 1439
+    },
+    "42": {
+      "chunk_idx": 0,
+      "local_idx": 41,
+      "title": "Essence of Combat",
+      "word_count": 1007
+    },
+    "43": {
+      "chunk_idx": 0,
+      "local_idx": 42,
+      "title": "Repetition",
+      "word_count": 1216
+    },
+    "44": {
+      "chunk_idx": 0,
+      "local_idx": 43,
+      "title": "Cassie's Dream",
+      "word_count": 1421
+    },
+    "45": {
+      "chunk_idx": 0,
+      "local_idx": 44,
+      "title": "Sound of Laughter",
+      "word_count": 1031
+    },
+    "46": {
+      "chunk_idx": 0,
+      "local_idx": 45,
+      "title": "Experience",
+      "word_count": 1398
+    },
+    "47": {
+      "chunk_idx": 0,
+      "local_idx": 46,
+      "title": "Echo",
+      "word_count": 987
+    },
+    "48": {
+      "chunk_idx": 0,
+      "local_idx": 47,
+      "title": "The Storm",
+      "word_count": 1136
+    },
+    "49": {
+      "chunk_idx": 0,
+      "local_idx": 48,
+      "title": "Natural Element",
+      "word_count": 869
+    },
+    "50": {
+      "chunk_idx": 0,
+      "local_idx": 49,
+      "title": "Death Trap",
+      "word_count": 1342
+    },
+    "51": {
+      "chunk_idx": 1,
+      "local_idx": 0,
+      "title": "Carapace Centurion",
+      "word_count": 1451
+    },
+    "52": {
+      "chunk_idx": 1,
+      "local_idx": 1,
+      "title": "Clarity",
+      "word_count": 1419
+    },
+    "53": {
+      "chunk_idx": 1,
+      "local_idx": 2,
+      "title": "Immortal Flame",
+      "word_count": 1326
+    },
+    "54": {
+      "chunk_idx": 1,
+      "local_idx": 3,
+      "title": "Spoils of War",
+      "word_count": 903
+    },
+    "55": {
+      "chunk_idx": 1,
+      "local_idx": 4,
+      "title": "Lucky People",
+      "word_count": 982
+    },
+    "56": {
+      "chunk_idx": 1,
+      "local_idx": 5,
+      "title": "The Heaviest Thing in the World",
+      "word_count": 960
+    },
+    "57": {
+      "chunk_idx": 1,
+      "local_idx": 6,
+      "title": "Use of Weapons",
+      "word_count": 959
+    },
+    "58": {
+      "chunk_idx": 1,
+      "local_idx": 7,
+      "title": "Survival of the Fittest",
+      "word_count": 938
+    },
+    "59": {
+      "chunk_idx": 1,
+      "local_idx": 8,
+      "title": "Shadow of the Crimson Spire",
+      "word_count": 1300
+    },
+    "60": {
+      "chunk_idx": 1,
+      "local_idx": 9,
+      "title": "Bone Ridge",
+      "word_count": 1316
+    },
+    "61": {
+      "chunk_idx": 1,
+      "local_idx": 10,
+      "title": "Sea of Ash",
+      "word_count": 1456
+    },
+    "62": {
+      "chunk_idx": 1,
+      "local_idx": 11,
+      "title": "Hide and Seek",
+      "word_count": 1346
+    },
+    "63": {
+      "chunk_idx": 1,
+      "local_idx": 12,
+      "title": "Lord of Ashes",
+      "word_count": 1389
+    },
+    "64": {
+      "chunk_idx": 1,
+      "local_idx": 13,
+      "title": "Pursued by Demons",
+      "word_count": 1042
+    },
+    "65": {
+      "chunk_idx": 1,
+      "local_idx": 14,
+      "title": "Lights in the Darkness",
+      "word_count": 1165
+    },
+    "66": {
+      "chunk_idx": 1,
+      "local_idx": 15,
+      "title": "First Part of the Plan",
+      "word_count": 1153
+    },
+    "67": {
+      "chunk_idx": 1,
+      "local_idx": 16,
+      "title": "Racing Against Time:",
+      "word_count": 739
+    },
+    "68": {
+      "chunk_idx": 1,
+      "local_idx": 17,
+      "title": "Beacon of Death",
+      "word_count": 1371
+    },
+    "69": {
+      "chunk_idx": 1,
+      "local_idx": 18,
+      "title": "The Guest",
+      "word_count": 1355
+    },
+    "70": {
+      "chunk_idx": 1,
+      "local_idx": 19,
+      "title": "Judgement of the Blade",
+      "word_count": 1264
+    },
+    "71": {
+      "chunk_idx": 1,
+      "local_idx": 20,
+      "title": "One Small Mistake",
+      "word_count": 1354
+    },
+    "72": {
+      "chunk_idx": 1,
+      "local_idx": 21,
+      "title": "Demon Slayers",
+      "word_count": 1069
+    },
+    "73": {
+      "chunk_idx": 1,
+      "local_idx": 22,
+      "title": "The Circle of Death",
+      "word_count": 1334
+    },
+    "74": {
+      "chunk_idx": 1,
+      "local_idx": 23,
+      "title": "Midnight Shard",
+      "word_count": 949
+    },
+    "75": {
+      "chunk_idx": 1,
+      "local_idx": 24,
+      "title": "Mimpi yang Retak",
+      "word_count": 1583
+    },
+    "76": {
+      "chunk_idx": 1,
+      "local_idx": 25,
+      "title": "The Abyss",
+      "word_count": 1347
+    },
+    "77": {
+      "chunk_idx": 1,
+      "local_idx": 26,
+      "title": "Enthralled",
+      "word_count": 1150
+    },
+    "78": {
+      "chunk_idx": 1,
+      "local_idx": 27,
+      "title": "Bliss",
+      "word_count": 1102
+    },
+    "79": {
+      "chunk_idx": 1,
+      "local_idx": 28,
+      "title": "Twist of Fate",
+      "word_count": 1097
+    },
+    "80": {
+      "chunk_idx": 1,
+      "local_idx": 29,
+      "title": "Spirit of Exploration",
+      "word_count": 1022
+    },
+    "81": {
+      "chunk_idx": 1,
+      "local_idx": 30,
+      "title": "Weaver's Eye",
+      "word_count": 1073
+    },
+    "82": {
+      "chunk_idx": 1,
+      "local_idx": 31,
+      "title": "Ketakutan akan yang Tak Diketahui",
+      "word_count": 1051
+    },
+    "83": {
+      "chunk_idx": 1,
+      "local_idx": 32,
+      "title": "Lima",
+      "word_count": 1212
+    },
+    "84": {
+      "chunk_idx": 1,
+      "local_idx": 33,
+      "title": "Black Seed",
+      "word_count": 904
+    },
+    "85": {
+      "chunk_idx": 1,
+      "local_idx": 34,
+      "title": "One Step at a Time",
+      "word_count": 1184
+    },
+    "86": {
+      "chunk_idx": 1,
+      "local_idx": 35,
+      "title": "Petunjuk Terakhir",
+      "word_count": 827
+    },
+    "87": {
+      "chunk_idx": 1,
+      "local_idx": 36,
+      "title": "Rencana Pelarian",
+      "word_count": 1049
+    },
+    "88": {
+      "chunk_idx": 1,
+      "local_idx": 37,
+      "title": "Pembuat Perahu",
+      "word_count": 901
+    },
+    "89": {
+      "chunk_idx": 1,
+      "local_idx": 38,
+      "title": "Demon's Bones",
+      "word_count": 1024
+    },
+    "90": {
+      "chunk_idx": 1,
+      "local_idx": 39,
+      "title": "Nightfall",
+      "word_count": 1238
+    },
+    "91": {
+      "chunk_idx": 1,
+      "local_idx": 40,
+      "title": "Pelarian",
+      "word_count": 1245
+    },
+    "92": {
+      "chunk_idx": 1,
+      "local_idx": 41,
+      "title": "Journey into the Night",
+      "word_count": 871
+    },
+    "93": {
+      "chunk_idx": 1,
+      "local_idx": 42,
+      "title": "Black Water",
+      "word_count": 936
+    },
+    "94": {
+      "chunk_idx": 1,
+      "local_idx": 43,
+      "title": "Pertempuran di Kedalaman",
+      "word_count": 1221
+    },
+    "95": {
+      "chunk_idx": 1,
+      "local_idx": 44,
+      "title": "Starlight",
+      "word_count": 841
+    },
+    "96": {
+      "chunk_idx": 1,
+      "local_idx": 45,
+      "title": "Exile",
+      "word_count": 879
+    },
+    "97": {
+      "chunk_idx": 1,
+      "local_idx": 46,
+      "title": "Hunter's Dream",
+      "word_count": 1062
+    },
+    "98": {
+      "chunk_idx": 1,
+      "local_idx": 47,
+      "title": "Tamu Tak Diundang",
+      "word_count": 1382
+    },
+    "99": {
+      "chunk_idx": 1,
+      "local_idx": 48,
+      "title": "Pengejaran",
+      "word_count": 870
+    },
+    "100": {
+      "chunk_idx": 1,
+      "local_idx": 49,
+      "title": "Hati yang Bersih",
+      "word_count": 896
+    },
+    "101": {
+      "chunk_idx": 2,
+      "local_idx": 0,
+      "title": "Turf War",
+      "word_count": 901
+    },
+    "102": {
+      "chunk_idx": 2,
+      "local_idx": 1,
+      "title": "Stone Saint",
+      "word_count": 936
+    },
+    "103": {
+      "chunk_idx": 2,
+      "local_idx": 2,
+      "title": "Coup de Grace",
+      "word_count": 875
+    },
+    "104": {
+      "chunk_idx": 2,
+      "local_idx": 3,
+      "title": "Soul Arsenal",
+      "word_count": 1058
+    },
+    "105": {
+      "chunk_idx": 2,
+      "local_idx": 4,
+      "title": "Living Stone",
+      "word_count": 1051
+    },
+    "106": {
+      "chunk_idx": 2,
+      "local_idx": 5,
+      "title": "Menciptakan Monster",
+      "word_count": 856
+    },
+    "107": {
+      "chunk_idx": 2,
+      "local_idx": 6,
+      "title": "Growing Shadow",
+      "word_count": 899
+    },
+    "108": {
+      "chunk_idx": 2,
+      "local_idx": 7,
+      "title": "Test Dummy",
+      "word_count": 934
+    },
+    "109": {
+      "chunk_idx": 2,
+      "local_idx": 8,
+      "title": "Soulmates",
+      "word_count": 1026
+    },
+    "110": {
+      "chunk_idx": 2,
+      "local_idx": 9,
+      "title": "Memento",
+      "word_count": 873
+    },
+    "111": {
+      "chunk_idx": 2,
+      "local_idx": 10,
+      "title": "Lesser Creature",
+      "word_count": 1045
+    },
+    "112": {
+      "chunk_idx": 2,
+      "local_idx": 11,
+      "title": "Duel of the Monsters",
+      "word_count": 892
+    },
+    "113": {
+      "chunk_idx": 2,
+      "local_idx": 12,
+      "title": "Dark Well",
+      "word_count": 1058
+    },
+    "114": {
+      "chunk_idx": 2,
+      "local_idx": 13,
+      "title": "Voice of Darkness",
+      "word_count": 1036
+    },
+    "115": {
+      "chunk_idx": 2,
+      "local_idx": 14,
+      "title": "Nightingale",
+      "word_count": 1082
+    },
+    "116": {
+      "chunk_idx": 2,
+      "local_idx": 15,
+      "title": "Deal with the Devil",
+      "word_count": 1040
+    },
+    "117": {
+      "chunk_idx": 2,
+      "local_idx": 16,
+      "title": "Cruel Injustice",
+      "word_count": 1045
+    },
+    "118": {
+      "chunk_idx": 2,
+      "local_idx": 17,
+      "title": "Mirror Image",
+      "word_count": 1038
+    },
+    "119": {
+      "chunk_idx": 2,
+      "local_idx": 18,
+      "title": "A Fistful of Soul Shards",
+      "word_count": 868
+    },
+    "120": {
+      "chunk_idx": 2,
+      "local_idx": 19,
+      "title": "Approaching the Castle",
+      "word_count": 915
+    },
+    "121": {
+      "chunk_idx": 2,
+      "local_idx": 20,
+      "title": "Graveyard of Hope",
+      "word_count": 1290
+    },
+    "122": {
+      "chunk_idx": 2,
+      "local_idx": 21,
+      "title": "Empat Bulan yang Lalu",
+      "word_count": 1220
+    },
+    "123": {
+      "chunk_idx": 2,
+      "local_idx": 22,
+      "title": "Helping Hand",
+      "word_count": 1224
+    },
+    "124": {
+      "chunk_idx": 2,
+      "local_idx": 23,
+      "title": "Desolation",
+      "word_count": 901
+    },
+    "125": {
+      "chunk_idx": 2,
+      "local_idx": 24,
+      "title": "A Feast in Time of Plague",
+      "word_count": 936
+    },
+    "126": {
+      "chunk_idx": 2,
+      "local_idx": 25,
+      "title": "Effie",
+      "word_count": 1098
+    },
+    "127": {
+      "chunk_idx": 2,
+      "local_idx": 26,
+      "title": "Abandon All Hope",
+      "word_count": 1057
+    },
+    "128": {
+      "chunk_idx": 2,
+      "local_idx": 27,
+      "title": "King of the Hill",
+      "word_count": 1060
+    },
+    "129": {
+      "chunk_idx": 2,
+      "local_idx": 28,
+      "title": "Solace",
+      "word_count": 1034
+    },
+    "130": {
+      "chunk_idx": 2,
+      "local_idx": 29,
+      "title": "Kekuatan Selusin Pria",
+      "word_count": 890
+    },
+    "131": {
+      "chunk_idx": 2,
+      "local_idx": 30,
+      "title": "Traversing the Dark City",
+      "word_count": 996
+    },
+    "132": {
+      "chunk_idx": 2,
+      "local_idx": 31,
+      "title": "End of the Line",
+      "word_count": 1087
+    },
+    "133": {
+      "chunk_idx": 2,
+      "local_idx": 32,
+      "title": "Perpisahan",
+      "word_count": 1057
+    },
+    "134": {
+      "chunk_idx": 2,
+      "local_idx": 33,
+      "title": "Bright Castle",
+      "word_count": 908
+    },
+    "135": {
+      "chunk_idx": 2,
+      "local_idx": 34,
+      "title": "Hidup Bersama",
+      "word_count": 953
+    },
+    "136": {
+      "chunk_idx": 2,
+      "local_idx": 35,
+      "title": "Reflection",
+      "word_count": 906
+    },
+    "137": {
+      "chunk_idx": 2,
+      "local_idx": 36,
+      "title": "All Eyes on Me",
+      "word_count": 1206
+    },
+    "138": {
+      "chunk_idx": 2,
+      "local_idx": 37,
+      "title": "Pertemuan yang Tak Terduga",
+      "word_count": 903
+    },
+    "139": {
+      "chunk_idx": 2,
+      "local_idx": 38,
+      "title": "Chapter 139",
+      "word_count": 898
+    },
+    "140": {
+      "chunk_idx": 2,
+      "local_idx": 39,
+      "title": "True Legacy",
+      "word_count": 893
+    },
+    "141": {
+      "chunk_idx": 2,
+      "local_idx": 40,
+      "title": "Golden Serpent",
+      "word_count": 937
+    },
+    "142": {
+      "chunk_idx": 2,
+      "local_idx": 41,
+      "title": "Di Balik Layar",
+      "word_count": 860
+    },
+    "143": {
+      "chunk_idx": 2,
+      "local_idx": 42,
+      "title": "Gunlaug",
+      "word_count": 903
+    },
+    "144": {
+      "chunk_idx": 2,
+      "local_idx": 43,
+      "title": "Right of Challenge",
+      "word_count": 1009
+    },
+    "145": {
+      "chunk_idx": 2,
+      "local_idx": 44,
+      "title": "Justice",
+      "word_count": 1108
+    },
+    "146": {
+      "chunk_idx": 2,
+      "local_idx": 45,
+      "title": "Kekuatan",
+      "word_count": 1114
+    },
+    "147": {
+      "chunk_idx": 2,
+      "local_idx": 46,
+      "title": "Guild Hall",
+      "word_count": 939
+    },
+    "148": {
+      "chunk_idx": 2,
+      "local_idx": 47,
+      "title": "Last Harvest",
+      "word_count": 870
+    },
+    "149": {
+      "chunk_idx": 2,
+      "local_idx": 48,
+      "title": "Dark Diver",
+      "word_count": 934
+    },
+    "150": {
+      "chunk_idx": 2,
+      "local_idx": 49,
+      "title": "Kelompok Berburu",
+      "word_count": 1051
+    },
+    "151": {
+      "chunk_idx": 3,
+      "local_idx": 0,
+      "title": "Head Hunting",
+      "word_count": 1104
+    },
+    "152": {
+      "chunk_idx": 3,
+      "local_idx": 1,
+      "title": "There and Back Again",
+      "word_count": 881
+    },
+    "153": {
+      "chunk_idx": 3,
+      "local_idx": 2,
+      "title": "Guiding Star",
+      "word_count": 1055
+    },
+    "154": {
+      "chunk_idx": 3,
+      "local_idx": 3,
+      "title": "Light of the Seven",
+      "word_count": 1386
+    },
+    "155": {
+      "chunk_idx": 3,
+      "local_idx": 4,
+      "title": "Rekrutan Pertama",
+      "word_count": 1192
+    },
+    "156": {
+      "chunk_idx": 3,
+      "local_idx": 5,
+      "title": "Makan Siang Gratis",
+      "word_count": 1102
+    },
+    "157": {
+      "chunk_idx": 3,
+      "local_idx": 6,
+      "title": "Angin Perubahan",
+      "word_count": 1240
+    },
+    "158": {
+      "chunk_idx": 3,
+      "local_idx": 7,
+      "title": "Tak Terlihat",
+      "word_count": 1492
+    },
+    "159": {
+      "chunk_idx": 3,
+      "local_idx": 8,
+      "title": "Wahyu",
+      "word_count": 907
+    },
+    "160": {
+      "chunk_idx": 3,
+      "local_idx": 9,
+      "title": "Masa Depan",
+      "word_count": 1248
+    },
+    "161": {
+      "chunk_idx": 3,
+      "local_idx": 10,
+      "title": "Rubicon",
+      "word_count": 1408
+    },
+    "162": {
+      "chunk_idx": 3,
+      "local_idx": 11,
+      "title": "Lost from Light",
+      "word_count": 1118
+    },
+    "163": {
+      "chunk_idx": 3,
+      "local_idx": 12,
+      "title": "The Past",
+      "word_count": 936
+    },
+    "164": {
+      "chunk_idx": 3,
+      "local_idx": 13,
+      "title": "Farewell",
+      "word_count": 1205
+    },
+    "165": {
+      "chunk_idx": 3,
+      "local_idx": 14,
+      "title": "Kekuatan",
+      "word_count": 850
+    },
+    "166": {
+      "chunk_idx": 3,
+      "local_idx": 15,
+      "title": "Light and Shadows",
+      "word_count": 1074
+    },
+    "167": {
+      "chunk_idx": 3,
+      "local_idx": 16,
+      "title": "Unforgivable",
+      "word_count": 1119
+    },
+    "168": {
+      "chunk_idx": 3,
+      "local_idx": 17,
+      "title": "Di Luar",
+      "word_count": 1046
+    },
+    "169": {
+      "chunk_idx": 3,
+      "local_idx": 18,
+      "title": "Back to the Future",
+      "word_count": 935
+    },
+    "170": {
+      "chunk_idx": 3,
+      "local_idx": 19,
+      "title": "Star-Crossed",
+      "word_count": 865
+    },
+    "171": {
+      "chunk_idx": 3,
+      "local_idx": 20,
+      "title": "Tether",
+      "word_count": 895
+    },
+    "172": {
+      "chunk_idx": 3,
+      "local_idx": 21,
+      "title": "Memory Market",
+      "word_count": 1041
+    },
+    "173": {
+      "chunk_idx": 3,
+      "local_idx": 22,
+      "title": "Black Armor",
+      "word_count": 1089
+    },
+    "174": {
+      "chunk_idx": 3,
+      "local_idx": 23,
+      "title": "Shopping Spree",
+      "word_count": 1087
+    },
+    "175": {
+      "chunk_idx": 3,
+      "local_idx": 24,
+      "title": "Reuni",
+      "word_count": 1101
+    },
+    "176": {
+      "chunk_idx": 3,
+      "local_idx": 25,
+      "title": "Coming Clean",
+      "word_count": 1053
+    },
+    "177": {
+      "chunk_idx": 3,
+      "local_idx": 26,
+      "title": "Cloak and Dagger",
+      "word_count": 872
+    },
+    "178": {
+      "chunk_idx": 3,
+      "local_idx": 27,
+      "title": "Ekspedisi yang Hilang",
+      "word_count": 1303
+    },
+    "179": {
+      "chunk_idx": 3,
+      "local_idx": 28,
+      "title": "New Generation",
+      "word_count": 1061
+    },
+    "180": {
+      "chunk_idx": 3,
+      "local_idx": 29,
+      "title": "Break Point",
+      "word_count": 1404
+    },
+    "181": {
+      "chunk_idx": 3,
+      "local_idx": 30,
+      "title": "Rules of Hospitality",
+      "word_count": 1121
+    },
+    "182": {
+      "chunk_idx": 3,
+      "local_idx": 31,
+      "title": "Waktu Makan Malam",
+      "word_count": 1066
+    },
+    "183": {
+      "chunk_idx": 3,
+      "local_idx": 32,
+      "title": "Learning New Tricks",
+      "word_count": 939
+    },
+    "184": {
+      "chunk_idx": 3,
+      "local_idx": 33,
+      "title": "Nilai Kerendahan Hati",
+      "word_count": 1042
+    },
+    "185": {
+      "chunk_idx": 3,
+      "local_idx": 34,
+      "title": "Battle Master",
+      "word_count": 1004
+    },
+    "186": {
+      "chunk_idx": 3,
+      "local_idx": 35,
+      "title": "Eureka",
+      "word_count": 929
+    },
+    "187": {
+      "chunk_idx": 3,
+      "local_idx": 36,
+      "title": "Ujian Kekuatan",
+      "word_count": 1053
+    },
+    "188": {
+      "chunk_idx": 3,
+      "local_idx": 37,
+      "title": "Tentang Surga dan Neraka",
+      "word_count": 1276
+    },
+    "189": {
+      "chunk_idx": 3,
+      "local_idx": 38,
+      "title": "Sunny's Brilliant Emporium",
+      "word_count": 1048
+    },
+    "190": {
+      "chunk_idx": 3,
+      "local_idx": 39,
+      "title": "Point of No Return",
+      "word_count": 1124
+    },
+    "191": {
+      "chunk_idx": 3,
+      "local_idx": 40,
+      "title": "Pursuer",
+      "word_count": 880
+    },
+    "192": {
+      "chunk_idx": 3,
+      "local_idx": 41,
+      "title": "Mercusuar",
+      "word_count": 912
+    },
+    "193": {
+      "chunk_idx": 3,
+      "local_idx": 42,
+      "title": "The Catacombs",
+      "word_count": 948
+    },
+    "194": {
+      "chunk_idx": 3,
+      "local_idx": 43,
+      "title": "Aching Bones",
+      "word_count": 945
+    },
+    "195": {
+      "chunk_idx": 3,
+      "local_idx": 44,
+      "title": "Rolling Battle",
+      "word_count": 922
+    },
+    "196": {
+      "chunk_idx": 3,
+      "local_idx": 45,
+      "title": "Divine Intervention",
+      "word_count": 1078
+    },
+    "197": {
+      "chunk_idx": 3,
+      "local_idx": 46,
+      "title": "Ultimate Test",
+      "word_count": 925
+    },
+    "198": {
+      "chunk_idx": 3,
+      "local_idx": 47,
+      "title": "Last Stand",
+      "word_count": 865
+    },
+    "199": {
+      "chunk_idx": 3,
+      "local_idx": 48,
+      "title": "Cliffhanger",
+      "word_count": 1078
+    },
+    "200": {
+      "chunk_idx": 3,
+      "local_idx": 49,
+      "title": "Descent",
+      "word_count": 890
+    },
+    "201": {
+      "chunk_idx": 4,
+      "local_idx": 0,
+      "title": "Lord of the Dead",
+      "word_count": 888
+    },
+    "202": {
+      "chunk_idx": 4,
+      "local_idx": 1,
+      "title": "Risiko dan Imbalan",
+      "word_count": 945
+    },
+    "203": {
+      "chunk_idx": 4,
+      "local_idx": 2,
+      "title": "Corpse Eater",
+      "word_count": 1041
+    },
+    "204": {
+      "chunk_idx": 4,
+      "local_idx": 3,
+      "title": "Mysterious Key",
+      "word_count": 991
+    },
+    "205": {
+      "chunk_idx": 4,
+      "local_idx": 4,
+      "title": "Journey to the South",
+      "word_count": 873
+    },
+    "206": {
+      "chunk_idx": 4,
+      "local_idx": 5,
+      "title": "Triumph",
+      "word_count": 911
+    },
+    "207": {
+      "chunk_idx": 4,
+      "local_idx": 6,
+      "title": "Beach Episode",
+      "word_count": 998
+    },
+    "208": {
+      "chunk_idx": 4,
+      "local_idx": 7,
+      "title": "Something Productive",
+      "word_count": 973
+    },
+    "209": {
+      "chunk_idx": 4,
+      "local_idx": 8,
+      "title": "Fireside Banter",
+      "word_count": 994
+    },
+    "210": {
+      "chunk_idx": 4,
+      "local_idx": 9,
+      "title": "Shadow of the Past",
+      "word_count": 923
+    },
+    "211": {
+      "chunk_idx": 4,
+      "local_idx": 10,
+      "title": "Game of Lies",
+      "word_count": 1018
+    },
+    "212": {
+      "chunk_idx": 4,
+      "local_idx": 11,
+      "title": "Knights and Knaves",
+      "word_count": 877
+    },
+    "213": {
+      "chunk_idx": 4,
+      "local_idx": 12,
+      "title": "Sword Saints",
+      "word_count": 853
+    },
+    "214": {
+      "chunk_idx": 4,
+      "local_idx": 13,
+      "title": "Transient Shadow",
+      "word_count": 872
+    },
+    "215": {
+      "chunk_idx": 4,
+      "local_idx": 14,
+      "title": "Shapeless",
+      "word_count": 1019
+    },
+    "216": {
+      "chunk_idx": 4,
+      "local_idx": 15,
+      "title": "Tacit Understanding",
+      "word_count": 941
+    },
+    "217": {
+      "chunk_idx": 4,
+      "local_idx": 16,
+      "title": "Origin",
+      "word_count": 952
+    },
+    "218": {
+      "chunk_idx": 4,
+      "local_idx": 17,
+      "title": "Shadow Dance",
+      "word_count": 1007
+    },
+    "219": {
+      "chunk_idx": 4,
+      "local_idx": 18,
+      "title": "Relik Masa Lalu",
+      "word_count": 894
+    },
+    "220": {
+      "chunk_idx": 4,
+      "local_idx": 19,
+      "title": "So You're a Spider, So What?",
+      "word_count": 1010
+    },
+    "221": {
+      "chunk_idx": 4,
+      "local_idx": 20,
+      "title": "Zenith",
+      "word_count": 1048
+    },
+    "222": {
+      "chunk_idx": 4,
+      "local_idx": 21,
+      "title": "Clearing the Nest",
+      "word_count": 1393
+    },
+    "223": {
+      "chunk_idx": 4,
+      "local_idx": 22,
+      "title": "Natural Selection",
+      "word_count": 828
+    },
+    "224": {
+      "chunk_idx": 4,
+      "local_idx": 23,
+      "title": "Pyre",
+      "word_count": 1050
+    },
+    "225": {
+      "chunk_idx": 4,
+      "local_idx": 24,
+      "title": "On the Shoulders of Giants",
+      "word_count": 904
+    },
+    "226": {
+      "chunk_idx": 4,
+      "local_idx": 25,
+      "title": "The Fool",
+      "word_count": 874
+    },
+    "227": {
+      "chunk_idx": 4,
+      "local_idx": 26,
+      "title": "Comparatively Safe",
+      "word_count": 894
+    },
+    "228": {
+      "chunk_idx": 4,
+      "local_idx": 27,
+      "title": "Menyeberangi Ngarai",
+      "word_count": 939
+    },
+    "229": {
+      "chunk_idx": 4,
+      "local_idx": 28,
+      "title": "Penumpang",
+      "word_count": 905
+    },
+    "230": {
+      "chunk_idx": 4,
+      "local_idx": 29,
+      "title": "Precarious Battle",
+      "word_count": 1029
+    },
+    "231": {
+      "chunk_idx": 4,
+      "local_idx": 30,
+      "title": "Stone Giant",
+      "word_count": 865
+    },
+    "232": {
+      "chunk_idx": 4,
+      "local_idx": 31,
+      "title": "Sebelum Badai",
+      "word_count": 1065
+    },
+    "233": {
+      "chunk_idx": 4,
+      "local_idx": 32,
+      "title": "Swarm",
+      "word_count": 851
+    },
+    "234": {
+      "chunk_idx": 4,
+      "local_idx": 33,
+      "title": "Horde",
+      "word_count": 933
+    },
+    "235": {
+      "chunk_idx": 4,
+      "local_idx": 34,
+      "title": "Flower Boy",
+      "word_count": 941
+    },
+    "236": {
+      "chunk_idx": 4,
+      "local_idx": 35,
+      "title": "Ex Machina",
+      "word_count": 1203
+    },
+    "237": {
+      "chunk_idx": 4,
+      "local_idx": 36,
+      "title": "Wall of Darkness",
+      "word_count": 874
+    },
+    "238": {
+      "chunk_idx": 4,
+      "local_idx": 37,
+      "title": "lnto the Storm",
+      "word_count": 870
+    },
+    "239": {
+      "chunk_idx": 4,
+      "local_idx": 38,
+      "title": "Clash of Titans",
+      "word_count": 866
+    },
+    "240": {
+      "chunk_idx": 4,
+      "local_idx": 39,
+      "title": "Shadow Slave",
+      "word_count": 939
+    },
+    "241": {
+      "chunk_idx": 4,
+      "local_idx": 40,
+      "title": "Setengah Jalan",
+      "word_count": 848
+    },
+    "242": {
+      "chunk_idx": 4,
+      "local_idx": 41,
+      "title": "Mainan Baru",
+      "word_count": 943
+    },
+    "243": {
+      "chunk_idx": 4,
+      "local_idx": 42,
+      "title": "Taring Naga",
+      "word_count": 901
+    },
+    "244": {
+      "chunk_idx": 4,
+      "local_idx": 43,
+      "title": "Death Zone",
+      "word_count": 957
+    },
+    "245": {
+      "chunk_idx": 4,
+      "local_idx": 44,
+      "title": "Theatre of Giants",
+      "word_count": 839
+    },
+    "246": {
+      "chunk_idx": 4,
+      "local_idx": 45,
+      "title": "Bukti Tak Terbantahkan",
+      "word_count": 1034
+    },
+    "247": {
+      "chunk_idx": 4,
+      "local_idx": 46,
+      "title": "The Mist",
+      "word_count": 950
+    },
+    "248": {
+      "chunk_idx": 4,
+      "local_idx": 47,
+      "title": "Those Who Survived",
+      "word_count": 849
+    },
+    "249": {
+      "chunk_idx": 4,
+      "local_idx": 48,
+      "title": "Kutukan Kegelapan",
+      "word_count": 591
+    },
+    "250": {
+      "chunk_idx": 4,
+      "local_idx": 49,
+      "title": "Defiant Oath",
+      "word_count": 883
+    },
+    "251": {
+      "chunk_idx": 5,
+      "local_idx": 0,
+      "title": "Boundary of the Underworld",
+      "word_count": 838
+    },
+    "252": {
+      "chunk_idx": 5,
+      "local_idx": 1,
+      "title": "Unseen",
+      "word_count": 873
+    },
+    "253": {
+      "chunk_idx": 5,
+      "local_idx": 2,
+      "title": "without a Master",
+      "word_count": 889
+    },
+    "254": {
+      "chunk_idx": 5,
+      "local_idx": 3,
+      "title": "The First Lord",
+      "word_count": 866
+    },
+    "255": {
+      "chunk_idx": 5,
+      "local_idx": 4,
+      "title": "Dawn Shard",
+      "word_count": 885
+    },
+    "256": {
+      "chunk_idx": 5,
+      "local_idx": 5,
+      "title": "Alasan Sebenarnya",
+      "word_count": 972
+    },
+    "257": {
+      "chunk_idx": 5,
+      "local_idx": 6,
+      "title": "Nightmare Champion",
+      "word_count": 889
+    },
+    "258": {
+      "chunk_idx": 5,
+      "local_idx": 7,
+      "title": "Chapter 258",
+      "word_count": 873
+    },
+    "259": {
+      "chunk_idx": 5,
+      "local_idx": 8,
+      "title": "Chapter 259",
+      "word_count": 1019
+    },
+    "260": {
+      "chunk_idx": 5,
+      "local_idx": 9,
+      "title": "How to be a Hero",
+      "word_count": 918
+    },
+    "261": {
+      "chunk_idx": 5,
+      "local_idx": 10,
+      "title": "Moon Shard",
+      "word_count": 921
+    },
+    "262": {
+      "chunk_idx": 5,
+      "local_idx": 11,
+      "title": "Path to Damnation",
+      "word_count": 1099
+    },
+    "263": {
+      "chunk_idx": 5,
+      "local_idx": 12,
+      "title": "Awal dari Akhir",
+      "word_count": 910
+    },
+    "264": {
+      "chunk_idx": 5,
+      "local_idx": 13,
+      "title": "First Things First",
+      "word_count": 957
+    },
+    "265": {
+      "chunk_idx": 5,
+      "local_idx": 14,
+      "title": "Hateful Shadow",
+      "word_count": 856
+    },
+    "266": {
+      "chunk_idx": 5,
+      "local_idx": 15,
+      "title": "The Devil You Know",
+      "word_count": 993
+    },
+    "267": {
+      "chunk_idx": 5,
+      "local_idx": 16,
+      "title": "Let There Be Light",
+      "word_count": 1004
+    },
+    "268": {
+      "chunk_idx": 5,
+      "local_idx": 17,
+      "title": "Clash",
+      "word_count": 835
+    },
+    "269": {
+      "chunk_idx": 5,
+      "local_idx": 18,
+      "title": "Incarnation of Death",
+      "word_count": 1026
+    },
+    "270": {
+      "chunk_idx": 5,
+      "local_idx": 19,
+      "title": "Runaway",
+      "word_count": 838
+    },
+    "271": {
+      "chunk_idx": 5,
+      "local_idx": 20,
+      "title": "Insurmountable",
+      "word_count": 1000
+    },
+    "272": {
+      "chunk_idx": 5,
+      "local_idx": 21,
+      "title": "Shadow and Darkness",
+      "word_count": 871
+    },
+    "273": {
+      "chunk_idx": 5,
+      "local_idx": 22,
+      "title": "Chrysalis",
+      "word_count": 872
+    },
+    "274": {
+      "chunk_idx": 5,
+      "local_idx": 23,
+      "title": "Salvation",
+      "word_count": 928
+    },
+    "275": {
+      "chunk_idx": 5,
+      "local_idx": 24,
+      "title": "Secrets of the Ruined Temple",
+      "word_count": 888
+    },
+    "276": {
+      "chunk_idx": 5,
+      "local_idx": 25,
+      "title": "Black Door",
+      "word_count": 938
+    },
+    "277": {
+      "chunk_idx": 5,
+      "local_idx": 26,
+      "title": "Demon of Fate",
+      "word_count": 1003
+    },
+    "278": {
+      "chunk_idx": 5,
+      "local_idx": 27,
+      "title": "Weaver's Mask",
+      "word_count": 972
+    },
+    "279": {
+      "chunk_idx": 5,
+      "local_idx": 28,
+      "title": "Guilty Conscience",
+      "word_count": 935
+    },
+    "280": {
+      "chunk_idx": 5,
+      "local_idx": 29,
+      "title": "One Last Job",
+      "word_count": 930
+    },
+    "281": {
+      "chunk_idx": 5,
+      "local_idx": 30,
+      "title": "Seven Heroes",
+      "word_count": 862
+    },
+    "282": {
+      "chunk_idx": 5,
+      "local_idx": 31,
+      "title": "Pengorbanan",
+      "word_count": 967
+    },
+    "283": {
+      "chunk_idx": 5,
+      "local_idx": 32,
+      "title": "Final Piece of the Puzzle",
+      "word_count": 890
+    },
+    "284": {
+      "chunk_idx": 5,
+      "local_idx": 33,
+      "title": "Nothing Serious",
+      "word_count": 910
+    },
+    "285": {
+      "chunk_idx": 5,
+      "local_idx": 34,
+      "title": "Kill Order",
+      "word_count": 910
+    },
+    "286": {
+      "chunk_idx": 5,
+      "local_idx": 35,
+      "title": "Blessings of the Fire",
+      "word_count": 932
+    },
+    "287": {
+      "chunk_idx": 5,
+      "local_idx": 36,
+      "title": "Lonely Star",
+      "word_count": 949
+    },
+    "288": {
+      "chunk_idx": 5,
+      "local_idx": 37,
+      "title": "Progress Report",
+      "word_count": 1045
+    },
+    "289": {
+      "chunk_idx": 5,
+      "local_idx": 38,
+      "title": "Dimulainya Pertunjukan",
+      "word_count": 1036
+    },
+    "290": {
+      "chunk_idx": 5,
+      "local_idx": 39,
+      "title": "Hari Penghakiman",
+      "word_count": 895
+    },
+    "291": {
+      "chunk_idx": 5,
+      "local_idx": 40,
+      "title": "Eye of the Storm",
+      "word_count": 929
+    },
+    "292": {
+      "chunk_idx": 5,
+      "local_idx": 41,
+      "title": "Just Cause",
+      "word_count": 866
+    },
+    "293": {
+      "chunk_idx": 5,
+      "local_idx": 42,
+      "title": "The Challenge",
+      "word_count": 831
+    },
+    "294": {
+      "chunk_idx": 5,
+      "local_idx": 43,
+      "title": "Song of Steel",
+      "word_count": 858
+    },
+    "295": {
+      "chunk_idx": 5,
+      "local_idx": 44,
+      "title": "The Duel",
+      "word_count": 882
+    },
+    "296": {
+      "chunk_idx": 5,
+      "local_idx": 45,
+      "title": "Creature of Light",
+      "word_count": 1033
+    },
+    "297": {
+      "chunk_idx": 5,
+      "local_idx": 46,
+      "title": "Red Flower",
+      "word_count": 916
+    },
+    "298": {
+      "chunk_idx": 5,
+      "local_idx": 47,
+      "title": "Api dan Darah",
+      "word_count": 1076
+    },
+    "299": {
+      "chunk_idx": 5,
+      "local_idx": 48,
+      "title": "Twisted Reflection",
+      "word_count": 939
+    },
+    "300": {
+      "chunk_idx": 5,
+      "local_idx": 49,
+      "title": "Bright Lord's Slave",
+      "word_count": 1299
+    },
+    "301": {
+      "chunk_idx": 6,
+      "local_idx": 0,
+      "title": "Heirs to the Throne",
+      "word_count": 913
+    },
+    "302": {
+      "chunk_idx": 6,
+      "local_idx": 1,
+      "title": "Status Quo",
+      "word_count": 961
+    },
+    "303": {
+      "chunk_idx": 6,
+      "local_idx": 2,
+      "title": "Helpful Shadow",
+      "word_count": 1010
+    },
+    "304": {
+      "chunk_idx": 6,
+      "local_idx": 3,
+      "title": "Memburu yang Besar",
+      "word_count": 1004
+    },
+    "305": {
+      "chunk_idx": 6,
+      "local_idx": 4,
+      "title": "Trail of Blood",
+      "word_count": 932
+    },
+    "306": {
+      "chunk_idx": 6,
+      "local_idx": 5,
+      "title": "Final Confrontation",
+      "word_count": 1020
+    },
+    "307": {
+      "chunk_idx": 6,
+      "local_idx": 6,
+      "title": "Takhta Cahaya",
+      "word_count": 1238
+    },
+    "308": {
+      "chunk_idx": 6,
+      "local_idx": 7,
+      "title": "Handmaiden",
+      "word_count": 877
+    },
+    "309": {
+      "chunk_idx": 6,
+      "local_idx": 8,
+      "title": "Chapter 309",
+      "word_count": 895
+    },
+    "310": {
+      "chunk_idx": 6,
+      "local_idx": 9,
+      "title": "Shadow Demon",
+      "word_count": 1007
+    },
+    "311": {
+      "chunk_idx": 6,
+      "local_idx": 10,
+      "title": "Yang Terakhir",
+      "word_count": 890
+    },
+    "312": {
+      "chunk_idx": 6,
+      "local_idx": 11,
+      "title": "Rantai Tak Terlihat",
+      "word_count": 1067
+    },
+    "313": {
+      "chunk_idx": 6,
+      "local_idx": 12,
+      "title": "Starlight Shard",
+      "word_count": 1313
+    },
+    "314": {
+      "chunk_idx": 6,
+      "local_idx": 13,
+      "title": "Meninggalkan Dark City",
+      "word_count": 1002
+    },
+    "315": {
+      "chunk_idx": 6,
+      "local_idx": 14,
+      "title": "Pengepungan Crimson Spire (1)",
+      "word_count": 1027
+    },
+    "316": {
+      "chunk_idx": 6,
+      "local_idx": 15,
+      "title": "Pengepungan Crimson Spire (2)",
+      "word_count": 899
+    },
+    "317": {
+      "chunk_idx": 6,
+      "local_idx": 16,
+      "title": "Siege of the Crimson Spire (3)",
+      "word_count": 976
+    },
+    "318": {
+      "chunk_idx": 6,
+      "local_idx": 17,
+      "title": "Siege of the Crimson Spire (4)",
+      "word_count": 897
+    },
+    "319": {
+      "chunk_idx": 6,
+      "local_idx": 18,
+      "title": "Pengepungan Crimson Spire (5)",
+      "word_count": 1072
+    },
+    "320": {
+      "chunk_idx": 6,
+      "local_idx": 19,
+      "title": "Siege of the Crimson Spire (6)",
+      "word_count": 912
+    },
+    "321": {
+      "chunk_idx": 6,
+      "local_idx": 20,
+      "title": "Siege of the Crimson Spire (7)",
+      "word_count": 930
+    },
+    "322": {
+      "chunk_idx": 6,
+      "local_idx": 21,
+      "title": "siege of the Crimson Spire (8)",
+      "word_count": 1060
+    },
+    "323": {
+      "chunk_idx": 6,
+      "local_idx": 22,
+      "title": "Pengepungan Menara Merah (9)",
+      "word_count": 861
+    },
+    "324": {
+      "chunk_idx": 6,
+      "local_idx": 23,
+      "title": "Siege of the Crimson Spire (10)",
+      "word_count": 946
+    },
+    "325": {
+      "chunk_idx": 6,
+      "local_idx": 24,
+      "title": "Siege of the Crimson Spire (11)",
+      "word_count": 895
+    },
+    "326": {
+      "chunk_idx": 6,
+      "local_idx": 25,
+      "title": "Siege of the Crimson Spire (12)",
+      "word_count": 1119
+    },
+    "327": {
+      "chunk_idx": 6,
+      "local_idx": 26,
+      "title": "Sieae of the Crimson Spire (13)",
+      "word_count": 1173
+    },
+    "328": {
+      "chunk_idx": 6,
+      "local_idx": 27,
+      "title": "Siege of the Crimson Spire (14)",
+      "word_count": 976
+    },
+    "329": {
+      "chunk_idx": 6,
+      "local_idx": 28,
+      "title": "Siege of the Crimson Spire (15)",
+      "word_count": 1212
+    },
+    "330": {
+      "chunk_idx": 6,
+      "local_idx": 29,
+      "title": "Pengepungan Crimson Spire (16)",
+      "word_count": 877
+    },
+    "331": {
+      "chunk_idx": 6,
+      "local_idx": 30,
+      "title": "Siege of the Crimson Spire (17)",
+      "word_count": 950
+    },
+    "332": {
+      "chunk_idx": 6,
+      "local_idx": 31,
+      "title": "Pengepungan Crimson Spire (18)",
+      "word_count": 1129
+    },
+    "333": {
+      "chunk_idx": 6,
+      "local_idx": 32,
+      "title": "ln the Belly of the Beast",
+      "word_count": 966
+    },
+    "334": {
+      "chunk_idx": 6,
+      "local_idx": 33,
+      "title": "Silver Sword",
+      "word_count": 875
+    },
+    "335": {
+      "chunk_idx": 6,
+      "local_idx": 34,
+      "title": "Ascent",
+      "word_count": 855
+    },
+    "336": {
+      "chunk_idx": 6,
+      "local_idx": 35,
+      "title": "The Gateway",
+      "word_count": 871
+    },
+    "337": {
+      "chunk_idx": 6,
+      "local_idx": 36,
+      "title": "Nobody",
+      "word_count": 903
+    },
+    "338": {
+      "chunk_idx": 6,
+      "local_idx": 37,
+      "title": "Rest of the Mongrels",
+      "word_count": 890
+    },
+    "339": {
+      "chunk_idx": 6,
+      "local_idx": 38,
+      "title": "Harder, Better, Faster, Stronger",
+      "word_count": 982
+    },
+    "340": {
+      "chunk_idx": 6,
+      "local_idx": 39,
+      "title": "Honor",
+      "word_count": 1139
+    },
+    "341": {
+      "chunk_idx": 6,
+      "local_idx": 40,
+      "title": "Seribu",
+      "word_count": 998
+    },
+    "342": {
+      "chunk_idx": 6,
+      "local_idx": 41,
+      "title": "Crimson Terror",
+      "word_count": 1017
+    },
+    "343": {
+      "chunk_idx": 6,
+      "local_idx": 42,
+      "title": "Soul Conduit",
+      "word_count": 1178
+    },
+    "344": {
+      "chunk_idx": 6,
+      "local_idx": 43,
+      "title": "Duka, Nyeri, dan Amarah",
+      "word_count": 976
+    },
+    "345": {
+      "chunk_idx": 6,
+      "local_idx": 44,
+      "title": "Bayangan dan Cahaya",
+      "word_count": 1138
+    },
+    "346": {
+      "chunk_idx": 6,
+      "local_idx": 45,
+      "title": "Janji Darah",
+      "word_count": 1021
+    },
+    "347": {
+      "chunk_idx": 6,
+      "local_idx": 46,
+      "title": "Jatuh Bebas",
+      "word_count": 971
+    },
+    "348": {
+      "chunk_idx": 6,
+      "local_idx": 47,
+      "title": "Unbroken",
+      "word_count": 882
+    },
+    "349": {
+      "chunk_idx": 6,
+      "local_idx": 48,
+      "title": "Takdir",
+      "word_count": 1672
+    },
+    "350": {
+      "chunk_idx": 6,
+      "local_idx": 49,
+      "title": "Akhir dari Mimpi Buruk",
+      "word_count": 1866
+    },
+    "351": {
+      "chunk_idx": 7,
+      "local_idx": 0,
+      "title": "Sekali Lagi",
+      "word_count": 1041
+    },
+    "352": {
+      "chunk_idx": 7,
+      "local_idx": 1,
+      "title": "Monster Core",
+      "word_count": 1118
+    },
+    "353": {
+      "chunk_idx": 7,
+      "local_idx": 2,
+      "title": "Light Bringer",
+      "word_count": 1405
+    },
+    "354": {
+      "chunk_idx": 7,
+      "local_idx": 3,
+      "title": "Awakening",
+      "word_count": 1232
+    },
+    "355": {
+      "chunk_idx": 7,
+      "local_idx": 4,
+      "title": "Back to Reality",
+      "word_count": 920
+    },
+    "356": {
+      "chunk_idx": 7,
+      "local_idx": 5,
+      "title": "Wawancara dengan Sang Bayangan",
+      "word_count": 1111
+    },
+    "357": {
+      "chunk_idx": 7,
+      "local_idx": 6,
+      "title": "Risiko dan Imbalan",
+      "word_count": 1236
+    },
+    "358": {
+      "chunk_idx": 7,
+      "local_idx": 7,
+      "title": "Shadow Step",
+      "word_count": 1426
+    },
+    "359": {
+      "chunk_idx": 7,
+      "local_idx": 8,
+      "title": "Soul Serpent",
+      "word_count": 1074
+    },
+    "360": {
+      "chunk_idx": 7,
+      "local_idx": 9,
+      "title": "Hancur",
+      "word_count": 1390
+    },
+    "361": {
+      "chunk_idx": 7,
+      "local_idx": 10,
+      "title": "The Goal",
+      "word_count": 1008
+    },
+    "362": {
+      "chunk_idx": 7,
+      "local_idx": 11,
+      "title": "Undangan Sarapan",
+      "word_count": 1065
+    },
+    "363": {
+      "chunk_idx": 7,
+      "local_idx": 12,
+      "title": "Warga Negara Sunny",
+      "word_count": 885
+    },
+    "364": {
+      "chunk_idx": 7,
+      "local_idx": 13,
+      "title": "Kelas SS Sunless",
+      "word_count": 1034
+    },
+    "365": {
+      "chunk_idx": 7,
+      "local_idx": 14,
+      "title": "Young Prospect",
+      "word_count": 1205
+    },
+    "366": {
+      "chunk_idx": 7,
+      "local_idx": 15,
+      "title": "Pelajaran Sejarah",
+      "word_count": 1466
+    },
+    "367": {
+      "chunk_idx": 7,
+      "local_idx": 16,
+      "title": "Fog of Time",
+      "word_count": 1187
+    },
+    "368": {
+      "chunk_idx": 7,
+      "local_idx": 17,
+      "title": "Aster, Song, Vale",
+      "word_count": 1210
+    },
+    "369": {
+      "chunk_idx": 7,
+      "local_idx": 18,
+      "title": "Kekuatan Tersembunyi",
+      "word_count": 1007
+    },
+    "370": {
+      "chunk_idx": 7,
+      "local_idx": 19,
+      "title": "Laporan Eksplorasi",
+      "word_count": 867
+    },
+    "371": {
+      "chunk_idx": 7,
+      "local_idx": 20,
+      "title": "Prestasi Akademis",
+      "word_count": 1213
+    },
+    "372": {
+      "chunk_idx": 7,
+      "local_idx": 21,
+      "title": "Names of the Gods",
+      "word_count": 886
+    },
+    "373": {
+      "chunk_idx": 7,
+      "local_idx": 22,
+      "title": "Reunited",
+      "word_count": 878
+    },
+    "374": {
+      "chunk_idx": 7,
+      "local_idx": 23,
+      "title": "Makan Malam dengan Teman",
+      "word_count": 986
+    },
+    "375": {
+      "chunk_idx": 7,
+      "local_idx": 24,
+      "title": "Jalan Terpisah",
+      "word_count": 1073
+    },
+    "376": {
+      "chunk_idx": 7,
+      "local_idx": 25,
+      "title": "Broken Oath",
+      "word_count": 1212
+    },
+    "377": {
+      "chunk_idx": 7,
+      "local_idx": 26,
+      "title": "Mantle of the Underworld",
+      "word_count": 919
+    },
+    "378": {
+      "chunk_idx": 7,
+      "local_idx": 27,
+      "title": "Awal yang Baru",
+      "word_count": 1298
+    },
+    "379": {
+      "chunk_idx": 7,
+      "local_idx": 28,
+      "title": "Chained lsles",
+      "word_count": 919
+    },
+    "380": {
+      "chunk_idx": 7,
+      "local_idx": 29,
+      "title": "Above and Below",
+      "word_count": 1037
+    },
+    "381": {
+      "chunk_idx": 7,
+      "local_idx": 30,
+      "title": "Roan of White Feather",
+      "word_count": 876
+    },
+    "382": {
+      "chunk_idx": 7,
+      "local_idx": 31,
+      "title": "The Crushing",
+      "word_count": 918
+    },
+    "383": {
+      "chunk_idx": 7,
+      "local_idx": 32,
+      "title": "Cowardly Researcher",
+      "word_count": 939
+    },
+    "384": {
+      "chunk_idx": 7,
+      "local_idx": 33,
+      "title": "Chapter 384",
+      "word_count": 969
+    },
+    "385": {
+      "chunk_idx": 7,
+      "local_idx": 34,
+      "title": "lron Hand lsland",
+      "word_count": 925
+    },
+    "386": {
+      "chunk_idx": 7,
+      "local_idx": 35,
+      "title": "Chapter 386",
+      "word_count": 951
+    },
+    "387": {
+      "chunk_idx": 7,
+      "local_idx": 36,
+      "title": "Bunga Layu",
+      "word_count": 932
+    },
+    "388": {
+      "chunk_idx": 7,
+      "local_idx": 37,
+      "title": "Vigil",
+      "word_count": 1055
+    },
+    "389": {
+      "chunk_idx": 7,
+      "local_idx": 38,
+      "title": "Tempat yang Bisa Disebut Miliknya",
+      "word_count": 932
+    },
+    "390": {
+      "chunk_idx": 7,
+      "local_idx": 39,
+      "title": "My Castle",
+      "word_count": 942
+    },
+    "391": {
+      "chunk_idx": 7,
+      "local_idx": 40,
+      "title": "Dreamscape",
+      "word_count": 1061
+    },
+    "392": {
+      "chunk_idx": 7,
+      "local_idx": 41,
+      "title": "Chapter 392",
+      "word_count": 1071
+    },
+    "393": {
+      "chunk_idx": 7,
+      "local_idx": 42,
+      "title": "Mongrel",
+      "word_count": 1306
+    },
+    "394": {
+      "chunk_idx": 7,
+      "local_idx": 43,
+      "title": "One Strike",
+      "word_count": 1020
+    },
+    "395": {
+      "chunk_idx": 7,
+      "local_idx": 44,
+      "title": "Roaring Lion, Hidden Dragon",
+      "word_count": 1272
+    },
+    "396": {
+      "chunk_idx": 7,
+      "local_idx": 45,
+      "title": "Sensasi Viral",
+      "word_count": 966
+    },
+    "397": {
+      "chunk_idx": 7,
+      "local_idx": 46,
+      "title": "Mongrel's Wisdom",
+      "word_count": 904
+    },
+    "398": {
+      "chunk_idx": 7,
+      "local_idx": 47,
+      "title": "Master of his Trade",
+      "word_count": 867
+    },
+    "399": {
+      "chunk_idx": 7,
+      "local_idx": 48,
+      "title": "Golden Coin",
+      "word_count": 823
+    },
+    "400": {
+      "chunk_idx": 7,
+      "local_idx": 49,
+      "title": "Panggilan Harta",
+      "word_count": 936
+    },
+    "401": {
+      "chunk_idx": 8,
+      "local_idx": 0,
+      "title": "Clueless",
+      "word_count": 948
+    },
+    "402": {
+      "chunk_idx": 8,
+      "local_idx": 1,
+      "title": "Chain worm",
+      "word_count": 987
+    },
+    "403": {
+      "chunk_idx": 8,
+      "local_idx": 2,
+      "title": "Sky Tide",
+      "word_count": 898
+    },
+    "404": {
+      "chunk_idx": 8,
+      "local_idx": 3,
+      "title": "Soft Life",
+      "word_count": 1031
+    },
+    "405": {
+      "chunk_idx": 8,
+      "local_idx": 4,
+      "title": "Kembali ke Sekolah",
+      "word_count": 891
+    },
+    "406": {
+      "chunk_idx": 8,
+      "local_idx": 5,
+      "title": "Chapter 406",
+      "word_count": 995
+    },
+    "407": {
+      "chunk_idx": 8,
+      "local_idx": 6,
+      "title": "Kualifikasi Dreamscape",
+      "word_count": 975
+    },
+    "408": {
+      "chunk_idx": 8,
+      "local_idx": 7,
+      "title": "Oh, Tidak",
+      "word_count": 1104
+    },
+    "409": {
+      "chunk_idx": 8,
+      "local_idx": 8,
+      "title": "Treasure Hunt",
+      "word_count": 1012
+    },
+    "410": {
+      "chunk_idx": 8,
+      "local_idx": 9,
+      "title": "Reckoning",
+      "word_count": 1145
+    },
+    "411": {
+      "chunk_idx": 8,
+      "local_idx": 10,
+      "title": "Reflection",
+      "word_count": 961
+    },
+    "412": {
+      "chunk_idx": 8,
+      "local_idx": 11,
+      "title": "Perfect Adversary",
+      "word_count": 1126
+    },
+    "413": {
+      "chunk_idx": 8,
+      "local_idx": 12,
+      "title": "Mirror Beast",
+      "word_count": 860
+    },
+    "414": {
+      "chunk_idx": 8,
+      "local_idx": 13,
+      "title": "Misteri Dark Mirror",
+      "word_count": 1036
+    },
+    "415": {
+      "chunk_idx": 8,
+      "local_idx": 14,
+      "title": "Cruel Sight",
+      "word_count": 935
+    },
+    "416": {
+      "chunk_idx": 8,
+      "local_idx": 15,
+      "title": "Hanged Man",
+      "word_count": 931
+    },
+    "417": {
+      "chunk_idx": 8,
+      "local_idx": 16,
+      "title": "Shipwreck",
+      "word_count": 936
+    },
+    "418": {
+      "chunk_idx": 8,
+      "local_idx": 17,
+      "title": "Remnant Crew",
+      "word_count": 866
+    },
+    "419": {
+      "chunk_idx": 8,
+      "local_idx": 18,
+      "title": "Eureka",
+      "word_count": 1022
+    },
+    "420": {
+      "chunk_idx": 8,
+      "local_idx": 19,
+      "title": "Amazing Chest Ahead",
+      "word_count": 953
+    },
+    "421": {
+      "chunk_idx": 8,
+      "local_idx": 20,
+      "title": "Ecstasy of Gold",
+      "word_count": 869
+    },
+    "422": {
+      "chunk_idx": 8,
+      "local_idx": 21,
+      "title": "Rude Awakening",
+      "word_count": 878
+    },
+    "423": {
+      "chunk_idx": 8,
+      "local_idx": 22,
+      "title": "Risk and Reward",
+      "word_count": 1049
+    },
+    "424": {
+      "chunk_idx": 8,
+      "local_idx": 23,
+      "title": "Seretan Sial",
+      "word_count": 961
+    },
+    "425": {
+      "chunk_idx": 8,
+      "local_idx": 24,
+      "title": "Twisted Rock",
+      "word_count": 931
+    },
+    "426": {
+      "chunk_idx": 8,
+      "local_idx": 25,
+      "title": "Most Terrible Battle",
+      "word_count": 1425
+    },
+    "427": {
+      "chunk_idx": 8,
+      "local_idx": 26,
+      "title": "Death of a Mimic",
+      "word_count": 832
+    },
+    "428": {
+      "chunk_idx": 8,
+      "local_idx": 27,
+      "title": "Covetous Coffer",
+      "word_count": 1037
+    },
+    "429": {
+      "chunk_idx": 8,
+      "local_idx": 28,
+      "title": "Schism",
+      "word_count": 912
+    },
+    "430": {
+      "chunk_idx": 8,
+      "local_idx": 29,
+      "title": "Tapestry of Fate",
+      "word_count": 1384
+    },
+    "431": {
+      "chunk_idx": 8,
+      "local_idx": 30,
+      "title": "Fall From Grace",
+      "word_count": 882
+    },
+    "432": {
+      "chunk_idx": 8,
+      "local_idx": 31,
+      "title": "First Day of Nothing",
+      "word_count": 1095
+    },
+    "433": {
+      "chunk_idx": 8,
+      "local_idx": 32,
+      "title": "Lebih Banyak dari Ketidakberadaan yang Sama",
+      "word_count": 873
+    },
+    "434": {
+      "chunk_idx": 8,
+      "local_idx": 33,
+      "title": "Banyak Hal yang Tak Berarti",
+      "word_count": 1320
+    },
+    "435": {
+      "chunk_idx": 8,
+      "local_idx": 34,
+      "title": "Listening to Nothing",
+      "word_count": 864
+    },
+    "436": {
+      "chunk_idx": 8,
+      "local_idx": 35,
+      "title": "Nothing to worry About",
+      "word_count": 998
+    },
+    "437": {
+      "chunk_idx": 8,
+      "local_idx": 36,
+      "title": "Tiada, Tiada, Tiada",
+      "word_count": 1042
+    },
+    "438": {
+      "chunk_idx": 8,
+      "local_idx": 37,
+      "title": "Prince of Nothing",
+      "word_count": 1035
+    },
+    "439": {
+      "chunk_idx": 8,
+      "local_idx": 38,
+      "title": "Chapter 439",
+      "word_count": 978
+    },
+    "440": {
+      "chunk_idx": 8,
+      "local_idx": 39,
+      "title": "Merciless Stars",
+      "word_count": 925
+    },
+    "441": {
+      "chunk_idx": 8,
+      "local_idx": 40,
+      "title": "Ocean of Flame",
+      "word_count": 1000
+    },
+    "442": {
+      "chunk_idx": 8,
+      "local_idx": 41,
+      "title": "Burning Heaven",
+      "word_count": 1021
+    },
+    "443": {
+      "chunk_idx": 8,
+      "local_idx": 42,
+      "title": "Secrets of the Void",
+      "word_count": 899
+    },
+    "444": {
+      "chunk_idx": 8,
+      "local_idx": 43,
+      "title": "Obsidian Tower",
+      "word_count": 1098
+    },
+    "445": {
+      "chunk_idx": 8,
+      "local_idx": 44,
+      "title": "Respite",
+      "word_count": 906
+    },
+    "446": {
+      "chunk_idx": 8,
+      "local_idx": 45,
+      "title": "Relentless Destroyer",
+      "word_count": 1014
+    },
+    "447": {
+      "chunk_idx": 8,
+      "local_idx": 46,
+      "title": "Primal Fear",
+      "word_count": 867
+    },
+    "448": {
+      "chunk_idx": 8,
+      "local_idx": 47,
+      "title": "Golden Needle",
+      "word_count": 1153
+    },
+    "449": {
+      "chunk_idx": 8,
+      "local_idx": 48,
+      "title": "Kelaparan Seribu Tahun",
+      "word_count": 924
+    },
+    "450": {
+      "chunk_idx": 8,
+      "local_idx": 49,
+      "title": "Alabaster Phalanx",
+      "word_count": 941
+    },
+    "451": {
+      "chunk_idx": 9,
+      "local_idx": 0,
+      "title": "Bone Weave",
+      "word_count": 928
+    },
+    "452": {
+      "chunk_idx": 9,
+      "local_idx": 1,
+      "title": "Above and Beyond",
+      "word_count": 1190
+    },
+    "453": {
+      "chunk_idx": 9,
+      "local_idx": 2,
+      "title": "Shrine of Stars",
+      "word_count": 1024
+    },
+    "454": {
+      "chunk_idx": 9,
+      "local_idx": 3,
+      "title": "Hope",
+      "word_count": 1065
+    },
+    "455": {
+      "chunk_idx": 9,
+      "local_idx": 4,
+      "title": "Doorway to Heaven",
+      "word_count": 960
+    },
+    "456": {
+      "chunk_idx": 9,
+      "local_idx": 5,
+      "title": "Leaving Nothing Behind",
+      "word_count": 990
+    },
+    "457": {
+      "chunk_idx": 9,
+      "local_idx": 6,
+      "title": "Ivory Tower",
+      "word_count": 937
+    },
+    "458": {
+      "chunk_idx": 9,
+      "local_idx": 7,
+      "title": "Shackles of Hope",
+      "word_count": 1087
+    },
+    "459": {
+      "chunk_idx": 9,
+      "local_idx": 8,
+      "title": "Seed of Nightmare",
+      "word_count": 902
+    },
+    "460": {
+      "chunk_idx": 9,
+      "local_idx": 9,
+      "title": "Fight or Flight",
+      "word_count": 1498
+    },
+    "461": {
+      "chunk_idx": 9,
+      "local_idx": 10,
+      "title": "Welcome Home",
+      "word_count": 856
+    },
+    "462": {
+      "chunk_idx": 9,
+      "local_idx": 11,
+      "title": "An Epic Quest",
+      "word_count": 1040
+    },
+    "463": {
+      "chunk_idx": 9,
+      "local_idx": 12,
+      "title": "Chapter 463",
+      "word_count": 1134
+    },
+    "464": {
+      "chunk_idx": 9,
+      "local_idx": 13,
+      "title": "Passion Blossoms Hoter in theCold Heart of Despair",
+      "word_count": 929
+    },
+    "465": {
+      "chunk_idx": 9,
+      "local_idx": 14,
+      "title": "Nilai Subjektif",
+      "word_count": 1000
+    },
+    "466": {
+      "chunk_idx": 9,
+      "local_idx": 15,
+      "title": "A Gracious lnvitation",
+      "word_count": 902
+    },
+    "467": {
+      "chunk_idx": 9,
+      "local_idx": 16,
+      "title": "Dinner with a Saint",
+      "word_count": 1045
+    },
+    "468": {
+      "chunk_idx": 9,
+      "local_idx": 17,
+      "title": "Desecrated Grove",
+      "word_count": 939
+    },
+    "469": {
+      "chunk_idx": 9,
+      "local_idx": 18,
+      "title": "Fire Keepers",
+      "word_count": 1035
+    },
+    "470": {
+      "chunk_idx": 9,
+      "local_idx": 19,
+      "title": "Come Winter",
+      "word_count": 894
+    },
+    "471": {
+      "chunk_idx": 9,
+      "local_idx": 20,
+      "title": "Quid Pro Quo",
+      "word_count": 900
+    },
+    "472": {
+      "chunk_idx": 9,
+      "local_idx": 21,
+      "title": "Hadiah yang Berharga",
+      "word_count": 855
+    },
+    "473": {
+      "chunk_idx": 9,
+      "local_idx": 22,
+      "title": "Mobius Loop",
+      "word_count": 1070
+    },
+    "474": {
+      "chunk_idx": 9,
+      "local_idx": 23,
+      "title": "Truth Be Told",
+      "word_count": 1049
+    },
+    "475": {
+      "chunk_idx": 9,
+      "local_idx": 24,
+      "title": "A Few Things To Do",
+      "word_count": 959
+    },
+    "476": {
+      "chunk_idx": 9,
+      "local_idx": 25,
+      "title": "A Song of Light and Darkness",
+      "word_count": 961
+    },
+    "477": {
+      "chunk_idx": 9,
+      "local_idx": 26,
+      "title": "Standing Ovation",
+      "word_count": 852
+    },
+    "478": {
+      "chunk_idx": 9,
+      "local_idx": 27,
+      "title": "Pengakuan yang Layak",
+      "word_count": 918
+    },
+    "479": {
+      "chunk_idx": 9,
+      "local_idx": 28,
+      "title": "Delegation",
+      "word_count": 1224
+    },
+    "480": {
+      "chunk_idx": 9,
+      "local_idx": 29,
+      "title": "Jadwal Sibuk",
+      "word_count": 1026
+    },
+    "481": {
+      "chunk_idx": 9,
+      "local_idx": 30,
+      "title": "First Meeting",
+      "word_count": 940
+    },
+    "482": {
+      "chunk_idx": 9,
+      "local_idx": 31,
+      "title": "Peace Offering",
+      "word_count": 1033
+    },
+    "483": {
+      "chunk_idx": 9,
+      "local_idx": 32,
+      "title": "Dua Ratus Detik",
+      "word_count": 968
+    },
+    "484": {
+      "chunk_idx": 9,
+      "local_idx": 33,
+      "title": "The Gate",
+      "word_count": 863
+    },
+    "485": {
+      "chunk_idx": 9,
+      "local_idx": 34,
+      "title": "Lesser Evil",
+      "word_count": 879
+    },
+    "486": {
+      "chunk_idx": 9,
+      "local_idx": 35,
+      "title": "Panggilan Nightmare",
+      "word_count": 1071
+    },
+    "487": {
+      "chunk_idx": 9,
+      "local_idx": 36,
+      "title": "Gelombang Pertama",
+      "word_count": 831
+    },
+    "488": {
+      "chunk_idx": 9,
+      "local_idx": 37,
+      "title": "A Beast More Terrible",
+      "word_count": 1010
+    },
+    "489": {
+      "chunk_idx": 9,
+      "local_idx": 38,
+      "title": "Second Wave",
+      "word_count": 1077
+    },
+    "490": {
+      "chunk_idx": 9,
+      "local_idx": 39,
+      "title": "Break Point",
+      "word_count": 899
+    },
+    "491": {
+      "chunk_idx": 9,
+      "local_idx": 40,
+      "title": "Desperate Measures",
+      "word_count": 1236
+    },
+    "492": {
+      "chunk_idx": 9,
+      "local_idx": 41,
+      "title": "Gate Guardian",
+      "word_count": 1138
+    },
+    "493": {
+      "chunk_idx": 9,
+      "local_idx": 42,
+      "title": "Advent of Death",
+      "word_count": 906
+    },
+    "494": {
+      "chunk_idx": 9,
+      "local_idx": 43,
+      "title": "The Cavalry",
+      "word_count": 1128
+    },
+    "495": {
+      "chunk_idx": 9,
+      "local_idx": 44,
+      "title": "Pahlawan Bertopeng",
+      "word_count": 890
+    },
+    "496": {
+      "chunk_idx": 9,
+      "local_idx": 45,
+      "title": "Stand and Fight",
+      "word_count": 928
+    },
+    "497": {
+      "chunk_idx": 9,
+      "local_idx": 46,
+      "title": "Perputaran Tak Terduga",
+      "word_count": 1217
+    },
+    "498": {
+      "chunk_idx": 9,
+      "local_idx": 47,
+      "title": "Keterikatan yang Dangkal",
+      "word_count": 898
+    },
+    "499": {
+      "chunk_idx": 9,
+      "local_idx": 48,
+      "title": "Somewhere Far Away...",
+      "word_count": 915
+    },
+    "500": {
+      "chunk_idx": 9,
+      "local_idx": 49,
+      "title": "...In the Depths of a Nightmare",
+      "word_count": 922
+    },
+    "501": {
+      "chunk_idx": 10,
+      "local_idx": 0,
+      "title": "Step Two",
+      "word_count": 965
+    },
+    "502": {
+      "chunk_idx": 10,
+      "local_idx": 1,
+      "title": "Permintaan Mendadak",
+      "word_count": 945
+    },
+    "503": {
+      "chunk_idx": 10,
+      "local_idx": 2,
+      "title": "Harsh Reality",
+      "word_count": 932
+    },
+    "504": {
+      "chunk_idx": 10,
+      "local_idx": 3,
+      "title": "The Right People",
+      "word_count": 1237
+    },
+    "505": {
+      "chunk_idx": 10,
+      "local_idx": 4,
+      "title": "Rumah Penyembelihan",
+      "word_count": 1076
+    },
+    "506": {
+      "chunk_idx": 10,
+      "local_idx": 5,
+      "title": "Silent Witnesses",
+      "word_count": 984
+    },
+    "507": {
+      "chunk_idx": 10,
+      "local_idx": 6,
+      "title": "ln the Spotlight",
+      "word_count": 1169
+    },
+    "508": {
+      "chunk_idx": 10,
+      "local_idx": 7,
+      "title": "Pertempuran Bayangan",
+      "word_count": 1197
+    },
+    "509": {
+      "chunk_idx": 10,
+      "local_idx": 8,
+      "title": "Ghastly Reward",
+      "word_count": 1022
+    },
+    "510": {
+      "chunk_idx": 10,
+      "local_idx": 9,
+      "title": "Human Echo",
+      "word_count": 1413
+    },
+    "511": {
+      "chunk_idx": 10,
+      "local_idx": 10,
+      "title": "Ascension",
+      "word_count": 1017
+    },
+    "512": {
+      "chunk_idx": 10,
+      "local_idx": 11,
+      "title": "Unburdened",
+      "word_count": 841
+    },
+    "513": {
+      "chunk_idx": 10,
+      "local_idx": 12,
+      "title": "Dewan Perang",
+      "word_count": 1041
+    },
+    "514": {
+      "chunk_idx": 10,
+      "local_idx": 13,
+      "title": "Hidden Blade",
+      "word_count": 1086
+    },
+    "515": {
+      "chunk_idx": 10,
+      "local_idx": 14,
+      "title": "Traveling Together",
+      "word_count": 996
+    },
+    "516": {
+      "chunk_idx": 10,
+      "local_idx": 15,
+      "title": "Legacy of Ruin",
+      "word_count": 1243
+    },
+    "517": {
+      "chunk_idx": 10,
+      "local_idx": 16,
+      "title": "Baiting the Monster",
+      "word_count": 885
+    },
+    "518": {
+      "chunk_idx": 10,
+      "local_idx": 17,
+      "title": "Ruang Kargo",
+      "word_count": 950
+    },
+    "519": {
+      "chunk_idx": 10,
+      "local_idx": 18,
+      "title": "Terjebak",
+      "word_count": 1100
+    },
+    "520": {
+      "chunk_idx": 10,
+      "local_idx": 19,
+      "title": "Pembebasan",
+      "word_count": 910
+    },
+    "521": {
+      "chunk_idx": 10,
+      "local_idx": 20,
+      "title": "Undying Chain",
+      "word_count": 904
+    },
+    "522": {
+      "chunk_idx": 10,
+      "local_idx": 21,
+      "title": "Tak Terkalahkan",
+      "word_count": 1284
+    },
+    "523": {
+      "chunk_idx": 10,
+      "local_idx": 22,
+      "title": "Made Eternal",
+      "word_count": 1064
+    },
+    "524": {
+      "chunk_idx": 10,
+      "local_idx": 23,
+      "title": "Forty-Two",
+      "word_count": 948
+    },
+    "525": {
+      "chunk_idx": 10,
+      "local_idx": 24,
+      "title": "Hantu Pendendam",
+      "word_count": 909
+    },
+    "526": {
+      "chunk_idx": 10,
+      "local_idx": 25,
+      "title": "Demon",
+      "word_count": 912
+    },
+    "527": {
+      "chunk_idx": 10,
+      "local_idx": 26,
+      "title": "Orang Baru",
+      "word_count": 912
+    },
+    "528": {
+      "chunk_idx": 10,
+      "local_idx": 27,
+      "title": "Personal Style",
+      "word_count": 925
+    },
+    "529": {
+      "chunk_idx": 10,
+      "local_idx": 28,
+      "title": "Secret Lair",
+      "word_count": 1047
+    },
+    "530": {
+      "chunk_idx": 10,
+      "local_idx": 29,
+      "title": "Something Better",
+      "word_count": 1104
+    },
+    "531": {
+      "chunk_idx": 10,
+      "local_idx": 30,
+      "title": "Dream Tournament",
+      "word_count": 867
+    },
+    "532": {
+      "chunk_idx": 10,
+      "local_idx": 31,
+      "title": "Hutan Kuno",
+      "word_count": 973
+    },
+    "533": {
+      "chunk_idx": 10,
+      "local_idx": 32,
+      "title": "Battle Royale",
+      "word_count": 1124
+    },
+    "534": {
+      "chunk_idx": 10,
+      "local_idx": 33,
+      "title": "Demonic Swordsman",
+      "word_count": 1453
+    },
+    "535": {
+      "chunk_idx": 10,
+      "local_idx": 34,
+      "title": "No Hard Feelings",
+      "word_count": 1025
+    },
+    "536": {
+      "chunk_idx": 10,
+      "local_idx": 35,
+      "title": "lcon of Chivalry",
+      "word_count": 1385
+    },
+    "537": {
+      "chunk_idx": 10,
+      "local_idx": 36,
+      "title": "Learning Curve",
+      "word_count": 1164
+    },
+    "538": {
+      "chunk_idx": 10,
+      "local_idx": 37,
+      "title": "Devouring Styles",
+      "word_count": 1366
+    },
+    "539": {
+      "chunk_idx": 10,
+      "local_idx": 38,
+      "title": "Out of Reach",
+      "word_count": 916
+    },
+    "540": {
+      "chunk_idx": 10,
+      "local_idx": 39,
+      "title": "Blood Feud",
+      "word_count": 926
+    },
+    "541": {
+      "chunk_idx": 10,
+      "local_idx": 40,
+      "title": "Pertempuran Dua Iblis",
+      "word_count": 1458
+    },
+    "542": {
+      "chunk_idx": 10,
+      "local_idx": 41,
+      "title": "Polite, Reasonable OnlineDiscussion",
+      "word_count": 994
+    },
+    "543": {
+      "chunk_idx": 10,
+      "local_idx": 42,
+      "title": "Finale",
+      "word_count": 969
+    },
+    "544": {
+      "chunk_idx": 10,
+      "local_idx": 43,
+      "title": "Glory to the Victor",
+      "word_count": 934
+    },
+    "545": {
+      "chunk_idx": 10,
+      "local_idx": 44,
+      "title": "Mongrel Menang",
+      "word_count": 901
+    },
+    "546": {
+      "chunk_idx": 10,
+      "local_idx": 45,
+      "title": "Morgan of Valor",
+      "word_count": 873
+    },
+    "547": {
+      "chunk_idx": 10,
+      "local_idx": 46,
+      "title": "Ditempa oleh Pertempuran",
+      "word_count": 1291
+    },
+    "548": {
+      "chunk_idx": 10,
+      "local_idx": 47,
+      "title": "The Road so Far",
+      "word_count": 844
+    },
+    "549": {
+      "chunk_idx": 10,
+      "local_idx": 48,
+      "title": "Soul Beast",
+      "word_count": 944
+    },
+    "550": {
+      "chunk_idx": 10,
+      "local_idx": 49,
+      "title": "Hadiah Turnamen",
+      "word_count": 1252
+    },
+    "551": {
+      "chunk_idx": 11,
+      "local_idx": 0,
+      "title": "Slave's Inheritance",
+      "word_count": 977
+    },
+    "552": {
+      "chunk_idx": 11,
+      "local_idx": 1,
+      "title": "September",
+      "word_count": 919
+    },
+    "553": {
+      "chunk_idx": 11,
+      "local_idx": 2,
+      "title": "Gracious Host",
+      "word_count": 988
+    },
+    "554": {
+      "chunk_idx": 11,
+      "local_idx": 3,
+      "title": "Coming Clean",
+      "word_count": 1007
+    },
+    "555": {
+      "chunk_idx": 11,
+      "local_idx": 4,
+      "title": "Makan Malam dengan Teman",
+      "word_count": 830
+    },
+    "556": {
+      "chunk_idx": 11,
+      "local_idx": 5,
+      "title": "Tentang Kentang Itu",
+      "word_count": 998
+    },
+    "557": {
+      "chunk_idx": 11,
+      "local_idx": 6,
+      "title": "Night Temple",
+      "word_count": 997
+    },
+    "558": {
+      "chunk_idx": 11,
+      "local_idx": 7,
+      "title": "Satu Pelajaran Terakhir",
+      "word_count": 907
+    },
+    "559": {
+      "chunk_idx": 11,
+      "local_idx": 8,
+      "title": "No One Path",
+      "word_count": 1234
+    },
+    "560": {
+      "chunk_idx": 11,
+      "local_idx": 9,
+      "title": "Bidak Takdir",
+      "word_count": 1052
+    },
+    "561": {
+      "chunk_idx": 11,
+      "local_idx": 10,
+      "title": "Perjalanan ke Utara",
+      "word_count": 854
+    },
+    "562": {
+      "chunk_idx": 11,
+      "local_idx": 11,
+      "title": "Into the Night",
+      "word_count": 862
+    },
+    "563": {
+      "chunk_idx": 11,
+      "local_idx": 12,
+      "title": "Lost Sentinels",
+      "word_count": 1
+    },
+    "564": {
+      "chunk_idx": 11,
+      "local_idx": 13,
+      "title": "Inspeksi",
+      "word_count": 1
+    },
+    "565": {
+      "chunk_idx": 11,
+      "local_idx": 14,
+      "title": "Terlepas",
+      "word_count": 1
+    },
+    "566": {
+      "chunk_idx": 11,
+      "local_idx": 15,
+      "title": "lmprisoned",
+      "word_count": 932
+    },
+    "567": {
+      "chunk_idx": 11,
+      "local_idx": 16,
+      "title": "No Escape",
+      "word_count": 1122
+    },
+    "568": {
+      "chunk_idx": 11,
+      "local_idx": 17,
+      "title": "Full Circle",
+      "word_count": 1054
+    },
+    "569": {
+      "chunk_idx": 11,
+      "local_idx": 18,
+      "title": "Pada Hari Ketujuh",
+      "word_count": 979
+    },
+    "570": {
+      "chunk_idx": 11,
+      "local_idx": 19,
+      "title": "Thirst",
+      "word_count": 854
+    },
+    "571": {
+      "chunk_idx": 11,
+      "local_idx": 20,
+      "title": "Jangan Bersuara",
+      "word_count": 1145
+    },
+    "572": {
+      "chunk_idx": 11,
+      "local_idx": 21,
+      "title": "Sweeter than Heaven",
+      "word_count": 860
+    },
+    "573": {
+      "chunk_idx": 11,
+      "local_idx": 22,
+      "title": "Kelaparan",
+      "word_count": 1079
+    },
+    "574": {
+      "chunk_idx": 11,
+      "local_idx": 23,
+      "title": "Black Altar",
+      "word_count": 1037
+    },
+    "575": {
+      "chunk_idx": 11,
+      "local_idx": 24,
+      "title": "Confrontation",
+      "word_count": 1150
+    },
+    "576": {
+      "chunk_idx": 11,
+      "local_idx": 25,
+      "title": "lnner Sanctum",
+      "word_count": 915
+    },
+    "577": {
+      "chunk_idx": 11,
+      "local_idx": 26,
+      "title": "Hanya Dirimu",
+      "word_count": 897
+    },
+    "578": {
+      "chunk_idx": 11,
+      "local_idx": 27,
+      "title": "Perfect Vessel",
+      "word_count": 900
+    },
+    "579": {
+      "chunk_idx": 11,
+      "local_idx": 28,
+      "title": "First Victim",
+      "word_count": 963
+    },
+    "580": {
+      "chunk_idx": 11,
+      "local_idx": 29,
+      "title": "Presumption of Guilt",
+      "word_count": 1147
+    },
+    "581": {
+      "chunk_idx": 11,
+      "local_idx": 30,
+      "title": "Menara Lonceng",
+      "word_count": 1060
+    },
+    "582": {
+      "chunk_idx": 11,
+      "local_idx": 31,
+      "title": "Demi Kebaikan Besar",
+      "word_count": 918
+    },
+    "583": {
+      "chunk_idx": 11,
+      "local_idx": 32,
+      "title": "Web of Lies",
+      "word_count": 1141
+    },
+    "584": {
+      "chunk_idx": 11,
+      "local_idx": 33,
+      "title": "Samudra Kegelapan",
+      "word_count": 1164
+    },
+    "585": {
+      "chunk_idx": 11,
+      "local_idx": 34,
+      "title": "Bentrokan",
+      "word_count": 919
+    },
+    "586": {
+      "chunk_idx": 11,
+      "local_idx": 35,
+      "title": "Cold Steel",
+      "word_count": 1003
+    },
+    "587": {
+      "chunk_idx": 11,
+      "local_idx": 36,
+      "title": "Ledakan",
+      "word_count": 1422
+    },
+    "588": {
+      "chunk_idx": 11,
+      "local_idx": 37,
+      "title": "Trust lssues",
+      "word_count": 847
+    },
+    "589": {
+      "chunk_idx": 11,
+      "local_idx": 38,
+      "title": "Dark Mirror",
+      "word_count": 1054
+    },
+    "590": {
+      "chunk_idx": 11,
+      "local_idx": 39,
+      "title": "Sang Tuan",
+      "word_count": 1264
+    },
+    "591": {
+      "chunk_idx": 11,
+      "local_idx": 40,
+      "title": "Sea of Soul",
+      "word_count": 1079
+    },
+    "592": {
+      "chunk_idx": 11,
+      "local_idx": 41,
+      "title": "Soul Slayer",
+      "word_count": 1358
+    },
+    "593": {
+      "chunk_idx": 11,
+      "local_idx": 42,
+      "title": "Satu Langkah Maju",
+      "word_count": 909
+    },
+    "594": {
+      "chunk_idx": 11,
+      "local_idx": 43,
+      "title": "Dua Langkah Mundur",
+      "word_count": 885
+    },
+    "595": {
+      "chunk_idx": 11,
+      "local_idx": 44,
+      "title": "The Saints Are Coming",
+      "word_count": 985
+    },
+    "596": {
+      "chunk_idx": 11,
+      "local_idx": 45,
+      "title": "And We Wwere Gone",
+      "word_count": 1505
+    },
+    "597": {
+      "chunk_idx": 11,
+      "local_idx": 46,
+      "title": "Selamat Datang",
+      "word_count": 1046
+    },
+    "598": {
+      "chunk_idx": 11,
+      "local_idx": 47,
+      "title": "Broken Balance",
+      "word_count": 916
+    },
+    "599": {
+      "chunk_idx": 11,
+      "local_idx": 48,
+      "title": "Kapal Terbang",
+      "word_count": 1036
+    },
+    "600": {
+      "chunk_idx": 11,
+      "local_idx": 49,
+      "title": "The Departure",
+      "word_count": 1567
+    },
+    "601": {
+      "chunk_idx": 12,
+      "local_idx": 0,
+      "title": "Kingdom of Hope",
+      "word_count": 1351
+    },
+    "602": {
+      "chunk_idx": 12,
+      "local_idx": 1,
+      "title": "Swarm of Shadows",
+      "word_count": 928
+    },
+    "603": {
+      "chunk_idx": 12,
+      "local_idx": 2,
+      "title": "Menagerie of Monsters",
+      "word_count": 1017
+    },
+    "604": {
+      "chunk_idx": 12,
+      "local_idx": 3,
+      "title": "Shadow Gladiator",
+      "word_count": 1331
+    },
+    "605": {
+      "chunk_idx": 12,
+      "local_idx": 4,
+      "title": "Iblis Mengerikan",
+      "word_count": 1056
+    },
+    "606": {
+      "chunk_idx": 12,
+      "local_idx": 5,
+      "title": "Nasib Seorang Budak",
+      "word_count": 1127
+    },
+    "607": {
+      "chunk_idx": 12,
+      "local_idx": 6,
+      "title": "Shifting Sand",
+      "word_count": 939
+    },
+    "608": {
+      "chunk_idx": 12,
+      "local_idx": 7,
+      "title": "Reincarnated as a Demonic Gladiator in a Magical World",
+      "word_count": 1126
+    },
+    "609": {
+      "chunk_idx": 12,
+      "local_idx": 8,
+      "title": "Glory",
+      "word_count": 1079
+    },
+    "610": {
+      "chunk_idx": 12,
+      "local_idx": 9,
+      "title": "Mind of a Beast",
+      "word_count": 1076
+    },
+    "611": {
+      "chunk_idx": 12,
+      "local_idx": 10,
+      "title": "Immortal Lords",
+      "word_count": 1001
+    },
+    "612": {
+      "chunk_idx": 12,
+      "local_idx": 11,
+      "title": "Red Colosseum",
+      "word_count": 864
+    },
+    "613": {
+      "chunk_idx": 12,
+      "local_idx": 12,
+      "title": "Aliran Sihir",
+      "word_count": 903
+    },
+    "614": {
+      "chunk_idx": 12,
+      "local_idx": 13,
+      "title": "Hope's Canvas",
+      "word_count": 1166
+    },
+    "615": {
+      "chunk_idx": 12,
+      "local_idx": 14,
+      "title": "Ancient Runes",
+      "word_count": 1002
+    },
+    "616": {
+      "chunk_idx": 12,
+      "local_idx": 15,
+      "title": "Black String",
+      "word_count": 938
+    },
+    "617": {
+      "chunk_idx": 12,
+      "local_idx": 16,
+      "title": "Simplest Weave",
+      "word_count": 1244
+    },
+    "618": {
+      "chunk_idx": 12,
+      "local_idx": 17,
+      "title": "Plan of Escape",
+      "word_count": 1008
+    },
+    "619": {
+      "chunk_idx": 12,
+      "local_idx": 18,
+      "title": "Seven Seconds",
+      "word_count": 1032
+    },
+    "620": {
+      "chunk_idx": 12,
+      "local_idx": 19,
+      "title": "Death",
+      "word_count": 1651
+    },
+    "621": {
+      "chunk_idx": 12,
+      "local_idx": 20,
+      "title": "Path to Freedom",
+      "word_count": 952
+    },
+    "622": {
+      "chunk_idx": 12,
+      "local_idx": 21,
+      "title": "Wooden Sword",
+      "word_count": 1261
+    },
+    "623": {
+      "chunk_idx": 12,
+      "local_idx": 22,
+      "title": "Ardent Desire",
+      "word_count": 886
+    },
+    "624": {
+      "chunk_idx": 12,
+      "local_idx": 23,
+      "title": "Hari Baru",
+      "word_count": 912
+    },
+    "625": {
+      "chunk_idx": 12,
+      "local_idx": 24,
+      "title": "Comfortably Numb",
+      "word_count": 956
+    },
+    "626": {
+      "chunk_idx": 12,
+      "local_idx": 25,
+      "title": "Bersembunyi di Kegelapan",
+      "word_count": 1012
+    },
+    "627": {
+      "chunk_idx": 12,
+      "local_idx": 26,
+      "title": "Needlework",
+      "word_count": 886
+    },
+    "628": {
+      "chunk_idx": 12,
+      "local_idx": 27,
+      "title": "From the Dark Side",
+      "word_count": 942
+    },
+    "629": {
+      "chunk_idx": 12,
+      "local_idx": 28,
+      "title": "Pengejaran",
+      "word_count": 1226
+    },
+    "630": {
+      "chunk_idx": 12,
+      "local_idx": 29,
+      "title": "Wicked Warlock of the East",
+      "word_count": 911
+    },
+    "631": {
+      "chunk_idx": 12,
+      "local_idx": 30,
+      "title": "Hal Paling Lucu di Dunia",
+      "word_count": 907
+    },
+    "632": {
+      "chunk_idx": 12,
+      "local_idx": 31,
+      "title": "Broken Heart",
+      "word_count": 1102
+    },
+    "633": {
+      "chunk_idx": 12,
+      "local_idx": 32,
+      "title": "Dead Fortress",
+      "word_count": 1184
+    },
+    "634": {
+      "chunk_idx": 12,
+      "local_idx": 33,
+      "title": "Pilar Api",
+      "word_count": 1496
+    },
+    "635": {
+      "chunk_idx": 12,
+      "local_idx": 34,
+      "title": "The will of Gods",
+      "word_count": 1029
+    },
+    "636": {
+      "chunk_idx": 12,
+      "local_idx": 35,
+      "title": "Penghinaan",
+      "word_count": 1547
+    },
+    "637": {
+      "chunk_idx": 12,
+      "local_idx": 36,
+      "title": "Iron Cage",
+      "word_count": 1414
+    },
+    "638": {
+      "chunk_idx": 12,
+      "local_idx": 37,
+      "title": "Mimpi Demi Mimpi",
+      "word_count": 1070
+    },
+    "639": {
+      "chunk_idx": 12,
+      "local_idx": 38,
+      "title": "Neverending Nightmare",
+      "word_count": 1222
+    },
+    "640": {
+      "chunk_idx": 12,
+      "local_idx": 39,
+      "title": "World That Has Gone Mad",
+      "word_count": 969
+    },
+    "641": {
+      "chunk_idx": 12,
+      "local_idx": 40,
+      "title": "Dream Battle",
+      "word_count": 918
+    },
+    "642": {
+      "chunk_idx": 12,
+      "local_idx": 41,
+      "title": "Rude Awakening",
+      "word_count": 977
+    },
+    "643": {
+      "chunk_idx": 12,
+      "local_idx": 42,
+      "title": "Bentrokan Bayangan",
+      "word_count": 861
+    },
+    "644": {
+      "chunk_idx": 12,
+      "local_idx": 43,
+      "title": "My Enemy",
+      "word_count": 1347
+    },
+    "645": {
+      "chunk_idx": 12,
+      "local_idx": 44,
+      "title": "Facing a New Day",
+      "word_count": 888
+    },
+    "646": {
+      "chunk_idx": 12,
+      "local_idx": 45,
+      "title": "Pemandangan yang Membekas",
+      "word_count": 1026
+    },
+    "647": {
+      "chunk_idx": 12,
+      "local_idx": 46,
+      "title": "Dua Jawaban",
+      "word_count": 925
+    },
+    "648": {
+      "chunk_idx": 12,
+      "local_idx": 47,
+      "title": "With Good Intentions",
+      "word_count": 923
+    },
+    "649": {
+      "chunk_idx": 12,
+      "local_idx": 48,
+      "title": "Kingdom of Madness",
+      "word_count": 1034
+    },
+    "650": {
+      "chunk_idx": 12,
+      "local_idx": 49,
+      "title": "Langkah Drastis",
+      "word_count": 1004
+    },
+    "651": {
+      "chunk_idx": 13,
+      "local_idx": 0,
+      "title": "lnvisible Tethers",
+      "word_count": 920
+    },
+    "652": {
+      "chunk_idx": 13,
+      "local_idx": 1,
+      "title": "Hasil yang Melimpah",
+      "word_count": 1018
+    },
+    "653": {
+      "chunk_idx": 13,
+      "local_idx": 2,
+      "title": "Cute Little Snake",
+      "word_count": 1081
+    },
+    "654": {
+      "chunk_idx": 13,
+      "local_idx": 3,
+      "title": "Shadow Lantern",
+      "word_count": 1181
+    },
+    "655": {
+      "chunk_idx": 13,
+      "local_idx": 4,
+      "title": "Nightmare",
+      "word_count": 1458
+    },
+    "656": {
+      "chunk_idx": 13,
+      "local_idx": 5,
+      "title": "Gardens of the Moon",
+      "word_count": 973
+    },
+    "657": {
+      "chunk_idx": 13,
+      "local_idx": 6,
+      "title": "Peluang Kemenangan",
+      "word_count": 1225
+    },
+    "658": {
+      "chunk_idx": 13,
+      "local_idx": 7,
+      "title": "Seven Knives",
+      "word_count": 1295
+    },
+    "659": {
+      "chunk_idx": 13,
+      "local_idx": 8,
+      "title": "Istirahat Sebelum Perang",
+      "word_count": 912
+    },
+    "660": {
+      "chunk_idx": 13,
+      "local_idx": 9,
+      "title": "Shadow Arrows",
+      "word_count": 1396
+    },
+    "661": {
+      "chunk_idx": 13,
+      "local_idx": 10,
+      "title": "Precious Tether",
+      "word_count": 955
+    },
+    "662": {
+      "chunk_idx": 13,
+      "local_idx": 11,
+      "title": "Demon's Bargain",
+      "word_count": 874
+    },
+    "663": {
+      "chunk_idx": 13,
+      "local_idx": 12,
+      "title": "Pembawa Berita Perang",
+      "word_count": 1068
+    },
+    "664": {
+      "chunk_idx": 13,
+      "local_idx": 13,
+      "title": "Logika Dasar",
+      "word_count": 1035
+    },
+    "665": {
+      "chunk_idx": 13,
+      "local_idx": 14,
+      "title": "Preparations",
+      "word_count": 1011
+    },
+    "666": {
+      "chunk_idx": 13,
+      "local_idx": 15,
+      "title": "Dark Rider",
+      "word_count": 1061
+    },
+    "667": {
+      "chunk_idx": 13,
+      "local_idx": 16,
+      "title": "Temple of the Chalice",
+      "word_count": 938
+    },
+    "668": {
+      "chunk_idx": 13,
+      "local_idx": 17,
+      "title": "Vessels of War",
+      "word_count": 1245
+    },
+    "669": {
+      "chunk_idx": 13,
+      "local_idx": 18,
+      "title": "Feral Child",
+      "word_count": 1049
+    },
+    "670": {
+      "chunk_idx": 13,
+      "local_idx": 19,
+      "title": "Dengan Sangat Hati-hati",
+      "word_count": 976
+    },
+    "671": {
+      "chunk_idx": 13,
+      "local_idx": 20,
+      "title": "Thunderstruck",
+      "word_count": 1298
+    },
+    "672": {
+      "chunk_idx": 13,
+      "local_idx": 21,
+      "title": "Shadow Cohort",
+      "word_count": 922
+    },
+    "673": {
+      "chunk_idx": 13,
+      "local_idx": 22,
+      "title": "War Masters",
+      "word_count": 856
+    },
+    "674": {
+      "chunk_idx": 13,
+      "local_idx": 23,
+      "title": "Mercy of Shadow",
+      "word_count": 1224
+    },
+    "675": {
+      "chunk_idx": 13,
+      "local_idx": 24,
+      "title": "Kebinasan",
+      "word_count": 936
+    },
+    "676": {
+      "chunk_idx": 13,
+      "local_idx": 25,
+      "title": "Glass Knife",
+      "word_count": 1036
+    },
+    "677": {
+      "chunk_idx": 13,
+      "local_idx": 26,
+      "title": "Current of Fate",
+      "word_count": 1082
+    },
+    "678": {
+      "chunk_idx": 13,
+      "local_idx": 27,
+      "title": "Wind of Change",
+      "word_count": 1397
+    },
+    "679": {
+      "chunk_idx": 13,
+      "local_idx": 28,
+      "title": "Utusan dari Utara",
+      "word_count": 995
+    },
+    "680": {
+      "chunk_idx": 13,
+      "local_idx": 29,
+      "title": "Lost and Found",
+      "word_count": 946
+    },
+    "682": {
+      "chunk_idx": 13,
+      "local_idx": 30,
+      "title": "The Red Sect",
+      "word_count": 939
+    },
+    "683": {
+      "chunk_idx": 13,
+      "local_idx": 31,
+      "title": "To Kill a Dragon",
+      "word_count": 926
+    },
+    "684": {
+      "chunk_idx": 13,
+      "local_idx": 32,
+      "title": "You Must Become a Dragon",
+      "word_count": 1617
+    },
+    "685": {
+      "chunk_idx": 13,
+      "local_idx": 33,
+      "title": "Temple of the Night",
+      "word_count": 898
+    },
+    "686": {
+      "chunk_idx": 13,
+      "local_idx": 34,
+      "title": "Creature of the Fog",
+      "word_count": 979
+    },
+    "687": {
+      "chunk_idx": 13,
+      "local_idx": 35,
+      "title": "Oracle of the Night",
+      "word_count": 936
+    },
+    "688": {
+      "chunk_idx": 13,
+      "local_idx": 36,
+      "title": "Keputusan Besar",
+      "word_count": 989
+    },
+    "689": {
+      "chunk_idx": 13,
+      "local_idx": 37,
+      "title": "Kepercayaan",
+      "word_count": 961
+    },
+    "690": {
+      "chunk_idx": 13,
+      "local_idx": 38,
+      "title": "Satu Pertanyaan",
+      "word_count": 1201
+    },
+    "691": {
+      "chunk_idx": 13,
+      "local_idx": 39,
+      "title": "Heresy",
+      "word_count": 1054
+    },
+    "692": {
+      "chunk_idx": 13,
+      "local_idx": 40,
+      "title": "Waktu Luang",
+      "word_count": 986
+    },
+    "693": {
+      "chunk_idx": 13,
+      "local_idx": 41,
+      "title": "Knowledge of Everything",
+      "word_count": 1195
+    },
+    "694": {
+      "chunk_idx": 13,
+      "local_idx": 42,
+      "title": "Key Piece",
+      "word_count": 955
+    },
+    "695": {
+      "chunk_idx": 13,
+      "local_idx": 43,
+      "title": "Sonorous Silver Bell",
+      "word_count": 961
+    },
+    "696": {
+      "chunk_idx": 13,
+      "local_idx": 44,
+      "title": "Extraordinary Rock",
+      "word_count": 1104
+    },
+    "697": {
+      "chunk_idx": 13,
+      "local_idx": 45,
+      "title": "Friendly Visit",
+      "word_count": 1197
+    },
+    "698": {
+      "chunk_idx": 13,
+      "local_idx": 46,
+      "title": "Creature of the Lake",
+      "word_count": 1196
+    },
+    "699": {
+      "chunk_idx": 13,
+      "local_idx": 47,
+      "title": "Reverse Scale",
+      "word_count": 898
+    },
+    "700": {
+      "chunk_idx": 13,
+      "local_idx": 48,
+      "title": "Blood of the the Moon",
+      "word_count": 1116
+    },
+    "701": {
+      "chunk_idx": 14,
+      "local_idx": 0,
+      "title": "Four Hunters",
+      "word_count": 1249
+    },
+    "702": {
+      "chunk_idx": 14,
+      "local_idx": 1,
+      "title": "The Devil You Know",
+      "word_count": 1266
+    },
+    "703": {
+      "chunk_idx": 14,
+      "local_idx": 2,
+      "title": "Way Back",
+      "word_count": 945
+    },
+    "704": {
+      "chunk_idx": 14,
+      "local_idx": 3,
+      "title": "A Cup of Tea",
+      "word_count": 1098
+    },
+    "705": {
+      "chunk_idx": 14,
+      "local_idx": 4,
+      "title": "Herald of the Sun",
+      "word_count": 1031
+    },
+    "706": {
+      "chunk_idx": 14,
+      "local_idx": 5,
+      "title": "Ultimatum",
+      "word_count": 987
+    },
+    "707": {
+      "chunk_idx": 14,
+      "local_idx": 6,
+      "title": "Pengkhianatan",
+      "word_count": 903
+    },
+    "708": {
+      "chunk_idx": 14,
+      "local_idx": 7,
+      "title": "Crimson Beast of Twilight",
+      "word_count": 1049
+    },
+    "709": {
+      "chunk_idx": 14,
+      "local_idx": 8,
+      "title": "Nature of the Beast",
+      "word_count": 1071
+    },
+    "710": {
+      "chunk_idx": 14,
+      "local_idx": 9,
+      "title": "Keberangkatan",
+      "word_count": 1282
+    },
+    "711": {
+      "chunk_idx": 14,
+      "local_idx": 10,
+      "title": "A Simple Task",
+      "word_count": 864
+    },
+    "712": {
+      "chunk_idx": 14,
+      "local_idx": 11,
+      "title": "Meninggalkan Sanctuary",
+      "word_count": 1548
+    },
+    "713": {
+      "chunk_idx": 14,
+      "local_idx": 12,
+      "title": "Genderang Perang",
+      "word_count": 960
+    },
+    "714": {
+      "chunk_idx": 14,
+      "local_idx": 13,
+      "title": "Dread Naught",
+      "word_count": 1046
+    },
+    "715": {
+      "chunk_idx": 14,
+      "local_idx": 14,
+      "title": "Boarding Party",
+      "word_count": 908
+    },
+    "716": {
+      "chunk_idx": 14,
+      "local_idx": 15,
+      "title": "Kepala Ular",
+      "word_count": 1032
+    },
+    "717": {
+      "chunk_idx": 14,
+      "local_idx": 16,
+      "title": "Slick With Blood",
+      "word_count": 1060
+    },
+    "718": {
+      "chunk_idx": 14,
+      "local_idx": 17,
+      "title": "Heavenly Carnage",
+      "word_count": 989
+    },
+    "719": {
+      "chunk_idx": 14,
+      "local_idx": 18,
+      "title": "Dark Side of the Moon",
+      "word_count": 933
+    },
+    "720": {
+      "chunk_idx": 14,
+      "local_idx": 19,
+      "title": "Crimson Sky",
+      "word_count": 1087
+    },
+    "721": {
+      "chunk_idx": 14,
+      "local_idx": 20,
+      "title": "Dreadful Threat",
+      "word_count": 967
+    },
+    "722": {
+      "chunk_idx": 14,
+      "local_idx": 21,
+      "title": "Soul Reaver",
+      "word_count": 1104
+    },
+    "723": {
+      "chunk_idx": 14,
+      "local_idx": 22,
+      "title": "Falling Star",
+      "word_count": 886
+    },
+    "724": {
+      "chunk_idx": 14,
+      "local_idx": 23,
+      "title": "Weight of Regret",
+      "word_count": 931
+    },
+    "725": {
+      "chunk_idx": 14,
+      "local_idx": 24,
+      "title": "Shipwreck lsland",
+      "word_count": 902
+    },
+    "726": {
+      "chunk_idx": 14,
+      "local_idx": 25,
+      "title": "Sweet Release",
+      "word_count": 944
+    },
+    "727": {
+      "chunk_idx": 14,
+      "local_idx": 26,
+      "title": "Unforgiven",
+      "word_count": 919
+    },
+    "728": {
+      "chunk_idx": 14,
+      "local_idx": 27,
+      "title": "Spiteful Shadow",
+      "word_count": 1050
+    },
+    "729": {
+      "chunk_idx": 14,
+      "local_idx": 28,
+      "title": "Broken Shackles",
+      "word_count": 1054
+    },
+    "730": {
+      "chunk_idx": 14,
+      "local_idx": 29,
+      "title": "Permohonan Terakhir",
+      "word_count": 997
+    },
+    "731": {
+      "chunk_idx": 14,
+      "local_idx": 30,
+      "title": "Child of the Sun, Child of the Moon",
+      "word_count": 881
+    },
+    "732": {
+      "chunk_idx": 14,
+      "local_idx": 31,
+      "title": "Sevras",
+      "word_count": 918
+    },
+    "733": {
+      "chunk_idx": 14,
+      "local_idx": 32,
+      "title": "lnferno",
+      "word_count": 1092
+    },
+    "734": {
+      "chunk_idx": 14,
+      "local_idx": 33,
+      "title": "Rintangan Terakhir",
+      "word_count": 950
+    },
+    "735": {
+      "chunk_idx": 14,
+      "local_idx": 34,
+      "title": "Melunasi Utang",
+      "word_count": 902
+    },
+    "736": {
+      "chunk_idx": 14,
+      "local_idx": 35,
+      "title": "Dikepung",
+      "word_count": 1009
+    },
+    "737": {
+      "chunk_idx": 14,
+      "local_idx": 36,
+      "title": "Introspeksi",
+      "word_count": 1045
+    },
+    "738": {
+      "chunk_idx": 14,
+      "local_idx": 37,
+      "title": "Soul Annihilation",
+      "word_count": 1089
+    },
+    "739": {
+      "chunk_idx": 14,
+      "local_idx": 38,
+      "title": "Empty Skies",
+      "word_count": 979
+    },
+    "740": {
+      "chunk_idx": 14,
+      "local_idx": 39,
+      "title": "Mimpi Runtuh",
+      "word_count": 1004
+    },
+    "741": {
+      "chunk_idx": 14,
+      "local_idx": 40,
+      "title": "Chain Breaker",
+      "word_count": 1234
+    },
+    "742": {
+      "chunk_idx": 14,
+      "local_idx": 41,
+      "title": "Harapan",
+      "word_count": 1066
+    },
+    "743": {
+      "chunk_idx": 14,
+      "local_idx": 42,
+      "title": "Penilaian",
+      "word_count": 1014
+    },
+    "744": {
+      "chunk_idx": 14,
+      "local_idx": 43,
+      "title": "Ascension",
+      "word_count": 978
+    },
+    "745": {
+      "chunk_idx": 14,
+      "local_idx": 44,
+      "title": "Freedom of Choice",
+      "word_count": 994
+    },
+    "746": {
+      "chunk_idx": 14,
+      "local_idx": 45,
+      "title": "Langkah Pertama",
+      "word_count": 934
+    },
+    "747": {
+      "chunk_idx": 14,
+      "local_idx": 46,
+      "title": "Luka Tak Terlihat",
+      "word_count": 925
+    },
+    "748": {
+      "chunk_idx": 14,
+      "local_idx": 47,
+      "title": "Young Masters",
+      "word_count": 1198
+    },
+    "749": {
+      "chunk_idx": 14,
+      "local_idx": 48,
+      "title": "Shadow Manifestation",
+      "word_count": 1072
+    },
+    "750": {
+      "chunk_idx": 14,
+      "local_idx": 49,
+      "title": "Rumah",
+      "word_count": 1112
+    },
+    "751": {
+      "chunk_idx": 15,
+      "local_idx": 0,
+      "title": "Master Sunless",
+      "word_count": 1417
+    },
+    "752": {
+      "chunk_idx": 15,
+      "local_idx": 1,
+      "title": "Solid Foundation",
+      "word_count": 1505
+    },
+    "753": {
+      "chunk_idx": 15,
+      "local_idx": 2,
+      "title": "Inti Persoalan",
+      "word_count": 1212
+    },
+    "754": {
+      "chunk_idx": 15,
+      "local_idx": 3,
+      "title": "Pelajaran Sejarah",
+      "word_count": 1243
+    },
+    "755": {
+      "chunk_idx": 15,
+      "local_idx": 4,
+      "title": "Obel Scale",
+      "word_count": 863
+    },
+    "756": {
+      "chunk_idx": 15,
+      "local_idx": 5,
+      "title": "Navigation",
+      "word_count": 1040
+    },
+    "757": {
+      "chunk_idx": 15,
+      "local_idx": 6,
+      "title": "Professional Sensibility",
+      "word_count": 968
+    },
+    "758": {
+      "chunk_idx": 15,
+      "local_idx": 7,
+      "title": "Persimpangan",
+      "word_count": 963
+    },
+    "759": {
+      "chunk_idx": 15,
+      "local_idx": 8,
+      "title": "Perkembangan Baru",
+      "word_count": 1079
+    },
+    "760": {
+      "chunk_idx": 15,
+      "local_idx": 9,
+      "title": "Pelajaran Berharga",
+      "word_count": 1266
+    },
+    "761": {
+      "chunk_idx": 15,
+      "local_idx": 10,
+      "title": "Burning Candles",
+      "word_count": 876
+    },
+    "762": {
+      "chunk_idx": 15,
+      "local_idx": 11,
+      "title": "Negosiasi",
+      "word_count": 968
+    },
+    "763": {
+      "chunk_idx": 15,
+      "local_idx": 12,
+      "title": "Dangerous Questions",
+      "word_count": 852
+    },
+    "764": {
+      "chunk_idx": 15,
+      "local_idx": 13,
+      "title": "Spirit of Flame",
+      "word_count": 1326
+    },
+    "765": {
+      "chunk_idx": 15,
+      "local_idx": 14,
+      "title": "Turmoil",
+      "word_count": 1008
+    },
+    "766": {
+      "chunk_idx": 15,
+      "local_idx": 15,
+      "title": "Membuat Sejarah",
+      "word_count": 896
+    },
+    "767": {
+      "chunk_idx": 15,
+      "local_idx": 16,
+      "title": "Ukuran Kekuatan",
+      "word_count": 965
+    },
+    "768": {
+      "chunk_idx": 15,
+      "local_idx": 17,
+      "title": "Dark Shore",
+      "word_count": 884
+    },
+    "769": {
+      "chunk_idx": 15,
+      "local_idx": 18,
+      "title": "Maybe",
+      "word_count": 937
+    },
+    "770": {
+      "chunk_idx": 15,
+      "local_idx": 19,
+      "title": "Aimless Blade",
+      "word_count": 1013
+    },
+    "771": {
+      "chunk_idx": 15,
+      "local_idx": 20,
+      "title": "Pasukan Pengawal Kehormatan",
+      "word_count": 1016
+    },
+    "772": {
+      "chunk_idx": 15,
+      "local_idx": 21,
+      "title": "Perjalanan ke Timur",
+      "word_count": 1008
+    },
+    "773": {
+      "chunk_idx": 15,
+      "local_idx": 22,
+      "title": "Mengejar Ketinggalan",
+      "word_count": 900
+    },
+    "774": {
+      "chunk_idx": 15,
+      "local_idx": 23,
+      "title": "Fundamental Changes",
+      "word_count": 959
+    },
+    "775": {
+      "chunk_idx": 15,
+      "local_idx": 24,
+      "title": "Cafe Sunless",
+      "word_count": 866
+    },
+    "776": {
+      "chunk_idx": 15,
+      "local_idx": 25,
+      "title": "Musuh dari Musuhku",
+      "word_count": 892
+    },
+    "777": {
+      "chunk_idx": 15,
+      "local_idx": 26,
+      "title": "Kencan Buta",
+      "word_count": 879
+    },
+    "778": {
+      "chunk_idx": 15,
+      "local_idx": 27,
+      "title": "Dalam Kegelapan",
+      "word_count": 1006
+    },
+    "779": {
+      "chunk_idx": 15,
+      "local_idx": 28,
+      "title": "Unmoored",
+      "word_count": 904
+    },
+    "780": {
+      "chunk_idx": 15,
+      "local_idx": 29,
+      "title": "Friendly Spar",
+      "word_count": 1010
+    },
+    "781": {
+      "chunk_idx": 15,
+      "local_idx": 30,
+      "title": "The Brightest Light",
+      "word_count": 1110
+    },
+    "782": {
+      "chunk_idx": 15,
+      "local_idx": 31,
+      "title": "Grand Teacher",
+      "word_count": 890
+    },
+    "783": {
+      "chunk_idx": 15,
+      "local_idx": 32,
+      "title": "Captive Audience",
+      "word_count": 892
+    },
+    "784": {
+      "chunk_idx": 15,
+      "local_idx": 33,
+      "title": "Kesatuan Utuh",
+      "word_count": 843
+    },
+    "785": {
+      "chunk_idx": 15,
+      "local_idx": 34,
+      "title": "Kesendirian",
+      "word_count": 986
+    },
+    "786": {
+      "chunk_idx": 15,
+      "local_idx": 35,
+      "title": "Lifeline",
+      "word_count": 864
+    },
+    "787": {
+      "chunk_idx": 15,
+      "local_idx": 36,
+      "title": "Latihan",
+      "word_count": 1061
+    },
+    "788": {
+      "chunk_idx": 15,
+      "local_idx": 37,
+      "title": "Cordial Invitation",
+      "word_count": 868
+    },
+    "789": {
+      "chunk_idx": 15,
+      "local_idx": 38,
+      "title": "Hanya Maju",
+      "word_count": 1048
+    },
+    "790": {
+      "chunk_idx": 15,
+      "local_idx": 39,
+      "title": "Jalan-Jalan",
+      "word_count": 909
+    },
+    "791": {
+      "chunk_idx": 15,
+      "local_idx": 40,
+      "title": "Ritual Manusia",
+      "word_count": 880
+    },
+    "792": {
+      "chunk_idx": 15,
+      "local_idx": 41,
+      "title": "Blind Spot",
+      "word_count": 873
+    },
+    "793": {
+      "chunk_idx": 15,
+      "local_idx": 42,
+      "title": "Kenangan Masa Depan",
+      "word_count": 1019
+    },
+    "794": {
+      "chunk_idx": 15,
+      "local_idx": 43,
+      "title": "Dewasa",
+      "word_count": 1121
+    },
+    "795": {
+      "chunk_idx": 15,
+      "local_idx": 44,
+      "title": "Momen Kedamaian",
+      "word_count": 973
+    },
+    "796": {
+      "chunk_idx": 15,
+      "local_idx": 45,
+      "title": "Real Deal",
+      "word_count": 887
+    },
+    "797": {
+      "chunk_idx": 15,
+      "local_idx": 46,
+      "title": "Different Side",
+      "word_count": 1051
+    },
+    "798": {
+      "chunk_idx": 15,
+      "local_idx": 47,
+      "title": "Pohon Kesepian",
+      "word_count": 931
+    },
+    "799": {
+      "chunk_idx": 15,
+      "local_idx": 48,
+      "title": "Outskirt Rat",
+      "word_count": 1024
+    },
+    "800": {
+      "chunk_idx": 15,
+      "local_idx": 49,
+      "title": "Facing the Music",
+      "word_count": 870
+    },
+    "801": {
+      "chunk_idx": 16,
+      "local_idx": 0,
+      "title": "Distinguished Guests",
+      "word_count": 904
+    },
+    "802": {
+      "chunk_idx": 16,
+      "local_idx": 1,
+      "title": "Feast of Deceit",
+      "word_count": 936
+    },
+    "803": {
+      "chunk_idx": 16,
+      "local_idx": 2,
+      "title": "Friendly Reminder",
+      "word_count": 933
+    },
+    "804": {
+      "chunk_idx": 16,
+      "local_idx": 3,
+      "title": "Whispering Blade",
+      "word_count": 927
+    },
+    "805": {
+      "chunk_idx": 16,
+      "local_idx": 4,
+      "title": "Percakapan dengan Cermin",
+      "word_count": 1001
+    },
+    "806": {
+      "chunk_idx": 16,
+      "local_idx": 5,
+      "title": "A Dance of Light and Shadow",
+      "word_count": 889
+    },
+    "807": {
+      "chunk_idx": 16,
+      "local_idx": 6,
+      "title": "Dari Dalam",
+      "word_count": 883
+    },
+    "808": {
+      "chunk_idx": 16,
+      "local_idx": 7,
+      "title": "A Long-Awaited Conversation",
+      "word_count": 1060
+    },
+    "809": {
+      "chunk_idx": 16,
+      "local_idx": 8,
+      "title": "Kekuatan Sejati",
+      "word_count": 1081
+    },
+    "810": {
+      "chunk_idx": 16,
+      "local_idx": 9,
+      "title": "Hadiah Rahasia",
+      "word_count": 1378
+    },
+    "811": {
+      "chunk_idx": 16,
+      "local_idx": 10,
+      "title": "Train Ride",
+      "word_count": 927
+    },
+    "812": {
+      "chunk_idx": 16,
+      "local_idx": 11,
+      "title": "Konvoi Angkatan Laut",
+      "word_count": 894
+    },
+    "813": {
+      "chunk_idx": 16,
+      "local_idx": 12,
+      "title": "First Evacuation Army",
+      "word_count": 915
+    },
+    "814": {
+      "chunk_idx": 16,
+      "local_idx": 13,
+      "title": "Special Company",
+      "word_count": 872
+    },
+    "815": {
+      "chunk_idx": 16,
+      "local_idx": 14,
+      "title": "First Irregular Company",
+      "word_count": 921
+    },
+    "816": {
+      "chunk_idx": 16,
+      "local_idx": 15,
+      "title": "Tiga Fase",
+      "word_count": 920
+    },
+    "817": {
+      "chunk_idx": 16,
+      "local_idx": 16,
+      "title": "Captain Sunless",
+      "word_count": 899
+    },
+    "818": {
+      "chunk_idx": 16,
+      "local_idx": 17,
+      "title": "Irregulars, Assemble",
+      "word_count": 1079
+    },
+    "819": {
+      "chunk_idx": 16,
+      "local_idx": 18,
+      "title": "Alloy Beast",
+      "word_count": 1012
+    },
+    "820": {
+      "chunk_idx": 16,
+      "local_idx": 19,
+      "title": "Pentingnya Utilitas",
+      "word_count": 1112
+    },
+    "821": {
+      "chunk_idx": 16,
+      "local_idx": 20,
+      "title": "Offense Pillars",
+      "word_count": 960
+    },
+    "822": {
+      "chunk_idx": 16,
+      "local_idx": 21,
+      "title": "Shadow Cohort",
+      "word_count": 904
+    },
+    "823": {
+      "chunk_idx": 16,
+      "local_idx": 22,
+      "title": "Six Awakened",
+      "word_count": 994
+    },
+    "824": {
+      "chunk_idx": 16,
+      "local_idx": 23,
+      "title": "Mysterious Master",
+      "word_count": 879
+    },
+    "825": {
+      "chunk_idx": 16,
+      "local_idx": 24,
+      "title": "Under Pressure",
+      "word_count": 1010
+    },
+    "826": {
+      "chunk_idx": 16,
+      "local_idx": 25,
+      "title": "Shopping Spree",
+      "word_count": 945
+    },
+    "827": {
+      "chunk_idx": 16,
+      "local_idx": 26,
+      "title": "Tugas yang Berat",
+      "word_count": 1092
+    },
+    "828": {
+      "chunk_idx": 16,
+      "local_idx": 27,
+      "title": "Panggilan Itu",
+      "word_count": 1031
+    },
+    "829": {
+      "chunk_idx": 16,
+      "local_idx": 28,
+      "title": "Battle Scars",
+      "word_count": 998
+    },
+    "830": {
+      "chunk_idx": 16,
+      "local_idx": 29,
+      "title": "Keberangkatan",
+      "word_count": 983
+    },
+    "831": {
+      "chunk_idx": 16,
+      "local_idx": 30,
+      "title": "Master Naeve",
+      "word_count": 914
+    },
+    "832": {
+      "chunk_idx": 16,
+      "local_idx": 31,
+      "title": "Heirs of the Storm",
+      "word_count": 997
+    },
+    "833": {
+      "chunk_idx": 16,
+      "local_idx": 32,
+      "title": "Rhino",
+      "word_count": 951
+    },
+    "834": {
+      "chunk_idx": 16,
+      "local_idx": 33,
+      "title": "Kohesi",
+      "word_count": 1015
+    },
+    "835": {
+      "chunk_idx": 16,
+      "local_idx": 34,
+      "title": "Siren's Song",
+      "word_count": 945
+    },
+    "836": {
+      "chunk_idx": 16,
+      "local_idx": 35,
+      "title": "Black Water",
+      "word_count": 886
+    },
+    "837": {
+      "chunk_idx": 16,
+      "local_idx": 36,
+      "title": "Naval Engagement",
+      "word_count": 926
+    },
+    "838": {
+      "chunk_idx": 16,
+      "local_idx": 37,
+      "title": "Bang",
+      "word_count": 1038
+    },
+    "839": {
+      "chunk_idx": 16,
+      "local_idx": 38,
+      "title": "Unholy Blood",
+      "word_count": 943
+    },
+    "840": {
+      "chunk_idx": 16,
+      "local_idx": 39,
+      "title": "Mobilisasi",
+      "word_count": 845
+    },
+    "841": {
+      "chunk_idx": 16,
+      "local_idx": 40,
+      "title": "Keputusan yang Bijaksana",
+      "word_count": 986
+    },
+    "842": {
+      "chunk_idx": 16,
+      "local_idx": 41,
+      "title": "Pelajaran dari Masa Lalu",
+      "word_count": 890
+    },
+    "843": {
+      "chunk_idx": 16,
+      "local_idx": 42,
+      "title": "Falcon Scott",
+      "word_count": 994
+    },
+    "844": {
+      "chunk_idx": 16,
+      "local_idx": 43,
+      "title": "Opening Act",
+      "word_count": 1075
+    },
+    "845": {
+      "chunk_idx": 16,
+      "local_idx": 44,
+      "title": "Spesialis Jarak Jauh",
+      "word_count": 870
+    },
+    "846": {
+      "chunk_idx": 16,
+      "local_idx": 45,
+      "title": "Melee Vanguard",
+      "word_count": 983
+    },
+    "847": {
+      "chunk_idx": 16,
+      "local_idx": 46,
+      "title": "Pembantaian",
+      "word_count": 940
+    },
+    "848": {
+      "chunk_idx": 16,
+      "local_idx": 47,
+      "title": "Ancaman yang Gigih",
+      "word_count": 955
+    },
+    "849": {
+      "chunk_idx": 16,
+      "local_idx": 48,
+      "title": "Serangan Penjepit",
+      "word_count": 954
+    },
+    "850": {
+      "chunk_idx": 16,
+      "local_idx": 49,
+      "title": "Surrounded",
+      "word_count": 1075
+    },
+    "851": {
+      "chunk_idx": 17,
+      "local_idx": 0,
+      "title": "Tanpa Tahan Diri",
+      "word_count": 890
+    },
+    "852": {
+      "chunk_idx": 17,
+      "local_idx": 1,
+      "title": "The Return of the Lord",
+      "word_count": 1005
+    },
+    "853": {
+      "chunk_idx": 17,
+      "local_idx": 2,
+      "title": "Bone Singer",
+      "word_count": 1201
+    },
+    "854": {
+      "chunk_idx": 17,
+      "local_idx": 3,
+      "title": "Alibi Sempurna",
+      "word_count": 922
+    },
+    "855": {
+      "chunk_idx": 17,
+      "local_idx": 4,
+      "title": "Snow and Ash",
+      "word_count": 868
+    },
+    "856": {
+      "chunk_idx": 17,
+      "local_idx": 5,
+      "title": "Pemandangan Asing",
+      "word_count": 1076
+    },
+    "857": {
+      "chunk_idx": 17,
+      "local_idx": 6,
+      "title": "Jade Beetle",
+      "word_count": 897
+    },
+    "858": {
+      "chunk_idx": 17,
+      "local_idx": 7,
+      "title": "Aerial Superiority",
+      "word_count": 863
+    },
+    "859": {
+      "chunk_idx": 17,
+      "local_idx": 8,
+      "title": "Puncak",
+      "word_count": 889
+    },
+    "860": {
+      "chunk_idx": 17,
+      "local_idx": 9,
+      "title": "Stone Hive",
+      "word_count": 936
+    },
+    "861": {
+      "chunk_idx": 17,
+      "local_idx": 10,
+      "title": "Dimakamkan",
+      "word_count": 929
+    },
+    "862": {
+      "chunk_idx": 17,
+      "local_idx": 11,
+      "title": "Soul Reaper",
+      "word_count": 956
+    },
+    "863": {
+      "chunk_idx": 17,
+      "local_idx": 12,
+      "title": "Fractured",
+      "word_count": 952
+    },
+    "864": {
+      "chunk_idx": 17,
+      "local_idx": 13,
+      "title": "Breaking the Balance",
+      "word_count": 1025
+    },
+    "865": {
+      "chunk_idx": 17,
+      "local_idx": 14,
+      "title": "Lucky Shot",
+      "word_count": 892
+    },
+    "866": {
+      "chunk_idx": 17,
+      "local_idx": 15,
+      "title": "White Stone",
+      "word_count": 941
+    },
+    "867": {
+      "chunk_idx": 17,
+      "local_idx": 16,
+      "title": "Tooth and Nail",
+      "word_count": 1173
+    },
+    "868": {
+      "chunk_idx": 17,
+      "local_idx": 17,
+      "title": "Reputation",
+      "word_count": 954
+    },
+    "869": {
+      "chunk_idx": 17,
+      "local_idx": 18,
+      "title": "Sin of Solace",
+      "word_count": 1005
+    },
+    "870": {
+      "chunk_idx": 17,
+      "local_idx": 19,
+      "title": "To Do List",
+      "word_count": 895
+    },
+    "871": {
+      "chunk_idx": 17,
+      "local_idx": 20,
+      "title": "Wild Imaginations",
+      "word_count": 971
+    },
+    "872": {
+      "chunk_idx": 17,
+      "local_idx": 21,
+      "title": "Mimpi Burur yang Menyebar",
+      "word_count": 986
+    },
+    "873": {
+      "chunk_idx": 17,
+      "local_idx": 22,
+      "title": "Dan Penuh Teror",
+      "word_count": 852
+    },
+    "874": {
+      "chunk_idx": 17,
+      "local_idx": 23,
+      "title": "One Last Mission",
+      "word_count": 881
+    },
+    "875": {
+      "chunk_idx": 17,
+      "local_idx": 24,
+      "title": "Old Roads",
+      "word_count": 896
+    },
+    "876": {
+      "chunk_idx": 17,
+      "local_idx": 25,
+      "title": "LO49",
+      "word_count": 886
+    },
+    "877": {
+      "chunk_idx": 17,
+      "local_idx": 26,
+      "title": "Terputus",
+      "word_count": 973
+    },
+    "878": {
+      "chunk_idx": 17,
+      "local_idx": 27,
+      "title": "VIP",
+      "word_count": 952
+    },
+    "879": {
+      "chunk_idx": 17,
+      "local_idx": 28,
+      "title": "Tanda-tanda Petir",
+      "word_count": 954
+    },
+    "880": {
+      "chunk_idx": 17,
+      "local_idx": 29,
+      "title": "Cause and Effect",
+      "word_count": 1006
+    },
+    "881": {
+      "chunk_idx": 17,
+      "local_idx": 30,
+      "title": "Perubahan Rencana",
+      "word_count": 879
+    },
+    "882": {
+      "chunk_idx": 17,
+      "local_idx": 31,
+      "title": "Kondisi Kuning",
+      "word_count": 865
+    },
+    "883": {
+      "chunk_idx": 17,
+      "local_idx": 32,
+      "title": "Sortie",
+      "word_count": 856
+    },
+    "884": {
+      "chunk_idx": 17,
+      "local_idx": 33,
+      "title": "Sinister Blade",
+      "word_count": 872
+    },
+    "885": {
+      "chunk_idx": 17,
+      "local_idx": 34,
+      "title": "Myriad Eater",
+      "word_count": 907
+    },
+    "886": {
+      "chunk_idx": 17,
+      "local_idx": 35,
+      "title": "Clean Up",
+      "word_count": 884
+    },
+    "887": {
+      "chunk_idx": 17,
+      "local_idx": 36,
+      "title": "Kesalahan Penilaian",
+      "word_count": 978
+    },
+    "888": {
+      "chunk_idx": 17,
+      "local_idx": 37,
+      "title": "Menghilang",
+      "word_count": 1003
+    },
+    "889": {
+      "chunk_idx": 17,
+      "local_idx": 38,
+      "title": "Without a Trace",
+      "word_count": 972
+    },
+    "890": {
+      "chunk_idx": 17,
+      "local_idx": 39,
+      "title": "Tanggung Jawab Bersama",
+      "word_count": 899
+    },
+    "891": {
+      "chunk_idx": 17,
+      "local_idx": 40,
+      "title": "Fatigue",
+      "word_count": 969
+    },
+    "892": {
+      "chunk_idx": 17,
+      "local_idx": 41,
+      "title": "Kegunaan",
+      "word_count": 1036
+    },
+    "893": {
+      "chunk_idx": 17,
+      "local_idx": 42,
+      "title": "Negative Space",
+      "word_count": 863
+    },
+    "894": {
+      "chunk_idx": 17,
+      "local_idx": 43,
+      "title": "Cold Waves",
+      "word_count": 874
+    },
+    "895": {
+      "chunk_idx": 17,
+      "local_idx": 44,
+      "title": "Catcher in the Night",
+      "word_count": 1020
+    },
+    "896": {
+      "chunk_idx": 17,
+      "local_idx": 45,
+      "title": "Rintangan",
+      "word_count": 872
+    },
+    "897": {
+      "chunk_idx": 17,
+      "local_idx": 46,
+      "title": "Silent Ocean",
+      "word_count": 871
+    },
+    "898": {
+      "chunk_idx": 17,
+      "local_idx": 47,
+      "title": "Going for a Swim",
+      "word_count": 908
+    },
+    "899": {
+      "chunk_idx": 17,
+      "local_idx": 48,
+      "title": "Only Hope",
+      "word_count": 927
+    },
+    "900": {
+      "chunk_idx": 17,
+      "local_idx": 49,
+      "title": "Don't Look Back",
+      "word_count": 1743
+    },
+    "901": {
+      "chunk_idx": 18,
+      "local_idx": 0,
+      "title": "Degrees of Danger",
+      "word_count": 845
+    },
+    "902": {
+      "chunk_idx": 18,
+      "local_idx": 1,
+      "title": "Keadaan Urusan",
+      "word_count": 924
+    },
+    "903": {
+      "chunk_idx": 18,
+      "local_idx": 2,
+      "title": "Angka Abstrak",
+      "word_count": 867
+    },
+    "904": {
+      "chunk_idx": 18,
+      "local_idx": 3,
+      "title": "Perjalanan Seribu Mil",
+      "word_count": 891
+    },
+    "905": {
+      "chunk_idx": 18,
+      "local_idx": 4,
+      "title": "Pembawa Berita Buruk",
+      "word_count": 1038
+    },
+    "906": {
+      "chunk_idx": 18,
+      "local_idx": 5,
+      "title": "Moral Conundrum",
+      "word_count": 964
+    },
+    "907": {
+      "chunk_idx": 18,
+      "local_idx": 6,
+      "title": "Beban Komando",
+      "word_count": 981
+    },
+    "908": {
+      "chunk_idx": 18,
+      "local_idx": 7,
+      "title": "Delegasi",
+      "word_count": 1040
+    },
+    "909": {
+      "chunk_idx": 18,
+      "local_idx": 8,
+      "title": "Underground Nest",
+      "word_count": 1082
+    },
+    "910": {
+      "chunk_idx": 18,
+      "local_idx": 9,
+      "title": "Master of Cartography",
+      "word_count": 1014
+    },
+    "911": {
+      "chunk_idx": 18,
+      "local_idx": 10,
+      "title": "Pertanyaan tentang Nilai",
+      "word_count": 1004
+    },
+    "912": {
+      "chunk_idx": 18,
+      "local_idx": 11,
+      "title": "Soul of a Man",
+      "word_count": 1123
+    },
+    "913": {
+      "chunk_idx": 18,
+      "local_idx": 12,
+      "title": "Lucky Sleeper",
+      "word_count": 942
+    },
+    "914": {
+      "chunk_idx": 18,
+      "local_idx": 13,
+      "title": "Moving On",
+      "word_count": 858
+    },
+    "915": {
+      "chunk_idx": 18,
+      "local_idx": 14,
+      "title": "Fool's Errand",
+      "word_count": 953
+    },
+    "916": {
+      "chunk_idx": 18,
+      "local_idx": 15,
+      "title": "Divide and Conquer",
+      "word_count": 959
+    },
+    "917": {
+      "chunk_idx": 18,
+      "local_idx": 16,
+      "title": "Black Tongues",
+      "word_count": 1052
+    },
+    "918": {
+      "chunk_idx": 18,
+      "local_idx": 17,
+      "title": "Voiceless Wraiths",
+      "word_count": 919
+    },
+    "919": {
+      "chunk_idx": 18,
+      "local_idx": 18,
+      "title": "Defying Gravity",
+      "word_count": 950
+    },
+    "920": {
+      "chunk_idx": 18,
+      "local_idx": 19,
+      "title": "Sum of Its Parts",
+      "word_count": 877
+    },
+    "921": {
+      "chunk_idx": 18,
+      "local_idx": 20,
+      "title": "New Pets",
+      "word_count": 986
+    },
+    "922": {
+      "chunk_idx": 18,
+      "local_idx": 21,
+      "title": "Sedikit Demi Sedikit",
+      "word_count": 950
+    },
+    "923": {
+      "chunk_idx": 18,
+      "local_idx": 22,
+      "title": "Rahasia Muara",
+      "word_count": 1126
+    },
+    "924": {
+      "chunk_idx": 18,
+      "local_idx": 23,
+      "title": "Wear and Tear",
+      "word_count": 913
+    },
+    "925": {
+      "chunk_idx": 18,
+      "local_idx": 24,
+      "title": "Geraman Pelan",
+      "word_count": 1052
+    },
+    "926": {
+      "chunk_idx": 18,
+      "local_idx": 25,
+      "title": "Stormfront",
+      "word_count": 973
+    },
+    "927": {
+      "chunk_idx": 18,
+      "local_idx": 26,
+      "title": "Berlomba Melawan Waktu",
+      "word_count": 957
+    },
+    "928": {
+      "chunk_idx": 18,
+      "local_idx": 27,
+      "title": "Devouring Cloud",
+      "word_count": 967
+    },
+    "929": {
+      "chunk_idx": 18,
+      "local_idx": 28,
+      "title": "Swarm",
+      "word_count": 950
+    },
+    "930": {
+      "chunk_idx": 18,
+      "local_idx": 29,
+      "title": "Old Tunnel",
+      "word_count": 987
+    },
+    "931": {
+      "chunk_idx": 18,
+      "local_idx": 30,
+      "title": "Rival of Light",
+      "word_count": 865
+    },
+    "932": {
+      "chunk_idx": 18,
+      "local_idx": 31,
+      "title": "Blinded",
+      "word_count": 924
+    },
+    "933": {
+      "chunk_idx": 18,
+      "local_idx": 32,
+      "title": "Kegelapan di Ujung Terowongan",
+      "word_count": 1105
+    },
+    "934": {
+      "chunk_idx": 18,
+      "local_idx": 33,
+      "title": "No Way Out",
+      "word_count": 914
+    },
+    "935": {
+      "chunk_idx": 18,
+      "local_idx": 34,
+      "title": "Tanpa Jangkar",
+      "word_count": 858
+    },
+    "936": {
+      "chunk_idx": 18,
+      "local_idx": 35,
+      "title": "Apapun Bisa Salah",
+      "word_count": 973
+    },
+    "937": {
+      "chunk_idx": 18,
+      "local_idx": 36,
+      "title": "Exchanging Messages",
+      "word_count": 866
+    },
+    "938": {
+      "chunk_idx": 18,
+      "local_idx": 37,
+      "title": "Pengiriman Makanan",
+      "word_count": 935
+    },
+    "939": {
+      "chunk_idx": 18,
+      "local_idx": 38,
+      "title": "In the Belly of the Beast",
+      "word_count": 945
+    },
+    "940": {
+      "chunk_idx": 18,
+      "local_idx": 39,
+      "title": "Heart of Darkness",
+      "word_count": 988
+    },
+    "941": {
+      "chunk_idx": 18,
+      "local_idx": 40,
+      "title": "Time to Run",
+      "word_count": 888
+    },
+    "942": {
+      "chunk_idx": 18,
+      "local_idx": 41,
+      "title": "Tide of Darkness",
+      "word_count": 945
+    },
+    "943": {
+      "chunk_idx": 18,
+      "local_idx": 42,
+      "title": "No Way Forward",
+      "word_count": 1143
+    },
+    "944": {
+      "chunk_idx": 18,
+      "local_idx": 43,
+      "title": "Selamat dan Relatif Utuh",
+      "word_count": 976
+    },
+    "945": {
+      "chunk_idx": 18,
+      "local_idx": 44,
+      "title": "Jalan ke Depan",
+      "word_count": 951
+    },
+    "946": {
+      "chunk_idx": 18,
+      "local_idx": 45,
+      "title": "Scenic Route",
+      "word_count": 1073
+    },
+    "947": {
+      "chunk_idx": 18,
+      "local_idx": 46,
+      "title": "Highway to Hell",
+      "word_count": 868
+    },
+    "948": {
+      "chunk_idx": 18,
+      "local_idx": 47,
+      "title": "Dire Marathon",
+      "word_count": 882
+    },
+    "949": {
+      "chunk_idx": 18,
+      "local_idx": 48,
+      "title": "Moving Slaughterhouse",
+      "word_count": 849
+    },
+    "950": {
+      "chunk_idx": 18,
+      "local_idx": 49,
+      "title": "Derailed",
+      "word_count": 847
+    },
+    "951": {
+      "chunk_idx": 19,
+      "local_idx": 0,
+      "title": "Outrider",
+      "word_count": 1082
+    },
+    "952": {
+      "chunk_idx": 19,
+      "local_idx": 1,
+      "title": "Raksasa Tersembunyi",
+      "word_count": 930
+    },
+    "953": {
+      "chunk_idx": 19,
+      "local_idx": 2,
+      "title": "Titan",
+      "word_count": 899
+    },
+    "954": {
+      "chunk_idx": 19,
+      "local_idx": 3,
+      "title": "Hanya Kegelapan",
+      "word_count": 921
+    },
+    "955": {
+      "chunk_idx": 19,
+      "local_idx": 4,
+      "title": "The End",
+      "word_count": 1
+    },
+    "956": {
+      "chunk_idx": 19,
+      "local_idx": 5,
+      "title": "Pengikut",
+      "word_count": 1
+    },
+    "957": {
+      "chunk_idx": 19,
+      "local_idx": 6,
+      "title": "Tooth and Nail",
+      "word_count": 1
+    },
+    "958": {
+      "chunk_idx": 19,
+      "local_idx": 7,
+      "title": "Serangkaian Peristiwa Malang",
+      "word_count": 1
+    },
+    "959": {
+      "chunk_idx": 19,
+      "local_idx": 8,
+      "title": "Lonesome Rider",
+      "word_count": 1
+    },
+    "960": {
+      "chunk_idx": 19,
+      "local_idx": 9,
+      "title": "Erebus Field",
+      "word_count": 1
+    },
+    "961": {
+      "chunk_idx": 19,
+      "local_idx": 10,
+      "title": "Istana Pasir",
+      "word_count": 1
+    },
+    "962": {
+      "chunk_idx": 19,
+      "local_idx": 11,
+      "title": "Reaper's Crow",
+      "word_count": 1
+    },
+    "963": {
+      "chunk_idx": 19,
+      "local_idx": 12,
+      "title": "Supply Depot",
+      "word_count": 1
+    },
+    "964": {
+      "chunk_idx": 19,
+      "local_idx": 13,
+      "title": "Proof of Competence",
+      "word_count": 1
+    },
+    "965": {
+      "chunk_idx": 19,
+      "local_idx": 14,
+      "title": "Rencana Baru",
+      "word_count": 1
+    },
+    "966": {
+      "chunk_idx": 19,
+      "local_idx": 15,
+      "title": "Reinforcements",
+      "word_count": 907
+    },
+    "967": {
+      "chunk_idx": 19,
+      "local_idx": 16,
+      "title": "Perjalanan Lancar",
+      "word_count": 1
+    },
+    "968": {
+      "chunk_idx": 19,
+      "local_idx": 17,
+      "title": "Shifting Scales",
+      "word_count": 1
+    },
+    "969": {
+      "chunk_idx": 19,
+      "local_idx": 18,
+      "title": "Hadiah dari Pantai",
+      "word_count": 1
+    },
+    "970": {
+      "chunk_idx": 19,
+      "local_idx": 19,
+      "title": "Hellfire",
+      "word_count": 1
+    },
+    "971": {
+      "chunk_idx": 19,
+      "local_idx": 20,
+      "title": "Retreat Strategis",
+      "word_count": 1
+    },
+    "972": {
+      "chunk_idx": 19,
+      "local_idx": 21,
+      "title": "Soulbound",
+      "word_count": 1
+    },
+    "973": {
+      "chunk_idx": 19,
+      "local_idx": 22,
+      "title": "Mutual Rescue",
+      "word_count": 1
+    },
+    "974": {
+      "chunk_idx": 19,
+      "local_idx": 23,
+      "title": "Bayangan dalam Kerangka",
+      "word_count": 1
+    },
+    "975": {
+      "chunk_idx": 19,
+      "local_idx": 24,
+      "title": "Marble Shell",
+      "word_count": 1
+    },
+    "976": {
+      "chunk_idx": 19,
+      "local_idx": 25,
+      "title": "Hukum Yang Mendunia",
+      "word_count": 1
+    },
+    "977": {
+      "chunk_idx": 19,
+      "local_idx": 26,
+      "title": "Through the Blizzard",
+      "word_count": 1
+    },
+    "978": {
+      "chunk_idx": 19,
+      "local_idx": 27,
+      "title": "Kembali Lagi",
+      "word_count": 1
+    },
+    "979": {
+      "chunk_idx": 19,
+      "local_idx": 28,
+      "title": "Full Circle",
+      "word_count": 1
+    },
+    "980": {
+      "chunk_idx": 19,
+      "local_idx": 29,
+      "title": "Pengepungan Ibu Kota",
+      "word_count": 1
+    },
+    "981": {
+      "chunk_idx": 19,
+      "local_idx": 30,
+      "title": "All Quiet",
+      "word_count": 1
+    },
+    "982": {
+      "chunk_idx": 19,
+      "local_idx": 31,
+      "title": "Gelap, Kosong, dan Senyap",
+      "word_count": 1
+    },
+    "983": {
+      "chunk_idx": 19,
+      "local_idx": 32,
+      "title": "Jatuhnya Falcon Scott (1)",
+      "word_count": 1
+    },
+    "984": {
+      "chunk_idx": 19,
+      "local_idx": 33,
+      "title": "Jatuhnya Falcon Scott (2)",
+      "word_count": 1
+    },
+    "985": {
+      "chunk_idx": 19,
+      "local_idx": 34,
+      "title": "The Fall of Falcon Scott (3)",
+      "word_count": 1
+    },
+    "986": {
+      "chunk_idx": 19,
+      "local_idx": 35,
+      "title": "Jatuhnya Falcon Scott (4)",
+      "word_count": 1
+    },
+    "987": {
+      "chunk_idx": 19,
+      "local_idx": 36,
+      "title": "Jatuhnya Falcon Scott (5)",
+      "word_count": 1
+    },
+    "988": {
+      "chunk_idx": 19,
+      "local_idx": 37,
+      "title": "Jatuhnya Falcon Scott (6)",
+      "word_count": 1
+    },
+    "989": {
+      "chunk_idx": 19,
+      "local_idx": 38,
+      "title": "Jatuhnya Falcon Scott (7)",
+      "word_count": 1
+    },
+    "990": {
+      "chunk_idx": 19,
+      "local_idx": 39,
+      "title": "The Fall of Falcon Scott (8)",
+      "word_count": 1
+    },
+    "991": {
+      "chunk_idx": 19,
+      "local_idx": 40,
+      "title": "The Fall of Falcon Scott (9)",
+      "word_count": 1
+    },
+    "992": {
+      "chunk_idx": 19,
+      "local_idx": 41,
+      "title": "Jatuhnya Falcon Scott (10)",
+      "word_count": 1
+    },
+    "993": {
+      "chunk_idx": 19,
+      "local_idx": 42,
+      "title": "Jatuhnya Falcon Scott (11)",
+      "word_count": 1
+    },
+    "994": {
+      "chunk_idx": 19,
+      "local_idx": 43,
+      "title": "Jatuhnya Falcon Scott (12)",
+      "word_count": 1
+    },
+    "995": {
+      "chunk_idx": 19,
+      "local_idx": 44,
+      "title": "The Fall of Falcon Scott (13)",
+      "word_count": 1
+    },
+    "996": {
+      "chunk_idx": 19,
+      "local_idx": 45,
+      "title": "The Fall of Falcon Scott (14)",
+      "word_count": 1
+    },
+    "997": {
+      "chunk_idx": 19,
+      "local_idx": 46,
+      "title": "Kejatuhan Falcon Scott (15)",
+      "word_count": 1
+    },
+    "998": {
+      "chunk_idx": 19,
+      "local_idx": 47,
+      "title": "The Fall of Falcon Scott (16)",
+      "word_count": 930
+    },
+    "999": {
+      "chunk_idx": 19,
+      "local_idx": 48,
+      "title": "The Fall of Falcon Scott (17)",
+      "word_count": 940
+    },
+    "1000": {
+      "chunk_idx": 19,
+      "local_idx": 49,
+      "title": "Jatuhnya Falcon Scott (18)",
+      "word_count": 1122
+    }
+  }
+}
