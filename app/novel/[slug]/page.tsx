@@ -255,5 +255,6 @@ export default async function NovelPage({ params, searchParams }: Props) {
         />
       </section>
     </div>
+    </div>
   );
 }
