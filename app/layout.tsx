@@ -1,8 +1,22 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
+import { Bricolage_Grotesque, Lora, Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { ThemeScript } from "@/components/Navbar";
 import BottomNav from "@/components/BottomNav";
+
+const fontHeading = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-heading",
+});
+const fontBody = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+});
+const fontNovel = Lora({
+  subsets: ["latin"],
+  variable: "--font-novel",
+});
 
 const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://lunovel.vercel.app";
@@ -73,7 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <ThemeScript />
       </head>
-      <body className="font-sans antialiased">
+      <body className={`${fontBody.variable} ${fontHeading.variable} ${fontNovel.variable} font-sans antialiased bg-bg-light dark:bg-bg-dark text-black dark:text-white selection:bg-accent selection:text-white transition-colors duration-300`}>
         <Navbar />
         <main className="min-h-[calc(100vh-64px)] pb-14 md:pb-0">{children}</main>
         <BottomNav />

@@ -46,36 +46,77 @@ export default async function HomePage() {
 
   return (
     <div className="max-w-7xl mx-auto px-3 md:px-4 py-3 md:py-6 space-y-4 md:space-y-8">
-      {/* === DESKTOP HERO (md+) — unchanged from original === */}
-      <section className="hidden md:block relative rounded-2xl overflow-hidden bg-gradient-to-br from-accent/15 via-accent/5 to-transparent border border-accent/20">
-        <div className="px-6 sm:px-10 py-8 sm:py-12 flex flex-col sm:flex-row items-center gap-6">
-          <div className="flex-1 space-y-3">
-            <div className="text-xs uppercase tracking-widest text-accent font-bold">
-              🌙 Baca novel gratis
+      {/* === DESKTOP HERO (md+) — JAW-DROPPING REDESIGN === */}
+      <section className="hidden md:flex relative rounded-3xl overflow-hidden min-h-[400px] border border-black/5 dark:border-white/5 shadow-2xl items-center group">
+        {/* Immersive Blurred Background */}
+        <div className="absolute inset-0 bg-black/90 z-0">
+          {featured?.novel.cover && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img 
+              src={featured.novel.cover} 
+              alt="cover" 
+              className="absolute inset-0 w-full h-full object-cover opacity-40 blur-3xl scale-110 group-hover:scale-125 group-hover:opacity-50 transition-all duration-[2s] ease-out" 
+            />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-r from-bg-light/95 via-bg-light/80 to-transparent dark:from-bg-dark/95 dark:via-bg-dark/80 z-10" />
+        </div>
+
+        <div className="relative z-20 px-10 py-12 flex flex-row items-center gap-10 w-full">
+          <div className="flex-1 space-y-5">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-md">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+              </span>
+              <span className="text-[10px] uppercase tracking-widest text-accent font-bold">Terpopuler Hari Ini</span>
             </div>
-            <h1 className="text-3xl sm:text-5xl font-serif font-bold leading-tight">
-              Selamat datang di <span className="text-accent">Lunovel</span>
+            
+            <h1 className="text-5xl lg:text-7xl font-heading font-extrabold leading-[1.1] tracking-tight drop-shadow-sm">
+              <span className="text-transparent bg-clip-text bg-gradient-to-br from-black to-black/60 dark:from-white dark:to-white/60">
+                {featured?.novel.title || "Selamat datang di Lunovel"}
+              </span>
             </h1>
-            <p className="text-sm sm:text-base opacity-80 max-w-xl">
-              Ribuan chapter novel terjemahan & original bahasa Indonesia. Baca online,
-              tanpa batas, tanpa iklan. Bookmark, atur tampilan, lanjut dari mana lo berhenti.
+            
+            <p className="text-base lg:text-lg opacity-80 max-w-xl font-medium leading-relaxed">
+              {featured?.novel.description?.slice(0, 150) || "Ribuan chapter novel terjemahan & original bahasa Indonesia. Baca online, tanpa batas, tanpa iklan."}...
             </p>
-            <div className="flex gap-2 pt-1">
+            
+            <div className="flex gap-4 pt-4">
               <Link
-                href="/search?status=ongoing"
-                className="px-4 py-2 rounded-lg bg-accent text-white text-sm font-medium hover:bg-accent/90"
+                href={`/novel/${featured?.novel.slug}`}
+                className="px-8 py-3.5 rounded-xl bg-accent text-white text-sm font-bold shadow-glow hover:-translate-y-1 transition-all duration-300"
               >
-                Lihat Ongoing
+                Mulai Baca
               </Link>
               <Link
-                href="/search?type=translated"
-                className="px-4 py-2 rounded-lg bg-black/5 dark:bg-white/10 text-sm font-medium hover:bg-black/10 dark:hover:bg-white/20"
+                href="/search"
+                className="px-8 py-3.5 rounded-xl bg-black/5 dark:bg-white/10 text-sm font-bold backdrop-blur-md border border-black/10 dark:border-white/10 hover:bg-black/10 dark:hover:bg-white/20 transition-all duration-300"
               >
-                Novel Terjemahan
+                Jelajahi Novel
               </Link>
             </div>
           </div>
-          <div className="shrink-0 text-7xl sm:text-9xl opacity-20 select-none">📖</div>
+
+          {/* 3D Floating Cover Card */}
+          {featured?.novel.cover && (
+            <div className="shrink-0 relative group/cover perspective-[1000px] hidden lg:block">
+              <div className="w-[280px] aspect-[2/3] rounded-2xl overflow-hidden shadow-2xl border border-white/10 transform rotate-y-[-10deg] rotate-x-[5deg] group-hover/cover:rotate-y-0 group-hover/cover:rotate-x-0 transition-transform duration-700 ease-out z-20 relative bg-black">
+                 {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img 
+                  src={featured.novel.cover} 
+                  alt={featured.novel.title} 
+                  className="w-full h-full object-cover group-hover/cover:scale-110 transition-transform duration-700 ease-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <div className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{featured.novel.author}</div>
+                  <div className="font-mono text-sm">{featured.chapterCount} Chapters</div>
+                </div>
+              </div>
+              {/* Fake reflection */}
+              <div className="absolute -bottom-10 left-0 right-0 h-1/2 bg-gradient-to-b from-black/20 to-transparent blur-2xl z-0 transform -skew-x-12" />
+            </div>
+          )}
         </div>
       </section>
 

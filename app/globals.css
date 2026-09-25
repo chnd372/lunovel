@@ -8,14 +8,7 @@
 }
 
 html, body {
-  background: var(--bg-light);
-  color: #1a1410;
   min-height: 100vh;
-}
-
-html.dark, html.dark body {
-  background: var(--bg-dark);
-  color: #fff2d5;
 }
 
 .dark {
