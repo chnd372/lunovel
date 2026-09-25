@@ -242,7 +242,7 @@ export default async function HomePage() {
                       <span>📚 {featured?.chapterCount} chapter</span>
                       <span>✍️ {featured?.totalWords?.toLocaleString("id-ID")} kata</span>
                       {featured?.lastChapter && (
-                        <span>📌 Ch {featured.lastChapter.number}: {featured.lastChapter.title}</span>
+                        <span>📌 Ch {featured?.lastChapter.number}: {featured?.lastChapter.title}</span>
                       )}
                     </div>
                   </div>
