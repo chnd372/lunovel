@@ -28,7 +28,7 @@ export default function NovelCard({ novel, chapterCount, totalWords }: Props) {
   return (
     <Link
       href={`/novel/${novel.slug}`}
-      className="group relative flex flex-col rounded-2xl overflow-hidden bg-white/50 dark:bg-black/20 border border-black/5 dark:border-white/5 hover:shadow-glow hover:-translate-y-1 transition-all duration-500"
+      className="group relative flex flex-col rounded-2xl overflow-hidden bg-white/50 dark:bg-black/20 border border-black/5 dark:border-white/5 hover:shadow-glow hover:-translate-y-1 transition-all duration-500 perspective-[1000px] hover:[transform:rotateX(2deg)_rotateY(-2deg)]"
     >
       <div className="relative aspect-[3/4] overflow-hidden bg-black/5 dark:bg-white/5">
         {/* Cover Background Blur for Ambience */}

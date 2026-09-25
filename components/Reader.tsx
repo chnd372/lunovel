@@ -30,16 +30,15 @@ const defaultSettings: ReaderSettings = {
   theme: "light",
   font_size: 18,
   line_height: 1.8,
-  max_width: 720,
+  max_width: 768,
   font_family: "serif",
 };
 
 const themes: Record<ReaderTheme, { bg: string; text: string; label: string; icon: string }> = {
-  light: { bg: "bg-[#fffcf2]", text: "text-[#2a2a2a]", label: "Terang", icon: "☀️" },
+  light: { bg: "bg-[#fcfcfa]", text: "text-[#111111]", label: "Light", icon: "☀️" },
   sepia: { bg: "bg-[#f5ead5]", text: "text-[#433422]", label: "Sepia", icon: "📜" },
-  dark:  { bg: "bg-[#0a0a0a]", text: "text-[#d4d4d4]", label: "Gelap",  icon: "🌙" },
-  cyan:  { bg: "bg-[#0b141a]", text: "text-[#d1e2ec]", label: "Malam",  icon: "🌃" },
-};
+  cyan: { bg: "bg-[#0f172a]", text: "text-[#cbd5e1]", label: "Slate", icon: "🌑" },
+  dark:  { bg: "bg-[#000000]", text: "text-[#e2e8f0]", label: "OLED",  icon: "🌙" },
 };
 
 function loadSettings(): ReaderSettings {
@@ -144,6 +143,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
   const activeChapterRef = useRef<HTMLButtonElement>(null);
   const [progress, setProgress] = useState(0);
   const [showHeader, setShowHeader] = useState(true);
+  const lastScrollY = useRef(0);
   const [perbaikanVersion, setPerbaikanVersion] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
   const [selectedTerm, setSelectedTerm] = useState<{term: string, definition: string} | null>(null);
@@ -313,11 +313,19 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
           pct,
         );
       }
-      setShowHeader(scrollTop < 100);
+      
+      if (scrollTop < 50) {
+        setShowHeader(true);
+      } else if (scrollTop > lastScrollY.current && scrollTop > 100) {
+        setShowHeader(false);
+      } else if (scrollTop < lastScrollY.current) {
+        setShowHeader(true);
+      }
+      lastScrollY.current = scrollTop;
     }
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [novel.id, chapter.id, chapter.number]);
+  }, [novel.id, chapter.id, chapter.number, novel.slug, novel.title]);
 
   // Keyboard nav + help overlay
   const [showHelp, setShowHelp] = useState(false);
@@ -513,11 +521,11 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
 
       {/* Floating header (hides on scroll) */}
       <header
-        className={`fixed top-1 left-0 right-0 z-40 transition-all duration-300 ${
-          showHeader ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+        className={`fixed top-0 left-0 right-0 z-40 bg-white/70 dark:bg-black/70 backdrop-blur-xl border-b border-black/5 dark:border-white/5 transition-transform duration-500 ease-in-out ${
+          showHeader ? "translate-y-0" : "-translate-y-full pointer-events-none"
         }`}
       >
-        <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
+        <div className="max-w-[75ch] mx-auto px-4 py-3 flex items-center gap-3 pt-4">
           <button
             onClick={() => router.push(`/novel/${novel.slug}`)}
             className="p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10"
