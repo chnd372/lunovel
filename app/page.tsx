@@ -53,7 +53,7 @@ export default async function HomePage() {
           {featured?.novel.cover && (
             // eslint-disable-next-line @next/next/no-img-element
             <img 
-              src={featured.novel.cover} 
+              src={featured?.novel.cover || ""} 
               alt="cover" 
               className="absolute inset-0 w-full h-full object-cover opacity-40 blur-3xl scale-110 group-hover:scale-125 group-hover:opacity-50 transition-all duration-[2s] ease-out" 
             />
@@ -103,14 +103,14 @@ export default async function HomePage() {
               <div className="w-[280px] aspect-[2/3] rounded-2xl overflow-hidden shadow-2xl border border-white/10 transform rotate-y-[-10deg] rotate-x-[5deg] group-hover/cover:rotate-y-0 group-hover/cover:rotate-x-0 transition-transform duration-700 ease-out z-20 relative bg-black">
                  {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
-                  src={featured.novel.cover} 
-                  alt={featured.novel.title} 
+                  src={featured?.novel.cover || ""} 
+                  alt={featured?.novel.title || ""} 
                   className="w-full h-full object-cover group-hover/cover:scale-110 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <div className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{featured.novel.author}</div>
-                  <div className="font-mono text-sm">{featured.chapterCount} Chapters</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{featured?.novel.author}</div>
+                  <div className="font-mono text-sm">{featured?.chapterCount} Chapters</div>
                 </div>
               </div>
               {/* Fake reflection */}
@@ -207,16 +207,16 @@ export default async function HomePage() {
           {featured && (
             <section className="hidden md:block">
               <Link
-                href={`/novel/${featured.novel.slug}`}
+                href={`/novel/${featured?.novel.slug}`}
                 className="block group rounded-xl overflow-hidden bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 hover:shadow-lg transition-all"
               >
                 <div className="grid sm:grid-cols-3 gap-0">
                   <div className="aspect-square sm:aspect-auto sm:max-h-64 bg-gradient-to-br from-accent/30 to-accent/5 flex items-center justify-center p-6">
-                    {featured.novel.cover ? (
+                    {featured?.novel.cover ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
-                        src={featured.novel.cover}
-                        alt={featured.novel.title}
+                        src={featured?.novel.cover}
+                        alt={featured?.novel.title}
                         className="w-full h-full object-cover"
                       />
                     ) : (
@@ -227,21 +227,21 @@ export default async function HomePage() {
                     <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-accent mb-2">
                       <span>★ Featured</span>
                       <span>·</span>
-                      <span className="text-emerald-500">{featured.novel.status}</span>
+                      <span className="text-emerald-500">{featured?.novel.status}</span>
                     </div>
-                    <h2 className="text-2xl sm:text-3xl font-serif font-bold group-hover:text-accent transition-colors line-clamp-2">
-                      {featured.novel.title}
+                    <h2 className="text-2xl font-serif font-bold leading-tight group-hover:text-accent transition-colors">
+                      {featured?.novel.title}
                     </h2>
-                    {featured.novel.author && (
-                      <p className="text-sm opacity-70 mt-1">oleh {featured.novel.author}</p>
+                    {featured?.novel.author && (
+                      <p className="text-sm opacity-70 mt-1">oleh {featured?.novel.author}</p>
                     )}
-                    <p className="text-sm opacity-80 mt-3 line-clamp-3">
-                      {featured.novel.description}
+                    <p className="text-sm opacity-80 line-clamp-3 leading-relaxed mt-4">
+                      {featured?.novel.description}
                     </p>
                     <div className="flex items-center gap-4 mt-4 text-xs opacity-70">
-                      <span>📚 {featured.chapterCount} chapter</span>
-                      <span>✍️ {featured.totalWords.toLocaleString("id-ID")} kata</span>
-                      {featured.lastChapter && (
+                      <span>📚 {featured?.chapterCount} chapter</span>
+                      <span>✍️ {featured?.totalWords?.toLocaleString("id-ID")} kata</span>
+                      {featured?.lastChapter && (
                         <span>📌 Ch {featured.lastChapter.number}: {featured.lastChapter.title}</span>
                       )}
                     </div>
