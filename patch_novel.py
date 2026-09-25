@@ -1,92 +1,115 @@
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-import Link from "next/link";
-import { getNovelBySlug, getChaptersByNovel } from "@/lib/data";
-import ChapterList from "@/components/ChapterList";
-import BookAccordion from "@/components/BookAccordion";
-import BookmarkButton from "@/components/BookmarkButton";
-import ResumeReadingButton from "@/components/ResumeReadingButton";
-import CorrectionPanel from "@/components/CorrectionPanel";
-import Comments from "@/components/Comments";
+import re
 
-export const dynamic = "force-dynamic";
+with open("app/novel/[slug]/page.tsx", "r", encoding="utf-8") as f:
+    content = f.read()
 
-interface Props {
-  params: Promise<{ slug: string }>;
-  searchParams: Promise<{ sort?: string }>;
-}
+# Replace the specific header part.
+# We'll use a precise replacement.
 
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME ?? "Lunovel";
+old_str = """  return (
+    <div className="max-w-5xl mx-auto px-4 py-6">
+      {/* Header */}
+      <div className="grid sm:grid-cols-[200px_1fr] gap-6 mb-6">
+        <div className="aspect-[3/4] rounded-xl overflow-hidden bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+          {novel.cover ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={novel.cover}
+              alt={novel.title}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <div className="text-7xl opacity-30">📖</div>
+          )}
+        </div>
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase text-white ${statusColor[novel.status]}`}>
+              {statusLabel[novel.status]}
+            </span>
+            <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-black/5 dark:bg-white/10">
+              {novel.type === "translated" ? "Terjemahan" : (novel.type ?? "Original")}
+            </span>
+            {novel.original_language && novel.original_language !== "id" && (
+              <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-black/5 dark:bg-white/10">
+                dari {novel.original_language}
+              </span>
+            )}
+          </div>
+          <h1 className="text-2xl sm:text-4xl font-serif font-bold leading-tight">
+            {novel.title}
+          </h1>
+          {novel.alt_titles && novel.alt_titles.length > 0 && (
+            <p className="text-sm opacity-60">
+              Alt: {novel.alt_titles.join(" · ")}
+            </p>
+          )}
+          {novel.author && (
+            <p className="text-sm">
+              <span className="opacity-60">oleh </span>
+              <span className="font-medium">{novel.author}</span>
+            </p>
+          )}
+          <div className="flex flex-wrap gap-1.5">
+            {novel.genres.map((g) => (
+              <Link
+                key={g}
+                href={`/search?genre=${encodeURIComponent(g)}`}
+                className="text-xs px-2 py-1 rounded-md bg-black/5 dark:bg-white/10 hover:bg-accent hover:text-white transition"
+              >
+                {g}
+              </Link>
+            ))}
+          </div>
+          <p className="text-sm opacity-90 leading-relaxed whitespace-pre-line">
+            {novel.description}
+          </p>
+          <div className="flex items-center gap-3 text-xs opacity-70">
+            <span>📚 {chapters.length} chapter</span>
+            <span>✍️ {totalWords.toLocaleString("id-ID")} kata</span>
+            {novel.rating && <span>⭐ {novel.rating.toFixed(1)}</span>}
+          </div>
+          <div className="flex flex-wrap gap-2 pt-1">
+            {firstChapter && (
+              <Link
+                href={`/read/${novel.slug}/${firstChapter.number}`}
+                className="px-4 py-2 rounded-lg bg-accent text-white text-sm font-medium hover:bg-accent/90"
+              >
+                📖 Mulai dari Ch 1
+              </Link>
+            )}
+            {lastChapter && (
+              <Link
+                href={`/read/${novel.slug}/${lastChapter.number}`}
+                className="px-4 py-2 rounded-lg bg-black/5 dark:bg-white/10 text-sm font-medium hover:bg-black/10 dark:hover:bg-white/20"
+              >
+                ⏭ Chapter Terakhir
+              </Link>
+            )}
+            <ResumeReadingButton novelId={novel.id} slug={novel.slug} />
+            <BookmarkButton novel={novel} />
+            <Link
+              href={`/novel/${novel.slug}/perbaikan`}
+              className="px-3 py-2 rounded-lg bg-black/5 dark:bg-white/10 text-sm font-medium hover:bg-black/10 dark:hover:bg-white/20 inline-flex items-center gap-1.5"
+              title="Kelola perbaikan kata pribadi (tersimpan lokal)"
+            >
+              ✏️ Perbaikan Kata
+            </Link>
+            <Link
+              href={`/novel/${novel.slug}/search`}
+              className="px-3 py-2 rounded-lg bg-black/5 dark:bg-white/10 text-sm font-medium hover:bg-black/10 dark:hover:bg-white/20 inline-flex items-center gap-1.5"
+              title="Cari kata kunci, nama tokoh, atau dialog di seluruh isi novel"
+            >
+              🔍 Cari Isi
+            </Link>
+          </div>
+        </div>
+      </div>
 
-// Sinopsis → meta description (≤ 160 chars, word-boundary safe).
-function truncate(text: string, max = 160): string {
-  const clean = text.replace(/\s+/g, " ").trim();
-  if (clean.length <= max) return clean;
-  const cut = clean.slice(0, max);
-  const lastSpace = cut.lastIndexOf(" ");
-  return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trimEnd() + "…";
-}
+      {/* Chapter list */}
+      <section>"""
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const novel = await getNovelBySlug(slug);
-  if (!novel) return { title: "Novel tidak ditemukan" };
-
-  const description = truncate(novel.description || `${novel.title} — baca online gratis di ${SITE_NAME}.`);
-  const ogImage = novel.cover
-    ? [{ url: novel.cover, width: 800, height: 1200, alt: novel.title }]
-    : undefined;
-
-  return {
-    title: novel.title,
-    description,
-    keywords: [novel.title, ...(novel.genres || []), novel.author].filter(Boolean) as string[],
-    alternates: { canonical: `/novel/${novel.slug}` },
-    openGraph: {
-      type: "book",
-      title: novel.title,
-      description,
-      url: `/novel/${novel.slug}`,
-      siteName: SITE_NAME,
-      locale: "id_ID",
-      images: ogImage,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: novel.title,
-      description,
-      images: ogImage?.map((i) => i.url),
-    },
-  };
-}
-
-type SortOrder = "newest" | "oldest";
-
-const statusColor: Record<string, string> = {
-  ongoing: "bg-emerald-500/90",
-  completed: "bg-blue-500/90",
-  hiatus: "bg-amber-500/90",
-};
-const statusLabel: Record<string, string> = {
-  ongoing: "Ongoing",
-  completed: "Tamat",
-  hiatus: "Hiatus",
-};
-
-export default async function NovelPage({ params, searchParams }: Props) {
-  const { slug } = await params;
-  const query = await searchParams;
-  const novel = await getNovelBySlug(slug);
-  if (!novel) notFound();
-
-  const chapters = await getChaptersByNovel(novel.id);
-  const totalWords = chapters.reduce((s, c) => s + c.word_count, 0);
-  const lastChapter = chapters[chapters.length - 1];
-  const firstChapter = chapters[0];
-  const sort: SortOrder = query.sort === "oldest" ? "oldest" : "newest";
-  const orderedChapters = sort === "oldest" ? chapters : chapters.slice().reverse();
-
-  return (
+new_str = """  return (
     <div className="w-full">
       {/* Immersive Header */}
       <div className="relative w-full overflow-hidden bg-black/90 pb-8 pt-10 sm:pt-16 sm:pb-12 border-b border-white/10">
@@ -228,32 +251,11 @@ export default async function NovelPage({ params, searchParams }: Props) {
         </div>
 
         {/* Chapter list */}
-        <section className="mt-12">
-        <div className="flex items-baseline justify-between mb-3">
-          <h2 className="text-lg sm:text-xl font-bold">Daftar Chapter</h2>
-          <span className="text-xs opacity-60">{chapters.length} entries</span>
-        </div>
-        
-        {novel.books && novel.books.length > 0 ? (
-          <BookAccordion novel={novel} chapters={chapters} />
-        ) : (
-          <div className="rounded-xl overflow-hidden bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5">
-            <ChapterList novel={novel} chapters={orderedChapters} />
-          </div>
-        )}
-      </section>
+        <section className="mt-12">"""
 
-      {/* Novel-level discussion (separate from chapter-threaded comments) */}
-      <section className="mt-10">
-        <div className="flex items-baseline justify-between mb-3">
-          <h2 className="text-lg sm:text-xl font-bold">Diskusi Novel</h2>
-          <span className="text-xs opacity-60">Topik umum · tidak terikat chapter</span>
-        </div>
-        <Comments
-          chapterId={`novel:${novel.slug}`}
-          novelId={novel.id}
-        />
-      </section>
-    </div>
-  );
-}
+if old_str in content:
+    with open("app/novel/[slug]/page.tsx", "w", encoding="utf-8") as f:
+        f.write(content.replace(old_str, new_str))
+    print("PATCHED DETAIL PAGE")
+else:
+    print("NOT FOUND")

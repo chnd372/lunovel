@@ -35,10 +35,11 @@ const defaultSettings: ReaderSettings = {
 };
 
 const themes: Record<ReaderTheme, { bg: string; text: string; label: string; icon: string }> = {
-  light: { bg: "bg-[#fafaf8]", text: "text-[#1a1a1a]", label: "Light", icon: "☀️" },
-  sepia: { bg: "bg-[#f4ecd8]", text: "text-[#5b4636]", label: "Sepia", icon: "📜" },
-  dark:  { bg: "bg-[#0d0d0d]", text: "text-[#e8e8e8]", label: "Dark",  icon: "🌙" },
-  cyan:  { bg: "bg-[#0f1c24]", text: "text-[#d1e2ec]", label: "Cyan",  icon: "🌃" },
+  light: { bg: "bg-[#fffcf2]", text: "text-[#2a2a2a]", label: "Terang", icon: "☀️" },
+  sepia: { bg: "bg-[#f5ead5]", text: "text-[#433422]", label: "Sepia", icon: "📜" },
+  dark:  { bg: "bg-[#0a0a0a]", text: "text-[#d4d4d4]", label: "Gelap",  icon: "🌙" },
+  cyan:  { bg: "bg-[#0b141a]", text: "text-[#d1e2ec]", label: "Malam",  icon: "🌃" },
+};
 };
 
 function loadSettings(): ReaderSettings {
