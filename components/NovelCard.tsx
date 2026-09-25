@@ -69,9 +69,7 @@ export default function NovelCard({ novel, chapterCount, totalWords }: Props) {
           <span className={`px-1.5 sm:px-2 py-0.5 rounded text-[8px] sm:text-[10px] font-bold uppercase tracking-wider text-white shadow-sm backdrop-blur-md ${statusColor[novel.status] ?? "bg-gray-500"}`}>
             {statusLabel[novel.status] ?? novel.status}
           </span>
-          <span className="px-1.5 sm:px-2 py-0.5 rounded text-[8px] sm:text-[10px] font-bold tracking-wider uppercase bg-black/50 text-white backdrop-blur-md border border-white/10 shadow-sm">
-            {typeLabel[novel.type] ?? novel.type}
-          </span>
+          {/* Badge TYPE dihilangkan sesuai request user */}
         </div>
       </div>
 
