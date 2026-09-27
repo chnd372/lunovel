@@ -27,7 +27,7 @@ export default function TextSelectionHandler({
   const lastTextRef = useRef<string>("");
   const isEditingRef = useRef(false);
   const selectionRef = useRef<typeof selection>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
 
   // Keep refs in sync
   useEffect(() => { isEditingRef.current = isEditing; }, [isEditing]);
@@ -37,7 +37,7 @@ export default function TextSelectionHandler({
     const sel = window.getSelection();
     if (!sel || sel.isCollapsed || !sel.rangeCount) return null;
     const text = sel.toString().trim();
-    if (!text || text.length < 1 || text.length > 100) return null;
+    if (!text || text.length < 1 || text.length > 5000) return null;
 
     const range = sel.getRangeAt(0);
     const container = contentRef.current;
@@ -118,7 +118,7 @@ export default function TextSelectionHandler({
   }
 
   function handleKeyDown(e: React.KeyboardEvent) {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSave();
     } else if (e.key === "Escape") {
@@ -163,14 +163,13 @@ export default function TextSelectionHandler({
               <button onClick={() => { isEditingRef.current = false; setIsEditing(false); setSelection(null); }} className="text-white dark:text-black opacity-60 hover:opacity-100 px-2">✕</button>
             </div>
             <div className="flex items-center gap-2">
-              <input
+              <textarea
                 ref={inputRef}
-                type="text"
                 value={replacement}
                 onChange={(e) => setReplacement(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder={`Ganti "${selection.text}"...`}
-                className="flex-1 bg-black/20 dark:bg-white/50 text-white dark:text-black text-sm px-4 py-2.5 rounded-xl outline-none font-medium placeholder-white/40 dark:placeholder-black/40 focus:ring-2 focus:ring-accent"
+                placeholder={`Ganti "${selection.text.length > 30 ? selection.text.substring(0,30) + '...' : selection.text}"...`}
+                className="flex-1 bg-black/20 dark:bg-white/50 text-white dark:text-black text-sm px-4 py-2.5 rounded-xl outline-none font-medium placeholder-white/40 dark:placeholder-black/40 focus:ring-2 focus:ring-accent min-h-[44px] max-h-[200px] resize-y"
               />
               <button
                 onClick={handleSave}
