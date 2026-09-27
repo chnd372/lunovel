@@ -99,7 +99,6 @@ export default function TextSelectionHandler({
         });
       } catch (err) {}
       
-      // Dispatch event for Reader to re-render instantly
       try {
         window.dispatchEvent(new CustomEvent("lunovel:perbaikan-changed", {
           detail: { slug: novelSlug },
@@ -108,6 +107,7 @@ export default function TextSelectionHandler({
     }
 
     // Reset
+    isEditingRef.current = false;
     setIsEditing(false);
     setSelection(null);
     setReplacement("");
@@ -120,6 +120,7 @@ export default function TextSelectionHandler({
       e.preventDefault();
       handleSave();
     } else if (e.key === "Escape") {
+      isEditingRef.current = false;
       setIsEditing(false);
       setSelection(null);
       setReplacement("");
@@ -141,7 +142,10 @@ export default function TextSelectionHandler({
       >
         {!isEditing ? (
           <button
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
+              isEditingRef.current = true;
+              if (debounceRef.current) clearTimeout(debounceRef.current);
               setIsEditing(true);
               setReplacement(selection.text);
             }}
@@ -154,7 +158,7 @@ export default function TextSelectionHandler({
           <div className="flex flex-col gap-2 p-3 bg-neutral-900/95 dark:bg-neutral-100/95 rounded-2xl shadow-[0_10px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl border border-white/10 dark:border-black/10 w-[90vw] max-w-[400px] mx-auto">
             <div className="flex items-center justify-between px-1">
               <span className="text-[10px] font-bold uppercase tracking-wider opacity-60 text-white dark:text-black">Koreksi Cepat</span>
-              <button onClick={() => { setIsEditing(false); setSelection(null); }} className="text-white dark:text-black opacity-60 hover:opacity-100 px-2">✕</button>
+              <button onClick={() => { isEditingRef.current = false; setIsEditing(false); setSelection(null); }} className="text-white dark:text-black opacity-60 hover:opacity-100 px-2">✕</button>
             </div>
             <div className="flex items-center gap-2">
               <input
