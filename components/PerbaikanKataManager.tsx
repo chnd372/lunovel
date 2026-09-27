@@ -292,6 +292,11 @@ export default function PerbaikanKataManager({ novel }: Props) {
                         <div className="text-[10px] opacity-50 font-mono">
                           {rule.caseSensitive ? "Aa" : "aa"}
                         </div>
+                        {rule.chapter && (
+                          <div className="text-[10px] opacity-50 font-mono bg-accent/10 text-accent px-1 rounded">
+                            Ch {rule.chapter}
+                          </div>
+                        )}
                       </div>
                       <div className="flex gap-1 shrink-0">
                         <button

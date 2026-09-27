@@ -12,7 +12,7 @@ interface Props {
 }
 
 export default function TextSelectionHandler({
-  novelSlug, contentRef,
+  novelSlug, chapterNumber, contentRef,
 }: Props) {
   const [selection, setSelection] = useState<{
     text: string;
@@ -22,6 +22,7 @@ export default function TextSelectionHandler({
   
   const [isEditing, setIsEditing] = useState(false);
   const [replacement, setReplacement] = useState("");
+  const [applyGlobal, setApplyGlobal] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastTextRef = useRef<string>("");
   const isEditingRef = useRef(false);
@@ -96,6 +97,7 @@ export default function TextSelectionHandler({
           ke,
           caseSensitive: false,
           by: "anon",
+          chapter: applyGlobal ? undefined : chapterNumber,
         });
       } catch (err) {}
       
@@ -177,6 +179,15 @@ export default function TextSelectionHandler({
                 ✓
               </button>
             </div>
+            <label className="flex items-center gap-2 mt-1 px-1 cursor-pointer">
+              <input 
+                type="checkbox" 
+                checked={applyGlobal} 
+                onChange={(e) => setApplyGlobal(e.target.checked)}
+                className="w-3.5 h-3.5 rounded-sm accent-accent"
+              />
+              <span className="text-[11px] opacity-70 text-white dark:text-black leading-none pt-0.5">Terapkan ke seluruh chapter di novel ini</span>
+            </label>
           </div>
         )}
       </div>

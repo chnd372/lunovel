@@ -22,6 +22,7 @@ export interface PerbaikanKata {
   caseSensitive: boolean;
   createdAt: string;     // ISO timestamp
   by?: string;           // contributor name (when sourced from shared)
+  chapter?: number;      // if present, only applies to this specific chapter
 }
 
 const localKey = (slug: string) => `perbaikan_${slug}`;
@@ -126,6 +127,7 @@ export async function addPerbaikanShared(
       ke: entry.ke,
       caseSensitive: entry.caseSensitive,
       by: entry.by,
+      chapter: entry.chapter,
     }),
   });
 
@@ -209,7 +211,11 @@ export async function clearPerbaikanShared(slug: string): Promise<void> {
  * Rules are read fresh from localStorage each call so a re-run after a
  * "perubahan-changed" event picks up new rules immediately.
  */
-export function applyPerbaikanToDOM(element: HTMLElement, slug: string): {
+export function applyPerbaikanToDOM(
+  element: HTMLElement, 
+  slug: string,
+  currentChapterNumber?: number
+): {
   applied: PerbaikanKata[];
   totalReplacements: number;
   rulesCount: number;
@@ -217,10 +223,12 @@ export function applyPerbaikanToDOM(element: HTMLElement, slug: string): {
   if (!element || typeof document === "undefined") {
     return { applied: [], totalReplacements: 0, rulesCount: 0 };
   }
-  const list = getPerbaikan(slug);
+  const allList = getPerbaikan(slug);
+  const list = allList.filter((r) => r.chapter === undefined || r.chapter === null || r.chapter === currentChapterNumber);
+
   if (list.length === 0) {
     if (typeof console !== "undefined") {
-      console.log(`[perbaikan] DOM pass: 0 rules in localStorage for slug="${slug}"`);
+      console.log(`[perbaikan] DOM pass: 0 applicable rules in localStorage for slug="${slug}" ch=${currentChapterNumber}`);
     }
     return { applied: [], totalReplacements: 0, rulesCount: 0 };
   }
@@ -290,11 +298,13 @@ export function applyPerbaikanToDOM(element: HTMLElement, slug: string): {
  * Apply all find-and-replace rules to text. Pure sync function.
  * Reads from localStorage (which has been hydrated by syncSharedRules).
  */
-export function applyPerbaikan(text: string, slug: string): {
+export function applyPerbaikan(text: string, slug: string, currentChapterNumber?: number): {
   text: string;
   applied: PerbaikanKata[];
 } {
-  const list = getPerbaikan(slug);
+  const allList = getPerbaikan(slug);
+  const list = allList.filter((r) => r.chapter === undefined || r.chapter === null || r.chapter === currentChapterNumber);
+  
   let modified = text;
   const applied: PerbaikanKata[] = [];
   for (const rule of list) {

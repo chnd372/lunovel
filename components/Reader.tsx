@@ -256,7 +256,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
     function run() {
       const el = contentRef.current;
       if (!el) return;
-      const res = applyPerbaikanToDOM(el, slug);
+      const res = applyPerbaikanToDOM(el, slug, chapter.number);
       console.log(
         `[perbaikan] DOM pass summary: rules=${res.rulesCount}, applied=${res.applied.length}, replacements=${res.totalReplacements}`,
       );
