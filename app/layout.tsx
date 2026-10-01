@@ -91,9 +91,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={`${fontBody.variable} ${fontHeading.variable} ${fontNovel.variable} font-sans antialiased bg-bg-light dark:bg-bg-dark text-black dark:text-white selection:bg-accent selection:text-white transition-colors duration-300`}>
         <Navbar />
-        <main className="min-h-[calc(100vh-64px)] pb-14 md:pb-0">{children}</main>
+        <main className="min-h-[calc(100vh-64px)] pb-24 md:pb-0">{children}</main>
         <BottomNav />
-        <footer className="border-t border-black/10 dark:border-white/10 py-6 text-center text-sm opacity-70">
+        <footer className="border-t border-black/10 dark:border-white/10 py-6 text-center text-sm opacity-70 pb-32 md:pb-6">
           <div className="max-w-7xl mx-auto px-4 space-y-1">
             <div>🌙 {siteName} · {new Date().getFullYear()} · {tagline}</div>
             <div className="text-xs opacity-60">

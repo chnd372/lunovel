@@ -59,7 +59,7 @@ export default function BottomNav() {
     <nav
       data-bottom-nav
       aria-label="Navigasi bawah"
-      className="md:hidden fixed bottom-0 left-0 right-0 z-30 h-16 glass flex items-stretch justify-around pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_30px_rgba(0,0,0,0.05)] transition-colors duration-300"
+      className="md:hidden fixed bottom-0 left-0 right-0 z-[100] h-16 glass flex items-stretch justify-around pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_30px_rgba(0,0,0,0.05)] transition-colors duration-300"
     >
       {ITEMS.map((item) => {
         const active = item.match(pathname);
