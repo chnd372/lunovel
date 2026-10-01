@@ -3,13 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --bg-light: #fff2d5;
-  --bg-dark: #1a1410;
+  --bg-light: #fefcf8;
+  --bg-dark: #0f0f13;
+  --accent: #e11d48;
 }
 
 html, body {
   min-height: 100vh;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* UI/UX Pro Max: Glassmorphism base */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass {
+  background: rgba(15, 15, 19, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Subtle Ambient Background */
@@ -20,15 +36,15 @@ body::before {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 50% 50%, rgba(237, 78, 8, 0.03) 0%, transparent 40%),
-              radial-gradient(circle at 80% 20%, rgba(237, 78, 8, 0.02) 0%, transparent 30%);
+  background: radial-gradient(circle at 50% 50%, rgba(225, 29, 72, 0.03) 0%, transparent 40%),
+              radial-gradient(circle at 80% 20%, rgba(225, 29, 72, 0.02) 0%, transparent 30%);
   pointer-events: none;
   z-index: -1;
   background-attachment: fixed;
 }
 .dark body::before {
-  background: radial-gradient(circle at 50% 50%, rgba(237, 78, 8, 0.05) 0%, transparent 40%),
-              radial-gradient(circle at 80% 20%, rgba(237, 78, 8, 0.04) 0%, transparent 30%);
+  background: radial-gradient(circle at 50% 50%, rgba(225, 29, 72, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 80% 80%, rgba(225, 29, 72, 0.05) 0%, transparent 40%);
 }
 
 .dark {

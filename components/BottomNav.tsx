@@ -9,11 +9,19 @@ import { usePathname } from "next/navigation";
 // Active route is detected from pathname; the "Baca" tab links to /profile
 // (where last-read chapter lives in the history list) when no other match.
 const ITEMS = [
-  { href: "/", label: "Beranda", icon: "🏠", match: (p: string) => p === "/" },
-  { href: "/search", label: "Cari", icon: "🔍", match: (p: string) => p.startsWith("/search") },
-  { href: "/novel", label: "Novel", icon: "📚", match: (p: string) => p.startsWith("/novel") || p.startsWith("/read") },
-  { href: "/profile", label: "Profil", icon: "👤", match: (p: string) => p.startsWith("/profile") },
-] as const;
+  { href: "/", label: "Beranda", icon: (
+    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+  ), match: (p: string) => p === "/" },
+  { href: "/search", label: "Cari", icon: (
+    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+  ), match: (p: string) => p.startsWith("/search") },
+  { href: "/novel", label: "Novel", icon: (
+    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+  ), match: (p: string) => p.startsWith("/novel") || p.startsWith("/read") },
+  { href: "/profile", label: "Profil", icon: (
+    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+  ), match: (p: string) => p.startsWith("/profile") },
+];
 
 export default function BottomNav() {
   const pathname = usePathname();
@@ -51,7 +59,7 @@ export default function BottomNav() {
     <nav
       data-bottom-nav
       aria-label="Navigasi bawah"
-      className="md:hidden fixed bottom-0 left-0 right-0 z-30 h-14 bg-bg-light/85 dark:bg-bg-dark/85 backdrop-blur-xl border-t border-black/5 dark:border-white/5 flex items-stretch justify-around pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_30px_rgba(0,0,0,0.05)] transition-colors duration-300"
+      className="md:hidden fixed bottom-0 left-0 right-0 z-30 h-16 glass flex items-stretch justify-around pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_30px_rgba(0,0,0,0.05)] transition-colors duration-300"
     >
       {ITEMS.map((item) => {
         const active = item.match(pathname);
@@ -61,13 +69,15 @@ export default function BottomNav() {
             href={item.href}
             aria-current={active ? "page" : undefined}
             aria-label={item.label}
-            className={`flex-1 flex flex-col items-center justify-center gap-0.5 text-[10px] transition-colors ${
+            className={`flex-1 flex flex-col items-center justify-center gap-1 text-[10px] active:scale-95 transition-all duration-300 ${
               active
                 ? "text-accent font-semibold"
-                : "text-black/55 dark:text-white/55 hover:text-accent"
+                : "text-black/55 dark:text-white/55 hover:text-black dark:hover:text-white"
             }`}
           >
-            <span className="text-xl leading-none">{item.icon}</span>
+            <div className={`${active ? "scale-110" : "scale-100"} transition-transform duration-300`}>
+              {item.icon}
+            </div>
             <span className="leading-none">{item.label}</span>
           </Link>
         );
@@ -75,13 +85,15 @@ export default function BottomNav() {
       <Link
         href={lastRead}
         aria-label="Lanjut baca"
-        className={`flex-1 flex flex-col items-center justify-center gap-0.5 text-[10px] transition-colors ${
+        className={`flex-1 flex flex-col items-center justify-center gap-1 text-[10px] active:scale-95 transition-all duration-300 ${
           pathname.startsWith("/read")
             ? "text-accent font-semibold"
-            : "text-black/55 dark:text-white/55 hover:text-accent"
+            : "text-black/55 dark:text-white/55 hover:text-black dark:hover:text-white"
         }`}
       >
-        <span className="text-xl leading-none">📖</span>
+        <div className={`${pathname.startsWith("/read") ? "scale-110" : "scale-100"} transition-transform duration-300`}>
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+        </div>
         <span className="leading-none">Baca</span>
       </Link>
     </nav>

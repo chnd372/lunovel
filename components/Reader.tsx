@@ -27,18 +27,18 @@ const SETTINGS_KEY = "lunovel_reader_settings";
 const HISTORY_KEY = "lunovel_history";
 
 const defaultSettings: ReaderSettings = {
-  theme: "light",
+  theme: "dark",
   font_size: 18,
-  line_height: 1.8,
+  line_height: 1.625,
   max_width: 768,
   font_family: "serif",
 };
 
 const themes: Record<ReaderTheme, { bg: string; text: string; label: string; icon: string }> = {
-  light: { bg: "bg-[#fcfcfa]", text: "text-[#111111]", label: "Light", icon: "☀️" },
-  sepia: { bg: "bg-[#f5ead5]", text: "text-[#433422]", label: "Sepia", icon: "📜" },
+  light: { bg: "bg-[#fefcf8]", text: "text-[#1a1a1e]", label: "Light", icon: "☀️" },
+  sepia: { bg: "bg-[#f4ebd8]", text: "text-[#3b2f21]", label: "Sepia", icon: "📜" },
   cyan: { bg: "bg-[#0f172a]", text: "text-[#cbd5e1]", label: "Slate", icon: "🌑" },
-  dark:  { bg: "bg-[#000000]", text: "text-[#e2e8f0]", label: "OLED",  icon: "🌙" },
+  dark:  { bg: "bg-[#0f0f13]", text: "text-[#e0e0e4]", label: "Dark",  icon: "🌙" },
 };
 
 function loadSettings(): ReaderSettings {
@@ -521,7 +521,7 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
 
       {/* Floating header (hides on scroll) */}
       <header
-        className={`fixed top-0 left-0 right-0 z-40 bg-white/70 dark:bg-black/70 backdrop-blur-xl border-b border-black/5 dark:border-white/5 transition-transform duration-500 ease-in-out ${
+        className={`fixed top-0 left-0 right-0 z-40 glass transition-transform duration-500 ease-in-out ${
           showHeader ? "translate-y-0" : "-translate-y-full pointer-events-none"
         }`}
       >
@@ -563,10 +563,10 @@ export default function Reader({ novel, chapter, prevChapter, nextChapter, allCh
           className="fixed inset-0 z-50 flex items-end md:items-center md:justify-center"
           onClick={() => setShowSettings(false)}
         >
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full md:max-w-md bg-white dark:bg-neutral-900 rounded-t-2xl md:rounded-2xl p-6 space-y-4"
+            className="relative w-full md:max-w-md glass rounded-t-2xl md:rounded-2xl p-6 space-y-4 shadow-2xl ring-1 ring-white/10"
           >
             <div className="flex items-center justify-between">
               <h3 className="font-bold text-lg">Pengaturan Bacaan</h3>

@@ -23,14 +23,26 @@ export function ThemeScript() {
 
 // Mobile nav items — icons + href, rendered identically inside the
 // desktop <nav> and the mobile drawer so behaviour stays in sync.
-type NavItem = { href: string; label: string; icon: string; match: (p: string) => boolean };
+type NavItem = { href: string; label: string; icon: React.ReactNode; match: (p: string) => boolean };
 const NAV_ITEMS: readonly NavItem[] = [
-  { href: "/", label: "Beranda", icon: "🏠", match: (p) => p === "/" },
-  { href: "/search?type=translated", label: "Terjemahan", icon: "📖", match: () => false },
-  { href: "/search?type=original", label: "Original", icon: "✍️", match: () => false },
-  { href: "/search?status=ongoing", label: "Ongoing", icon: "🔄", match: () => false },
-  { href: "/search?status=completed", label: "Completed", icon: "✅", match: () => false },
-  { href: "/profile", label: "Profil", icon: "👤", match: (p) => p.startsWith("/profile") },
+  { href: "/", label: "Beranda", icon: (
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+  ), match: (p) => p === "/" },
+  { href: "/search?type=translated", label: "Terjemahan", icon: (
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+  ), match: () => false },
+  { href: "/search?type=original", label: "Original", icon: (
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+  ), match: () => false },
+  { href: "/search?status=ongoing", label: "Ongoing", icon: (
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+  ), match: () => false },
+  { href: "/search?status=completed", label: "Completed", icon: (
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+  ), match: () => false },
+  { href: "/profile", label: "Profil", icon: (
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+  ), match: (p) => p.startsWith("/profile") },
 ];
 
 export default function Navbar() {
@@ -101,7 +113,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-40 bg-bg-light/80 dark:bg-bg-dark/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 shadow-glass transition-colors duration-300">
+    <header className="sticky top-0 z-40 glass border-b border-black/5 dark:border-white/5 shadow-glass transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 h-12 md:h-16 flex items-center gap-2 sm:gap-4">
         {/* Logo */}
         <Link

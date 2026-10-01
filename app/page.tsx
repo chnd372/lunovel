@@ -84,13 +84,13 @@ export default async function HomePage() {
             <div className="flex gap-4 pt-4">
               <Link
                 href={`/novel/${featured?.novel.slug}`}
-                className="px-8 py-3.5 rounded-xl bg-accent text-white text-sm font-bold shadow-glow hover:-translate-y-1 transition-all duration-300"
+                className="px-8 py-3.5 rounded-xl bg-accent text-white text-sm font-bold shadow-glow hover:-translate-y-1 active:scale-[0.98] transition-all duration-300"
               >
                 Mulai Baca
               </Link>
               <Link
                 href="/search"
-                className="px-8 py-3.5 rounded-xl bg-black/5 dark:bg-white/10 text-sm font-bold backdrop-blur-md border border-black/10 dark:border-white/10 hover:bg-black/10 dark:hover:bg-white/20 transition-all duration-300"
+                className="px-8 py-3.5 rounded-xl bg-black/5 dark:bg-white/10 text-sm font-bold backdrop-blur-md border border-black/10 dark:border-white/10 hover:bg-black/10 dark:hover:bg-white/20 active:scale-[0.98] transition-all duration-300"
               >
                 Jelajahi Novel
               </Link>

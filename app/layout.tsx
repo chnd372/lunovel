@@ -1,20 +1,22 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque, Lora, Inter } from "next/font/google";
+import { Cormorant_Garamond, Crimson_Pro, Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { ThemeScript } from "@/components/Navbar";
 import BottomNav from "@/components/BottomNav";
 
-const fontHeading = Bricolage_Grotesque({
+const fontHeading = Cormorant_Garamond({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-heading",
 });
 const fontBody = Inter({
   subsets: ["latin"],
   variable: "--font-body",
 });
-const fontNovel = Lora({
+const fontNovel = Crimson_Pro({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-novel",
 });
 
@@ -78,7 +80,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#ed4e08",
+  themeColor: "#e11d48",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
