@@ -129,7 +129,7 @@ export default function HomeTabs({ enriched }: Props) {
             <Link
               key={novel.id}
               href={`/novel/${novel.slug}`}
-              className="flex items-center gap-3 p-3 rounded-xl bg-card-light dark:bg-card-dark border border-black/5 dark:border-white/5 hover:bg-accent/5 transition-colors group"
+              className="flex items-center gap-3 p-3 rounded-xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 hover:bg-black/10 dark:hover:bg-white/10 active:scale-[0.98] transition-all duration-300 group"
             >
               <div className="shrink-0 w-10 h-10 rounded-lg bg-accent/15 flex items-center justify-center group-hover:bg-accent/25 transition-colors">
                 {novel.cover ? "📖" : "📖"}

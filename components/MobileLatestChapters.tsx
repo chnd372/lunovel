@@ -50,7 +50,7 @@ export default function MobileLatestChapters({ items }: Props) {
           <li key={`${novel.id}-${chapter.number}`}>
             <Link
               href={`/read/${novel.slug}/${chapter.number}`}
-              className="flex items-center gap-3 p-2.5 hover:bg-black/5 dark:hover:bg-white/5 active:bg-black/10 dark:active:bg-white/10 transition-colors"
+              className="flex items-center gap-3 p-2.5 hover:bg-black/5 dark:hover:bg-white/5 active:scale-[0.98] transition-all duration-300"
             >
               {/* Thumbnail */}
               <div className="shrink-0 w-[40px] h-[55px] rounded overflow-hidden bg-accent/10 flex items-center justify-center">

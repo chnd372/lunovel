@@ -188,9 +188,9 @@ function ChapterCard({
   return (
     <Link
       href={`/read/${novel.slug}/${chapter.number}`}
-      className={`group relative flex gap-3 p-3 rounded-xl border transition-all duration-150 overflow-hidden
-        bg-[#2a2a3e] hover:bg-[#34344a] border-white/5 hover:border-white/15
-        text-white hover:shadow-lg hover:shadow-black/20
+      className={`group relative flex gap-3 p-3 rounded-xl border active:scale-[0.98] transition-all duration-300 overflow-hidden
+        glass border-white/5 hover:border-white/15
+        text-current hover:shadow-lg hover:shadow-black/20
         ${isCurrent ? "ring-2 ring-accent border-accent/40" : ""}
       `}
     >
