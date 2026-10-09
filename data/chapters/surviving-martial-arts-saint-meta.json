@@ -1,6 +1,6 @@
 {
   "novel_id": "surviving-martial-arts-saint",
-  "total_chapters": 200,
+  "total_chapters": 350,
   "chunks": 4,
   "chunk_size": 50,
   "chapter_map": {
@@ -1205,754 +1205,904 @@
       "word_count": 3566
     },
     "201": {
-      "id": "surviving-martial-arts-saint-ch201",
-      "title": "Chapter 201: Undercurrents",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 0,
+      "title": "Undercurrents",
+      "word_count": 3680
     },
     "202": {
-      "id": "surviving-martial-arts-saint-ch202",
-      "title": "Chapter 202: Three Auras",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 1,
+      "title": "Three Auras",
+      "word_count": 3182
     },
     "203": {
-      "id": "surviving-martial-arts-saint-ch203",
-      "title": "Chapter 203: True Disciples",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 2,
+      "title": "True Disciples",
+      "word_count": 3598
     },
     "204": {
-      "id": "surviving-martial-arts-saint-ch204",
-      "title": "Chapter 204: Selection",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 3,
+      "title": "Selection",
+      "word_count": 3597
     },
     "205": {
-      "id": "surviving-martial-arts-saint-ch205",
-      "title": "Chapter 205: Patriarch",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 4,
+      "title": "Patriarch",
+      "word_count": 4340
     },
     "206": {
-      "id": "surviving-martial-arts-saint-ch206",
-      "title": "Chapter 206: Purple Light",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 5,
+      "title": "Purple Light",
+      "word_count": 4165
     },
     "207": {
-      "id": "surviving-martial-arts-saint-ch207",
-      "title": "Chapter 207: Resources",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 6,
+      "title": "Resources",
+      "word_count": 3846
     },
     "208": {
-      "id": "surviving-martial-arts-saint-ch208",
-      "title": "Chapter 208: The Shen Family",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 7,
+      "title": "The Shen Family",
+      "word_count": 3569
     },
     "209": {
-      "id": "surviving-martial-arts-saint-ch209",
-      "title": "Chapter 209: New Nobility",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 8,
+      "title": "New Nobility",
+      "word_count": 3534
     },
     "210": {
-      "id": "surviving-martial-arts-saint-ch210",
-      "title": "Chapter 210: Lihuo",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 9,
+      "title": "Lihuo",
+      "word_count": 3428
     },
     "211": {
-      "id": "surviving-martial-arts-saint-ch211",
-      "title": "Chapter 211: Mountain Thunder",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 10,
+      "title": "Mountain Thunder",
+      "word_count": 3322
     },
     "212": {
-      "id": "surviving-martial-arts-saint-ch212",
-      "title": "Chapter 212: True Martial",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 11,
+      "title": "True Martial",
+      "word_count": 3786
     },
     "213": {
-      "id": "surviving-martial-arts-saint-ch213",
-      "title": "Chapter 213: Five Elements",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 12,
+      "title": "Five Elements",
+      "word_count": 4102
     },
     "214": {
-      "id": "surviving-martial-arts-saint-ch214",
-      "title": "Chapter 214: Stone Beast",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 13,
+      "title": "Stone Beast",
+      "word_count": 3468
     },
     "215": {
-      "id": "surviving-martial-arts-saint-ch215",
-      "title": "Chapter 215: Enormous Treasure",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 14,
+      "title": "Enormous Treasure",
+      "word_count": 3549
     },
     "216": {
-      "id": "surviving-martial-arts-saint-ch216",
-      "title": "Chapter 216: The Harvest",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 15,
+      "title": "The Harvest",
+      "word_count": 3684
     },
     "217": {
-      "id": "surviving-martial-arts-saint-ch217",
-      "title": "Chapter 217: The Eagle Egg",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 16,
+      "title": "The Eagle Egg",
+      "word_count": 4034
     },
     "218": {
-      "id": "surviving-martial-arts-saint-ch218",
-      "title": "Chapter 218: Probing",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 17,
+      "title": "Probing",
+      "word_count": 3154
     },
     "219": {
-      "id": "surviving-martial-arts-saint-ch219",
-      "title": "Chapter 219: Mid-Stage",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 18,
+      "title": "Mid-Stage",
+      "word_count": 2767
     },
     "220": {
-      "id": "surviving-martial-arts-saint-ch220",
-      "title": "Chapter 220: Giant Tree",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 19,
+      "title": "Giant Tree",
+      "word_count": 3820
     },
     "221": {
-      "id": "surviving-martial-arts-saint-ch221",
-      "title": "Chapter 221: Shocking",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 20,
+      "title": "Shocking",
+      "word_count": 3523
     },
     "222": {
-      "id": "surviving-martial-arts-saint-ch222",
-      "title": "Chapter 222: Fury",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 21,
+      "title": "Fury",
+      "word_count": 3158
     },
     "223": {
-      "id": "surviving-martial-arts-saint-ch223",
-      "title": "Chapter 223: Demon-Quelling",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 22,
+      "title": "Demon-Quelling",
+      "word_count": 3709
     },
     "224": {
-      "id": "surviving-martial-arts-saint-ch224",
-      "title": "Chapter 224: Thousand Rain",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 23,
+      "title": "Thousand Rain",
+      "word_count": 3357
     },
     "225": {
-      "id": "surviving-martial-arts-saint-ch225",
-      "title": "Chapter 225: Heaven-Connecting",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 24,
+      "title": "Heaven-Connecting",
+      "word_count": 3439
     },
     "226": {
-      "id": "surviving-martial-arts-saint-ch226",
-      "title": "Chapter 226: Reality",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 25,
+      "title": "Reality",
+      "word_count": 3371
     },
     "227": {
-      "id": "surviving-martial-arts-saint-ch227",
-      "title": "Chapter 227: The Gap",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 26,
+      "title": "The Gap",
+      "word_count": 3497
     },
     "228": {
-      "id": "surviving-martial-arts-saint-ch228",
-      "title": "Chapter 228: Malevolent Qi",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 27,
+      "title": "Malevolent Qi",
+      "word_count": 3497
     },
     "229": {
-      "id": "surviving-martial-arts-saint-ch229",
-      "title": "Chapter 229: Variant Species",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 28,
+      "title": "Variant Species",
+      "word_count": 2635
     },
     "230": {
-      "id": "surviving-martial-arts-saint-ch230",
-      "title": "Chapter 230: True Origin",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 29,
+      "title": "True Origin",
+      "word_count": 3558
     },
     "231": {
-      "id": "surviving-martial-arts-saint-ch231",
-      "title": "Chapter 231: Annihilation",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 30,
+      "title": "Annihilation",
+      "word_count": 3811
     },
     "232": {
-      "id": "surviving-martial-arts-saint-ch232",
-      "title": "Chapter 232: Rumors",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 31,
+      "title": "Rumors",
+      "word_count": 3688
     },
     "233": {
-      "id": "surviving-martial-arts-saint-ch233",
-      "title": "Chapter 233: The Wang Family",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 32,
+      "title": "The Wang Family",
+      "word_count": 3407
     },
     "234": {
-      "id": "surviving-martial-arts-saint-ch234",
-      "title": "Chapter 234: Turmoil",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 33,
+      "title": "Turmoil",
+      "word_count": 3180
     },
     "235": {
-      "id": "surviving-martial-arts-saint-ch235",
-      "title": "Chapter 235: Elixir Glow",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 34,
+      "title": "Elixir Glow",
+      "word_count": 4116
     },
     "236": {
-      "id": "surviving-martial-arts-saint-ch236",
-      "title": "Chapter 236: Vajra",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 35,
+      "title": "Vajra",
+      "word_count": 3350
     },
     "237": {
-      "id": "surviving-martial-arts-saint-ch237",
-      "title": "Chapter 237: Suppression",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 36,
+      "title": "Suppression",
+      "word_count": 3531
     },
     "238": {
-      "id": "surviving-martial-arts-saint-ch238",
-      "title": "Chapter 238: 30,000",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 37,
+      "title": "30,000",
+      "word_count": 3007
     },
     "239": {
-      "id": "surviving-martial-arts-saint-ch239",
-      "title": "Chapter 239: The Match",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 38,
+      "title": "The Match",
+      "word_count": 6630
     },
     "240": {
-      "id": "surviving-martial-arts-saint-ch240",
-      "title": "Chapter 240: Victory",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 39,
+      "title": "Victory",
+      "word_count": 3431
     },
     "241": {
-      "id": "surviving-martial-arts-saint-ch241",
-      "title": "Chapter 241: Prison Peak",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 40,
+      "title": "Prison Peak",
+      "word_count": 3747
     },
     "242": {
-      "id": "surviving-martial-arts-saint-ch242",
-      "title": "Chapter 242: Pure Land",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 41,
+      "title": "Pure Land",
+      "word_count": 3187
     },
     "243": {
-      "id": "surviving-martial-arts-saint-ch243",
-      "title": "Chapter 243: Tathagata",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 42,
+      "title": "Tathagata",
+      "word_count": 3446
     },
     "244": {
-      "id": "surviving-martial-arts-saint-ch244",
-      "title": "Chapter 244: Foundation",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 43,
+      "title": "Foundation",
+      "word_count": 3642
     },
     "245": {
-      "id": "surviving-martial-arts-saint-ch245",
-      "title": "Chapter 245: Snow Mountain",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 44,
+      "title": "Snow Mountain",
+      "word_count": 3672
     },
     "246": {
-      "id": "surviving-martial-arts-saint-ch246",
-      "title": "Chapter 246: Compensation",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 45,
+      "title": "Compensation",
+      "word_count": 3572
     },
     "247": {
-      "id": "surviving-martial-arts-saint-ch247",
-      "title": "Chapter 247: Foundation",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 46,
+      "title": "Foundation",
+      "word_count": 3813
     },
     "248": {
-      "id": "surviving-martial-arts-saint-ch248",
-      "title": "Chapter 248: True Martial",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 47,
+      "title": "True Martial",
+      "word_count": 4004
     },
     "249": {
-      "id": "surviving-martial-arts-saint-ch249",
-      "title": "Chapter 249: Core Principles",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 48,
+      "title": "Core Principles",
+      "word_count": 3311
     },
     "250": {
-      "id": "surviving-martial-arts-saint-ch250",
-      "title": "Chapter 250: Deduction",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 49,
+      "title": "Deduction",
+      "word_count": 3705
     },
     "251": {
-      "id": "surviving-martial-arts-saint-ch251",
-      "title": "Chapter 251: Three Generations",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 50,
+      "title": "Three Generations",
+      "word_count": 4145
     },
     "252": {
-      "id": "surviving-martial-arts-saint-ch252",
-      "title": "Chapter 252: External Aura",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 51,
+      "title": "External Aura",
+      "word_count": 4489
     },
     "253": {
-      "id": "surviving-martial-arts-saint-ch253",
-      "title": "Chapter 253: Second Layer",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 52,
+      "title": "Second Layer",
+      "word_count": 3422
     },
     "254": {
-      "id": "surviving-martial-arts-saint-ch254",
-      "title": "Chapter 254: Climbing the Tower",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 53,
+      "title": "Climbing the Tower",
+      "word_count": 3885
     },
     "255": {
-      "id": "surviving-martial-arts-saint-ch255",
-      "title": "Chapter 255: Formidable",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 54,
+      "title": "Formidable",
+      "word_count": 3597
     },
     "256": {
-      "id": "surviving-martial-arts-saint-ch256",
-      "title": "Chapter 256: Challenge",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 55,
+      "title": "Challenge",
+      "word_count": 3288
     },
     "257": {
-      "id": "surviving-martial-arts-saint-ch257",
-      "title": "Chapter 257: True Disciple",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 56,
+      "title": "True Disciple",
+      "word_count": 9353
     },
     "258": {
-      "id": "surviving-martial-arts-saint-ch258",
-      "title": "Chapter 258: Bell Toll",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 57,
+      "title": "Bell Toll",
+      "word_count": 3995
     },
     "259": {
-      "id": "surviving-martial-arts-saint-ch259",
-      "title": "Chapter 259: Cave Dwelling",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 58,
+      "title": "Cave Dwelling",
+      "word_count": 3034
     },
     "260": {
-      "id": "surviving-martial-arts-saint-ch260",
-      "title": "Chapter 260: The Woman",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 59,
+      "title": "The Woman",
+      "word_count": 3305
     },
     "261": {
-      "id": "surviving-martial-arts-saint-ch261",
-      "title": "Chapter 261: Inheritance",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 60,
+      "title": "Inheritance",
+      "word_count": 3972
     },
     "262": {
-      "id": "surviving-martial-arts-saint-ch262",
-      "title": "Chapter 262: Dividing the Pills",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 61,
+      "title": "Dividing the Pills",
+      "word_count": 3309
     },
     "263": {
-      "id": "surviving-martial-arts-saint-ch263",
-      "title": "Chapter 263: The Eighth Layer",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 62,
+      "title": "The Eighth Layer",
+      "word_count": 3564
     },
     "264": {
-      "id": "surviving-martial-arts-saint-ch264",
-      "title": "Chapter 264: The Foremost",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 63,
+      "title": "The Foremost",
+      "word_count": 4140
     },
     "265": {
-      "id": "surviving-martial-arts-saint-ch265",
-      "title": "Chapter 265: Moon Grasping",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 64,
+      "title": "Moon Grasping",
+      "word_count": 3184
     },
     "266": {
-      "id": "surviving-martial-arts-saint-ch266",
-      "title": "Chapter 266: East Pole",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 65,
+      "title": "East Pole",
+      "word_count": 3486
     },
     "267": {
-      "id": "surviving-martial-arts-saint-ch267",
-      "title": "Chapter 267: Broken Soul",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 66,
+      "title": "Broken Soul",
+      "word_count": 2863
     },
     "268": {
-      "id": "surviving-martial-arts-saint-ch268",
-      "title": "Chapter 268: Assassination",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 67,
+      "title": "Assassination",
+      "word_count": 3546
     },
     "269": {
-      "id": "surviving-martial-arts-saint-ch269",
-      "title": "Chapter 269: Divine Ability",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 68,
+      "title": "Divine Ability",
+      "word_count": 3799
     },
     "270": {
-      "id": "surviving-martial-arts-saint-ch270",
-      "title": "Chapter 270: Sinister",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 69,
+      "title": "Sinister",
+      "word_count": 2667
     },
     "271": {
-      "id": "surviving-martial-arts-saint-ch271",
-      "title": "Chapter 271: The Gu Family",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 70,
+      "title": "The Gu Family",
+      "word_count": 3958
     },
     "272": {
-      "id": "surviving-martial-arts-saint-ch272",
-      "title": "Chapter 272: The Ancestor",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 71,
+      "title": "The Ancestor",
+      "word_count": 2620
     },
     "273": {
-      "id": "surviving-martial-arts-saint-ch273",
-      "title": "Chapter 273: Black Mysterious",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 72,
+      "title": "Black Mysterious",
+      "word_count": 3457
     },
     "274": {
-      "id": "surviving-martial-arts-saint-ch274",
-      "title": "Chapter 274: Black Dragon",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 73,
+      "title": "Black Dragon",
+      "word_count": 4392
     },
     "275": {
-      "id": "surviving-martial-arts-saint-ch275",
-      "title": "Chapter 275: Boiling Over",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 74,
+      "title": "Boiling Over",
+      "word_count": 3479
     },
     "276": {
-      "id": "surviving-martial-arts-saint-ch276",
-      "title": "Chapter 276: Personal Matter",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 75,
+      "title": "Personal Matter",
+      "word_count": 3406
     },
     "277": {
-      "id": "surviving-martial-arts-saint-ch277",
-      "title": "Chapter 277: Landing on the Island",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 76,
+      "title": "Landing on the Island",
+      "word_count": 3773
     },
     "278": {
-      "id": "surviving-martial-arts-saint-ch278",
-      "title": "Chapter 278: Return to the Sect",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 77,
+      "title": "Return to the Sect",
+      "word_count": 2987
     },
     "279": {
-      "id": "surviving-martial-arts-saint-ch279",
-      "title": "Chapter 279: The Heavenly Pivot",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 78,
+      "title": "The Heavenly Pivot",
+      "word_count": 4266
     },
     "280": {
-      "id": "surviving-martial-arts-saint-ch280",
-      "title": "Chapter 280: Spear Intent",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 79,
+      "title": "Spear Intent",
+      "word_count": 3692
     },
     "281": {
-      "id": "surviving-martial-arts-saint-ch281",
-      "title": "Chapter 281: The Fish King",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 80,
+      "title": "The Fish King",
+      "word_count": 3521
     },
     "282": {
-      "id": "surviving-martial-arts-saint-ch282",
-      "title": "Chapter 282: The Ten Absolutes",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 81,
+      "title": "The Ten Absolutes",
+      "word_count": 3526
     },
     "283": {
-      "id": "surviving-martial-arts-saint-ch283",
-      "title": "Chapter 283: The Supreme Void",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 82,
+      "title": "The Supreme Void",
+      "word_count": 3051
     },
     "284": {
-      "id": "surviving-martial-arts-saint-ch284",
-      "title": "Chapter 284: Dragon's Roar",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 83,
+      "title": "Dragon's Roar",
+      "word_count": 3335
     },
     "285": {
-      "id": "surviving-martial-arts-saint-ch285",
-      "title": "Chapter 285: Challenge",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 84,
+      "title": "Challenge",
+      "word_count": 3474
     },
     "286": {
-      "id": "surviving-martial-arts-saint-ch286",
-      "title": "Chapter 286: True Origin",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 85,
+      "title": "True Origin",
+      "word_count": 3286
     },
     "287": {
-      "id": "surviving-martial-arts-saint-ch287",
-      "title": "Chapter 287: Refinement",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 86,
+      "title": "Refinement",
+      "word_count": 3500
     },
     "288": {
-      "id": "surviving-martial-arts-saint-ch288",
-      "title": "Chapter 288: Condensing Spirit",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 87,
+      "title": "Condensing Spirit",
+      "word_count": 4303
     },
     "289": {
-      "id": "surviving-martial-arts-saint-ch289",
-      "title": "Chapter 289: Tide",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 88,
+      "title": "Tide",
+      "word_count": 3620
     },
     "290": {
-      "id": "surviving-martial-arts-saint-ch290",
-      "title": "Chapter 290: Raging Waves",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 89,
+      "title": "Raging Waves",
+      "word_count": 3392
     },
     "291": {
-      "id": "surviving-martial-arts-saint-ch291",
-      "title": "Chapter 291: Main Peak",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 90,
+      "title": "Main Peak",
+      "word_count": 3925
     },
     "292": {
-      "id": "surviving-martial-arts-saint-ch292",
-      "title": "Chapter 292: Rewards",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 91,
+      "title": "Rewards",
+      "word_count": 3125
     },
     "293": {
-      "id": "surviving-martial-arts-saint-ch293",
-      "title": "Chapter 293: The Formation Diagram",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 92,
+      "title": "The Formation Diagram",
+      "word_count": 4304
     },
     "294": {
-      "id": "surviving-martial-arts-saint-ch294",
-      "title": "Chapter 294: The Assembly",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 93,
+      "title": "The Assembly",
+      "word_count": 4595
     },
     "295": {
-      "id": "surviving-martial-arts-saint-ch295",
-      "title": "Chapter 295: Dragon Marsh",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 94,
+      "title": "Dragon Marsh",
+      "word_count": 4148
     },
     "296": {
-      "id": "surviving-martial-arts-saint-ch296",
-      "title": "Chapter 296: Flood Dragon Transformation",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 95,
+      "title": "Flood Dragon Transformation",
+      "word_count": 3258
     },
     "297": {
-      "id": "surviving-martial-arts-saint-ch297",
-      "title": "Chapter 297: Harvest",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 96,
+      "title": "Harvest",
+      "word_count": 3115
     },
     "298": {
-      "id": "surviving-martial-arts-saint-ch298",
-      "title": "Chapter 298: Seizing",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 97,
+      "title": "Seizing",
+      "word_count": 3849
     },
     "299": {
-      "id": "surviving-martial-arts-saint-ch299",
-      "title": "Chapter 299: Startled Dragon",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 98,
+      "title": "Startled Dragon",
+      "word_count": 4046
     },
     "300": {
-      "id": "surviving-martial-arts-saint-ch300",
-      "title": "Chapter 300: Startled Soul",
-      "chunk": "02"
+      "chunk_idx": 2,
+      "local_idx": 99,
+      "title": "Startled Soul",
+      "word_count": 4276
     },
     "301": {
-      "id": "surviving-martial-arts-saint-ch301",
-      "title": "Chapter 301: Soul Wood",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 0,
+      "title": "Soul Wood",
+      "word_count": 3472
     },
     "302": {
-      "id": "surviving-martial-arts-saint-ch302",
-      "title": "Chapter 302: Spring Arrives",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 1,
+      "title": "Spring Arrives",
+      "word_count": 3337
     },
     "303": {
-      "id": "surviving-martial-arts-saint-ch303",
-      "title": "Chapter 303: Mist Kill",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 2,
+      "title": "Mist Kill",
+      "word_count": 5016
     },
     "304": {
-      "id": "surviving-martial-arts-saint-ch304",
-      "title": "Chapter 304: Hidden Game",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 3,
+      "title": "Hidden Game",
+      "word_count": 2947
     },
     "305": {
-      "id": "surviving-martial-arts-saint-ch305",
-      "title": "Chapter 305: Framing",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 4,
+      "title": "Framing",
+      "word_count": 3757
     },
     "306": {
-      "id": "surviving-martial-arts-saint-ch306",
-      "title": "Chapter 306: Demon Ox",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 5,
+      "title": "Demon Ox",
+      "word_count": 3399
     },
     "307": {
-      "id": "surviving-martial-arts-saint-ch307",
-      "title": "Chapter 307: Demoness",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 6,
+      "title": "Demoness",
+      "word_count": 4295
     },
     "308": {
-      "id": "surviving-martial-arts-saint-ch308",
-      "title": "Chapter 308: Second Refinement",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 7,
+      "title": "Second Refinement",
+      "word_count": 4242
     },
     "309": {
-      "id": "surviving-martial-arts-saint-ch309",
-      "title": "Chapter 309: Spear Formation",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 8,
+      "title": "Spear Formation",
+      "word_count": 4123
     },
     "310": {
-      "id": "surviving-martial-arts-saint-ch310",
-      "title": "Chapter 310: The Struggle for the Elixir",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 9,
+      "title": "The Struggle for the Elixir",
+      "word_count": 3796
     },
     "311": {
-      "id": "surviving-martial-arts-saint-ch311",
-      "title": "Chapter 311: Breaking the Deadlock",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 10,
+      "title": "Breaking the Deadlock",
+      "word_count": 3427
     },
     "312": {
-      "id": "surviving-martial-arts-saint-ch312",
-      "title": "Chapter 312: Rising Tide",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 11,
+      "title": "Rising Tide",
+      "word_count": 3911
     },
     "313": {
-      "id": "surviving-martial-arts-saint-ch313",
-      "title": "Chapter 313: Evil Fruit",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 12,
+      "title": "Evil Fruit",
+      "word_count": 3203
     },
     "314": {
-      "id": "surviving-martial-arts-saint-ch314",
-      "title": "Chapter 314: Golden Leaf",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 13,
+      "title": "Golden Leaf",
+      "word_count": 4612
     },
     "315": {
-      "id": "surviving-martial-arts-saint-ch315",
-      "title": "Chapter 315: Breaking Through the Boundary",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 14,
+      "title": "Breaking Through the Boundary",
+      "word_count": 2967
     },
     "316": {
-      "id": "surviving-martial-arts-saint-ch316",
-      "title": "Chapter 316: Returning to the Sect",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 15,
+      "title": "Returning to the Sect",
+      "word_count": 5029
     },
     "317": {
-      "id": "surviving-martial-arts-saint-ch317",
-      "title": "Chapter 317: Retrieving the Treasure",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 16,
+      "title": "Retrieving the Treasure",
+      "word_count": 3682
     },
     "318": {
-      "id": "surviving-martial-arts-saint-ch318",
-      "title": "Chapter 318: Foreign Lands",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 17,
+      "title": "Foreign Lands",
+      "word_count": 4463
     },
     "319": {
-      "id": "surviving-martial-arts-saint-ch319",
-      "title": "Chapter 319: Sixth Layer",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 18,
+      "title": "Sixth Layer",
+      "word_count": 3517
     },
     "320": {
-      "id": "surviving-martial-arts-saint-ch320",
-      "title": "Chapter 320: Undercurrents",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 19,
+      "title": "Undercurrents",
+      "word_count": 3147
     },
     "321": {
-      "id": "surviving-martial-arts-saint-ch321",
-      "title": "Chapter 321: Tempering the True Origin",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 20,
+      "title": "Tempering the True Origin",
+      "word_count": 2707
     },
     "322": {
-      "id": "surviving-martial-arts-saint-ch322",
-      "title": "Chapter 322: Three Times",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 21,
+      "title": "Three Times",
+      "word_count": 4835
     },
     "323": {
-      "id": "surviving-martial-arts-saint-ch323",
-      "title": "Chapter 323: Maneuvering",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 22,
+      "title": "Maneuvering",
+      "word_count": 3851
     },
     "324": {
-      "id": "surviving-martial-arts-saint-ch324",
-      "title": "Chapter 324: Pill Completion",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 23,
+      "title": "Pill Completion",
+      "word_count": 3758
     },
     "325": {
-      "id": "surviving-martial-arts-saint-ch325",
-      "title": "Chapter 325: Opening the Furnace",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 24,
+      "title": "Opening the Furnace",
+      "word_count": 4994
     },
     "326": {
-      "id": "surviving-martial-arts-saint-ch326",
-      "title": "Chapter 326: Breaking the Formation",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 25,
+      "title": "Breaking the Formation",
+      "word_count": 4322
     },
     "327": {
-      "id": "surviving-martial-arts-saint-ch327",
-      "title": "Chapter 327: Situation",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 26,
+      "title": "Situation",
+      "word_count": 3875
     },
     "328": {
-      "id": "surviving-martial-arts-saint-ch328",
-      "title": "Chapter 328: Shocking Turn of Events",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 27,
+      "title": "Shocking Turn of Events",
+      "word_count": 4522
     },
     "329": {
-      "id": "surviving-martial-arts-saint-ch329",
-      "title": "Chapter 329: Tempering",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 28,
+      "title": "Tempering",
+      "word_count": 3347
     },
     "330": {
-      "id": "surviving-martial-arts-saint-ch330",
-      "title": "Chapter 330: Temporary Control",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 29,
+      "title": "Temporary Control",
+      "word_count": 4333
     },
     "331": {
-      "id": "surviving-martial-arts-saint-ch331",
-      "title": "Chapter 331: Authority",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 30,
+      "title": "Authority",
+      "word_count": 4250
     },
     "332": {
-      "id": "surviving-martial-arts-saint-ch332",
-      "title": "Chapter 332: A Killing Trap",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 31,
+      "title": "A Killing Trap",
+      "word_count": 3541
     },
     "333": {
-      "id": "surviving-martial-arts-saint-ch333",
-      "title": "Chapter 333: Death",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 32,
+      "title": "Death",
+      "word_count": 3809
     },
     "334": {
-      "id": "surviving-martial-arts-saint-ch334",
-      "title": "Chapter 334: Demon Traces",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 33,
+      "title": "Demon Traces",
+      "word_count": 2829
     },
     "335": {
-      "id": "surviving-martial-arts-saint-ch335",
-      "title": "Chapter 335: Interception",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 34,
+      "title": "Interception",
+      "word_count": 3384
     },
     "336": {
-      "id": "surviving-martial-arts-saint-ch336",
-      "title": "Chapter 336: Spear and Fire",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 35,
+      "title": "Spear and Fire",
+      "word_count": 3348
     },
     "337": {
-      "id": "surviving-martial-arts-saint-ch337",
-      "title": "Chapter 337: Azure Bird",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 36,
+      "title": "Azure Bird",
+      "word_count": 3612
     },
     "338": {
-      "id": "surviving-martial-arts-saint-ch338",
-      "title": "Chapter 338: Sea Market",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 37,
+      "title": "Sea Market",
+      "word_count": 3585
     },
     "339": {
-      "id": "surviving-martial-arts-saint-ch339",
-      "title": "Chapter 339: Disguise",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 38,
+      "title": "Disguise",
+      "word_count": 3179
     },
     "340": {
-      "id": "surviving-martial-arts-saint-ch340",
-      "title": "Chapter 340: Sect Master",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 39,
+      "title": "Sect Master",
+      "word_count": 4444
     },
     "341": {
-      "id": "surviving-martial-arts-saint-ch341",
-      "title": "Chapter 341: Breaking Through the Boundary",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 40,
+      "title": "Breaking Through the Boundary",
+      "word_count": 3803
     },
     "342": {
-      "id": "surviving-martial-arts-saint-ch342",
-      "title": "Chapter 342: Spear and Sword",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 41,
+      "title": "Spear and Sword",
+      "word_count": 3201
     },
     "343": {
-      "id": "surviving-martial-arts-saint-ch343",
-      "title": "Chapter 343: Clone",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 42,
+      "title": "Clone",
+      "word_count": 4148
     },
     "344": {
-      "id": "surviving-martial-arts-saint-ch344",
-      "title": "Chapter 344: Hidden Piece",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 43,
+      "title": "Hidden Piece",
+      "word_count": 3147
     },
     "345": {
-      "id": "surviving-martial-arts-saint-ch345",
-      "title": "Chapter 345: The Great Dao",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 44,
+      "title": "The Great Dao",
+      "word_count": 4468
     },
     "346": {
-      "id": "surviving-martial-arts-saint-ch346",
-      "title": "Chapter 346: Terrestrial Balance",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 45,
+      "title": "Terrestrial Balance",
+      "word_count": 3096
     },
     "347": {
-      "id": "surviving-martial-arts-saint-ch347",
-      "title": "Chapter 347: Jade Pendant",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 46,
+      "title": "Jade Pendant",
+      "word_count": 3436
     },
     "348": {
-      "id": "surviving-martial-arts-saint-ch348",
-      "title": "Chapter 348: Prison Upheaval",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 47,
+      "title": "Prison Upheaval",
+      "word_count": 3726
     },
     "349": {
-      "id": "surviving-martial-arts-saint-ch349",
-      "title": "Chapter 349: Prison Buddha",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 48,
+      "title": "Prison Buddha",
+      "word_count": 3946
     },
     "350": {
-      "id": "surviving-martial-arts-saint-ch350",
-      "title": "Chapter 350: Fifth Level",
-      "chunk": "03"
+      "chunk_idx": 3,
+      "local_idx": 49,
+      "title": "Fifth Level",
+      "word_count": 3406
     }
   }
 }
