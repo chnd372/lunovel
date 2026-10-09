@@ -1,7 +1,7 @@
 {
   "novel_id": "surviving-martial-arts-saint",
-  "total_chapters": 600,
-  "chunks": 12,
+  "total_chapters": 740,
+  "chunks": 15,
   "chunk_size": 50,
   "chapter_map": {
     "1": {
@@ -3603,6 +3603,846 @@
       "local_idx": 49,
       "title": "Fishing",
       "word_count": 4146
+    },
+    "601": {
+      "chunk_idx": 12,
+      "local_idx": 0,
+      "title": "Coercion",
+      "word_count": 4691
+    },
+    "602": {
+      "chunk_idx": 12,
+      "local_idx": 1,
+      "title": "The Eruption",
+      "word_count": 4172
+    },
+    "603": {
+      "chunk_idx": 12,
+      "local_idx": 2,
+      "title": "The Seizure of Power",
+      "word_count": 4002
+    },
+    "604": {
+      "chunk_idx": 12,
+      "local_idx": 3,
+      "title": "Hidden Currents",
+      "word_count": 3175
+    },
+    "605": {
+      "chunk_idx": 12,
+      "local_idx": 4,
+      "title": "The Plan",
+      "word_count": 3108
+    },
+    "606": {
+      "chunk_idx": 12,
+      "local_idx": 5,
+      "title": "Clouds Rising",
+      "word_count": 3889
+    },
+    "607": {
+      "chunk_idx": 12,
+      "local_idx": 6,
+      "title": "Thunderclap",
+      "word_count": 3489
+    },
+    "608": {
+      "chunk_idx": 12,
+      "local_idx": 7,
+      "title": "Dawn's Breaking",
+      "word_count": 3558
+    },
+    "609": {
+      "chunk_idx": 12,
+      "local_idx": 8,
+      "title": "Sect Master",
+      "word_count": 3604
+    },
+    "610": {
+      "chunk_idx": 12,
+      "local_idx": 9,
+      "title": "The Hidden Peak",
+      "word_count": 3004
+    },
+    "611": {
+      "chunk_idx": 12,
+      "local_idx": 10,
+      "title": "Alive",
+      "word_count": 3531
+    },
+    "612": {
+      "chunk_idx": 12,
+      "local_idx": 11,
+      "title": "The Seventh Revolution",
+      "word_count": 4441
+    },
+    "613": {
+      "chunk_idx": 12,
+      "local_idx": 12,
+      "title": "The Hook is Taken",
+      "word_count": 4204
+    },
+    "614": {
+      "chunk_idx": 12,
+      "local_idx": 13,
+      "title": "The Grand Ceremony",
+      "word_count": 3370
+    },
+    "615": {
+      "chunk_idx": 12,
+      "local_idx": 14,
+      "title": "Old Grievances",
+      "word_count": 3740
+    },
+    "616": {
+      "chunk_idx": 12,
+      "local_idx": 15,
+      "title": "Speaking of the Dao",
+      "word_count": 4383
+    },
+    "617": {
+      "chunk_idx": 12,
+      "local_idx": 16,
+      "title": "The Fourth Layer",
+      "word_count": 4436
+    },
+    "618": {
+      "chunk_idx": 12,
+      "local_idx": 17,
+      "title": "Falling Star",
+      "word_count": 3330
+    },
+    "619": {
+      "chunk_idx": 12,
+      "local_idx": 18,
+      "title": "The Sword Arrives",
+      "word_count": 2982
+    },
+    "620": {
+      "chunk_idx": 12,
+      "local_idx": 19,
+      "title": "The Standoff",
+      "word_count": 3216
+    },
+    "621": {
+      "chunk_idx": 12,
+      "local_idx": 20,
+      "title": "The Buddhist Sword",
+      "word_count": 1920
+    },
+    "622": {
+      "chunk_idx": 12,
+      "local_idx": 21,
+      "title": "The Mountain Seal",
+      "word_count": 6043
+    },
+    "623": {
+      "chunk_idx": 12,
+      "local_idx": 22,
+      "title": "The Curtain Falls",
+      "word_count": 4027
+    },
+    "624": {
+      "chunk_idx": 12,
+      "local_idx": 23,
+      "title": "Aftershocks",
+      "word_count": 4550
+    },
+    "625": {
+      "chunk_idx": 12,
+      "local_idx": 24,
+      "title": "Night Schemes",
+      "word_count": 2709
+    },
+    "626": {
+      "chunk_idx": 12,
+      "local_idx": 25,
+      "title": "",
+      "word_count": 4091
+    },
+    "627": {
+      "chunk_idx": 12,
+      "local_idx": 26,
+      "title": "The Twelfth Layer",
+      "word_count": 3096
+    },
+    "628": {
+      "chunk_idx": 12,
+      "local_idx": 27,
+      "title": "The Transaction",
+      "word_count": 4475
+    },
+    "629": {
+      "chunk_idx": 12,
+      "local_idx": 28,
+      "title": "The Undying Mountain",
+      "word_count": 2845
+    },
+    "630": {
+      "chunk_idx": 12,
+      "local_idx": 29,
+      "title": "The Night Battle",
+      "word_count": 3628
+    },
+    "631": {
+      "chunk_idx": 12,
+      "local_idx": 30,
+      "title": "Extreme Night",
+      "word_count": 4321
+    },
+    "632": {
+      "chunk_idx": 12,
+      "local_idx": 31,
+      "title": "The Great Luo Heaven",
+      "word_count": 3059
+    },
+    "633": {
+      "chunk_idx": 12,
+      "local_idx": 32,
+      "title": "Eighth Revolution",
+      "word_count": 4586
+    },
+    "634": {
+      "chunk_idx": 12,
+      "local_idx": 33,
+      "title": "Jingyang",
+      "word_count": 3889
+    },
+    "635": {
+      "chunk_idx": 12,
+      "local_idx": 34,
+      "title": "Competition",
+      "word_count": 3071
+    },
+    "636": {
+      "chunk_idx": 12,
+      "local_idx": 35,
+      "title": "The Supreme Void Dao",
+      "word_count": 4836
+    },
+    "637": {
+      "chunk_idx": 12,
+      "local_idx": 36,
+      "title": "Longevity",
+      "word_count": 3919
+    },
+    "638": {
+      "chunk_idx": 12,
+      "local_idx": 37,
+      "title": "Third Layer",
+      "word_count": 3503
+    },
+    "639": {
+      "chunk_idx": 12,
+      "local_idx": 38,
+      "title": "Dao Soldiers",
+      "word_count": 2817
+    },
+    "640": {
+      "chunk_idx": 12,
+      "local_idx": 39,
+      "title": "The Limitless",
+      "word_count": 4113
+    },
+    "641": {
+      "chunk_idx": 12,
+      "local_idx": 40,
+      "title": "The Wilds",
+      "word_count": 3495
+    },
+    "642": {
+      "chunk_idx": 12,
+      "local_idx": 41,
+      "title": "The Chief Seat",
+      "word_count": 2912
+    },
+    "643": {
+      "chunk_idx": 12,
+      "local_idx": 42,
+      "title": "Ninth Revolution",
+      "word_count": 4325
+    },
+    "644": {
+      "chunk_idx": 12,
+      "local_idx": 43,
+      "title": "The Test",
+      "word_count": 4053
+    },
+    "645": {
+      "chunk_idx": 12,
+      "local_idx": 44,
+      "title": "The Start",
+      "word_count": 3804
+    },
+    "646": {
+      "chunk_idx": 12,
+      "local_idx": 45,
+      "title": "Nine Patterns",
+      "word_count": 5350
+    },
+    "647": {
+      "chunk_idx": 12,
+      "local_idx": 46,
+      "title": "The Harvest",
+      "word_count": 3541
+    },
+    "648": {
+      "chunk_idx": 12,
+      "local_idx": 47,
+      "title": "The Dao Son",
+      "word_count": 3042
+    },
+    "649": {
+      "chunk_idx": 12,
+      "local_idx": 48,
+      "title": "Qingwei",
+      "word_count": 3273
+    },
+    "650": {
+      "chunk_idx": 12,
+      "local_idx": 49,
+      "title": "The Secret Record",
+      "word_count": 3644
+    },
+    "651": {
+      "chunk_idx": 13,
+      "local_idx": 0,
+      "title": "The Dao Court",
+      "word_count": 3811
+    },
+    "652": {
+      "chunk_idx": 13,
+      "local_idx": 1,
+      "title": "The Secret Grounds",
+      "word_count": 3868
+    },
+    "653": {
+      "chunk_idx": 13,
+      "local_idx": 2,
+      "title": "Failure",
+      "word_count": 3254
+    },
+    "654": {
+      "chunk_idx": 13,
+      "local_idx": 3,
+      "title": "Conflict",
+      "word_count": 4067
+    },
+    "655": {
+      "chunk_idx": 13,
+      "local_idx": 4,
+      "title": "The Origin Mountain",
+      "word_count": 3086
+    },
+    "656": {
+      "chunk_idx": 13,
+      "local_idx": 5,
+      "title": "Danger",
+      "word_count": 3352
+    },
+    "657": {
+      "chunk_idx": 13,
+      "local_idx": 6,
+      "title": "The Hundred Clans",
+      "word_count": 2623
+    },
+    "658": {
+      "chunk_idx": 13,
+      "local_idx": 7,
+      "title": "The Talisman Treasure",
+      "word_count": 3822
+    },
+    "659": {
+      "chunk_idx": 13,
+      "local_idx": 8,
+      "title": "The Primordial Spirit",
+      "word_count": 3340
+    },
+    "660": {
+      "chunk_idx": 13,
+      "local_idx": 9,
+      "title": "",
+      "word_count": 3834
+    },
+    "661": {
+      "chunk_idx": 13,
+      "local_idx": 10,
+      "title": "",
+      "word_count": 3569
+    },
+    "662": {
+      "chunk_idx": 13,
+      "local_idx": 11,
+      "title": "",
+      "word_count": 3400
+    },
+    "663": {
+      "chunk_idx": 13,
+      "local_idx": 12,
+      "title": "Mysterious Balance",
+      "word_count": 3460
+    },
+    "664": {
+      "chunk_idx": 13,
+      "local_idx": 13,
+      "title": "The Battlefield",
+      "word_count": 3763
+    },
+    "665": {
+      "chunk_idx": 13,
+      "local_idx": 14,
+      "title": "The Puppet",
+      "word_count": 3259
+    },
+    "666": {
+      "chunk_idx": 13,
+      "local_idx": 15,
+      "title": "The Dao Chart",
+      "word_count": 2982
+    },
+    "667": {
+      "chunk_idx": 13,
+      "local_idx": 16,
+      "title": "",
+      "word_count": 3367
+    },
+    "668": {
+      "chunk_idx": 13,
+      "local_idx": 17,
+      "title": "",
+      "word_count": 3914
+    },
+    "669": {
+      "chunk_idx": 13,
+      "local_idx": 18,
+      "title": "Breaking the Formation",
+      "word_count": 4380
+    },
+    "670": {
+      "chunk_idx": 13,
+      "local_idx": 19,
+      "title": "Sudden Change",
+      "word_count": 3271
+    },
+    "671": {
+      "chunk_idx": 13,
+      "local_idx": 20,
+      "title": "Encirclement",
+      "word_count": 4150
+    },
+    "672": {
+      "chunk_idx": 13,
+      "local_idx": 21,
+      "title": "The Blood Pool",
+      "word_count": 3867
+    },
+    "673": {
+      "chunk_idx": 13,
+      "local_idx": 22,
+      "title": "Dividing the Spoils",
+      "word_count": 3192
+    },
+    "674": {
+      "chunk_idx": 13,
+      "local_idx": 23,
+      "title": "Spirit Transformation",
+      "word_count": 3153
+    },
+    "675": {
+      "chunk_idx": 13,
+      "local_idx": 24,
+      "title": "",
+      "word_count": 4214
+    },
+    "676": {
+      "chunk_idx": 13,
+      "local_idx": 25,
+      "title": "Evasion Arts",
+      "word_count": 4383
+    },
+    "677": {
+      "chunk_idx": 13,
+      "local_idx": 26,
+      "title": "The True Life Leaf",
+      "word_count": 3642
+    },
+    "678": {
+      "chunk_idx": 13,
+      "local_idx": 27,
+      "title": "",
+      "word_count": 3605
+    },
+    "679": {
+      "chunk_idx": 13,
+      "local_idx": 28,
+      "title": "Fierce Battle",
+      "word_count": 3973
+    },
+    "680": {
+      "chunk_idx": 13,
+      "local_idx": 29,
+      "title": "Thick Earth",
+      "word_count": 4129
+    },
+    "681": {
+      "chunk_idx": 13,
+      "local_idx": 30,
+      "title": "Four Victories",
+      "word_count": 3270
+    },
+    "682": {
+      "chunk_idx": 13,
+      "local_idx": 31,
+      "title": "Breaking Through",
+      "word_count": 4496
+    },
+    "683": {
+      "chunk_idx": 13,
+      "local_idx": 32,
+      "title": "Seven Victories",
+      "word_count": 3291
+    },
+    "684": {
+      "chunk_idx": 13,
+      "local_idx": 33,
+      "title": "Zixiao",
+      "word_count": 4228
+    },
+    "685": {
+      "chunk_idx": 13,
+      "local_idx": 34,
+      "title": "Thunder and Fire",
+      "word_count": 3023
+    },
+    "686": {
+      "chunk_idx": 13,
+      "local_idx": 35,
+      "title": "Consecutive Victories",
+      "word_count": 4150
+    },
+    "687": {
+      "chunk_idx": 13,
+      "local_idx": 36,
+      "title": "Mystic Light",
+      "word_count": 4417
+    },
+    "688": {
+      "chunk_idx": 13,
+      "local_idx": 37,
+      "title": "Desert",
+      "word_count": 3372
+    },
+    "689": {
+      "chunk_idx": 13,
+      "local_idx": 38,
+      "title": "The Contest of Dao",
+      "word_count": 3571
+    },
+    "690": {
+      "chunk_idx": 13,
+      "local_idx": 39,
+      "title": "The Golden Shield",
+      "word_count": 3032
+    },
+    "691": {
+      "chunk_idx": 13,
+      "local_idx": 40,
+      "title": "Killing",
+      "word_count": 4072
+    },
+    "692": {
+      "chunk_idx": 13,
+      "local_idx": 41,
+      "title": "Accepting a Disciple",
+      "word_count": 4130
+    },
+    "693": {
+      "chunk_idx": 13,
+      "local_idx": 42,
+      "title": "Summons",
+      "word_count": 4939
+    },
+    "694": {
+      "chunk_idx": 13,
+      "local_idx": 43,
+      "title": "The Hidden Piece",
+      "word_count": 3609
+    },
+    "695": {
+      "chunk_idx": 13,
+      "local_idx": 44,
+      "title": "The Seal Technique",
+      "word_count": 4777
+    },
+    "696": {
+      "chunk_idx": 13,
+      "local_idx": 45,
+      "title": "Hidden Undercurrents",
+      "word_count": 3303
+    },
+    "697": {
+      "chunk_idx": 13,
+      "local_idx": 46,
+      "title": "The Crouching Tiger",
+      "word_count": 3898
+    },
+    "698": {
+      "chunk_idx": 13,
+      "local_idx": 47,
+      "title": "The Dragon's Roar",
+      "word_count": 4220
+    },
+    "699": {
+      "chunk_idx": 13,
+      "local_idx": 48,
+      "title": "",
+      "word_count": 4734
+    },
+    "700": {
+      "chunk_idx": 13,
+      "local_idx": 49,
+      "title": "The Warden",
+      "word_count": 5595
+    },
+    "701": {
+      "chunk_idx": 14,
+      "local_idx": 0,
+      "title": "Attacking the Rankings",
+      "word_count": 3288
+    },
+    "702": {
+      "chunk_idx": 14,
+      "local_idx": 1,
+      "title": "The Water Palace",
+      "word_count": 4870
+    },
+    "703": {
+      "chunk_idx": 14,
+      "local_idx": 2,
+      "title": "Tempering",
+      "word_count": 4011
+    },
+    "704": {
+      "chunk_idx": 14,
+      "local_idx": 3,
+      "title": "The Inheritance",
+      "word_count": 3827
+    },
+    "705": {
+      "chunk_idx": 14,
+      "local_idx": 4,
+      "title": "Origin Essence",
+      "word_count": 4032
+    },
+    "706": {
+      "chunk_idx": 14,
+      "local_idx": 5,
+      "title": "Chaos",
+      "word_count": 3751
+    },
+    "707": {
+      "chunk_idx": 14,
+      "local_idx": 6,
+      "title": "The Clash of Champions",
+      "word_count": 3225
+    },
+    "708": {
+      "chunk_idx": 14,
+      "local_idx": 7,
+      "title": "The Decisive Kill",
+      "word_count": 4440
+    },
+    "709": {
+      "chunk_idx": 14,
+      "local_idx": 8,
+      "title": "Rising Onto the Rankings",
+      "word_count": 4393
+    },
+    "710": {
+      "chunk_idx": 14,
+      "local_idx": 9,
+      "title": "The Wandering Cultivator",
+      "word_count": 3715
+    },
+    "711": {
+      "chunk_idx": 14,
+      "local_idx": 10,
+      "title": "Background",
+      "word_count": 4393
+    },
+    "712": {
+      "chunk_idx": 14,
+      "local_idx": 11,
+      "title": "The Black Rankings",
+      "word_count": 3808
+    },
+    "713": {
+      "chunk_idx": 14,
+      "local_idx": 12,
+      "title": "Hidden Without a Trace",
+      "word_count": 3042
+    },
+    "714": {
+      "chunk_idx": 14,
+      "local_idx": 13,
+      "title": "Accepting a Disciple",
+      "word_count": 2669
+    },
+    "715": {
+      "chunk_idx": 14,
+      "local_idx": 14,
+      "title": "Return to the Terrace",
+      "word_count": 3443
+    },
+    "716": {
+      "chunk_idx": 14,
+      "local_idx": 15,
+      "title": "Breaking Precedent",
+      "word_count": 3043
+    },
+    "717": {
+      "chunk_idx": 14,
+      "local_idx": 16,
+      "title": "Green Lotus",
+      "word_count": 3290
+    },
+    "718": {
+      "chunk_idx": 14,
+      "local_idx": 17,
+      "title": "Spirit Vein",
+      "word_count": 4024
+    },
+    "719": {
+      "chunk_idx": 14,
+      "local_idx": 18,
+      "title": "A Foreign Object",
+      "word_count": 3418
+    },
+    "720": {
+      "chunk_idx": 14,
+      "local_idx": 19,
+      "title": "The Record",
+      "word_count": 3425
+    },
+    "721": {
+      "chunk_idx": 14,
+      "local_idx": 20,
+      "title": "Standoff",
+      "word_count": 3539
+    },
+    "722": {
+      "chunk_idx": 14,
+      "local_idx": 21,
+      "title": "The Third Layer",
+      "word_count": 3507
+    },
+    "723": {
+      "chunk_idx": 14,
+      "local_idx": 22,
+      "title": "Marriage Alliance",
+      "word_count": 3643
+    },
+    "724": {
+      "chunk_idx": 14,
+      "local_idx": 23,
+      "title": "The Duel",
+      "word_count": 2775
+    },
+    "725": {
+      "chunk_idx": 14,
+      "local_idx": 24,
+      "title": "Breaking the Chart",
+      "word_count": 4586
+    },
+    "726": {
+      "chunk_idx": 14,
+      "local_idx": 25,
+      "title": "The Dao Son",
+      "word_count": 4768
+    },
+    "727": {
+      "chunk_idx": 14,
+      "local_idx": 26,
+      "title": "Palace Master Yun",
+      "word_count": 2694
+    },
+    "728": {
+      "chunk_idx": 14,
+      "local_idx": 27,
+      "title": "Thunder Pearl",
+      "word_count": 4609
+    },
+    "729": {
+      "chunk_idx": 14,
+      "local_idx": 28,
+      "title": "Breakthrough",
+      "word_count": 3470
+    },
+    "730": {
+      "chunk_idx": 14,
+      "local_idx": 29,
+      "title": "Conflict",
+      "word_count": 4785
+    },
+    "731": {
+      "chunk_idx": 14,
+      "local_idx": 30,
+      "title": "Danxuan",
+      "word_count": 3366
+    },
+    "732": {
+      "chunk_idx": 14,
+      "local_idx": 31,
+      "title": "Crisis",
+      "word_count": 3381
+    },
+    "733": {
+      "chunk_idx": 14,
+      "local_idx": 32,
+      "title": "Cloud-Chasing",
+      "word_count": 4978
+    },
+    "734": {
+      "chunk_idx": 14,
+      "local_idx": 33,
+      "title": "Heavenly Net",
+      "word_count": 3320
+    },
+    "735": {
+      "chunk_idx": 14,
+      "local_idx": 34,
+      "title": "Fist Shattering",
+      "word_count": 3795
+    },
+    "736": {
+      "chunk_idx": 14,
+      "local_idx": 35,
+      "title": "Breaking the Ice",
+      "word_count": 3604
+    },
+    "737": {
+      "chunk_idx": 14,
+      "local_idx": 36,
+      "title": "The Black Hand",
+      "word_count": 4116
+    },
+    "738": {
+      "chunk_idx": 14,
+      "local_idx": 37,
+      "title": "Counter-Kill",
+      "word_count": 3196
+    },
+    "739": {
+      "chunk_idx": 14,
+      "local_idx": 38,
+      "title": "Trump Card",
+      "word_count": 3292
+    },
+    "740": {
+      "chunk_idx": 14,
+      "local_idx": 39,
+      "title": "Five Elements",
+      "word_count": 2868
     }
   }
 }
