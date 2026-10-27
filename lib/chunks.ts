@@ -7,6 +7,7 @@ import ibcMeta from "@/data/chapters/infinite-bloodcore-meta.json";
 import renegadeImmortalMeta from "@/data/chapters/renegade-immortal-meta.json";
 import shadowSlaveMeta from "@/data/chapters/shadow-slave-meta.json";
 import iAmNotTheGodOfDramaMeta from "@/data/chapters/i-am-not-the-god-of-drama-meta.json";
+import topTierProvidenceMeta from "@/data/chapters/top-tier-providence-meta.json";
 
 interface ChapterMetaEntry {
   chunk_idx: number;
@@ -32,6 +33,7 @@ const META: Record<string, NovelMeta> = {
   "renegade-immortal": renegadeImmortalMeta as NovelMeta,
   "shadow-slave": shadowSlaveMeta as NovelMeta,
   "i-am-not-the-god-of-drama": iAmNotTheGodOfDramaMeta as NovelMeta,
+  "top-tier-providence": topTierProvidenceMeta as NovelMeta,
 };
 
 async function loadChunk(novelId: string, chunkIdx: number): Promise<Chapter[]> {
