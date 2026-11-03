@@ -10,6 +10,7 @@ import iAmNotTheGodOfDramaMeta from "@/data/chapters/i-am-not-the-god-of-drama-m
 import topTierProvidenceMeta from "@/data/chapters/top-tier-providence-meta.json";
 import strugglingToSurviveMeta from "@/data/chapters/struggling-to-survive-meta.json";
 import theAzureMountainMeta from "@/data/chapters/the-azure-mountain-meta.json";
+import wlhciMeta from "@/data/chapters/who-let-him-cultivate-immortality-meta.json";
 
 interface ChapterMetaEntry {
   chunk_idx: number;
@@ -38,6 +39,7 @@ const META: Record<string, NovelMeta> = {
   "top-tier-providence": topTierProvidenceMeta as NovelMeta,
   "struggling-to-survive": strugglingToSurviveMeta as NovelMeta,
   "the-azure-mountain": theAzureMountainMeta as NovelMeta,
+  "who-let-him-cultivate-immortality": wlhciMeta as NovelMeta,
 };
 
 async function loadChunk(novelId: string, chunkIdx: number): Promise<Chapter[]> {
